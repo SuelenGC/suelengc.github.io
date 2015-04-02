@@ -10,6 +10,14 @@ layout: default
       <p class="resume" itemprop="about">{{ post.resumo }}</p>
       <p><a href="{{ post.url }}" itemprop="url">Continue lendo →</a></p>
     </header>
+    {% unless post.tags == empty %}
+    <!-- Tags -->
+    <ul class="post-tags">
+      {% for tag in post.tags %}
+      <li><a href="/tag/{{ tag }}" class="btn btn-tag">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endunless %}
     <p class="hidden" rel="author" itemprop="author">Rafaell Lycan</p>
     <p class="hidden" itemprop="publisher">Rafaell Lycan</p>
     <p class="hidden" itemprop="keywords">{{ post.keywords }}</p>

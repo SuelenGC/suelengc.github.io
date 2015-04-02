@@ -250,7 +250,7 @@ blockquote{
 
     header {
       position: relative;
-      padding: 2em 0 1em;
+      padding: 2em 0 0;
 
       h2{
         font-size: 1.5em;
@@ -435,6 +435,15 @@ blockquote{
   border-top: 2px solid #ddd;
 }
 
+.post-tags{
+  padding: 0;
+  list-style: none;
+
+  li{
+    display: inline-block;
+  }
+}
+
 .btn{
   padding: .4em .75em;
   text-decoration: none !important;
@@ -451,7 +460,7 @@ blockquote{
   &:hover{
     color: #fff;
     background: #585858;
-    border: 1px solid #636363;
+    border-color: #636363;
   }
 }
 .btn-light{
@@ -460,7 +469,20 @@ blockquote{
 
   &:hover{
     color: #2f2b28;
-    border: 1px solid #979797;
+    border-color: #979797;
+  }
+}
+
+.btn-tag{
+  color: #777;
+  border: 2px solid #dedede;
+  padding: .2em .5em !important;
+  margin: .2em !important;
+  font-weight: 400;
+
+  &:hover{
+    color: #333;
+    border-color: #999;
   }
 }
 
@@ -470,5 +492,5 @@ blockquote{
 }
 .btn-github:hover{
   background: #555555;
-  border: 1px solid #393939;
+  border-color: #393939;
 }
