@@ -1,14 +1,14 @@
 {
-  "name": "rafaell-lycan",
+  "name": "suelengc",
   "version": "0.0.1",
-  "description": "Rafaell Lycan Jekyll site",
-  "homepage": "http://rafaell-lycan.github.com/",
+  "description": "Suelen GC site",
+  "homepage": "http://suelengc.github.com/",
   "main": "index.html",
-  "author": "Rafaell Lycan <sonny.webdsg@gmail.com>",
+  "author": "Suelen GC <suelengcarvalho@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rafaell-lycan/rafaell-lycan.github.com.git"
+    "url": "https://github.com/SuelenGC/suelengc.github.io"
   },
   "devDependencies": {
     "browser-sync": "^2.9.11",
