@@ -1,7 +1,7 @@
 /*
-  ### Rafaell Lycan Website ###
+  ### Suelen GC Website ###
   Document    : base.less
-  Author      : Rafaell Lycan
+  Author      : SuelenGC
 */
 
 html{
@@ -40,12 +40,12 @@ p{
 }
 
 a{
-  color: darken(#5ab3f6, 20%);
+  color: darken(#ff594d, 20%);
   font-weight: 400;
   text-decoration: none;
 
   &:hover{
-    color: #5ab3f6;
+    color: #ff594d;
     text-decoration: underline;
   }
 }
@@ -95,7 +95,9 @@ blockquote{
   height: 100%;
   max-width: 500px;
   background: #292929;
-  background: url('../img/bg-triangles-black.svg') repeat 0;
+  /*background: url('../img/bg-triangles-black.svg') repeat 0;*/
+  background: url('../img/sue-gc7.png') no-repeat center center;
+  background-size: cover;
   overflow: hidden;
 
   &>header{
@@ -131,12 +133,18 @@ blockquote{
     }
 
     ul{
+      margin-top: 200px;
       padding: 0;
       list-style: none;
 
       a{
         padding: 10px;
         display: block;
+      }
+
+      a:hover {
+        /*text-decoration: underline;*/
+        color: #ccc;
       }
     }
   }
@@ -170,7 +178,7 @@ blockquote{
   &>.container{
     width: 100%;
     max-width: 800px;
-    padding: 80px 30px 0;
+    padding: 40px 30px 0;
     margin: 0 auto;
     .box-sizing();
   }
@@ -215,14 +223,8 @@ blockquote{
     color: #343434;
 
     article{
-      padding: 1em 0 1em;
       position: relative;
-      min-height: 60px;
-
-      padding-left: 4.5em;
-      padding-bottom: .7em;
-
-      margin-left: 5em;
+      padding-left: 1em;
     }
 
     h3{
@@ -233,11 +235,10 @@ blockquote{
       top: -1px;
       float: left;
     }
+
     h2{
-      font-size: 1.5em;
+      font-size: 1em;
       color: #343434;
-      margin-top: 0.2em;
-      margin-bottom: .5em;
 
       a{
         text-decoration: none;
@@ -249,8 +250,9 @@ blockquote{
     time{
       font-size: .9em;
       line-height: 1.2em;
-
+      text-transform: uppercase;
       position: absolute;
+      font-size: 0.8em;
       text-align: right;
       left: 0em;
       top: 1.8em;
@@ -482,7 +484,7 @@ blockquote{
   border: 1px solid #2286d3;
 }
 .btn-github:hover{
-  background: #555555;
+  /*background: #555555;*/
   border: 1px solid #393939;
 }
 
@@ -491,8 +493,8 @@ blockquote{
 .table {
   width: 100%;
 }
-th,
-td {
+
+th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1;
@@ -508,19 +510,30 @@ td:last-child {
 
 /* Social
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.share {
-  margin: 3rem 0;
-  text-align: center;
+.social_icons {
+   width: 35px;
+   height: 35px;
+   margin: 10px;
+   text-decoration: none;
+   -webkit-transition: -webkit-transform 1s; /* Safari */
+    transition: transform 1s;
+}
 
-  a{
-    margin: 0 0.5rem;
-    font-size: 1.8rem;
-    color: #BBC7CC;
-    text-decoration: none;
-    transition: color ease 0.3s;
+.social_icons:hover {
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
 
-    &:hover{
-      color: #50585D;
+/* Presentations 
+-------------------------------------------------- */
+.presentations {
+    a {
+      text-transform: uppercase; 
+      font-size: 0.8em;
     }
-  }
+
+    P {
+      margin: 0;
+      margin-left: 1em;
+    }
 }

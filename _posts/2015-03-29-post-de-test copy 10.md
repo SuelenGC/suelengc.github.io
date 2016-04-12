@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Post de Teste"
-date:   2016-03-29
+title:  "Só falta você testar esta coisa"
+date:   2015-03-29
 categories: teste
 tags: teste
 image: assets/img/posts/html5-voce-deveria-estar-usando.jpg

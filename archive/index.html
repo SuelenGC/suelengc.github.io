@@ -8,21 +8,30 @@ title: Blog Archive
   </header>
   <div class="blog-archives">
     {% for post in site.posts %}
-      {% unless post.next %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
+        {% unless post.next %}
+        <h2>{{ post.date | date: '%Y' }}</h2>
       {% else %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
         {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
         {% if year != nyear %}
-          <h3>{{ post.date | date: '%Y' }}</h3>
+          <h2>{{ post.date | date: '%Y' }}</h2>
         {% endif %}
       {% endunless %}
 
-      <article>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <!-- <article>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%b %d" }}</time>
         <footer></footer>
+      </article> -->
+
+      <article>
+        <header>
+          <time datetime="{{ post.date | date_to_xmlschema }}" >{{ post.date | date: '%-d %B'}} &#10143; <a href="{{ post.url }}">{{ post.title }}</a></time>
+          <p><small>{{ post.resumo }}</small></p>
+        </header>
+        
       </article>
+      
     {% endfor %}
   </div>
 </section>

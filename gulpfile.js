@@ -73,7 +73,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function () {
     gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/less/**/*.less', ['less']);
-    gulp.watch(['*.{html,md}', '_layouts/*.{html,md}', '_posts/*', '_drafts/*', '!assets', '!_publish'], ['jekyll-rebuild']);
+    gulp.watch(['*/*.{html,md}', '*.{html,md}', '_layouts/*.{html,md}', '_posts/*', '_drafts/*', 'assets/img/*', '!assets', '!_publish'], ['jekyll-rebuild']);
 });
 
 /**
