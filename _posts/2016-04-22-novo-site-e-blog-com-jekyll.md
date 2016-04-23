@@ -17,7 +17,7 @@ resumo: >
    Neste post de estréia do meu novo site e blog eu explico porque migrei do Wordpress para o Jekyll, um gerador de páginas estáticas, e quais as vantagens e desvantagens desta migração. 
 ---
 
-##Blog antigo
+## Blog antigo
 
 Por muito tempo eu mantive meu site pessoal e blog no [Wordpress](https://br.wordpress.org/). Sobre o host usado, bem... eu passei por alguns, não me lembro de todos, mas o último foi o [BlueHost](https://www.bluehost.com/). 
 
