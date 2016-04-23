@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Solução barata e simples para Sites e Blogs pessoais"
+title:  "Novo site e blog com Jekyll"
 date:   2016-04-23
 categories: blog
 tags: jekyll
