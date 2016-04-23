@@ -20,6 +20,12 @@ highlighter: pygments
 paginate: 10
 exclude: ['/node_modules', '/.gitignore', './config.ru', './Gemfile', './Gemfile.lock', './CNAME', '/gulpfile.js', '/package.json', '/README.md', '/src']
 
+# Google Analytics configuration
+analytics : 
+  provider : google
+  google : 
+    tracking_id : 'UA-29893194-2'
+
 # Publish posts with future date.
 future: false
 
