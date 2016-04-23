@@ -3,7 +3,7 @@ layout: post
 title:  "Novo site e blog com Jekyll"
 date:   2016-04-23
 categories: blog
-tags: jekyll
+tags: [jekyll]
 image: assets/img/posts/jekyll-github.png
 keywords:
 related:
