@@ -27,7 +27,7 @@ Meu único problema foi na renovação. Como os preços dos planos na renovaçã
 
 Busquei informações com a BlueHost de como eu poderia recuperar um backup, mesmo já não tendo um plano ativo. Resumo da história, fiz uma assinatura de 1 mês para conseguir recuperar o backup do wordpress. 
 
-##E quanto aos posts antigos
+## E quanto aos posts antigos
 
 Com o backup em mãos, resta migrar o conteúdo do Wordpress para cá.
 
@@ -35,7 +35,7 @@ Porém, o Wordpress armazena suas informações no MySQL, isso inclui os posts, 
 
 Não encontrei uma forma rápida e simples de fazer isso ainda e acredito que não exista --- aceito sugestões :). Então farei isso gradualmente. Infelizmente, quanto aos comentários, serão perdidos #Triste.
 
-##Blog novo
+## Blog novo
 
 Este cenário de quase perder todo o conteúdo que produzi ao longo de alguns anos, me fez repensar sobre o *stack* tecnológico do meu blog e site. O Wordpress é bem prático de __usar__, mas uma vez os dados lá dentro, __fica difícil de migrar__, armazer algo inteligível fora dele, etc. 
 
@@ -59,7 +59,7 @@ Isso me fez considerar um gerador de páginas estáticas, especificamente o [Jek
 
 * Como tudo na vida tem dois lados, uma desvantagem é que para aqueles que não possuem conhecimento técnico sobre tecnologias web, pode ser um desafio ou até mesmo uma tarefa chata.
 
-##Mas e o famoso Medium.com
+## Mas e o famoso Medium.com
 
 O [Medium](http://medium.com) tem sido usado por diversas pessoas, inclusive desenvolvedores para prover seus conteúdos. 
 
