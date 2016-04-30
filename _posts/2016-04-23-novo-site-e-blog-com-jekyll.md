@@ -11,7 +11,7 @@ related:
     url: https://jekyllrb.com/
   - title: Site oficial do Liquid, uma linguagem de template (usada no Jekyll)
     url: https://shopify.github.io/liquid/
-  - title: Docuemntação oficial do GitHub Pages para geração do site com Jekyll
+  - title: Documentação oficial do GitHub Pages para geração do site com Jekyll
     url: https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/
 resumo: >
    Neste post de estréia do meu novo site e blog eu explico porque migrei do Wordpress para o Jekyll, um gerador de páginas estáticas, e quais as vantagens e desvantagens desta migração. 
