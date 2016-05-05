@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Java e a evolução do operador de repetição for"
+date:   2016-04-29
+categories: java
+tags: [java]
+image: 
+keywords:
+related:
+  - title: Excelente post no blog da Caelum sobre Java 8 
+    url: http://blog.caelum.com.br/o-minimo-que-voce-deve-saber-de-java-8/
+  - title: Apresentação sobre Java 8 por Paulo Silveira no Conexão Java 2014
+    url: https://www.youtube.com/watch?v=UZaKFZHrnag
+resumo: >
+   Entenda quais são as novidades do Java 8. 
+---
+
+##Geração de iteradores do Java
+
+Um dos recursos mais usados em qualquer linguagem são operadores de repetição como for e while.
+
+No Java, o for tem sido vagarosamente evoluído, sendo que com o Java 8 recebemos a terceira geração de iteradores. Vamos relembrar. Para exemplificarmos vamos utilizar a lista de frutas abaixo e vamos imprimir todas as frutas no console.
+
+	List<String> frutas = Arrays.asList("banana", "maça", "limão");
+
+A primeira geração é o famoso for com índice.
+
+	for (int i = 0; i < frutas.size(); i++) {
+		System.out.println(frutas.get(i));
+	}
+
+A segunda geração é a geração do "for each", recurso que veio com o Java 5, que já nos retorna cada objeto baseado numa lista não necessitando de um índice explícito.
+
+	for(String fruta : frutas) {
+		System.out.println(frutas.get(i));	
+	}
+
+Ambas a primeira e segunda geração são consideradas formas de iteração externa, ou seja, **nós** temos que nos preocupar em como iremos iterar na lista e em o que fazer a cada iteração.
+
+Na terceira geração, é a primeira vez que surge no Java a iteração interna, ou seja, nós não mais precisamos nos preocupar em como iterar na lista pois esta complexidade foi encapsulada no método forEach adicionado a interface Iterable. A vantagem disso é que esta implementação pode ser aperfeiçoada de forma a usar processamento paralelo internamente pelo SDK e não interefrir negativamente em implementações existentes.
+
+Esta mesma mesma operação com Java 8 pode ser feita da seguinte forma:
+	frutas.forEach((s) -> System.out.println(s));
+
+E ainda, utilizando o recurso de *Method Reference*, da seguinte forma:
+
+	frutas.forEach(System.out::println)

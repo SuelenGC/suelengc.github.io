@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Java 8 - Entendendo method reference"
+date:   2016-04-29
+categories: java
+tags: [java]
+image: 
+keywords:
+related:
+  - title: Excelente post no blog da Caelum sobre Java 8 
+    url: http://blog.caelum.com.br/o-minimo-que-voce-deve-saber-de-java-8/
+  - title: Apresentação sobre Java 8 por Paulo Silveira no Conexão Java 2014
+    url: https://www.youtube.com/watch?v=UZaKFZHrnag
+resumo: >
+   Entenda quais são as novidades do Java 8 - Method Reference. 
+---
+
+##Method Reference
+
+Suponha que temos a lista abaixo e queremos imprimir no console cada nome contido na lista.
+
+	List<String> nomes = Arrays.AsList("suelen", "david", "eric");
+
+Com o Java até a versão 7 fariamos usando por exemplo o "ForEach", como segue:
+
+	for(String nome : nomes) {
+		System.out.println(nome);
+	}
+
+Com a versão 8 do Java podemos utilizar o novo método forEach adicionado na interface List para iterar sobre os itens passando um lambda. O forEach é a forma como o Java 8 itera sobre itens de coleções, estamos agora na terceira geração de iteradores do Java, é bem legal entender [a evolução dos iteradores](link).
+
+	nomes.forEach((s) -> System.out.println(s));
+
+Esta operação pode ser simplificada ainda mais usando a ideia dos methods references. Porém só podemos usá-la porque o método recebe apenas um parâmetro do tipo que temos, logo o compilador pode inferir isso para nós e desta forma, podemos escrever assim:
+
+	nomes.forEach(System.out::println);
+
+O compilador infere que cada string contida na lista pode ser passada para o println que recebe uma string.
+
+Esta ideia de chamar um método a partir da notação :: é o que indica o uso de method reference.
+
+
+

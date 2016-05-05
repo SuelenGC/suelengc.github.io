@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Java 8 - Entendendo melhor os lambdas"
+date:   2016-04-29
+categories: java
+tags: [java]
+image: 
+keywords:
+related:
+  - title: Excelente post no blog da Caelum sobre Java 8 
+    url: http://blog.caelum.com.br/o-minimo-que-voce-deve-saber-de-java-8/
+  - title: Apresentação sobre Java 8 por Paulo Silveira no Conexão Java 2014
+    url: https://www.youtube.com/watch?v=UZaKFZHrnag
+resumo: >
+   Entenda quais são as novidades do Java 8. 
+---
+
+##Lambdas
+
+A sintaxe do lambda do Java 8 só pode ser aplicada em interfaces funcionais, ou seja, uma interface com apenas um método abstrato. Métodos abstratos que são override de Object não contam pois qualquer classe que implemente a interface terá a implementação padrão de Object.
+
+Como o único método abstrato desta interface é o int compare(T o1, T o2), o compilador pode inferir qual método que você está implementando, e desta forma podemos suprimir a assinatura do método passando diretamente para o nome dos parâmetros e apontando -> para a implementação direto.
+
+
+Segue exemplo de Comparator com classe anônima:
+	Comparator<String> ordenaPorTamanho = new Comparator<String>() {
+		@Override
+		public int compare(String s1, String s2) {
+			return Integer.compare(s1.length(), s2.length());
+		}
+	};
+
+E agora com a sintaxe lambda do Java 8:
+	Comparator<String> comparador = (s1, s2) -> {
+	  return Integer.compare(s1.length(), s2.length()); 
+	};
+
+Ou ainda mais enxuto, quando temos apenas uma instrução na implementação do método, podemos apontar direto para ela:
+	Comparator<String> comparador = (s1, s2) -> Integer.compare(s1.length(), s2.length()); 
+
+Ou ainda, passar tudo isso como argumento no método sort (eu acho que na maior parte das vezes a legibilidade fica comprometida, mas é possível ser feito):
+	palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+
+Se o método só receber um único argumento, podemos suprimir os parênteses: 
+	palavras.forEach(s -> System.out.println(s));
+
+Você pode usar a sintaxe lambda em qualquer interface que seja considerada funcional, isso quer dizer, qualquer interface que passou a ter a anotação @FunctionalInterface.
+	new Thread(() -> System.out.println("thread nova rodando")).start();
