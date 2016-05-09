@@ -14,7 +14,7 @@ related:
   - title: Documentação da Oracle sobre Lambda Expressions
     url: http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 resumo: >
-   Entenda para que serve e como usar lambdas do Java 8. Veja também meu vídeo sobre <a href="https://www.youtube.com/watch?v=BPootnK8taE" target="_blank">vídeo sobre lambdas</a> no meu canal do YouTube.  
+   Entenda para que serve e como usar lambdas do Java 8. Veja também meu <a href="https://www.youtube.com/watch?v=BPootnK8taE" target="_blank">vídeo sobre lambdas</a> no meu canal do YouTube.  
 ---
 
 ## O que é?
