@@ -65,7 +65,7 @@ Collections.sort(frutas, (String s1, String s2) -> {
 {% endhighlight %}
 
 
-##Síntaxe
+## Síntaxe
 
 Um ponto importante de entender é que as expressão Lambda, salvo poucas exceções, terão o seguinte formato:
 
