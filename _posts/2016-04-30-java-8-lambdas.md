@@ -67,7 +67,7 @@ Collections.sort(frutas, (String s1, String s2) -> {
 
 ## Síntaxe
 
-Um ponto importante de entender é que as expressão Lambda, salvo poucas exceções, terão o seguinte formato:
+Um ponto importante de entender é que as expressões Lambdas, salvo poucas exceções, terão o seguinte formato:
 
 __(__ parâmetros do método implementado separados por vírgula __)__ __->__ __{__ código a ser executado __}__
 
