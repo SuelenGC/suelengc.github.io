@@ -72,7 +72,7 @@ Um ponto importante de entender é que as expressões Lambdas, salvo poucas exce
 __(__ parâmetros do método implementado separados por vírgula __)__ __->__ __{__ código a ser executado __}__
 
 
-##Otimizações
+## Otimizações
 
 É possível deixar o Lambda ainda mais enxuto do que está. 
 
