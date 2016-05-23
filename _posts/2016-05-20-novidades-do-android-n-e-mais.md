@@ -82,7 +82,7 @@ Sabe aquele loading que aparece quando reiniciamos o Android, dizendo que está 
 
 ## Java 8 
 
-Funcionalidades como lambdas, *methods references*, *repeatable annotation*, *default methods* e outros finalmente serão suportados! E digo mais, muitas destas novidades do Java 8 também poderão ser usadas nos xmls de layout. 
+Funcionalidades como [lambdas](http://suelengc.com/2016/java-8-lambdas/), *methods references*, *repeatable annotation*, *default methods* e outros finalmente serão suportados! E digo mais, muitas destas novidades do Java 8 também poderão ser usadas nos xmls de layout. 
 
 Essa funcionalidade de poder colocar alguns códigos nos xmls é chamada de *Data Binding* e foi lançada em 2015. Este ano fizeram uma série de melhorias possibilitando usar alguns conceitos do Java 8 também. Particularmente eu achei muito bacana!
 
