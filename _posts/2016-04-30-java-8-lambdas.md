@@ -19,7 +19,7 @@ resumo: >
 
 ## O que é?
 
-Basicamente, expressões lambdas não é nada novo, em outras linguagens de programação como C#, Scala e outras já é algo bem comum. Mas no Java ela é basicamente uma forma mais enxuta de escrever código. 
+Basicamente, expressão lambda não é nada novo, em outras linguagens de programação como C#, Scala e outras já é algo bem comum. Mas no Java ela é basicamente uma forma mais enxuta de escrever código. 
 
 Uma forma de pensar sobre o Lambda é que, enquanto classes anônimas são classes sem nome, Lambdas são métodos sem nome. 
 
@@ -54,7 +54,7 @@ Collections.sort(frutas, new Comparator<String>() {
 
 Como comentamos no item anterior, o Lambda resolve o problema de grandes estruturas para criação de classes anônimas. Sendo assim, podemos melhorar este código trocando a classe anônima do `Comparator` pela expressão Lambda. 
 
-A ideia básica é omitir tudo aquilo que o compilador pode inferir. Pensando nisso, podemos concluir que o método `sort` já espera no segundo parâmetro uma instância de `Comparator` e que o único método que ele pode exceutar é o `compare`, pois este é o único método abstrato que a interface `Comparator` possui. 
+A ideia básica é omitir tudo aquilo que o compilador pode inferir. Pensando nisso, podemos concluir que o método `sort` já espera no segundo parâmetro uma instância de `Comparator` e que o único método que ele pode executar é o `compare`, pois este é o único método abstrato que a interface `Comparator` possui. 
 
 Logo, podemos omitir o nome da classe e nome do método (também todos os acessórios como chaves, new, etc.) e deixar só os parâmetros do método em diante. Nossa ordenação com expressão Lambda ficará assim:
 
@@ -103,7 +103,7 @@ Vale lembrar que, caso seu método não tenha nenhum parâmetro devemos colocar 
 
 Lambdas só funcionam com Interfaces Funcionais que também é um conceito que veio junto com o Java 8. Basicamente uma Interface Funcional é uma interface com apenas um método abstrato. 
 
-Desta forma fica fácil o compilador inferir qual método está sendo implementado sem informarmos o nome. Isso quer dizer que Comparator, que usamos na maior parte dos exemplos, é uma interface funcional.
+Desta forma fica fácil o compilador inferir qual método está sendo implementado sem informarmos o nome. Isso quer dizer que `Comparator`, que usamos na maior parte dos exemplos, é uma interface funcional.
 
 Nós podemos criar nossas próprias interfaces funcionais, basta que ela tenha apenas um método abstrato.
 
