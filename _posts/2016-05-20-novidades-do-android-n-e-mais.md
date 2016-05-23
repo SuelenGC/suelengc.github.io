@@ -4,7 +4,7 @@ title:  "Principais novidades para Android no Google IO"
 date:   2016-05-22
 categories: android
 tags: [android]
-image: assets/img/posts/androidn.jpg
+image: assets/img/posts/google-io16.jpg
 keywords:
 related:
   - title: Site oficial do Firebase
