@@ -14,7 +14,7 @@ related:
   - title: Site oficial do Twitter Fabric
     url: https://get.fabric.io/
 resumo: >
-   Saiba as principais novidades do Android N e outras coisas muito bacanas para desenvolvedores Android lançadas no Google IO. Você também pode assistir ao meu vídeo inédito [Resumão fo Google IO](https://www.youtube.com/watch?v=cIZCaKCn9D0){:target="_blank"}.
+   Saiba as principais novidades do Android N e outras coisas muito bacanas para desenvolvedores Android lançadas no Google IO. Você também pode assistir ao meu vídeo inédito <a href='https://www.youtube.com/watch?v=cIZCaKCn9D0' target='_blank'>Resumão fo Google IO</a>.
 ---
 
 Neste post vamos falar sobre as principais novidades divulgadas sobre o **Android N** e outras coisas para Android no **Google I/O** onde pela primeira vez, tive o privilégio de participar presencialmente.
