@@ -23,7 +23,7 @@ O Google I/O é o maior evento anual do Google onde são anunciados novos produt
 
 ## Nome da versão
 
-Se você como muitos, esperava saber o nome da nova versão do Android, vai ficar na mão. Neste ano não foi divulgada o nome da nova versão, ao invés, foi divulgado um [link](android.com/n) para os desenvolvedores darem sugestões. 
+Se você como muitos, esperava saber o nome da nova versão do Android, vai ficar na mão. Neste ano não foi divulgada o nome da nova versão, ao invés, foi divulgado um [link](http://android.com/n){:target="_blank"} para os desenvolvedores darem sugestões. 
 
 Em teoria, o nome deve vir destas sugestões. Pelo menos para mim é difícil pensar em um doce brasileiro que inicie com a letra N e que não seja Nutella 8).  
 
@@ -40,7 +40,7 @@ Outro ponto legal é que a IDE já vai deixando sua tela responsiva a tamanhos d
 
 É basicamente o sonho dos desenvolvedores que conheceram o eclipse e sabem que o *Design Mode* de lá é balela há alguns anos. A tendência é que a preferência por editar xml para fazer telas do Android se reverta em usar estas novas funcionalidades.
 
-Mais um funcionalidade super bacana é que agora é possível fazer a gravação de testes realizados com o [Espresso]([Espresso](https://google.github.io/android-testing-support-library/docs/espresso)). É mágico de tão legal e fácil que ficou criar testes funcionais! É como se gravasse uma macro, você coloca a IDE para gravar, usa o app fazendo o teste que você quer gravar e ele vai gerando o roteiro do Espresso.
+Mais um funcionalidade super bacana é que agora é possível fazer a gravação de testes realizados com o [Espresso](https://google.github.io/android-testing-support-library/docs/espresso){:target="_blank"}. É mágico de tão legal e fácil que ficou criar testes funcionais! É como se gravasse uma macro, você coloca a IDE para gravar, usa o app fazendo o teste que você quer gravar e ele vai gerando o roteiro do Espresso.
 
 Ainda há uma série de outras funcionalidades bacanas com o *APK Analyzer*, *Layout Inspector*, a integração com a última versão do IntelliJ, suporte a C++ e outras mais. É muito coisa para um post só!
 
@@ -89,17 +89,17 @@ Essa funcionalidade de poder colocar alguns códigos nos xmls é chamada de *Dat
 
 ## Firebase
 
-Sem dúvida um dos maiores destaques de todo o Google IO foi o [Firebase](https://firebase.google.com). O Google resolveu investir de fato nesta ferramenta como seu *Mobile Backend As A Service* (MBAAS). 
+Sem dúvida um dos maiores destaques de todo o Google IO foi o [Firebase](https://firebase.google.com){:target="_blank"}. O Google resolveu investir de fato nesta ferramenta como seu *Mobile Backend As A Service* (MBAAS). 
 
 O Firebase agora disponibiliza todo um *stack* de ferramentas para desenvolvimento mobile como banco de dados (*NoSQL*), *Cloud Messaging*, *Storage* para arquivos estáticos, *TestLab* para testes automatizados com várias integrações disponíveis, autenticação, *analytics* e muito mais. 
 
 Vale mencionar também que ele está completamente integrado ao Android Studio, ou seja, começar a usar qualquer destas ferramentas é muito simples.
 
-Durante todo o evento houveram palestras que entraram mais a fundo em cada uma das ferramentas. Vale ressaltar que alguns deles são de graça, o que torna bem legal de usar. Mas infelizmente algumas ferramentas bacanas ficaram de fora do pacote gratuíto como o TestLab. Pena, mas confira os [planos existente no site](https://firebase.google.com/pricing), afinal, isso pode sempre mudar.
+Durante todo o evento houveram palestras que entraram mais a fundo em cada uma das ferramentas. Vale ressaltar que alguns deles são de graça, o que torna bem legal de usar. Mas infelizmente algumas ferramentas bacanas ficaram de fora do pacote gratuíto como o TestLab. Pena, mas confira os [planos existente no site](https://firebase.google.com/pricing){:target="_blank"}, afinal, isso pode sempre mudar.
 
 Outro ponto interessante é que o GCM (*Google Cloud Messaging*) agora é FCM (*Firebase Cloud Messaging*), isso mesmo. O Google uniu as duas ferramentas.
 
-No momento que vi esta parte do KeyNote me lembrei imediatamente do [Fabric](https://get.fabric.io/) do Twitter pois algumas ferramentas do Firebase como *Analytics* por exemplo, resolvem problemas que algumas ferramentas do Twitter resolvem também. Bem, ambas me pareceram muito boas.
+No momento que vi esta parte do KeyNote me lembrei imediatamente do [Fabric](https://get.fabric.io/){:target="_blank"} do Twitter pois algumas ferramentas do Firebase como *Analytics* por exemplo, resolvem problemas que algumas ferramentas do Twitter resolvem também. Bem, ambas me pareceram muito boas.
 
 
 ## Não Para Por Aqui
