@@ -14,7 +14,7 @@ let gulp = require('gulp'),
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', ['tags'], function (done) {
   return cp.spawn('jekyll', ['build', '-D'], {stdio: 'inherit'})
     .on('close', done);
 });
@@ -51,6 +51,12 @@ gulp.task('less', function () {
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
 });
+
+gulp.task('tags', function () {
+    return gulp.src('_publish/tag/**/**')
+        .pipe(gulp.dest('tag'));
+});
+
 
 /**
  * Compile files from assets/js into both _publish/js (for live injecting) and assets (for future jekyll builds)

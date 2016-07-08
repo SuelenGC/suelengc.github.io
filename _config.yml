@@ -13,6 +13,7 @@ category_dir: /
 # Basic configuration
 permalink: /:year/:title/
 destination: ./_publish
+tag_dir: tag
 
 # Use Pygments to highlight code blocks
 baseurl: '/'
