@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Dicas sobre interface visual para desenvolvedores mobile"
-date:   2013-11-11
+date:   2013-03-01
 tags: [android, mobile, ui, ux, mobile]
-image: assets/img/posts/SC20120421-035355.png
+image: 
 keywords:
 related:
 resumo: >
