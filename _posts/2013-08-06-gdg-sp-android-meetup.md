@@ -3,7 +3,7 @@ layout: post
 title:  "GDG São Paulo Android Meetup"
 date:   2013-08-06
 tags: [android, eventos, android meetup]
-image: assets/img/posts/evolution-android-11
+image: assets/img/posts/evolution-android-11.jpg
 keywords:
 related:
   - title: GDG SP no Google+
