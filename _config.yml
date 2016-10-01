@@ -1,11 +1,11 @@
 # Jekyll configuration
-title: "Sue GC Blog and Website"
+title: "SuelenGC Site - Posts e vídeos techs, em português, diretos e sem firúlas você só encontra aqui!"
 url: 'http://suelengc.github.io'
 author: Suelen GC
 twitter: 'suelengc'
 github: 'suelengc'
 email: 'suelengcarvalho@gmail'
-description: 'Mobile Andriod and iOS development, web development stuffs, tutorials for beginners and more by Suelen GC'
+description: 'Posts and tutorials about Java, Android, iOS, Hibernate, Spring, Web Development and others development stuffs SuelenGC'
 
 category_title_prefix: ''
 category_dir: /
