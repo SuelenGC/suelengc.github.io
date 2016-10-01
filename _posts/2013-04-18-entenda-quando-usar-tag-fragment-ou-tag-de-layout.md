@@ -44,7 +44,21 @@ resumo: >
 
 <p>A desvantagem desta forma é que, mesmo o primeiro carregamento do Fragment, precisará ser feito programaticamente.</p>
 <p>Segue o trecho de código para carregar um Fragment em uma tag de layout, normalmente colocamos este trecho no método onCreate da Activity:</p>
-<p>https://gist.github.com/SuelenGC/4665cc6306f460cfd37a</p>
+
+{% highlight java %}
+/** Cria uma instância do Fragment a ser carregado */
+MenuFragment menuFrag = new MenuFragment();
+
+/** Pega a transação para trabalhar com Fragments */
+FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+      
+/** Coloca o Fragment de menu no espaço delimitado pela tag de layout */
+transaction.add(R.id.menu, menuFrag); 
+            
+/** Confirma a transação. Neste momento ele sabe o que deve ser renderizado no espaço da tag de layout */
+transaction.commit();
+{% endhighlight %}
+
 <p>Apesar disso, ganhamos a flexibilidade de poder alterar a qualquer momento o conteúdo atual por outro Fragment, bastando utilizar o código acima.</p>
 <p>Minha opinião como desenvolvedora é, sempre otimize o máximo que puder. Mas não de maneira prematura. Ou seja, pense sobre seu contexto e se for necessário alterar o conteúdo, use uma tag de layout, do contrário, use a tag fragment.</p>
 <p>Vale considerar que o esforço para mudar de um para o outro é muito baixo. Sendo necessário apenas que o desenvolvedor detenha este conhecimento.</p>
