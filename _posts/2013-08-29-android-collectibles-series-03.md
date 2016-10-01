@@ -15,7 +15,7 @@ resumo: >
 ![]({{site.url}}/assets/img/posts/android-collectibles1.jpg)
 
 <p>Cada box de Mini Android vem com um folheto que mostram todos (14) os Androids da coleção. Dois deles não são completamente identificados no folheto. Só aparece o contorno branco preenchido de preto e o nome do autor do design. Esses dois são chamados de "Androids raros".</p>
-<p>Infelizmente, na minha <em>box collection</em> só veio um deles. Fiquei descontente e pretendo questionar com o fabricante.</p>
+<p>Infelizmente, na minha <em>box collection</em> só veio um deles. #tristezaInfinita</p>
 
 ![]({{site.url}}/assets/img/posts/android-collectibles2.jpg)
 
