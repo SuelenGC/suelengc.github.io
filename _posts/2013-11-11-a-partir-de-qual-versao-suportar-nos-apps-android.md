@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Saiba como decidir qual versão suportar nos apps Android"
+title:  "Saiba como decidir qual versão suportar nos aplicativos Android"
 date:   2013-11-11
 tags: [android, mobile]
 image: assets/img/posts/androids_frags.png
