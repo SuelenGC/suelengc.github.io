@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Principais novidades para Android no Google IO"
+title:  "Principais Novidades Para Android no Google IO"
 date:   2016-05-22
 categories: android
 tags: [android]
