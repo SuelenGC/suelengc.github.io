@@ -25,7 +25,22 @@ resumo: >
 <p>A tag fragment é mais adequada em casos que não será necessário substituir o fragment em tempo de execução. Isso pois, se for feito usando os métodos <strong>add </strong>ou <strong>replace </strong>do <strong>FragmentTransaction</strong>, será notado um comportamento estranho pois ambos os métodos irão sobrepor o conteúdo do fragment atual, e ok, esperamos isso do <strong>add </strong>mas não esperamos isso do <strong>replace</strong>.</p>
 <p>Aplicativos para tablets são um bom exemplo de utilização. Normalmente o xml de layout de um tablet tem um menu a esquerda e o conteúdo se abre a diretira. O menu é um forte candidato para se usar a tag fragment no seu xml de layout, pois o que se espera neste contexto é que ele sempre esteja lá.</p>
 <p>O xml de layout neste caso seria assim:</p>
-<p>https://gist.github.com/SuelenGC/b4a54f8acf8fd07385bb</p>
+
+{% highlight xml %}
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
+{% endhighlight %}
+
 <p>A renderização do layout acima seria algo mais ou menos assim:</p>
 
 ![]({{site.url}}/assets/img/posts/tablet.png)
