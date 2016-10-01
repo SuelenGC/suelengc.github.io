@@ -36,4 +36,6 @@ resumo: >
 <li>Introduzido o patter layout de menu do Android;</li>
 <li>O label do campo e a parte de digitação estão no mesmo espaço visual;</li>
 </ul>
-<p>Por fim, ainda há muito o que melhorar, no entanto, para a versão 6 foram feitas uma série de mudanças que aos meus olhos soam melhores do que as versões anteriores. O feedback dos usuários quanto a nova versão foi muito positivo, é possível ver nos comentários do app na PlayStore.</p>
+<p>Por fim, ainda há muito o que melhorar, no entanto, para a versão 6 foram feitas uma série de mudanças que aos meus olhos soam melhores do que as versões anteriores. </p>
+
+<p>O feedback dos usuários quanto a nova versão foi muito positivo, é possível ver nos comentários do app na PlayStore.</p>
