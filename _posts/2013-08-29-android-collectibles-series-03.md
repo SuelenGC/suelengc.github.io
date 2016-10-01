@@ -6,8 +6,6 @@ tags: [android, coleção]
 image: assets/img/posts/todos.png
 keywords:
 related:
-  - title: Who’s Winning, iOS or Android? All the Numbers, All in One Place 
-    url: http://techland.time.com/2013/04/16/ios-vs-android/
 resumo: >
    Nerds são um caso sério, gastam dinheiro aleatoriamente. Como não sou diferente, exibo aqui meu Android colecionáveis para morrerem de inveja e gastar dinheiro também :).
 ---
