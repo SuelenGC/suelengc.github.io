@@ -15,7 +15,7 @@ resumo: >
    Está de saco cheio de repetidas vezes escrever um for? Conheça essa novidade do Java 8 e nunca mais escreva uma iteração na sua vida! 
 ---
 
-Um dos recursos mais usados em qualquer linguagem são operadores de repetição como for e while. No Java, o _for_ tem sido vagarosamente evoluído, sendo que com o Java 8 recebemos a __Terceira Geração de Iteradores__. Ou seja, passamos pela primeira e segunda geração. Mas quais são elas?!
+Um dos recursos mais usados em qualquer linguagem são operadores de repetição como _for_ e _while_. No Java, o _for_ tem sido vagarosamente evoluído, sendo que com o Java 8 recebemos a __Terceira Geração de Iteradores__. Ou seja, passamos pela primeira e segunda geração. Mas quais são elas?!
 
 Para exemplificarmos vamos utilizar a lista de frutas abaixo. Nosso objetivo é iterar sobre esta lista e imprimir as frutas.
 
