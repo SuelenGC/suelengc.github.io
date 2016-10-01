@@ -4,7 +4,7 @@ title:  "Java 8 - A Terceira Geração de Iteradores"
 date:   2016-10-01
 categories: java
 tags: [java, java8]
-image: assets/img/posts/java8-foreach.png
+image: assets/img/posts/java8-foreach-iterator.png
 keywords:
 related:
   - title: Excelente post no blog da Caelum sobre Java 8 
