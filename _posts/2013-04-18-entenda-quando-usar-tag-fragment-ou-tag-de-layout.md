@@ -3,7 +3,7 @@ layout: post
 title:  "Entenda quando usar tag fragment ou tag de layout"
 date:   2013-04-18
 tags: [android, mobile, fragments]
-image: assets/img/posts/fragmented.png
+image: assets/img/posts/fragmented2.png
 keywords:
 related:
 resumo: >
