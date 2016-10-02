@@ -6,7 +6,7 @@ tags: [android, mobile, ui, ux, mobile]
 image: 
 keywords:
 related:
-    title: Calculadora de Tributos PJ na Google PlayStore
+  - title: Calculadora de Tributos PJ na Google PlayStore
     url: https://play.google.com/store/apps/details?id=br.com.suelengc.calctributospj&hl=pt_BR
 resumo: >
    Aprenda alguns macetes para deixar seus aplicativos Android mais atraentes em um passe de mágica.
