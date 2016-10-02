@@ -3,7 +3,7 @@ layout: post
 title:  "Usando o poder da API Fragments do Android"
 date:   2013-04-16
 tags: [android, mobile, fragments]
-image: assets/img/posts/androids_frags.png
+image: {{site.url}}/assets/img/posts/androids_frags.png
 keywords:
 related:
 resumo: >
