@@ -34,3 +34,5 @@ future: false
 show_drafts: false
 
 gems: ['jekyll-paginate']
+
+theme: minima
