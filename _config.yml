@@ -1,36 +1,52 @@
-# Jekyll configuration
-title: "SuelenGC Site - Posts e vídeos techs, em português, diretos e sem firúlas você só encontra aqui!"
-url: 'http://suelengc.github.io'
-author: Suelen GC
-twitter: 'suelengc'
-github: 'suelengc'
-email: 'suelengcarvalho@gmail'
-description: 'Posts and tutorials about Java, Android, iOS, Hibernate, Spring, Web Development and others development stuffs SuelenGC'
+url: https://y7kim.github.io
+# baseurl: /agency-jekyll-theme/
 
-category_title_prefix: ''
-category_dir: /
+# Site settings
+title: Suelen Carvalho
+email: suelengcarvalho@gmail.com
+description: "Suelen Carvalho Site"
 
-# Basic configuration
-permalink: /:year/:title/
-destination: ./_publish
-tag_dir: tag
 
-# Use Pygments to highlight code blocks
-baseurl: '/'
-highlighter: pygments
-paginate: 10
-exclude: ['/node_modules', '/.gitignore', './config.ru', './Gemfile', './Gemfile.lock', './CNAME', '/gulpfile.js', '/package.json', '/README.md', '/src']
+# Team names, titles and social links
+people:
+- name: Suelen GC
+  pic: "https://avatars3.githubusercontent.com/u/965021?v=3&u=b05c88a87bfee95e61f480670668ba161b5f2456&s=400"
+  position: Agile Coach & Tech Lead
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
 
-# Google Analytics configuration
-analytics : 
-  provider : google
-  google : 
-    tracking_id : 'UA-29893194-2'
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/suelengc
+  - title: twitter
+    url: http://twitter.com/suelengc
+  - title: youtube
+    url: https://www.youtube.com/channel/UC_py-XItpneVweaE1mGWeNw
+  - title: medium
+    url: https://medium.com/@suelengc
+  - title: slideshare
+    url: https://pt.slideshare.net/suelengc
+  - title: github
+    url: http://github.com/suelengc
+  - title: instagram
+    url: https://instagram.com/_suelengc
 
-# Publish posts with future date.
-future: false
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
 
-# Compile posts in the _drafts directory.
-show_drafts: false
+# Build settings
+markdown: kramdown
+permalink: /:title
+tag_dir: blog/tag
 
 gems: ['jekyll-paginate']
+paginate: 5
+paginate_path: "/blog/page:num/"

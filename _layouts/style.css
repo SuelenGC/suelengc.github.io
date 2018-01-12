@@ -1,0 +1,4 @@
+{% include_relative /assets/css/bootstrap.min.css %}
+{% include_relative /assets/css/custom.scss %}
+{% include_relative /assets/css/posts.scss %}
+{{ content }}
