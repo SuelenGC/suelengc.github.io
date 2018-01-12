@@ -45,7 +45,7 @@ address:
 # Build settings
 markdown: kramdown
 permalink: /:title
-tag_dir: blog/tag
+tag_dir: /blog/tag
 
 gems: ['jekyll-paginate']
 
