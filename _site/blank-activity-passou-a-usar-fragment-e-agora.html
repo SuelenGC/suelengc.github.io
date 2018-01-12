@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blank Activity passou a usar Fragment, e agora?</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Suelen Carvalho Site">
+    <link rel="canonical" href="http://localhost:4000/blank-activity-passou-a-usar-fragment-e-agora">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+    <body id="page-top" class="index">
+      <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand page-scroll" href="#page-top">Suelen Carvalho</a> -->
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"><span class="white-text">Suelen</span>GC</a> -->
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"><span class="logoname-suelen">suelen</span><span class="white-text logoname-gc">gc</span></a> -->
+            <a class="navbar-brand page-scroll" href="/#page-top"><img src="/assets/img/suelen-carvalho-logo-name.png" width="220px"></a>
+            <br />
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#about">Carreira</a>
+                </li> -->
+                <li>
+                    <a class="page-scroll" href="/blog">Artigos</a>
+                </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#videos">Vídeos</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="#contact">Workshops</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="#team">Métodos Ágeis</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Mobile</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="#team">Pesquisas</a>
+                </li>  -->
+                <li>
+                    <a class="page-scroll" href="/#services">Sobre</a>
+                </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#portfolio">Palestras</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="">Me Contrate</a>
+                </li> -->
+                <li>
+                    <a class="page-scroll" href="/#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+      
+      <section id="post">
+    
+    <div class="container" style="min-height:100%;">
+        <!-- <div class="row">
+            <div class="col-lg-10 text-center">
+                <h2 class="section-heading">Blank Activity passou a usar Fragment, e agora?</h2>
+            </div>
+        </div> -->
+        
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <h3 class="section-heading">Blank Activity passou a usar Fragment, e agora?</h3>
+              
+
+
+    <!-- Posts's page -->
+    <p class="meta">
+        <time datetime="2014-06-10T00:00:00-03:00" itemprop="datePublished">
+        
+        10
+        Jun
+          
+        2014
+        </time> 
+        |
+        <span>Reading time 1 min</span>
+        |
+        
+          <a class="tag" href="/blog/tag/android/">android</a> ,
+        
+          <a class="tag" href="/blog/tag/mobile/">mobile</a> 
+        
+    </p>
+
+
+
+<!-- <a href="/blank-activity-passou-a-usar-fragment-e-agora#disqus_thread" data-disqus-identifier="/blank-activity-passou-a-usar-fragment-e-agora" itemprop="interactionCount">Comments</a> | -->
+
+              
+                <figure class="text-center">
+                  <img src="/assets/img/posts/android-triste.png" alt="Blank Activity passou a usar Fragment, e agora?" style="max-width: 80%; margin: 20px auto;" title="Blank Activity passou a usar Fragment, e agora?" itemprop="thumbnailUrl">
+                  <figcaption></figcaption>
+                </figure>
+                      
+              
+              <div class="post-content">
+                <p>A primeira coisa que normalmente fazemos ao iniciar o desenvolvimento em uma nova tecnologia é tentar criar um projeto do tipo <em>Hello World</em> para gerar o código mais simples e começar a partir dele.</p>
+<p>No Android, esta tarefa era bem simples de se fazer. Basicamente, após baixar e abrir o Eclipse <a href="http://developer.android.com/tools/sdk/eclipse-adt.html">ADT</a> Android Development Tools), bastava criar um novo <em><strong>Android Application Project</strong></em> usando o template <em>Blank Activity</em> e seguir as instruções do <em>wizard</em>, ou seja, <em>next, next </em>e<em> finish.</em></p>
+<p>Porém, na versão 2.6.0 do Eclipse ADT, o Google alterou o template <em>Blank Activity e</em> ao invés de gerar um código simples, passou a gerar um código mais complexo, já fazendo uso de API's mais avançadas e difíceis de entender. Isso fez com que alguns desenvolvedores Android ficassem um pouco confusos.</p>
+<p>Esta alteração sem aviso prévio gerou <a href="https://code.google.com/p/android/issues/detail?id=67513">muita insatisfação por parte dos desenvolvedores</a> pois não havia mais como criar o <em>Hello World</em> básico.</p>
+<p>Ao perceber esta insatisfação, o Google lançou a versão 2.6.3 do ADT que traz um template novo chamado <em>Empty Activity</em> que visa atuar como era o antigo <em>Blank Activity</em>, gerando um código simples sem o uso de API's avançadas.</p>
+<p>Ou seja, caso seu template <em>Blank Activity </em>esteja gerando um código complexo e você queira algo simples, use o template <em>Empty Activity</em>. Caso você não esteja visualizando este novo template, basta <a href="http://developer.android.com/sdk/installing/installing-adt.html">atualizar o Eclipse ADT</a>.</p>
+<p>&nbsp;</p>
+
+              </div>
+
+            </div> <!-- close col-sm-10 -->
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <footer style="background-color: #222;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="copyright" style="color: #fff;">Copyright &copy; Suelen Carvalho 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons-white social-buttons">
+                        
+                        <li><a href="https://www.linkedin.com/in/suelengc"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                        <li><a href="http://twitter.com/suelengc"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.youtube.com/channel/UC_py-XItpneVweaE1mGWeNw"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        
+                        <li><a href="https://medium.com/@suelengc"><i class="fa fa-medium"></i></a>
+                        </li>
+                        
+                        <li><a href="https://pt.slideshare.net/suelengc"><i class="fa fa-slideshare"></i></a>
+                        </li>
+                        
+                        <li><a href="http://github.com/suelengc"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://instagram.com/_suelengc"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <!-- Portfolio Modals -->
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Java 8 - A Terceira Geração de Iteradores</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Principais Novidades Para Android no Google IO</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Java 8 - Entendendo Lambdas</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Novo site e blog com Jekyll</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Blank Activity passou a usar Fragment, e agora?</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Saiba como decidir qual versão suportar nos aplicativos Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Android Colecionáveis Série 03</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Participação no Podcast do HappyHourTech sobre iOS e Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Android Meetup, seu evento mensal sobre Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Entenda quando usar tag fragment ou tag de layout</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Usando o poder da API Fragments do Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Dicas sobre interface visual para desenvolvedores mobile</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Orientador, onde eu compro isso!?</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+
+    <!-- jQuery Version 1.11.0 -->
+    <!-- <script src="/assets/js/jquery-1.11.0.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/js/classie.js"></script>
+    <script src="/assets/js/cbpAnimatedHeader.js"></script>
+    <script src="/assets/js/typeit.v5.3.0.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/assets/js/jqBootstrapValidation.js"></script>
+    <script src="/assets/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/assets/js/custom.js"></script>
+
+    </body>
+</html>

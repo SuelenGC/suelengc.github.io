@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Suelen Carvalho</title>
+    <description>Suelen Carvalho Site</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 12 Jan 2018 17:03:23 -0200</pubDate>
+    <lastBuildDate>Fri, 12 Jan 2018 17:03:23 -0200</lastBuildDate>
+    <generator>Jekyll v3.7.0</generator>
+    
+      <item>
+        <title>Java 8 - A Terceira Geração de Iteradores</title>
+        <description>&lt;p&gt;Um dos recursos mais usados em qualquer linguagem são operadores de repetição como &lt;em&gt;for&lt;/em&gt; e &lt;em&gt;while&lt;/em&gt;. No Java, o &lt;em&gt;for&lt;/em&gt; tem sido vagarosamente evoluído, sendo que com o Java 8 recebemos a &lt;strong&gt;Terceira Geração de Iteradores&lt;/strong&gt;. Ou seja, passamos pela primeira e segunda geração. Mas quais são elas?!&lt;/p&gt;
+
+&lt;p&gt;Para exemplificarmos vamos utilizar a lista de frutas abaixo. Nosso objetivo é iterar sobre esta lista e imprimir as frutas.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;asList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;banana&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;maça&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;limão&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A &lt;strong&gt;Primeira Geração&lt;/strong&gt; é o famoso for com índice, carinhosamente comumente chamado de &lt;code class=&quot;highlighter-rouge&quot;&gt;ì&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A &lt;strong&gt;Segunda Geração&lt;/strong&gt; é a geração do &lt;em&gt;foreach&lt;/em&gt;, recurso que veio com o Java 5, que já nos retorna cada objeto baseado numa lista não necessitando de um índice explícito, &lt;em&gt;casts&lt;/em&gt; e &lt;em&gt;get&lt;/em&gt; para pegar determinado elemento.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fruta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fruta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;	
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Ambas a primeira e segunda geração são consideradas formas de &lt;strong&gt;iteração externa&lt;/strong&gt;, ou seja, &lt;strong&gt;nós&lt;/strong&gt; temos que, explicitamente, nos preocupar em como iremos iterar na lista e em o que fazer a cada iteração.&lt;/p&gt;
+
+&lt;p&gt;De fato, o que importa na maioria das vezes é o que iremos fazer a cada iteração. Por isso, no Java 8 é justamente isso que acontece. Não precisamos mais nos preocupar em fazer a iteração, apenas em o que fazer com cada objeto a cada iteração.&lt;/p&gt;
+
+&lt;p&gt;Com a &lt;strong&gt;Terceira Geração de Iteradores&lt;/strong&gt; é a primeira vez que surge no Java a &lt;strong&gt;iteração interna&lt;/strong&gt;. A complexidade da iteração foi encapsulada no método &lt;code class=&quot;highlighter-rouge&quot;&gt;forEach&lt;/code&gt; adicionado a interface &lt;code class=&quot;highlighter-rouge&quot;&gt;Iterable&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Usando a iteração interna é possível aperfeiçoar a execução para que a iteração seja feita de forma paralela internamente pelo SDK sem interefrir negativamente em implementações existentes. Isso elimina uma dúvida existente quando se usa gerações anteriores sobre qual iterador usar, o &lt;em&gt;for&lt;/em&gt; com índice ou o &lt;em&gt;foreach&lt;/em&gt; com objeto, pensando em qual teria um desempenho melhor.&lt;/p&gt;
+
+&lt;p&gt;A ordenação das frutas com o &lt;code class=&quot;highlighter-rouge&quot;&gt;forEach&lt;/code&gt; do Java 8 pode ser feita da seguinte forma:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;E ainda é possível utilizar um outro recurso do Java 8 que é o &lt;em&gt;Method Reference&lt;/em&gt;, ficando ainda mais simples, conforme a seguir:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;E aí, gostou dessa nova geração de iteradores? Já conhecia? Conta aqui nos comentários.&lt;/p&gt;
+
+&lt;p&gt;Até mais!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Oct 2016 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/java-geracao-de-iteradores</link>
+        <guid isPermaLink="true">http://localhost:4000/java-geracao-de-iteradores</guid>
+        
+        <category>java</category>
+        
+        <category>java8</category>
+        
+        
+        <category>java</category>
+        
+      </item>
+    
+      <item>
+        <title>Principais Novidades Para Android no Google IO</title>
+        <description>&lt;p&gt;Neste post vamos falar sobre as principais novidades divulgadas sobre o &lt;strong&gt;Android N&lt;/strong&gt; e outras coisas para Android no &lt;strong&gt;Google I/O&lt;/strong&gt; onde pela primeira vez, tive o privilégio de participar presencialmente.&lt;/p&gt;
+
+&lt;p&gt;O Google I/O é o maior evento anual do Google onde são anunciados novos produtos, nova versão do Android e muito mais! Este ano ele ocorreu de 18 a 20 de Maio em San Francisco na Califórnia.&lt;/p&gt;
+
+&lt;h2 id=&quot;nome-da-versão&quot;&gt;Nome da versão&lt;/h2&gt;
+
+&lt;p&gt;Se você como muitos, esperava saber o nome da nova versão do Android, vai ficar na mão. Neste ano não foi divulgada o nome da nova versão, ao invés, foi divulgado um &lt;a href=&quot;http://android.com/n&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt; para os desenvolvedores darem sugestões.&lt;/p&gt;
+
+&lt;p&gt;Em teoria, o nome deve vir destas sugestões. Pelo menos para mim é difícil pensar em um doce brasileiro que inicie com a letra N e que não seja Nutella 8).&lt;/p&gt;
+
+&lt;h2 id=&quot;android-studio-22&quot;&gt;Android Studio 2.2&lt;/h2&gt;
+
+&lt;p&gt;O Android Studio veio cheio de novidades bacanas mais relacionadas a &lt;em&gt;design&lt;/em&gt; de interfaces.&lt;/p&gt;
+
+&lt;p&gt;Agora podemos contar com um &lt;em&gt;clip and point&lt;/em&gt; que de fato funcione e cheio de funcionalidades que te ajudam a criar uma tela bacana e seguindo o &lt;em&gt;Material Design&lt;/em&gt; sem ter que decorar quantos &lt;em&gt;dps&lt;/em&gt; devemos usar em cada lugar, pois a IDE tem agora &lt;em&gt;constraints&lt;/em&gt; que te ajudam com estes números.&lt;/p&gt;
+
+&lt;p&gt;Além de não ter que decorar o &lt;em&gt;Material Design&lt;/em&gt; inteiro, ela também gera xml de layout mais performáticos, ou seja, não temos mais que escolher por nós mesmos se vamos usar um &lt;code class=&quot;highlighter-rouge&quot;&gt;LinearLayout&lt;/code&gt; ou um &lt;code class=&quot;highlighter-rouge&quot;&gt;TableLayout&lt;/code&gt; ou etc, ao criar a tela com o &lt;em&gt;Design Mode&lt;/em&gt; o xml gerado vai buscar ser o mais performático.&lt;/p&gt;
+
+&lt;p&gt;Outro ponto legal é que a IDE já vai deixando sua tela responsiva a tamanhos de tela e orientações diferentes, por conta dessa ideia das &lt;em&gt;constraints&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;É basicamente o sonho dos desenvolvedores que conheceram o eclipse e sabem que o &lt;em&gt;Design Mode&lt;/em&gt; de lá é balela há alguns anos. A tendência é que a preferência por editar xml para fazer telas do Android se reverta em usar estas novas funcionalidades.&lt;/p&gt;
+
+&lt;p&gt;Mais um funcionalidade super bacana é que agora é possível fazer a gravação de testes realizados com o &lt;a href=&quot;https://google.github.io/android-testing-support-library/docs/espresso&quot; target=&quot;_blank&quot;&gt;Espresso&lt;/a&gt;. É mágico de tão legal e fácil que ficou criar testes funcionais! É como se gravasse uma macro, você coloca a IDE para gravar, usa o app fazendo o teste que você quer gravar e ele vai gerando o roteiro do Espresso.&lt;/p&gt;
+
+&lt;p&gt;Ainda há uma série de outras funcionalidades bacanas com o &lt;em&gt;APK Analyzer&lt;/em&gt;, &lt;em&gt;Layout Inspector&lt;/em&gt;, a integração com a última versão do IntelliJ, suporte a C++ e outras mais. É muito coisa para um post só!&lt;/p&gt;
+
+&lt;h2 id=&quot;notificações&quot;&gt;Notificações&lt;/h2&gt;
+
+&lt;p&gt;O Google deu uma repaginada nas notificações, agora podemos configurar coisas como o &lt;em&gt;direct reply&lt;/em&gt; onde o usuário consegue responder a notificação sem ter que abrir o app relacionado a ela, ou seja, ele faz isso dali da lista de notificações mesmo.&lt;/p&gt;
+
+&lt;p&gt;Há uma série de outras melhorias aqui como novos templates e formas de o usuário silenciar notificações.&lt;/p&gt;
+
+&lt;h2 id=&quot;multi-window&quot;&gt;Multi-window&lt;/h2&gt;
+
+&lt;p&gt;Sabe aquela funcionalidade que a Samsung já tem a eras de dividir a tela e usar dois apps diferentes? Pois é, agora podemos oficialmente implementar isso nos nossos apps Android. Legal né!&lt;/p&gt;
+
+&lt;p&gt;Junto com isso eles evoluiram a funcioanlidade de &lt;em&gt;drag and drop&lt;/em&gt; para ser possível fazer isso entre &lt;em&gt;activities&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;display-size-sobre-acessibilidade&quot;&gt;Display size (sobre acessibilidade)&lt;/h2&gt;
+
+&lt;p&gt;Agora os usuários poderam mudar o tamanho como eles veem as coisas em todo o app. Ou seja, vai aparecer no app uma barra progressiva onde as pessoas podem aumentar ou diminuir e isso vai influenciar na altura da &lt;em&gt;action bar&lt;/em&gt;, no tamanho da fonte, e etc.&lt;/p&gt;
+
+&lt;p&gt;É uma funcionalidade bem interessante para pessoas que tem problemas de vista.&lt;/p&gt;
+
+&lt;h2 id=&quot;android-instant-apps&quot;&gt;Android Instant Apps&lt;/h2&gt;
+
+&lt;p&gt;Agora mesmo que o usuário não tenha um app instalado no device, ele conseguirá usar uma parte específica do app. Basicamente o app será automaticamente instalado, mas não o app inteiro, apenas a parte necessária para rodar determinada parte do aplicativo que é necessária.&lt;/p&gt;
+
+&lt;p&gt;Imagine que você mande um link de uma música do Spotify para alguém que não o tenha instalado, quando esta pessoa clicar no link, a parte para exibir a música será automaticamente instalada.&lt;/p&gt;
+
+&lt;p&gt;Tecnicamente, para que isso funcione seu app precisa funcionar bem com &lt;em&gt;deeplinks&lt;/em&gt; além do desenvolvimento ter de ser modularizado.&lt;/p&gt;
+
+&lt;h2 id=&quot;direct-boot&quot;&gt;Direct boot&lt;/h2&gt;
+
+&lt;p&gt;Sabe aquele loading que aparece quando reiniciamos o Android, dizendo que está otimizando os apps e que ficava um tempão nesta tela de app em app compilando 1 a 1?! Pois é, graças a melhorias feitas no JIT, esta parte do código não existe mais! #Rocks!&lt;/p&gt;
+
+&lt;h2 id=&quot;java-8&quot;&gt;Java 8&lt;/h2&gt;
+
+&lt;p&gt;Funcionalidades como &lt;a href=&quot;http://suelengc.com/2016/java-8-lambdas/&quot;&gt;lambdas&lt;/a&gt;, &lt;em&gt;methods references&lt;/em&gt;, &lt;em&gt;repeatable annotation&lt;/em&gt;, &lt;em&gt;default methods&lt;/em&gt; e outros finalmente serão suportados! E digo mais, muitas destas novidades do Java 8 também poderão ser usadas nos xmls de layout.&lt;/p&gt;
+
+&lt;p&gt;Essa funcionalidade de poder colocar alguns códigos nos xmls é chamada de &lt;em&gt;Data Binding&lt;/em&gt; e foi lançada em 2015. Este ano fizeram uma série de melhorias possibilitando usar alguns conceitos do Java 8 também. Particularmente eu achei muito bacana!&lt;/p&gt;
+
+&lt;h2 id=&quot;firebase&quot;&gt;Firebase&lt;/h2&gt;
+
+&lt;p&gt;Sem dúvida um dos maiores destaques de todo o Google IO foi o &lt;a href=&quot;https://firebase.google.com&quot; target=&quot;_blank&quot;&gt;Firebase&lt;/a&gt;. O Google resolveu investir de fato nesta ferramenta como seu &lt;em&gt;Mobile Backend As A Service&lt;/em&gt; (MBAAS).&lt;/p&gt;
+
+&lt;p&gt;O Firebase agora disponibiliza todo um &lt;em&gt;stack&lt;/em&gt; de ferramentas para desenvolvimento mobile como banco de dados (&lt;em&gt;NoSQL&lt;/em&gt;), &lt;em&gt;Cloud Messaging&lt;/em&gt;, &lt;em&gt;Storage&lt;/em&gt; para arquivos estáticos, &lt;em&gt;TestLab&lt;/em&gt; para testes automatizados com várias integrações disponíveis, autenticação, &lt;em&gt;analytics&lt;/em&gt; e muito mais.&lt;/p&gt;
+
+&lt;p&gt;Vale mencionar também que ele está completamente integrado ao Android Studio, ou seja, começar a usar qualquer destas ferramentas é muito simples.&lt;/p&gt;
+
+&lt;p&gt;Durante todo o evento houveram palestras que entraram mais a fundo em cada uma das ferramentas. Vale ressaltar que alguns deles são de graça, o que torna bem legal de usar. Mas infelizmente algumas ferramentas bacanas ficaram de fora do pacote gratuíto como o TestLab. Pena, mas confira os &lt;a href=&quot;https://firebase.google.com/pricing&quot; target=&quot;_blank&quot;&gt;planos existente no site&lt;/a&gt;, afinal, isso pode sempre mudar.&lt;/p&gt;
+
+&lt;p&gt;Outro ponto interessante é que o GCM (&lt;em&gt;Google Cloud Messaging&lt;/em&gt;) agora é FCM (&lt;em&gt;Firebase Cloud Messaging&lt;/em&gt;), isso mesmo. O Google uniu as duas ferramentas.&lt;/p&gt;
+
+&lt;p&gt;No momento que vi esta parte do KeyNote me lembrei imediatamente do &lt;a href=&quot;https://get.fabric.io/&quot; target=&quot;_blank&quot;&gt;Fabric&lt;/a&gt; do Twitter pois algumas ferramentas do Firebase como &lt;em&gt;Analytics&lt;/em&gt; por exemplo, resolvem problemas que algumas ferramentas do Twitter resolvem também. Bem, ambas me pareceram muito boas.&lt;/p&gt;
+
+&lt;h2 id=&quot;não-para-por-aqui&quot;&gt;Não Para Por Aqui&lt;/h2&gt;
+
+&lt;p&gt;Este ano o Google IO foi como sempre espetacular. Estas são algumas novidades mas existem ainda muitas outras como Vulkan, &lt;em&gt;support library&lt;/em&gt;, &lt;em&gt;multi locale&lt;/em&gt;, &lt;em&gt;quickly settings&lt;/em&gt; e outras. Para cada uma dá um post sozinho e que pretendo escrever alguns mais detalhados mostrando como usar aqui.&lt;/p&gt;
+
+&lt;p&gt;E você, gostou das novidades? O que gostaria de ver em mais detalhes? Deixe aqui seu comentário!&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 22 May 2016 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/novidades-do-android-n-e-mais</link>
+        <guid isPermaLink="true">http://localhost:4000/novidades-do-android-n-e-mais</guid>
+        
+        <category>android</category>
+        
+        
+        <category>android</category>
+        
+      </item>
+    
+      <item>
+        <title>Java 8 - Entendendo Lambdas</title>
+        <description>&lt;h2 id=&quot;o-que-é&quot;&gt;O que é?&lt;/h2&gt;
+
+&lt;p&gt;Basicamente, expressão lambda não é nada novo, em outras linguagens de programação como C#, Scala e outras já é algo bem comum. Mas no Java ela é basicamente uma forma mais enxuta de escrever código.&lt;/p&gt;
+
+&lt;p&gt;Uma forma de pensar sobre o Lambda é que, enquanto classes anônimas são classes sem nome, Lambdas são métodos sem nome.&lt;/p&gt;
+
+&lt;h2 id=&quot;para-que-serve&quot;&gt;Para que serve?&lt;/h2&gt;
+
+&lt;p&gt;Eventualmente precisamos fazer uso de classes anônimas no nosso código Java. Porém, na maioria das vezes que optamos por uma classe anônima significa que provavelmente o trecho de código não é reaproveitável ou é muito pouco código para justificar a implementação de uma classe concreta ou &lt;em&gt;preencha seus outros motivos aqui&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;O ponto é que criar classe anônima no Java é um problema porque prejudica a legibilidade do código, e quanto mais classe anônima, pior vai ficando. Só a estrutura mínima de uma classe anônima já totalizam umas 5 linhas de código.&lt;/p&gt;
+
+&lt;p&gt;O Lambda vem resolver justamente este problema de muito &lt;strong&gt;código de estrutura&lt;/strong&gt; para criação de classes anônimas.&lt;/p&gt;
+
+&lt;h2 id=&quot;comofaz&quot;&gt;#Comofaz?&lt;/h2&gt;
+
+&lt;p&gt;Para entender como usar Lambda, vamos pegar como tarefa a ideia de ordenar alfabeticamente uma lista de frutas. Então no nosso código teremos a seguinte lista de frutas:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;asList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Banana&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Caqui&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Amora&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Para ordenar as coisas no Java antes do 8 o mais comum é usar o método &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; da classe &lt;code class=&quot;highlighter-rouge&quot;&gt;Collections&lt;/code&gt; e passar uma implementação, no nosso caso anônima, de &lt;code class=&quot;highlighter-rouge&quot;&gt;Comparator&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Comparator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Como comentamos no item anterior, o Lambda resolve o problema de grandes estruturas para criação de classes anônimas. Sendo assim, podemos melhorar este código trocando a classe anônima do &lt;code class=&quot;highlighter-rouge&quot;&gt;Comparator&lt;/code&gt; pela expressão Lambda.&lt;/p&gt;
+
+&lt;p&gt;A ideia básica é omitir tudo aquilo que o compilador pode inferir. Pensando nisso, podemos concluir que o método &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; já espera no segundo parâmetro uma instância de &lt;code class=&quot;highlighter-rouge&quot;&gt;Comparator&lt;/code&gt; e que o único método que ele pode executar é o &lt;code class=&quot;highlighter-rouge&quot;&gt;compare&lt;/code&gt;, pois este é o único método abstrato que a interface &lt;code class=&quot;highlighter-rouge&quot;&gt;Comparator&lt;/code&gt; possui.&lt;/p&gt;
+
+&lt;p&gt;Logo, podemos omitir o nome da classe e nome do método (também todos os acessórios como chaves, new, etc.) e deixar só os parâmetros do método em diante. Nossa ordenação com expressão Lambda ficará assim:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;síntaxe&quot;&gt;Síntaxe&lt;/h2&gt;
+
+&lt;p&gt;Um ponto importante de entender é que as expressões Lambdas, salvo poucas exceções, terão o seguinte formato:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(&lt;/strong&gt; parâmetros do método implementado separados por vírgula &lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;-&amp;gt;&lt;/strong&gt; &lt;strong&gt;{&lt;/strong&gt; código a ser executado &lt;strong&gt;}&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;otimizações&quot;&gt;Otimizações&lt;/h2&gt;
+
+&lt;p&gt;É possível deixar o Lambda ainda mais enxuto do que está.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Otimização 1&lt;/strong&gt;: Podemos omitir o tipo dos parâmetros. Vale lembrar que se omitir o tipo de um parâmetro tem que omitir de todos, ou seja, ou informa todos os tipos ou não informa nenhum. No nosso caso, ficaria assim:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Otimização 2&lt;/strong&gt;: Quando e somente quando, o bloco de execução conter apenas 1 linha, podemos mandar este código direto para a flechinha, omitindo chaves do corpo do Lambda, ponto e vírgula e algum return, se houver:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frutas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Otimização 3&lt;/strong&gt;: Não é o caso do nosso exemplo mas… quando o método sendo implementado recebe apenas um parâmetro, podemos omitir os parênteses do parâmetro, ficaria algo mais ou menos assim:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Vale lembrar que, caso seu método não tenha nenhum parâmetro devemos colocar os parênteses.&lt;/p&gt;
+
+&lt;h2 id=&quot;restrições&quot;&gt;Restrições&lt;/h2&gt;
+
+&lt;p&gt;Lambdas só funcionam com Interfaces Funcionais que também é um conceito que veio junto com o Java 8. Basicamente uma Interface Funcional é uma interface com apenas um método abstrato.&lt;/p&gt;
+
+&lt;p&gt;Desta forma fica fácil o compilador inferir qual método está sendo implementado sem informarmos o nome. Isso quer dizer que &lt;code class=&quot;highlighter-rouge&quot;&gt;Comparator&lt;/code&gt;, que usamos na maior parte dos exemplos, é uma interface funcional.&lt;/p&gt;
+
+&lt;p&gt;Nós podemos criar nossas próprias interfaces funcionais, basta que ela tenha apenas um método abstrato.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h2&gt;
+
+&lt;p&gt;De fato o Java 8 veio com algumas novidades bem bacanas, o Lambda é uma das mais importante delas. Nosso código fica muito mais simples e legível.&lt;/p&gt;
+
+&lt;p&gt;Ainda ficou alguma dúvida? Gostou e quer dar seu feedback? Quer deixar alguma dica, crítica construtiva? Escreve aqui nos comentários ;)&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/java-8-lambdas</link>
+        <guid isPermaLink="true">http://localhost:4000/java-8-lambdas</guid>
+        
+        <category>java</category>
+        
+        <category>java8</category>
+        
+        
+        <category>java</category>
+        
+      </item>
+    
+      <item>
+        <title>Novo site e blog com Jekyll</title>
+        <description>&lt;h2 id=&quot;blog-antigo&quot;&gt;Blog antigo&lt;/h2&gt;
+
+&lt;p&gt;Por muito tempo eu mantive meu site pessoal e blog no &lt;a href=&quot;https://br.wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;. Sobre o host usado, bem… eu passei por alguns, não me lembro de todos, mas o último foi o &lt;a href=&quot;https://www.bluehost.com/&quot;&gt;BlueHost&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para quem não conhece, o BlueHost é um dos melhores hosts para hospedar sites em Wordpress. Muito fácil de criar, atualizar, instalar plugins e tudo mais que você queira fazer. Gostei bastante.&lt;/p&gt;
+
+&lt;p&gt;Meu único problema foi na renovação. Como os preços dos planos na renovação estavam meio salgados, pelo menos para um blog e site pessoal, optei por não renovar. Como consequência disso, naturalmente algum tempo depois meu site e blog estavam fora do ar.&lt;/p&gt;
+
+&lt;p&gt;Busquei informações com a BlueHost de como eu poderia recuperar um backup, mesmo já não tendo um plano ativo. Resumo da história, fiz uma assinatura de 1 mês para conseguir recuperar o backup do wordpress.&lt;/p&gt;
+
+&lt;h2 id=&quot;e-quanto-aos-posts-antigos&quot;&gt;E quanto aos posts antigos&lt;/h2&gt;
+
+&lt;p&gt;Com o backup em mãos, resta migrar o conteúdo do Wordpress para cá.&lt;/p&gt;
+
+&lt;p&gt;Porém, o Wordpress armazena suas informações no MySQL, isso inclui os posts, mas este novo &lt;em&gt;stack&lt;/em&gt; técnológico entende arquivos textos formatados com &lt;em&gt;markdown&lt;/em&gt;. Ou seja, é necessário pegar estes posts que estão no MySQL e criar páginas estáticas formatadas com &lt;em&gt;markdown&lt;/em&gt; para trazer todos os posts de volta.&lt;/p&gt;
+
+&lt;p&gt;Não encontrei uma forma rápida e simples de fazer isso ainda e acredito que não exista — aceito sugestões :). Então farei isso gradualmente. Infelizmente, quanto aos comentários, serão perdidos #Triste.&lt;/p&gt;
+
+&lt;h2 id=&quot;blog-novo&quot;&gt;Blog novo&lt;/h2&gt;
+
+&lt;p&gt;Este cenário de quase perder todo o conteúdo que produzi ao longo de alguns anos, me fez repensar sobre o &lt;em&gt;stack&lt;/em&gt; tecnológico do meu blog e site. O Wordpress é bem prático de &lt;strong&gt;usar&lt;/strong&gt;, mas uma vez os dados lá dentro, &lt;strong&gt;fica difícil de migrar&lt;/strong&gt;, armazer algo inteligível fora dele, etc.&lt;/p&gt;
+
+&lt;p&gt;Isso me fez considerar um gerador de páginas estáticas, especificamente o &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; pelos seguintes motivos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Os conteúdos produzidos são arquivos textos formatados com &lt;em&gt;markdown&lt;/em&gt; ao invés de estarem em um banco de dados. A vantagem é que o conteúdo pode ser fácilmente acessado, sem necessidade de instalar um software ou saber fazer consultas SQL por exemplo;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Os arquivos textos por sí só, são inteligíveis. Os dados fazem sentido mesmo visualizando-os fora do site/blog, basta abrir um arquivo texto;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Markdown&lt;/em&gt; é um padrão bem sólido de formatação de texto, diversos desenvolvedores de diversas plataformas diferentes o conhecem, inclusive eu :);&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Especificamente o Jekyll tem integração oficial com GitHub. Isso significa que o GitHub disponibiliza uma &lt;a href=&quot;https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/&quot;&gt;documentação oficial&lt;/a&gt; de como fazer seu blog/site com Jekyll e hospedar no GitHub &lt;strong&gt;de graça&lt;/strong&gt; :);&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ainda sobre a vantagem de hospedar no &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;, ele permite customização de domínio, ou seja, você pode fazer seu site apontar para &lt;strong&gt;seudominio.com.br&lt;/strong&gt;, YEAAH! Se seu domínio é &lt;strong&gt;.com.br&lt;/strong&gt; poderá usar o bom e velho &lt;a href=&quot;http://registro.br&quot;&gt;RegistroBr&lt;/a&gt; para gerenciar o DNS, já que não estará pagando um host para fazer o trabalho, no meu caso, eu tenho &lt;strong&gt;.com&lt;/strong&gt; e &lt;strong&gt;.com.br&lt;/strong&gt;. O &lt;strong&gt;.com.br&lt;/strong&gt; uso o &lt;a href=&quot;http://registro.br&quot;&gt;RegistroBr&lt;/a&gt; como gerenciador de DNS, no caso do &lt;strong&gt;.com&lt;/strong&gt; eu estou usando &lt;strong&gt;gratuitamente&lt;/strong&gt; o &lt;a href=&quot;http://cloudflare.com&quot;&gt;CloudFlare&lt;/a&gt;, fica a dica;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Como o conteúdo é estático, não há necessidade de um servidor de aplicação específico ou outros softwares. Basicamente o Jekyll gera as páginas HTML, o host provê estas páginas e o browser renderiza o conteúdo. Simples assim;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Linguagens web como HTML, CSS, Javascript podem ser usadas, ou seja, bootstraps como &lt;a href=&quot;http://getbootstrap.com/2.3.2/&quot;&gt;Twitter Bootstrap&lt;/a&gt; ou &lt;a href=&quot;http://purecss.io/&quot;&gt;Pure CSS&lt;/a&gt; podem ser usados para ajudar no layout;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Templates&lt;/em&gt; de páginas web são bem vindos também, desde que sejam arquivos HTML, CSS ou outros arquivos web, tudo bem;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Como tudo na vida tem dois lados, uma desvantagem é que para aqueles que não possuem conhecimento técnico sobre tecnologias web, pode ser um desafio ou até mesmo uma tarefa chata.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mas-e-o-famoso-mediumcom&quot;&gt;Mas e o famoso Medium.com&lt;/h2&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://medium.com&quot;&gt;Medium&lt;/a&gt; tem sido usado por diversas pessoas, inclusive desenvolvedores para prover seus conteúdos.&lt;/p&gt;
+
+&lt;p&gt;Mesmo assim eu optei por manter pelo menos meus posts com perfil mais técnico no meu blog pessoal pela facilidade citada de controlar e guardar estas informações. O motivo é que não sei exatamente se seria simples ou não se estivesse tudo no Medium e um dia eu quisesse recuperar o backup para levar para outra plataforma.&lt;/p&gt;
+
+&lt;p&gt;Então, ao menos meus posts técnicos irei manter aqui, então fiquem ligados, acompanhem e comentem :).&lt;/p&gt;
+
+&lt;p&gt;E você, o que usa para manter seu site e/ou blog pessoal no ar?&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/novo-site-e-blog-com-jekyll</link>
+        <guid isPermaLink="true">http://localhost:4000/novo-site-e-blog-com-jekyll</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Blank Activity passou a usar Fragment, e agora?</title>
+        <description>&lt;p&gt;A primeira coisa que normalmente fazemos ao iniciar o desenvolvimento em uma nova tecnologia é tentar criar um projeto do tipo &lt;em&gt;Hello World&lt;/em&gt; para gerar o código mais simples e começar a partir dele.&lt;/p&gt;
+&lt;p&gt;No Android, esta tarefa era bem simples de se fazer. Basicamente, após baixar e abrir o Eclipse &lt;a href=&quot;http://developer.android.com/tools/sdk/eclipse-adt.html&quot;&gt;ADT&lt;/a&gt; Android Development Tools), bastava criar um novo &lt;em&gt;&lt;strong&gt;Android Application Project&lt;/strong&gt;&lt;/em&gt; usando o template &lt;em&gt;Blank Activity&lt;/em&gt; e seguir as instruções do &lt;em&gt;wizard&lt;/em&gt;, ou seja, &lt;em&gt;next, next &lt;/em&gt;e&lt;em&gt; finish.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Porém, na versão 2.6.0 do Eclipse ADT, o Google alterou o template &lt;em&gt;Blank Activity e&lt;/em&gt; ao invés de gerar um código simples, passou a gerar um código mais complexo, já fazendo uso de API's mais avançadas e difíceis de entender. Isso fez com que alguns desenvolvedores Android ficassem um pouco confusos.&lt;/p&gt;
+&lt;p&gt;Esta alteração sem aviso prévio gerou &lt;a href=&quot;https://code.google.com/p/android/issues/detail?id=67513&quot;&gt;muita insatisfação por parte dos desenvolvedores&lt;/a&gt; pois não havia mais como criar o &lt;em&gt;Hello World&lt;/em&gt; básico.&lt;/p&gt;
+&lt;p&gt;Ao perceber esta insatisfação, o Google lançou a versão 2.6.3 do ADT que traz um template novo chamado &lt;em&gt;Empty Activity&lt;/em&gt; que visa atuar como era o antigo &lt;em&gt;Blank Activity&lt;/em&gt;, gerando um código simples sem o uso de API's avançadas.&lt;/p&gt;
+&lt;p&gt;Ou seja, caso seu template &lt;em&gt;Blank Activity &lt;/em&gt;esteja gerando um código complexo e você queira algo simples, use o template &lt;em&gt;Empty Activity&lt;/em&gt;. Caso você não esteja visualizando este novo template, basta &lt;a href=&quot;http://developer.android.com/sdk/installing/installing-adt.html&quot;&gt;atualizar o Eclipse ADT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Jun 2014 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/blank-activity-passou-a-usar-fragment-e-agora</link>
+        <guid isPermaLink="true">http://localhost:4000/blank-activity-passou-a-usar-fragment-e-agora</guid>
+        
+        <category>android</category>
+        
+        <category>mobile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Saiba como decidir qual versão suportar nos aplicativos Android</title>
+        <description>&lt;p dir=&quot;ltr&quot;&gt;O Android é popularmente conhecido pela sua fragmentação de versões e devices. Ou seja, versões mais recentes do Android possuem recursos que não existem em versões mais antigas, além de que temos mais de 4000 smartphones diferentes rodando Android atualmente (fonte: Google Play Developer Console).&lt;/p&gt;
+&lt;p&gt;A grande divisora de águas no Android atualmente é a versão 3.x, ela marca um antes, durante e depois. Antes dela todas as versões foram desenvolvidas unicamente para smartphones, apesar de alguns tablets também usarem. Durante, as versões 3.x, foram desenvolvidas unicamente para tablets. E a partir da versão 4+, estes dois mundos foram unificados para rodarem em ambos, smartphones e tablets.&lt;/p&gt;
+&lt;p&gt;Esta característica trás a tona uma dúvida muito comum para desenvolvedores e empresas: ”A partir de qual versão do Android devemos suportar em nossos aplicativos?”. Apesar de aparentemente trivial, esta decisão é muito importante e pode representar o sucesso ou o fracosso do seu app, portanto deve ser muito bem embasada.&lt;/p&gt;
+&lt;p&gt;Veremos aqui uma estratégia possível para se tomar esta decisão. Os parágrafos a seguir são baseados na minha experiência pessoal e conhecimento sobre o mundo mobile e Android. Cada um deve pensar sobre eles, e outros que considerar pertinente, aplicado ao seu contexto para tirar conclusões.&lt;/p&gt;
+&lt;p&gt;Existem duas situações que podemos precisar decirdir qual versão do Android suportar: quando iniciamos o desenvolvimento de um app novo ou quando já temos um e nunca foi realmente pensado sobre isso. Acredito que os itens a seguir podem se encaixar em ambos os casos.&lt;/p&gt;
+&lt;h2 dir=&quot;ltr&quot;&gt;&lt;strong&gt;Passo 1: Inicie suportando a menor versão possível&lt;/strong&gt;&lt;/h2&gt;
+&lt;p dir=&quot;ltr&quot;&gt;É importante conhecer os recursos disponibilizados pelas versões e a partir disso pensar se realmente é necessário aquela versão mais recente ou se uma mais antiga já é suficiente para o projeto. Opte pela menor versão possível que atenda as funcionalidades  primordiais do seu app, as que definem seu negócio.&lt;/p&gt;
+&lt;p&gt;Na maior parte dos casos, versões mais antigas o atenderão, principalemente levando-se em conta que desde 2009 o Google mantém o &lt;a href=&quot;http://developer.android.com/tools/support-library/index.html&quot;&gt;Support Library&lt;/a&gt;, que leva novas funcionalidades para versões mais antigas do Android.&lt;/p&gt;
+&lt;p&gt;Este passo é muito importante para aumentar ao máximo os insumos para irmos para o próximo passo. Pois quanto menor for a versão que você decida suportar, maior será o público que seu app irá atingir.&lt;/p&gt;
+&lt;p&gt;O objetivo deste primeiro passo é ampliar nosso leque de informações para que decisões mais estratégicas como: “suportar a partir de versões mais recentes” ou “não dar suporte especializado a derterminada configuração que existe em poucos devices”, dentre outras, possam ser tomadas. Desta forma torna-se possível mais tarde, estreitar seu suporte de forma conciente.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Passo 2: Analise em quais versões seus usuários estão distribuídos&lt;/strong&gt;&lt;/h2&gt;
+&lt;p dir=&quot;ltr&quot;&gt;Este passo tem como objetivo lhe dar informações sobre seus usuários atuais, ou seja, pessoas que já decidiram e instalaram seu app. Com essas informações você conseguirá saber qual versão deve suportar para manter estes usuários.&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;O Google disponibiliza uma ferramenta de gerenciamento do app (deployment, test A/B, estatística e outros) muito poderosa, que é o Google Play Developer Console. Com ela é possível visualizar quantas instalações foram feitas (mesmo que desinstaladas posteriormente), quantas instalações ativas (que o app permanece instalado), qual a distribuição dessas instalações dentre as versões do Android, devices e muito mais.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/android-console.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 style=&quot;text-align: center;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;color: #808080;&quot;&gt;Google Play Developer Console&lt;/span&gt;&lt;/h5&gt;
+&lt;h2 dir=&quot;ltr&quot;&gt;&lt;strong&gt;Passo 3: Analise em quais versões o mundo está distribuído&lt;/strong&gt;&lt;/h2&gt;
+&lt;p dir=&quot;ltr&quot;&gt;Com este passo será possível obter dados de como expandir o app. Ou seja, qual versão do Android seu público alvo, que não é um usuário ativo (target), pode estar usando. Tornando possível tirar conclusões sobre quais versões continuar suportando para que no futuro ainda mais usuários tenham acesso a seu app.&lt;/p&gt;
+&lt;p&gt;O Google mantém estatísticas como estas. Periodicamente ele analisa os usuários da Play Store, webstore do Google, e gera alguns gráficos e tabelas que contém informações sobre qual a distribuição destes usuários dentro das versões do Android e outras. Estas estatísticas podem ser acessadas nos &lt;a href=&quot;http://developer.android.com/about/dashboards&quot;&gt;Dashboards do site Android Developer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As informações mais atuais, até a escrita deste texto, disponibilizadas pelo Google mostram que apenas 1,7% dos devices estão em versões 2.2 ou infeior. Que as verões 2.3.3 e 2.3.7 representam 26,3% . E 72,0% dos devices estão rodando a versão 4.0.3 ou superior. Ou seja, 98,3% dos aparelhos analisados pelo Google rodam o Android 2.3.3 ou superior.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/android-garf.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 style=&quot;text-align: center;&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://developer.android.com/about/dashboards&quot;&gt;&lt;span style=&quot;color: #808080;&quot;&gt;Dashboards do site Android Developer&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #808080;&quot;&gt; em 14/11/2013&lt;/span&gt;&lt;/h5&gt;
+&lt;h2 dir=&quot;ltr&quot;&gt;&lt;strong&gt;Conclusão&lt;/strong&gt;&lt;/h2&gt;
+&lt;p dir=&quot;ltr&quot;&gt;No passado esta decisão já foi muito mais difícil pois, os devices com Android usavam versões de forma muito mais pulverizada. Nos dias atuais a fragmentação está concentrada em dois grandes grupos: versões 2.3.3 e 2.3.7 e versões 4+.&lt;/p&gt;
+&lt;p&gt;As funcionalidades disponíveis para estes dois grandes grupos estão relativamente bem niveladas. Além deste nivelamento, para nos ajudar nas implementações de funcionalidades mais complexas, podemos contar também com o &lt;a href=&quot;http://developer.android.com/tools/support-library/index.html&quot;&gt;Support Library&lt;/a&gt;, mencionado no início deste texto e bibliotecas disponibilizadas pela comunidade do Android.&lt;/p&gt;
+&lt;p&gt;No entanto, ainda assim é interessante analisar esta questão de qual versão do Android suportar e, considerar os pontos levantados além de outros que forem pertinentes para encontrar a melhor opção no contexto de cada um. Desta forma será possível tomar a melhor decisão de forma conciente e tirar mais proveito das oportunidades que surgirem com ela.&lt;/p&gt;
+&lt;p&gt;E você, considera outros critérios? Compartilhe aqui sua opinião adicionando um comentário.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 Nov 2013 00:00:00 -0200</pubDate>
+        <link>http://localhost:4000/a-partir-de-qual-versao-suportar-nos-apps-android</link>
+        <guid isPermaLink="true">http://localhost:4000/a-partir-de-qual-versao-suportar-nos-apps-android</guid>
+        
+        <category>android</category>
+        
+        <category>mobile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Android Colecionáveis Série 03</title>
+        <description>&lt;p&gt;Há algumas semanas comprei a coleção Série 03 do Android Mini Colecionáveis. Estava começando a fazer uma review quando achei um post extremamente completo. A &lt;a href=&quot;http://www.androidauthority.com/android-mini-series-03-review-collectibles-117587/&quot; target=&quot;_blank&quot;&gt;review do Android Mini Series 03 Collectibles&lt;/a&gt; feita pelo &lt;a title=&quot;Twitter do Randy Khoo&quot; href=&quot;https://twitter.com/randy_khoo&quot; target=&quot;_blank&quot;&gt;Randy Khoo&lt;/a&gt; não poderia ser melhor. Espero que este post perdure até o restaurante no fim do universo =D&lt;/p&gt;
+&lt;p&gt;Eu adorei a compra apesar do preço. Dispendi mais ou menos $101. Porém com o dólar nas alturas das galáxias, ficou por mais ou menos R$240 (Dilmas).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/android-collectibles1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cada box de Mini Android vem com um folheto que mostram todos (14) os Androids da coleção. Dois deles não são completamente identificados no folheto. Só aparece o contorno branco preenchido de preto e o nome do autor do design. Esses dois são chamados de &quot;Androids raros&quot;.&lt;/p&gt;
+&lt;p&gt;Infelizmente, na minha &lt;em&gt;box collection&lt;/em&gt; só veio um deles. #tristezaInfinita&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/android-collectibles2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Descontentamentos a parte, uma dica valiosa é, verifique muito bem se tirou tudo da caixinha. Do contrário você corre o risco de perder/jogar fora/etc alguma pecinha pequena que eventualmente acompanha seu Android Mini. Eu quase perdi o taco de sinuca do 8-Ball Hustler e a flauta da Pandroid.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/android-collectibles3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;E aí, curtiu! Quer sua coleção também ou já tem uma? Compartilha aqui com a gente!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Aug 2013 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/android-collectibles-series-03</link>
+        <guid isPermaLink="true">http://localhost:4000/android-collectibles-series-03</guid>
+        
+        <category>android</category>
+        
+        <category>colecao</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Participação no Podcast do HappyHourTech sobre iOS e Android</title>
+        <description>&lt;p&gt;Recentemente fui convidada para participar da gravação de um podcast sobre Android e iOS gravado pelo site &lt;strong&gt;&lt;a href=&quot;http://happyhourtech.com/&quot; target=&quot;_blank&quot;&gt;HappyHourTech&lt;/a&gt;&lt;/strong&gt;. Minha participação foi para abordar sobre o Android, visto que tenho mais conhecimento sobre ele.&lt;/p&gt;
+&lt;p&gt;O convite surgiu após um tweet do meu amigo &lt;strong&gt;Alexandre Danelon&lt;/strong&gt; (&lt;a href=&quot;https://twitter.com/danelon&quot; target=&quot;_blank&quot;&gt;@Danelon&lt;/a&gt;) em resposta a um tweet do &lt;strong&gt;&lt;a href=&quot;https://twitter.com/happyhourtech&quot; target=&quot;_blank&quot;&gt;@HappyHourTech&lt;/a&gt;&lt;/strong&gt; onde eles buscavam por alguém que pudesse falar sobre Android. Fiquei muito feliz com a indicação.&lt;/p&gt;
+&lt;p&gt;Logo em seguida entraram em contato comigo e combinamos dia e horário para gravar o podcast.&lt;/p&gt;
+&lt;p&gt;A pessoa convidada para falar sobre iOS foi o &lt;strong&gt;Renato Bonício&lt;/strong&gt; (&lt;a href=&quot;https://twitter.com/bonicio&quot; target=&quot;_blank&quot;&gt;@Bonicio&lt;/a&gt;), que realmente tem &lt;em&gt;expertise&lt;/em&gt; na plataforma da maça.&lt;/p&gt;
+&lt;p&gt;A gravação foi bem divertida, cheia de conhecimento, troca de experiências e informações. Abordamos assuntos como vantagens e desvantagens, evolução de cada plataforma, loja, mercado e muito mais. Confira na íntegra &lt;a title=&quot;Podcast Android e iOS&quot; href=&quot;http://happyhourtech.com/h2t129-ios-vs-android-de-novo/&quot; target=&quot;_blank&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Alguns dias após a gravação, foi feita a edição e publicado no site. Realmente foi feito um ótimo trabalho de edição.&lt;/p&gt;
+&lt;p&gt;Após este podcast, tive diversas ideias de temas que poderiam ser abordados em muitos outros podcast's sobre mobile!&lt;/p&gt;
+&lt;p&gt;E você? Tem alguma dúvida ou curiosidade sobre Android, iOS ou mobile no geral que gostaria de ouvir em um podcast? Escreva nos cometários, quem sabe ele não é gravado!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Aug 2013 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/podcast-ios-vs-android-de-novo</link>
+        <guid isPermaLink="true">http://localhost:4000/podcast-ios-vs-android-de-novo</guid>
+        
+        <category>android</category>
+        
+        <category>mobile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Android Meetup, seu evento mensal sobre Android</title>
+        <description>&lt;p style=&quot;text-align: left;&quot;&gt;Olá pessoal!&lt;/p&gt;
+&lt;p&gt;Este será um post menos formal com o objetivo de explicar o que é o encontro &lt;strong&gt;Android Meetup&lt;/strong&gt; que tem ocorrido nos últimos 6 meses.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;Android Meetup&lt;/strong&gt; é um encontro focado no desenvolvimento com a plataforma Android. Seja de apps mobile ou usando hardware, através do Android ADK (Accessory Development Kit).&lt;/p&gt;
+&lt;p&gt;Este encontro surgiu com o grupo &lt;strong&gt;GDG-SP&lt;/strong&gt; (Google Developers Group - São Paulo), que de forma voluntária organiza diversos encontros sobre tecnologias do Google. Conheci o grupo há uns 4 meses e desde então faço parte da organização do Android Meetup.&lt;/p&gt;
+&lt;p&gt;O encontro ocorre toda primeira terça-feira do mês, das 19h as 22h30 mais ou menos. O local costuma variar pois todo mês buscamos por empresas que poderiam colaborar com o evento cedendo o local. Mas sempre nos esforçamos para que ocorra em locais com fácil acesso via metrô ou trem.&lt;/p&gt;
+&lt;p&gt;O formato do encontro é bem dinâmico. No entanto, nos últimos foi feita uma sequência de apresentações com duração aproximada de 1h30. Após, uma sessão de 30min. para networking e coffee break, gentilmente cedido pelo Google. E ao final, outra sequência de apresentações e atividades.&lt;/p&gt;
+&lt;p&gt;As apresentações possuem temas bem variados. No entanto sempre existe alguma relação com Android. Normalmente são abordados assuntos como:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UI e UX;&lt;/li&gt;
+&lt;li&gt;Introdução sobre alguma API como: Mapas, Widgets, dentre outras;&lt;/li&gt;
+&lt;li&gt;Frameworks de apoio ao desenvolvimento;&lt;/li&gt;
+&lt;li&gt;Hands-on;&lt;/li&gt;
+&lt;li&gt;Boas práticas;&lt;/li&gt;
+&lt;li&gt;Arquitetura mobile;&lt;/li&gt;
+&lt;li&gt;Integrações com outras plataformas;&lt;/li&gt;
+&lt;li&gt;E muitos outros.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A criatividade é o limite!&lt;/p&gt;
+&lt;p&gt;Todos podem palestrar. Basta querer compartilhar algum conhecimento sobre Android! Para isso acesse nossa &lt;a title=&quot;GDG SP no Google+&quot; href=&quot;https://plus.google.com/communities/111796219491655641176?utm_source=chrome_ntp_icon&amp;amp;utm_medium=chrome_app&amp;amp;utm_campaign=chrome&quot; target=&quot;_blank&quot;&gt;comunidade &lt;/a&gt;no Google+ e envie uma mensagem.&lt;/p&gt;
+&lt;p&gt;Este formato de palestras, feita pela comunidade, agrega muito conhecimento pois essas pessoas atuam de alguma forma no dia-a-dia com estas tecnologias. Logo, o conhecimento abordado vai além de conceitos teóricos e/ou didáticos.&lt;/p&gt;
+&lt;p&gt;É ainda uma excelente oportunidade para treinar habilidades de palestrar e se apresentar em público. Por ser um evento com público restrito e de proporções menores, possibilita um ambiente colaborativo e amigável, deixando o palestrante mais confortável.&lt;/p&gt;
+&lt;p&gt;Gostou de tudo que leu aqui e quer ficar informado sobre os próximos? Participe da &lt;a title=&quot;GDG-SP no Google+&quot; href=&quot;https://plus.google.com/communities/111796219491655641176?utm_source=chrome_ntp_icon&amp;amp;utm_medium=chrome_app&amp;amp;utm_campaign=chrome&quot; target=&quot;_blank&quot;&gt;comunidade &lt;/a&gt;no Google+, sempre divulgamos as informações sobre os eventos por lá.&lt;/p&gt;
+&lt;p&gt;Vejo vocês no Android Meetup!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Aug 2013 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/gdg-sp-android-meetup</link>
+        <guid isPermaLink="true">http://localhost:4000/gdg-sp-android-meetup</guid>
+        
+        <category>android</category>
+        
+        <category>eventos</category>
+        
+        <category>android-meetup</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Entenda quando usar tag fragment ou tag de layout</title>
+        <description>&lt;p&gt;Quando começamos a estudar sobre o uso da API de Fragment do Android, é comum chegarmos a conclusão de que temos duas maneiras de adicionar Fragments no xml de layout.&lt;/p&gt;
+
+&lt;p&gt;Uma maneira é usar a tag &lt;code class=&quot;highlighter-rouge&quot;&gt;fragment&lt;/code&gt; atributindo ao atributo &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt; o &lt;em&gt;fully qualified name&lt;/em&gt; do &lt;code class=&quot;highlighter-rouge&quot;&gt;Fragment&lt;/code&gt; que queremos usar.&lt;/p&gt;
+
+&lt;p&gt;Outra forma é usar uma tag de layout para delimitar o espaço e, programaticamente colocarmos o Fragment neste espaço através do &lt;code class=&quot;highlighter-rouge&quot;&gt;FragmentManager&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;FragmentTransaction&lt;/code&gt; e id atribuído a tag de layout. As leituras no &lt;a title=&quot;Android Developer&quot; href=&quot;developer.android.com&quot; target=&quot;_blank&quot;&gt;Android Developer&lt;/a&gt; nos induzem a tag de layout &lt;code class=&quot;highlighter-rouge&quot;&gt;FrameLayout&lt;/code&gt;, mas pode ser qualquer outra.&lt;/p&gt;
+
+&lt;p&gt;No entanto, uma questão que normalmente fica sem resposta é &lt;em&gt;Em quais situações devo usar tag fragment ou tag de layout?&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1&gt;Tag Fragment&lt;/h1&gt;
+
+&lt;p&gt;A tag fragment é mais adequada em casos que não será necessário substituir o fragment em tempo de execução. Isso pois, se for feito usando os métodos &lt;code class=&quot;highlighter-rouge&quot;&gt;add&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt; do &lt;code class=&quot;highlighter-rouge&quot;&gt;FragmentTransaction&lt;/code&gt;, será notado um comportamento estranho pois ambos os métodos irão sobrepor o conteúdo do fragment atual, e ok, esperamos isso do &lt;code class=&quot;highlighter-rouge&quot;&gt;add&lt;/code&gt; mas não esperamos isso do &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aplicativos para tablets são um bom exemplo de utilização. Normalmente o xml de layout de um tablet tem um menu a esquerda e o conteúdo se abre a diretira. O menu é um forte candidato para se usar a tag fragment no seu xml de layout, pois o que se espera neste contexto é que ele sempre esteja lá.&lt;/p&gt;
+
+&lt;p&gt;O xml de layout neste caso seria assim:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;LinearLayout&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:android=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.android.com/apk/res/android&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;xmlns:tools=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.android.com/tools&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;FrameLayout&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/main&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;\/LinearLayout&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A renderização do layout acima seria algo mais ou menos assim:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/tablet.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A vantagem neste contexto é uma performance um pouco melhor na renderização da Activity. Desta forma, tão logo o layout seja carregado, operação que é iniciada após a chamada do método setContentView, o próprio Android se encarregará de instanciar o Fragment e carregá-lo, não necessitando ser feito programaticamente.&lt;/p&gt;
+
+&lt;p&gt;Considerando inclusive que se feito programaticamente, deve ser feito após o carregamento do layout, para que se possa recuperar os id’s e atribuir o novo conteúdo.&lt;/p&gt;
+
+&lt;h1&gt;Tag de Layout&lt;/h1&gt;
+
+&lt;p&gt;A tag de layout é mais adequada quando se pretende alterar o conteúdo ocupado por um fragment em tempo de execução.&lt;/p&gt;
+
+&lt;p&gt;Usando o mesmo exemplo anterior, em um smartphone, o xml de layout teria apenas um espaço que inicialmente carregaria o menu na tela inteira. Ao clicar em algum item, no mesmo lugar que se encontra o menu, deve ser carregado o conteúdo do item clicado. Ou seja, teremos que substituir o conteúdo atual por um novo conteúdo.&lt;/p&gt;
+
+&lt;p&gt;Para que isso seja possível, precisamos usar o método &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt; da classe &lt;code class=&quot;highlighter-rouge&quot;&gt;FragmentTransaction&lt;/code&gt;. Este método irá substituir em tempo de execução o conteúdo atual da tag de layout por um novo Fragment.&lt;/p&gt;
+
+&lt;p&gt;Logo, nosso xml de layout ficaria assim:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;LinearLayout&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:android=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.android.com/apk/res/android&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;xmlns:tools=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.android.com/tools&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;FrameLayout&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/main&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fill_parent&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/LinearLayout&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A renderização esperada do layout acima é algo mais ou menos assim (abaixo é possível perceber também o comportamento):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/posts/smartphone.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A desvantagem desta forma é que, mesmo o primeiro carregamento do Fragment, precisará ser feito programaticamente.&lt;/p&gt;
+
+&lt;p&gt;Segue o trecho de código para carregar um Fragment em uma tag de layout, normalmente colocamos este trecho no método onCreate da Activity:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/** Cria uma instância do Fragment a ser carregado */&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;MenuFragment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;menuFrag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MenuFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/** Pega a transação para trabalhar com Fragments */&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;FragmentTransaction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transaction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getSupportFragmentManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;beginTransaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+      
+&lt;span class=&quot;cm&quot;&gt;/** Coloca o Fragment de menu no espaço delimitado pela tag de layout */&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;transaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;menu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;menuFrag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+            
+&lt;span class=&quot;cm&quot;&gt;/** Confirma a transação. Neste momento ele sabe o que deve ser renderizado no espaço da tag de layout */&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;transaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Apesar disso, ganhamos a flexibilidade de poder alterar a qualquer momento o conteúdo atual por outro Fragment, bastando utilizar o código acima.&lt;/p&gt;
+
+&lt;p&gt;Minha opinião como desenvolvedora é, sempre otimize o máximo que puder. Mas não de maneira prematura. Ou seja, pense sobre seu contexto e se for necessário alterar o conteúdo, use uma tag de layout, do contrário, use a tag fragment.&lt;/p&gt;
+
+&lt;p&gt;Vale considerar que o esforço para mudar de um para o outro é muito baixo. Sendo necessário apenas que o desenvolvedor detenha este conhecimento.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 18 Apr 2013 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/entenda-quando-usar-tag-fragment-ou-tag-de-layout</link>
+        <guid isPermaLink="true">http://localhost:4000/entenda-quando-usar-tag-fragment-ou-tag-de-layout</guid>
+        
+        <category>android</category>
+        
+        <category>mobile</category>
+        
+        <category>fragments</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

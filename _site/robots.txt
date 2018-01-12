@@ -1,0 +1,8 @@
+# robotstxt.org/
+
+User-agent: *
+
+Allow: /
+
+#site maps
+Sitemap: http://suelengc.github.io/sitemap.xml

@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Usando o poder da API Fragments do Android</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Suelen Carvalho Site">
+    <link rel="canonical" href="http://localhost:4000/android-usando-o-poder-da-api-fragments">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+    <body id="page-top" class="index">
+      <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand page-scroll" href="#page-top">Suelen Carvalho</a> -->
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"><span class="white-text">Suelen</span>GC</a> -->
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"><span class="logoname-suelen">suelen</span><span class="white-text logoname-gc">gc</span></a> -->
+            <a class="navbar-brand page-scroll" href="/#page-top"><img src="/assets/img/suelen-carvalho-logo-name.png" width="220px"></a>
+            <br />
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#about">Carreira</a>
+                </li> -->
+                <li>
+                    <a class="page-scroll" href="/blog">Artigos</a>
+                </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#videos">Vídeos</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="#contact">Workshops</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="#team">Métodos Ágeis</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Mobile</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="#team">Pesquisas</a>
+                </li>  -->
+                <li>
+                    <a class="page-scroll" href="/#services">Sobre</a>
+                </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#portfolio">Palestras</a>
+                </li> -->
+                <!-- <li>
+                    <a class="page-scroll" href="">Me Contrate</a>
+                </li> -->
+                <li>
+                    <a class="page-scroll" href="/#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+      
+      <section id="post">
+    
+    <div class="container" style="min-height:100%;">
+        <!-- <div class="row">
+            <div class="col-lg-10 text-center">
+                <h2 class="section-heading">Usando o poder da API Fragments do Android</h2>
+            </div>
+        </div> -->
+        
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <h3 class="section-heading">Usando o poder da API Fragments do Android</h3>
+              
+
+
+    <!-- Posts's page -->
+    <p class="meta">
+        <time datetime="2013-04-16T00:00:00-03:00" itemprop="datePublished">
+        
+        16
+        Abr
+          
+        2013
+        </time> 
+        |
+        <span>Reading time 14 min</span>
+        |
+        
+          <a class="tag" href="/blog/tag/android/">android</a> ,
+        
+          <a class="tag" href="/blog/tag/mobile/">mobile</a> ,
+        
+          <a class="tag" href="/blog/tag/fragments/">fragments</a> 
+        
+    </p>
+
+
+
+<!-- <a href="/android-usando-o-poder-da-api-fragments#disqus_thread" data-disqus-identifier="/android-usando-o-poder-da-api-fragments" itemprop="interactionCount">Comments</a> | -->
+
+              
+                <figure class="text-center">
+                  <img src="/http://suelengc.com/assets/img/posts/androids_frags.png" alt="Usando o poder da API Fragments do Android" style="max-width: 80%; margin: 20px auto;" title="Usando o poder da API Fragments do Android" itemprop="thumbnailUrl">
+                  <figcaption></figcaption>
+                </figure>
+                      
+              
+              <div class="post-content">
+                <p>É bem comum criarmos um app que tenha um menu com vários botões e cada botão inicie uma nova funcionalidade. Normalmente, por questões de adequação ao espaço disponível em cada device, esperamos que o comportamento deste app seja diferente se aberto em um Smartphone ou Tablet.</p>
+<p>No Smartphone o que costuma ocorrer é de o menu ocupar toda a tela inicial e ao clicar em um item, o novo conteúdo se sobrepõe ao menu, ficando visível somente o conteúdo novo.</p>
+<p>Já em um Tablet espera-se que o conteúdo do menu fique na lateral esquerda e que o conteúdo de cada item seja aberto na lateral direita, mantendo tanto menu como funcionalidade visível na mesma tela. Veja as imagens abaixo que demonstram esta situação.</p>
+<p>No Smartphone esperamos algo assim:</p>
+
+<p><img src="http://localhost:4000/assets/img/posts/smartphone.png" alt="" /></p>
+
+<p>No Tablet esperamos algo assim:</p>
+
+<p><img src="http://localhost:4000/assets/img/posts/tablet.png" alt="" /></p>
+
+<p>Neste post vou mostrar uma alternativa de implementação usando a API de Fragments para resolver este problema. Iremos usar o pacote de compatibilidade do Google para que nosso app rode em versões anteriores a 3.0 do Android.</p>
+<p>Vamos criar um novo projeto Android sem nenhuma Activity. A versão do Android neste projeto será a 2.3. Primeiro vamos criar um layout chamado <strong>main.xml </strong>que ficará responsável por armazenar nossos fragments.</p>
+<p>Um detalhe importante é que quando estivermos acessando de um Smartphone o main.xml deve ter espaço apenas para um Fragment, vou chamar este espaço de <strong>main</strong>. Quando estivermos acessando de um Tablet queremos que ele tenha espaço para dois Fragments, vou chamá-los respectivamente de <strong>menu</strong> e <strong>content</strong>. Iremos delimitar o espaço dos Fragments com a tag de layout FrameLayout, o atributo <strong>id</strong> de cada espaço receberá os nomes que definimos aqui.</p>
+<p>O xml de layout para o Smartphone deve ficar na pasta <strong>layout</strong> e o xml de layout para o Tablet deve ficar na pasta <strong>layout-large</strong>. Segue abaixo o código de cada um.</p>
+<p><strong>XML de Layout para Smartphone: </strong>res/layout/main.xml</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">xmlns:tools=</span><span class="s">"http://schemas.android.com/tools"</span>
+    <span class="na">android:layout_width=</span><span class="s">"fill_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"fill_parent"</span> <span class="nt">&gt;</span>
+
+    <span class="nt">&lt;FrameLayout</span>
+        <span class="na">android:id=</span><span class="s">"@+id/main"</span>
+        <span class="na">android:layout_width=</span><span class="s">"fill_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"fill_parent"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></figure>
+
+<p><strong>XML de Layout para Tablet: </strong>res/layout-large/main.xml</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">xmlns:tools=</span><span class="s">"http://schemas.android.com/tools"</span>
+    <span class="na">android:layout_width=</span><span class="s">"fill_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"fill_parent"</span>
+    <span class="na">android:orientation=</span><span class="s">"horizontal"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;FrameLayout</span>
+        <span class="na">android:id=</span><span class="s">"@+id/menu"</span>
+        <span class="na">android:layout_width=</span><span class="s">"fill_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"fill_parent"</span>
+        <span class="na">android:layout_weight=</span><span class="s">"2"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;FrameLayout</span> 
+        <span class="na">android:id=</span><span class="s">"@+id/content"</span>
+        <span class="na">android:layout_width=</span><span class="s">"fill_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"fill_parent"</span>
+        <span class="na">android:layout_weight=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></figure>
+
+<p>Vamos agora criar a Activity que irá carregar estes layouts. A ideia é que a Activity verifique se existe um espaço "main". Se ele existir significa que o app está sendo acessado por um Smartphone, se não o app está sendo acessado por um Tablet.</p>
+<p>Crie a Activity <strong>MainActivity.java</strong> que herde de <strong>FragmentActivity</strong>, segue o código:</p>
+<p><strong>Classe MainActivity: </strong>src/br.com.suelengc.fragments.MainActivity.java</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">br</span><span class="o">.</span><span class="na">com</span><span class="o">.</span><span class="na">suelengc</span><span class="o">.</span><span class="na">fragments</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.FragmentActivity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.FragmentTransaction</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">FragmentActivity</span> <span class="o">{</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+    <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">main</span><span class="o">);</span>
+
+    <span class="cm">/** Como o menu sempre existirá, instâncio ele fora da condição */</span>
+    <span class="n">MenuFragment</span> <span class="n">menuFrag</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuFragment</span><span class="o">();</span>
+    
+    <span class="k">if</span> <span class="o">(</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="cm">/** Se for acessodado de um smartphone o espaço main existirá */</span>
+      
+      <span class="cm">/** Adiciona o menu no único espaço */</span>
+      <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main</span><span class="o">,</span> <span class="n">menuFrag</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span> 
+    
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="cm">/** Se for acessodado de um tablet o espaço main não existirá, existirá o menu e content */</span>
+      
+      <span class="cm">/** Pega a transação */</span>
+      <span class="n">FragmentTransaction</span> <span class="n">transaction</span> <span class="o">=</span> <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">();</span>
+      
+      <span class="cm">/** Coloca o fragment de menu do lado esquerdo e o fragment de conteúdo do lado direito */</span>
+      <span class="n">transaction</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu</span><span class="o">,</span> <span class="n">menuFrag</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span> 
+      <span class="n">transaction</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">,</span> <span class="k">new</span> <span class="n">ContentFragment</span><span class="o">());</span> 
+      
+      <span class="cm">/** Confirma as transações */</span>
+      <span class="n">transaction</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Para que não tenhamos que ficar fazendo if´s em todo lugar no nosso código, vamos criar a interface <strong>OnItemClickedCallBack</strong> com o método callback <strong>onItemClicked </strong>e fazer nossa Activity implementá-la.</p>
+<p>A implementação deste método deve decidir se este conteúdo que foi clicado deve ser aberto no espaço <strong>main</strong> (se estiver no Smartphone) ou no espaço <strong>content</strong> (se estiver no Tablet). Seguem códigos:</p>
+<p><strong>Interface de callback:</strong> src/br.com.suelengc.fragments.OnItemClickedCallBack.java</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">br</span><span class="o">.</span><span class="na">com</span><span class="o">.</span><span class="na">suelengc</span><span class="o">.</span><span class="na">fragments</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">OnItemClickedCallBack</span>  <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onItemClicked</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<p><strong>Classe MainActivity.java</strong> com a implementação da Interface <strong>OnItemClickedCallBack.java</strong>:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">br</span><span class="o">.</span><span class="na">com</span><span class="o">.</span><span class="na">suelengc</span><span class="o">.</span><span class="na">fragments</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.Fragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.FragmentActivity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.FragmentTransaction</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.ViewGroup.LayoutParams</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.TextView</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">FragmentActivity</span> <span class="kd">implements</span> <span class="n">OnItemClickedCallBack</span> <span class="o">{</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+    <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">main</span><span class="o">);</span>
+
+    <span class="cm">/** Como o menu sempre existirá, instâncio ele fora da condição */</span>
+    <span class="n">MenuFragment</span> <span class="n">menuFrag</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuFragment</span><span class="o">();</span>
+    
+    <span class="k">if</span> <span class="o">(</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="cm">/** Se for acessodado de um smartphone o espaço main existirá */</span>
+      
+      <span class="cm">/** Adiciona o menu no único espaço */</span>
+      <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main</span><span class="o">,</span> <span class="n">menuFrag</span><span class="o">);</span> 
+    
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="cm">/** Se for acessodado de um tablet o espaço main não existirá, existirá o menu e content */</span>
+      
+      <span class="cm">/** Pega a transação */</span>
+      <span class="n">FragmentTransaction</span> <span class="n">transaction</span> <span class="o">=</span> <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">();</span>
+      
+      <span class="cm">/** Coloca o fragment de menu do lado esquerdo e o fragment de conteúdo do lado direito */</span>
+      <span class="n">transaction</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu</span><span class="o">,</span> <span class="n">menuFrag</span><span class="o">);</span> 
+      <span class="n">transaction</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">,</span> <span class="k">new</span> <span class="n">ContentFragment</span><span class="o">());</span> 
+      
+      <span class="cm">/** Confirma as transações */</span>
+      <span class="n">transaction</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onItemClicked</span><span class="o">(</span><span class="kt">int</span> <span class="n">menuItem</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Fragment</span> <span class="n">newFragment</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+    <span class="k">switch</span> <span class="o">(</span><span class="n">menuItem</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu1</span><span class="o">:</span>
+      <span class="cm">/** Fragment que deve ser aberto quando for o menu 1 */</span>
+      <span class="n">newFragment</span> <span class="o">=</span> <span class="n">getNewFragment</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span> 
+      <span class="k">break</span><span class="o">;</span>
+
+    <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu2</span><span class="o">:</span>
+      <span class="cm">/** Fragment que deve ser aberto quando for o menu 2 */</span>
+      <span class="n">newFragment</span> <span class="o">=</span> <span class="n">getNewFragment</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> 
+      <span class="k">break</span><span class="o">;</span>
+
+    <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu3</span><span class="o">:</span>
+      <span class="cm">/** Fragment que deve ser aberto quando for o menu 3 */</span>
+      <span class="n">newFragment</span> <span class="o">=</span> <span class="n">getNewFragment</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span> 
+      <span class="k">break</span><span class="o">;</span>
+      
+    <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu4</span><span class="o">:</span>
+      <span class="cm">/** Fragment que deve ser aberto quando for o menu 4 */</span>
+      <span class="n">newFragment</span> <span class="o">=</span> <span class="n">getNewFragment</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span> 
+      <span class="k">break</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="k">if</span> <span class="o">(</span><span class="n">newFragment</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+
+      <span class="cm">/** Pega a transação */</span>
+      <span class="n">FragmentTransaction</span> <span class="n">transaction</span> <span class="o">=</span> <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">();</span>
+      
+      <span class="k">if</span> <span class="o">(</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="cm">/** Se for acessodado de um smartphone o espaço main existirá */</span>
+        
+        <span class="cm">/** Adiciona o fragment com o novo conteúdo no único espaço */</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="na">replace</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main</span><span class="o">,</span> <span class="n">newFragment</span><span class="o">);</span> 
+        
+        <span class="cm">/** Adiciona o fragment a backstack */</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="na">addToBackStack</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+        
+      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="cm">/** Se for acessodado de um tablet o espaço main não existirá, existirá o menu e content */</span>
+        
+        <span class="cm">/** Coloca o fragment com o novo conteúdo do lado direito */</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="na">replace</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">,</span> <span class="n">newFragment</span><span class="o">);</span> 
+      <span class="o">}</span>
+
+      <span class="cm">/** Confirma a transação */</span>
+      <span class="n">transaction</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="cm">/** 
+   * Método auxiliar que faz a geração do ContentFragment com o conteúdo adequado ao menu clicado 
+   * Na prática é provável que você não utilize um método como este pois você terá fragments específicos 
+   */</span>
+  <span class="kd">private</span> <span class="n">Fragment</span> <span class="nf">getNewFragment</span><span class="o">(</span><span class="kt">int</span> <span class="n">menu</span><span class="o">)</span> <span class="o">{</span>
+    <span class="cm">/** Cria instância de ContentFragment */</span>
+    <span class="n">ContentFragment</span> <span class="n">fragment</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ContentFragment</span><span class="o">();</span>
+    
+    <span class="cm">/** Adiciona um argumento indicando qual menu foi clicado */</span>
+    <span class="n">Bundle</span> <span class="n">args</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+    <span class="n">args</span><span class="o">.</span><span class="na">putInt</span><span class="o">(</span><span class="s">"menu"</span><span class="o">,</span> <span class="n">menu</span><span class="o">);</span>
+    <span class="n">fragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
+    
+    <span class="cm">/** Retorna o fragment criado */</span>
+    <span class="k">return</span> <span class="n">fragment</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Ao clicar em algum dos botões do menu, este deve redirecionar a decisão para o método de callback na Activity, logo, nossa classe MenuFragment.java deve conter um atributo do tipo OnItemClickedCallBack.</p>
+<p>Este atributo receberá a instância da MainActivity no momento em que nosso fragment é "attached" nela. Assim, no click de algum botão poderemos invocar o método onItemClicked para decidir onde e qual o conteúdo a ser aberto. Segue código do nosso MenuFragment.java e seu xml de layout.</p>
+<p><strong>Fragment MenuFragment: </strong>src/br.com.suelengc.fragments.MenuFragment.java</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">br</span><span class="o">.</span><span class="na">com</span><span class="o">.</span><span class="na">suelengc</span><span class="o">.</span><span class="na">fragments</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.app.Activity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.Fragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.util.Log</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.LayoutInflater</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.ViewGroup</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.Button</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MenuFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+  
+  <span class="cm">/** Atributo de callback */</span>
+  <span class="n">OnItemClickedCallBack</span> <span class="n">callBack</span><span class="o">;</span>
+  
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="cm">/** Infla o layout */</span>
+    <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">menu</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+
+    <span class="cm">/** Recupera os botões de menu e adiciona o listener de click */</span>
+    <span class="o">((</span><span class="n">Button</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu1</span><span class="o">)).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickMenuItemListener</span><span class="o">());;</span>
+    <span class="o">((</span><span class="n">Button</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu2</span><span class="o">)).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickMenuItemListener</span><span class="o">());;</span>
+    <span class="o">((</span><span class="n">Button</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu3</span><span class="o">)).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickMenuItemListener</span><span class="o">());;</span>
+    <span class="o">((</span><span class="n">Button</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu4</span><span class="o">)).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickMenuItemListener</span><span class="o">());;</span>
+    
+    <span class="cm">/** Retorna a view para ser exibida */</span>
+    <span class="k">return</span> <span class="n">view</span><span class="o">;</span>
+  <span class="o">}</span>
+  
+  <span class="cm">/** Garante que a Activity que irá carregar o fragment implementa a interface de callback */</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onAttach</span><span class="o">(</span><span class="n">Activity</span> <span class="n">activity</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onAttach</span><span class="o">(</span><span class="n">activity</span><span class="o">);</span>
+    
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="n">callBack</span> <span class="o">=</span> <span class="o">(</span><span class="n">OnItemClickedCallBack</span><span class="o">)</span> <span class="n">activity</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassCastException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"MenuFragment"</span><span class="o">,</span> <span class="n">activity</span><span class="o">.</span><span class="na">toString</span><span class="o">()</span> <span class="o">+</span> <span class="s">" must implement OnItemClickedCallBack"</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  
+  <span class="cm">/** Listener do click do botão */</span>
+  <span class="kd">protected</span> <span class="kd">class</span> <span class="nc">OnClickMenuItemListener</span> <span class="kd">implements</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+      <span class="cm">/** Chama o método de callback passando o id do botão clicado */</span>
+      <span class="n">callBack</span><span class="o">.</span><span class="na">onItemClicked</span><span class="o">(</span><span class="n">v</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p><strong>XML de Layout do MenuFragment: </strong>res/layout/menu.xml</p>
+<p>https://gist.github.com/SuelenGC/db4b11027e1eb1b65aa2</p>
+<p>Para finalizar, seguem códigos da classe ContentFragment.java e seu xml de layout content.xml. Esta classe será responsável por exibir o conteúdo de cada botão.</p>
+<p>Provavelmente no seu app, ao invés de ter apenas um Fragment de conteúdo, terá vários, talvez um por funcionalidade. Aqui vamos usar apenas um por questões de simplicidade. Para distinguir um conteúdo do outro, no click de cada botão vamos passar um argumento informando qual menu foi clicado.</p>
+<p><strong>Fragment ContentFragment: </strong>src/br.com.suelengc.fragments.ContentFragment.java</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">br</span><span class="o">.</span><span class="na">com</span><span class="o">.</span><span class="na">suelengc</span><span class="o">.</span><span class="na">fragments</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v4.app.Fragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.LayoutInflater</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.ViewGroup</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.TextView</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ContentFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+
+  <span class="kt">int</span> <span class="n">menuClicado</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+  
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="cm">/** Infla a view que deve ser exibida */</span>
+    <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">content</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+    
+    <span class="cm">/** Recupra o argumento de qual método foi clicado */</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">getArguments</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">Bundle</span> <span class="n">args</span> <span class="o">=</span> <span class="n">getArguments</span><span class="o">();</span>
+      <span class="n">menuClicado</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="s">"menu"</span><span class="o">);</span>
+    <span class="o">}</span>
+    
+    <span class="cm">/** Preenche o conteúdo do textview com a informação de qual menu foi clicado */</span>
+    <span class="n">TextView</span> <span class="n">txt</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">txt</span><span class="o">);</span>
+    <span class="n">txt</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"Conteúdo do menu "</span> <span class="o">+</span> <span class="n">menuClicado</span><span class="o">);</span>
+    
+    <span class="cm">/** Retorna a view para ser exibida */</span>
+    <span class="k">return</span> <span class="n">view</span><span class="o">;</span>
+  <span class="o">}</span> 
+<span class="o">}</span></code></pre></figure>
+
+<p><strong>XML de Layout do <strong>ContentFragment</strong>: </strong>res/layout/content.xml</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+    <span class="na">android:orientation=</span><span class="s">"vertical"</span>
+    <span class="na">android:gravity=</span><span class="s">"center"</span> <span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:id=</span><span class="s">"@+id/txt"</span>
+        <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:textStyle=</span><span class="s">"bold"</span>
+        <span class="na">android:textSize=</span><span class="s">"18sp"</span> <span class="nt">/&gt;</span>
+        
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></figure>
+
+<p>O código-fonte completo deste exemplo está no meu <a title="Código-fonte no Github" href="https://github.com/SuelenGC/Blog-Fragments" target="_blank">Github</a>.</p>
+<p>A ideia do post é dar uma ideia inicial de como este problema pode ser resolvido. Obviamente este código pode ser melhorado de várias formas. Tentei mantê-lo simples para que seja didático. Sintam-se a vontade para modificá-lo e melhorá-lo para sua situação.</p>
+
+              </div>
+
+            </div> <!-- close col-sm-10 -->
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <footer style="background-color: #222;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="copyright" style="color: #fff;">Copyright &copy; Suelen Carvalho 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons-white social-buttons">
+                        
+                        <li><a href="https://www.linkedin.com/in/suelengc"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                        <li><a href="http://twitter.com/suelengc"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.youtube.com/channel/UC_py-XItpneVweaE1mGWeNw"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        
+                        <li><a href="https://medium.com/@suelengc"><i class="fa fa-medium"></i></a>
+                        </li>
+                        
+                        <li><a href="https://pt.slideshare.net/suelengc"><i class="fa fa-slideshare"></i></a>
+                        </li>
+                        
+                        <li><a href="http://github.com/suelengc"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://instagram.com/_suelengc"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <!-- Portfolio Modals -->
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Java 8 - A Terceira Geração de Iteradores</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Principais Novidades Para Android no Google IO</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Java 8 - Entendendo Lambdas</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Novo site e blog com Jekyll</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Blank Activity passou a usar Fragment, e agora?</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Saiba como decidir qual versão suportar nos aplicativos Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Android Colecionáveis Série 03</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Participação no Podcast do HappyHourTech sobre iOS e Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Android Meetup, seu evento mensal sobre Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Entenda quando usar tag fragment ou tag de layout</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Usando o poder da API Fragments do Android</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Dicas sobre interface visual para desenvolvedores mobile</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Orientador, onde eu compro isso!?</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+
+    <!-- jQuery Version 1.11.0 -->
+    <!-- <script src="/assets/js/jquery-1.11.0.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/js/classie.js"></script>
+    <script src="/assets/js/cbpAnimatedHeader.js"></script>
+    <script src="/assets/js/typeit.v5.3.0.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/assets/js/jqBootstrapValidation.js"></script>
+    <script src="/assets/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/assets/js/custom.js"></script>
+
+    </body>
+</html>
