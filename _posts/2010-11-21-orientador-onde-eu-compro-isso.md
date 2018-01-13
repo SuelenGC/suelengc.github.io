@@ -3,7 +3,7 @@ layout: post
 title:  "Orientador, onde eu compro isso!?"
 date:   2010-11-21
 categories: java
-tags: [pos-graduacao, estudos, ita]
+tags: [mestrado]
 image: /assets/img/posts/duvida-caminho.gif
 keywords:
 related:

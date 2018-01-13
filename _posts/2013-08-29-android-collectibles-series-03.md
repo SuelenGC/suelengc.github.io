@@ -2,7 +2,7 @@
 layout: post
 title:  "Android Colecionáveis Série 03"
 date:   2013-08-29
-tags: [android, colecao]
+tags: [android, geek]
 image: assets/img/posts/todos.png
 keywords:
 related:
