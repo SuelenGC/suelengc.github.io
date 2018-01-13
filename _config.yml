@@ -44,10 +44,10 @@ address:
 
 # Build settings
 markdown: kramdown
-permalink: /:title
-tag_dir: /blog/tag
+permalink: /articles/:title
+tag_dir: /articles/tag
 
-plugins: ['jekyll-paginate']
+gems: ['jekyll-paginate']
 
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/articles/page:num/"
