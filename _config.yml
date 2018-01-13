@@ -37,17 +37,13 @@ social:
   - title: instagram
     url: https://instagram.com/_suelengc
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
 # Build settings
 markdown: kramdown
 permalink: /articles/:title
 tag_dir: /articles/tag
 
-gems: ['jekyll-paginate']
+plugins: ['jekyll-paginate']
+plugins_dir: ./_plugins
 
 paginate: 5
 paginate_path: "/articles/page:num/"
