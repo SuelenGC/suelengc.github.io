@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java 8 - Entendendo Lambdas"
+title:  "6 simples passsos para você sair usando os lambdas do Java 8"
 date:   2016-04-29
 categories: java
 tags: [java, java8]
@@ -17,14 +17,14 @@ resumo: >
    Entenda para que serve e como usar lambdas do Java 8. Veja também meu <a href='https://www.youtube.com/watch?v=BPootnK8taE' target='_blank'>vídeo sobre lambdas</a> no meu canal do YouTube.  
 ---
 
-## O que é?
+## 1. O que é
 
 Basicamente, expressão lambda não é nada novo, em outras linguagens de programação como C#, Scala e outras já é algo bem comum. Mas no Java ela é basicamente uma forma mais enxuta de escrever código. 
 
 Uma forma de pensar sobre o Lambda é que, enquanto classes anônimas são classes sem nome, Lambdas são métodos sem nome. 
 
 
-## Para que serve?
+## 2. Para que serve
 
 Eventualmente precisamos fazer uso de classes anônimas no nosso código Java. Porém, na maioria das vezes que optamos por uma classe anônima significa que provavelmente o trecho de código não é reaproveitável ou é muito pouco código para justificar a implementação de uma classe concreta ou _preencha seus outros motivos aqui_.
 
@@ -33,7 +33,7 @@ O ponto é que criar classe anônima no Java é um problema porque prejudica a l
 O Lambda vem resolver justamente este problema de muito __código de estrutura__ para criação de classes anônimas.
 
 
-## #Comofaz?
+## 3. Show me the code
 
 Para entender como usar Lambda, vamos pegar como tarefa a ideia de ordenar alfabeticamente uma lista de frutas. Então no nosso código teremos a seguinte lista de frutas:
 
@@ -65,14 +65,14 @@ Collections.sort(frutas, (String s1, String s2) -> {
 {% endhighlight %}
 
 
-## Síntaxe
+## 4. Resumindo 
 
 Um ponto importante de entender é que as expressões Lambdas, salvo poucas exceções, terão o seguinte formato:
 
 __(__ parâmetros do método implementado separados por vírgula __)__ __->__ __{__ código a ser executado __}__
 
 
-## Otimizações
+## 5. Saindo do básico
 
 É possível deixar o Lambda ainda mais enxuto do que está. 
 
@@ -99,7 +99,7 @@ s -> System.out.println(s);
 Vale lembrar que, caso seu método não tenha nenhum parâmetro devemos colocar os parênteses.
 
 
-## Restrições
+## 6. Quando não usar
 
 Lambdas só funcionam com Interfaces Funcionais que também é um conceito que veio junto com o Java 8. Basicamente uma Interface Funcional é uma interface com apenas um método abstrato. 
 
