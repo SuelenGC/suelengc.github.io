@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Terceira Geração de Iteradores do Java"
+title:  "Implemente códigos melhores com a última geração de fors do Java 8"
 date:   2016-10-01
 categories: java
 tags: [java]
