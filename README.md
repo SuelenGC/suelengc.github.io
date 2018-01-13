@@ -1,30 +1,15 @@
-Agency Jekyll theme
-====================
-
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
-
-# How to use
-
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/img/portfolio'
-
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
+Personal Site
+==============
 
 
-# Demo
+### Generate files to Github Pages
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+'make all' (this command will execute Makefile)
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+### Run locally
+
+'docker-compose up --build'
+
+### After running, enter in docker container
+
+'docker exec --it [DOCKER_CONTAINER_ID] /bin/sh' (get docker container id by running 'docker ps')
