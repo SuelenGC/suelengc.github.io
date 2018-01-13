@@ -8,8 +8,8 @@ Personal Site
 
 ### Run locally
 
-'docker-compose up --build'
+`docker-compose up --build`
 
 ### After running, enter in docker container
 
-'docker exec --it [DOCKER_CONTAINER_ID] /bin/sh' (get docker container id by running 'docker ps')
+```docker exec --it [DOCKER_CONTAINER_ID] /bin/sh``` (get docker container id by running 'docker ps')
