@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "6 passos simples para você sair usando os lambdas do Java 8"
+title:  "5 passos simples para você sair usando os lambdas do Java 8"
 date:   2016-04-29
 categories: java
 tags: [java, java8]
@@ -63,16 +63,13 @@ Collections.sort(frutas, (String s1, String s2) -> {
     return s1.compareTo(s2);
 });
 {% endhighlight %}
-
-
-## 4. Resumindo 
-
+ 
 Um ponto importante de entender é que as expressões Lambdas, salvo poucas exceções, terão o seguinte formato:
 
 __(__ parâmetros do método implementado separados por vírgula __)__ __->__ __{__ código a ser executado __}__
 
 
-## 5. Saindo do básico
+## 4. Saindo do básico
 
 É possível deixar o Lambda ainda mais enxuto do que está. 
 
@@ -99,7 +96,7 @@ s -> System.out.println(s);
 Vale lembrar que, caso seu método não tenha nenhum parâmetro devemos colocar os parênteses.
 
 
-## 6. Quando não usar
+## 5. Quando não usar
 
 Lambdas só funcionam com Interfaces Funcionais que também é um conceito que veio junto com o Java 8. Basicamente uma Interface Funcional é uma interface com apenas um método abstrato. 
 
