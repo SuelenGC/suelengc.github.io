@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "6 simples passsos para você sair usando os lambdas do Java 8"
+title:  "6 passos simples para você sair usando os lambdas do Java 8"
 date:   2016-04-29
 categories: java
 tags: [java, java8]
