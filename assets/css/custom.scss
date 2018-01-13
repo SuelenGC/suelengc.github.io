@@ -821,6 +821,10 @@ ul.social-buttons li a:active {
     background-color: #{{ site.data.template.color.primary }};
 }
 
+img {
+  max-width: 100%;
+}
+
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -975,4 +979,14 @@ a.tag {
   margin-bottom: 40px;
   text-align: left;
   color: #fff;
+}
+
+.post-image-container
+{
+  max-width:  100%;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px 0;
 }

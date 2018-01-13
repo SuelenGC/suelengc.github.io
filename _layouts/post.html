@@ -12,10 +12,7 @@ layout: page
               {% include meta.html %}
 
               {% if page.image %}
-                <figure class="text-center">
-                  <img src="/{{ page.image }}" alt="{{page.title}}" style="max-width: 80%; margin: 20px auto;" title="{{page.title}}" itemprop="thumbnailUrl">
-                  <figcaption>{{ image }}</figcaption>
-                </figure>
+                <div class="post-image-container" style="background-image: url({{site.url}}/{{page.image}});"></div>
               {% endif %}        
               
               <div class="post-content">

@@ -4,7 +4,7 @@ title: "10 novidades incríveis sobre Android do Google IO 2016"
 date: 2016-05-22
 categories: android
 tags: [android]
-image: assets/img/posts/google-io-16.gif
+image: assets/img/posts/google-io-2016-2.jpg
 keywords:
 related:
   - title: Site oficial do Firebase
@@ -21,14 +21,14 @@ Neste post vamos falar sobre as principais novidades divulgadas sobre o **Androi
 
 O Google I/O é o maior evento anual do Google onde são anunciados novos produtos, nova versão do Android e muito mais! Este ano ele ocorreu de 18 a 20 de Maio em San Francisco na Califórnia.
 
-## Nome da versão
+## 1. Nome da versão
 
 Se você como muitos, esperava saber o nome da nova versão do Android, vai ficar na mão. Neste ano não foi divulgada o nome da nova versão, ao invés, foi divulgado um [link](http://android.com/n){:target="_blank"} para os desenvolvedores darem sugestões. 
 
 Em teoria, o nome deve vir destas sugestões. Pelo menos para mim é difícil pensar em um doce brasileiro que inicie com a letra N e que não seja Nutella 8).  
 
 
-## Android Studio 2.2
+## 2. Android Studio 2.2
 
 O Android Studio veio cheio de novidades bacanas mais relacionadas a *design* de interfaces. 
 
@@ -45,28 +45,28 @@ Mais um funcionalidade super bacana é que agora é possível fazer a gravação
 Ainda há uma série de outras funcionalidades bacanas com o *APK Analyzer*, *Layout Inspector*, a integração com a última versão do IntelliJ, suporte a C++ e outras mais. É muito coisa para um post só!
 
 
-## Notificações
+## 3. Notificações
 
 O Google deu uma repaginada nas notificações, agora podemos configurar coisas como o *direct reply* onde o usuário consegue responder a notificação sem ter que abrir o app relacionado a ela, ou seja, ele faz isso dali da lista de notificações mesmo.
 
 Há uma série de outras melhorias aqui como novos templates e formas de o usuário silenciar notificações.
 
 
-## Multi-window 
+## 4. Multi-window 
 
 Sabe aquela funcionalidade que a Samsung já tem a eras de dividir a tela e usar dois apps diferentes? Pois é, agora podemos oficialmente implementar isso nos nossos apps Android. Legal né! 
 
 Junto com isso eles evoluiram a funcioanlidade de *drag and drop* para ser possível fazer isso entre *activities*.
 
 
-## Display size (sobre acessibilidade)
+## 5. Display size (sobre acessibilidade)
 
 Agora os usuários poderam mudar o tamanho como eles veem as coisas em todo o app. Ou seja, vai aparecer no app uma barra progressiva onde as pessoas podem aumentar ou diminuir e isso vai influenciar na altura da *action bar*, no tamanho da fonte, e etc.
 
 É uma funcionalidade bem interessante para pessoas que tem problemas de vista.
 
 
-## Android Instant Apps
+## 6. Android Instant Apps
 
 Agora mesmo que o usuário não tenha um app instalado no device, ele conseguirá usar uma parte específica do app. Basicamente o app será automaticamente instalado, mas não o app inteiro, apenas a parte necessária para rodar determinada parte do aplicativo que é necessária.
 
@@ -75,19 +75,19 @@ Imagine que você mande um link de uma música do Spotify para alguém que não 
 Tecnicamente, para que isso funcione seu app precisa funcionar bem com *deeplinks* além do desenvolvimento ter de ser modularizado. 
 
 
-## Direct boot
+## 7. Direct boot
 
 Sabe aquele loading que aparece quando reiniciamos o Android, dizendo que está otimizando os apps e que ficava um tempão nesta tela de app em app compilando 1 a 1?! Pois é, graças a melhorias feitas no JIT, esta parte do código não existe mais! #Rocks!
 
 
-## Java 8 
+## 8. Java 8 
 
 Funcionalidades como [lambdas](http://suelengc.com/2016/java-8-lambdas/), *methods references*, *repeatable annotation*, *default methods* e outros finalmente serão suportados! E digo mais, muitas destas novidades do Java 8 também poderão ser usadas nos xmls de layout. 
 
 Essa funcionalidade de poder colocar alguns códigos nos xmls é chamada de *Data Binding* e foi lançada em 2015. Este ano fizeram uma série de melhorias possibilitando usar alguns conceitos do Java 8 também. Particularmente eu achei muito bacana!
 
 
-## Firebase
+## 9. Firebase
 
 Sem dúvida um dos maiores destaques de todo o Google IO foi o [Firebase](https://firebase.google.com){:target="_blank"}. O Google resolveu investir de fato nesta ferramenta como seu *Mobile Backend As A Service* (MBAAS). 
 
@@ -102,7 +102,7 @@ Outro ponto interessante é que o GCM (*Google Cloud Messaging*) agora é FCM (*
 No momento que vi esta parte do KeyNote me lembrei imediatamente do [Fabric](https://get.fabric.io/){:target="_blank"} do Twitter pois algumas ferramentas do Firebase como *Analytics* por exemplo, resolvem problemas que algumas ferramentas do Twitter resolvem também. Bem, ambas me pareceram muito boas.
 
 
-## Não Para Por Aqui
+## 10. Não Para Por Aqui
 
 Este ano o Google IO foi como sempre espetacular. Estas são algumas novidades mas existem ainda muitas outras como Vulkan, *support library*, *multi locale*, *quickly settings* e outras. Para cada uma dá um post sozinho e que pretendo escrever alguns mais detalhados mostrando como usar aqui.
 
