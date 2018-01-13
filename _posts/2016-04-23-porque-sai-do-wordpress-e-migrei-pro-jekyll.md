@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Novo site e blog com Jekyll"
+title:  "Porque sai do Wordpress e migrei pro Jekyll"
 date:   2016-04-23
 categories: blog
 tags: [jekyll]
