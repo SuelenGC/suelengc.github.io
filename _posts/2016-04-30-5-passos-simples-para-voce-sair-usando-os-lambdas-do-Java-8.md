@@ -3,7 +3,7 @@ layout: post
 title:  "5 passos simples para você sair usando os lambdas do Java 8"
 date:   2016-04-29
 categories: java
-tags: [java, java8]
+tags: [java]
 image: assets/img/posts/java8-lambda.jpg
 keywords:
 related:
