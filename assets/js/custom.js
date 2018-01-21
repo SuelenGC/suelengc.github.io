@@ -37,7 +37,7 @@ $('div.modal').on('show.bs.modal', function() {
 });
 
 $('#type-it').typeIt({
-    strings: ["Desenvolvedora de Software", "Consultora de Agilidade", "Professora", "Palestrante"],
+    strings: ["Desenvolvedora de Software", "Consultora de Agilidade", "Palestrante", "Professora", "Pesquisadora"],
     // strings: ["<span class='white-text'>MULHER,</span> desenvolvedora de software há 13 anos.", 
     //           "<span class='white-text'>MULHER,</span> mestre em Ciência da Computação pelo Instituto de Matemética e Estatística da USP.",
     //           "<span class='white-text'>MULHER,</span> pós-graduada pelo Instituto Tecnológico de Aeronáutica.", 
