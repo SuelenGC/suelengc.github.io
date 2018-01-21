@@ -41,7 +41,7 @@ markdown: kramdown
 permalink: /articles/:title
 tag_dir: /articles/tag
 
-plugins: ['jekyll-paginate']
+gems: ['jekyll-paginate']
 plugins_dir: ./_plugins
 
 paginate: 5
