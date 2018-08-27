@@ -426,6 +426,7 @@ section h3.section-subheading {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    background-color: white;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -929,19 +930,19 @@ body {
 
 .resumo {
   font-size: 1em;
-  color: #777;  
+  color: #777;
   text-align: justify
 }
-  
+
 a.post-title {
   font-size: 1.5em;
-  color: #222;  
+  color: #222;
   text-decoration: none;
 }
 
 a.post-title {
   font-size: 1.5em;
-  color: #222;  
+  color: #222;
   text-decoration: none;
 }
 
@@ -949,7 +950,7 @@ a.post-title:hover,
 a.post-title:focus,
 a.post-title:active,
 a.post-title.active {
-  color: #{{ site.data.template.color.secondary }};  
+  color: #{{ site.data.template.color.secondary }};
 }
 
 .meta{

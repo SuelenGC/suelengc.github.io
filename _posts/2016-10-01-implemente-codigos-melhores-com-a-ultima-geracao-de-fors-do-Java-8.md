@@ -6,13 +6,14 @@ categories: java
 tags: [java]
 image: assets/img/posts/java8-foreach-iterator.png
 keywords:
+modal-id: 3
 related:
-  - title: Excelente post no blog da Caelum sobre Java 8 
+  - title: Excelente post no blog da Caelum sobre Java 8
     url: http://blog.caelum.com.br/o-minimo-que-voce-deve-saber-de-java-8/
   - title: Apresentação sobre Java 8 por Paulo Silveira no Conexão Java 2014
     url: https://www.youtube.com/watch?v=UZaKFZHrnag
 resumo: >
-   Está de saco cheio de repetidas vezes escrever um for? Conheça essa novidade do Java 8 e nunca mais escreva uma iteração na sua vida! 
+   Está de saco cheio de repetidas vezes escrever um for? Conheça essa novidade do Java 8 e nunca mais escreva uma iteração na sua vida!
 ---
 
 Um dos recursos mais usados em qualquer linguagem são operadores de repetição como _for_ e _while_. No Java, o _for_ tem sido vagarosamente evoluído, sendo que com o Java 8 recebemos a __Terceira Geração de Iteradores__. Ou seja, passamos pela primeira e segunda geração. Mas quais são elas?!
@@ -35,7 +36,7 @@ A __Segunda Geração__ é a geração do _foreach_, recurso que veio com o Java
 
 {% highlight java %}
 for(String fruta : frutas) {
-  System.out.println(fruta);	
+  System.out.println(fruta);
 }
 {% endhighlight %}
 
@@ -43,7 +44,7 @@ Ambas a primeira e segunda geração são consideradas formas de __iteração ex
 
 De fato, o que importa na maioria das vezes é o que iremos fazer a cada iteração. Por isso, no Java 8 é justamente isso que acontece. Não precisamos mais nos preocupar em fazer a iteração, apenas em o que fazer com cada objeto a cada iteração.
 
-Com a __Terceira Geração de Iteradores__ é a primeira vez que surge no Java a __iteração interna__. A complexidade da iteração foi encapsulada no método `forEach` adicionado a interface `Iterable`. 
+Com a __Terceira Geração de Iteradores__ é a primeira vez que surge no Java a __iteração interna__. A complexidade da iteração foi encapsulada no método `forEach` adicionado a interface `Iterable`.
 
 Usando a iteração interna é possível aperfeiçoar a execução para que a iteração seja feita de forma paralela internamente pelo SDK sem interefrir negativamente em implementações existentes. Isso elimina uma dúvida existente quando se usa gerações anteriores sobre qual iterador usar, o _for_ com índice ou o _foreach_ com objeto, pensando em qual teria um desempenho melhor.
 

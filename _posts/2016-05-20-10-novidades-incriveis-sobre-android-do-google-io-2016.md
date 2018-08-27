@@ -6,6 +6,7 @@ categories: android
 tags: [android, eventos]
 image: assets/img/posts/google-io-2016-2.jpg
 keywords:
+modal-id: 2
 related:
   - title: Site oficial do Firebase
     url: https://firebase.google.com
@@ -23,14 +24,14 @@ O Google I/O é o maior evento anual do Google onde são anunciados novos produt
 
 ## 1. Nome da versão
 
-Se você como muitos, esperava saber o nome da nova versão do Android, vai ficar na mão. Neste ano não foi divulgada o nome da nova versão, ao invés, foi divulgado um [link](http://android.com/n){:target="_blank"} para os desenvolvedores darem sugestões. 
+Se você como muitos, esperava saber o nome da nova versão do Android, vai ficar na mão. Neste ano não foi divulgada o nome da nova versão, ao invés, foi divulgado um [link](http://android.com/n){:target="_blank"} para os desenvolvedores darem sugestões.
 
-Em teoria, o nome deve vir destas sugestões. Pelo menos para mim é difícil pensar em um doce brasileiro que inicie com a letra N e que não seja Nutella 8).  
+Em teoria, o nome deve vir destas sugestões. Pelo menos para mim é difícil pensar em um doce brasileiro que inicie com a letra N e que não seja Nutella 8).
 
 
 ## 2. Android Studio 2.2
 
-O Android Studio veio cheio de novidades bacanas mais relacionadas a *design* de interfaces. 
+O Android Studio veio cheio de novidades bacanas mais relacionadas a *design* de interfaces.
 
 Agora podemos contar com um *clip and point* que de fato funcione e cheio de funcionalidades que te ajudam a criar uma tela bacana e seguindo o *Material Design* sem ter que decorar quantos *dps* devemos usar em cada lugar, pois a IDE tem agora *constraints* que te ajudam com estes números.
 
@@ -52,9 +53,9 @@ O Google deu uma repaginada nas notificações, agora podemos configurar coisas 
 Há uma série de outras melhorias aqui como novos templates e formas de o usuário silenciar notificações.
 
 
-## 4. Multi-window 
+## 4. Multi-window
 
-Sabe aquela funcionalidade que a Samsung já tem a eras de dividir a tela e usar dois apps diferentes? Pois é, agora podemos oficialmente implementar isso nos nossos apps Android. Legal né! 
+Sabe aquela funcionalidade que a Samsung já tem a eras de dividir a tela e usar dois apps diferentes? Pois é, agora podemos oficialmente implementar isso nos nossos apps Android. Legal né!
 
 Junto com isso eles evoluiram a funcioanlidade de *drag and drop* para ser possível fazer isso entre *activities*.
 
@@ -72,7 +73,7 @@ Agora mesmo que o usuário não tenha um app instalado no device, ele conseguir�
 
 Imagine que você mande um link de uma música do Spotify para alguém que não o tenha instalado, quando esta pessoa clicar no link, a parte para exibir a música será automaticamente instalada.
 
-Tecnicamente, para que isso funcione seu app precisa funcionar bem com *deeplinks* além do desenvolvimento ter de ser modularizado. 
+Tecnicamente, para que isso funcione seu app precisa funcionar bem com *deeplinks* além do desenvolvimento ter de ser modularizado.
 
 
 ## 7. Direct boot
@@ -80,18 +81,18 @@ Tecnicamente, para que isso funcione seu app precisa funcionar bem com *deeplink
 Sabe aquele loading que aparece quando reiniciamos o Android, dizendo que está otimizando os apps e que ficava um tempão nesta tela de app em app compilando 1 a 1?! Pois é, graças a melhorias feitas no JIT, esta parte do código não existe mais! #Rocks!
 
 
-## 8. Java 8 
+## 8. Java 8
 
-Funcionalidades como [lambdas](http://suelengc.com/2016/java-8-lambdas/), *methods references*, *repeatable annotation*, *default methods* e outros finalmente serão suportados! E digo mais, muitas destas novidades do Java 8 também poderão ser usadas nos xmls de layout. 
+Funcionalidades como [lambdas](http://suelengc.com/2016/java-8-lambdas/), *methods references*, *repeatable annotation*, *default methods* e outros finalmente serão suportados! E digo mais, muitas destas novidades do Java 8 também poderão ser usadas nos xmls de layout.
 
 Essa funcionalidade de poder colocar alguns códigos nos xmls é chamada de *Data Binding* e foi lançada em 2015. Este ano fizeram uma série de melhorias possibilitando usar alguns conceitos do Java 8 também. Particularmente eu achei muito bacana!
 
 
 ## 9. Firebase
 
-Sem dúvida um dos maiores destaques de todo o Google IO foi o [Firebase](https://firebase.google.com){:target="_blank"}. O Google resolveu investir de fato nesta ferramenta como seu *Mobile Backend As A Service* (MBAAS). 
+Sem dúvida um dos maiores destaques de todo o Google IO foi o [Firebase](https://firebase.google.com){:target="_blank"}. O Google resolveu investir de fato nesta ferramenta como seu *Mobile Backend As A Service* (MBAAS).
 
-O Firebase agora disponibiliza todo um *stack* de ferramentas para desenvolvimento mobile como banco de dados (*NoSQL*), *Cloud Messaging*, *Storage* para arquivos estáticos, *TestLab* para testes automatizados com várias integrações disponíveis, autenticação, *analytics* e muito mais. 
+O Firebase agora disponibiliza todo um *stack* de ferramentas para desenvolvimento mobile como banco de dados (*NoSQL*), *Cloud Messaging*, *Storage* para arquivos estáticos, *TestLab* para testes automatizados com várias integrações disponíveis, autenticação, *analytics* e muito mais.
 
 Vale mencionar também que ele está completamente integrado ao Android Studio, ou seja, começar a usar qualquer destas ferramentas é muito simples.
 
