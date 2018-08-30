@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.primary }};
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -986,6 +986,7 @@ a.tag {
 
 .post-content {
   text-align: justify;
+  font-size: 1.1em;
 }
 
 .post-content > h2 {
