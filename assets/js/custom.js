@@ -35,16 +35,11 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
-
 $('#type-it').typeIt({
-    strings: ["Desenvolvedora de Software", "Consultora de Agilidade", "Palestrante", "Professora", "Pesquisadora"],
-    // strings: ["<span class='white-text'>MULHER,</span> desenvolvedora de software há 13 anos.", 
-    //           "<span class='white-text'>MULHER,</span> mestre em Ciência da Computação pelo Instituto de Matemética e Estatística da USP.",
-    //           "<span class='white-text'>MULHER,</span> pós-graduada pelo Instituto Tecnológico de Aeronáutica.", 
-    //           "<span class='white-text'>MULHER,</span> que sou, fora da curva! Iniciando projeto de mesmo nome em 2018 (conheça mais aqui)."],
+    strings: ["Tudo o que você precisa saber", "e não te contaram", "sobre carreira, métodos ágeis", "e desenvolvimento de aplicativos!"],
     speed: 90,
-    breakLines: false,
-    loop: true,
+    breakLines: true,
+    loop: false,
     lifeLike: false,
     nextStringDelay: 1000,
     startDelete: true
