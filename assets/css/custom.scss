@@ -64,8 +64,8 @@ h6 {
 
 .carousel .item {
     width: 100%; /*slider width*/
-    height: 100vh;
-    max-height: 700px; /*slider height*/
+    height: 100vh; /*slider height*/
+    /*max-height: 700px; */
 }
 .carousel .item img {
     width: 100%; /*img width*/
@@ -341,12 +341,12 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    text-align: center;
+    text-align: left;
     color: #fff;
     background-attachment: scroll;
-    /*background-image: url('/assets/img/bg-palestra-suelen-carvalho.png');*/
+    background-image: url('/assets/img/bg-idea.jpg');
     background-color: #222;
-    background-position: center center;
+    background-position: center top;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -354,51 +354,55 @@ header {
     -o-background-size: cover;
 }
 
-header .intro-text {
-    padding-top: 100px;
+header .intro {
+    padding-top: 90px;
     padding-bottom: 50px;
-    /*padding-right: 550px;*/
+    width: 100%;
+    height: 100vh;
 }
 
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
+header .intro .main-text-box {
+    background-color: #00000060;
+    padding: 15px;
+    margin-top: 200px;
 }
 
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
+header .intro .main-text-box .main-text {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
 }
 
 @media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        /*padding-bottom: 200px;*/
+    header .intro {
+        padding-top: 250px;
         padding-bottom: 40px;
     }
 
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: {{ site.data.template.font.primary }};
-        font-size: 14px;
-        font-style: italic;
-        line-height: 14px;
+    header .intro .main-text-box {
+        margin-left: 320px;
+        margin-top: 0px;
+        padding: 20px;
     }
 
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
+    header .intro .main-text-box .main-text {
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+}
+
+@media(min-width:1000px) {
+    header .intro {
+      padding-top: 280px;
+    }
+
+    header .intro .main-text-box {
+        margin-left: 530px;
     }
 }
 

@@ -24,6 +24,8 @@
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">
@@ -33,7 +35,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,6 +75,12 @@
                     <a class="page-scroll" href="#about">Carreira</a>
                 </li> -->
                 <li>
+                    <a class="page-scroll" href="/#about">Sobre</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#services">Serviços</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="/articles">Artigos</a>
                 </li>
                 <!-- <li>
@@ -90,9 +98,6 @@
                 <!-- <li>
                     <a class="page-scroll" href="#team">Pesquisas</a>
                 </li>  -->
-                <li>
-                    <a class="page-scroll" href="/#about">Sobre</a>
-                </li>
                 <!-- <li>
                     <a class="page-scroll" href="#portfolio">Palestras</a>
                 </li> -->
@@ -108,7 +113,7 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-      
+
       <!-- Services Section -->
 <section id="posts">
     
@@ -304,8 +309,13 @@
         <footer style="background-color: #222;">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <span class="copyright" style="color: #fff;">Copyright &copy; Suelen Carvalho 2018</span>
+              <div class="col-md-3">
+<!--                     <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul> -->
                 </div>
                 <div class="col-md-6">
                     <ul class="list-inline social-buttons-white social-buttons">
@@ -334,12 +344,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-<!--                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul> -->
+                    <span class="copyright" style="color: #fff;">Copyright &copy; Suelen Carvalho 2018</span>
                 </div>
             </div>
         </div>
@@ -347,7 +352,7 @@
 
        <!-- Portfolio Modals -->
  
-    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -359,11 +364,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Implemente códigos melhores com a última geração de fors do Java 8</h2>
+                            <h3>Implemente códigos melhores com a última geração de fors do Java 8</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/java8-foreach-iterator.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Está de saco cheio de repetidas vezes escrever um for? Conheça essa novidade do Java 8 e nunca mais escreva uma iteração na sua vida!
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -376,8 +382,86 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h3>10 novidades incríveis sobre Android do Google IO 2016</h3>
+                            <hr class="star-primary">
+                            <img src="assets/img/posts/google-io-2016-2.jpg" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Saiba as principais novidades do Android N e outras coisas muito bacanas para desenvolvedores Android lançadas no Google IO. Você também pode assistir ao meu vídeo inédito <a href='https://www.youtube.com/watch?v=cIZCaKCn9D0' target='_blank'>Resumão do Google IO</a>.
+</p>
+                            <!-- <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h3>5 passos simples para você sair usando os lambdas do Java 8</h3>
+                            <hr class="star-primary">
+                            <img src="assets/img/posts/java8-lambda.jpg" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Entenda para que serve e como usar lambdas do Java 8. Veja também meu <a href='https://www.youtube.com/watch?v=BPootnK8taE' target='_blank'>vídeo sobre lambdas</a> no meu canal do YouTube.
+</p>
+                            <!-- <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -397,11 +481,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>10 novidades incríveis sobre Android do Google IO 2016</h2>
+                            <h3>Porque sai do Wordpress e migrei pro Jekyll</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/jekyll-github.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Neste post de estréia do meu novo site e blog eu explico porque migrei do Wordpress para o Jekyll, um gerador de páginas estáticas, e quais as vantagens e desvantagens desta migração. 
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -414,8 +499,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -435,11 +520,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>5 passos simples para você sair usando os lambdas do Java 8</h2>
+                            <h3>Blank Activity passou a usar Fragment, e agora?</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/android-triste.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>O Google mudou o template da Blank Activity sem avisar e os desenvovledores ficaram #chateados. Saiba mais aqui.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -452,8 +538,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -473,11 +559,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Porque sai do Wordpress e migrei pro Jekyll</h2>
+                            <h3>Saiba como decidir qual versão suportar nos aplicativos Android</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/androids_frags.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Um fator muito importante e muitas vezes ignorado por desenvolvedores Android é qual versão mínima suportar em seu aplicativo. Sem pensar nisso seu aplicativo pode estar perdendo usuário. Veja neste post tudo o que precisa considerar para tomar esta decisão.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -490,8 +577,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -511,11 +598,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Blank Activity passou a usar Fragment, e agora?</h2>
+                            <h3>Android Colecionáveis Série 03</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/todos.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Nerds são um caso sério, gastam dinheiro aleatoriamente. Para mantermos com esta boa fama exibo aqui meus novos Androids colecionáveis. Espero que morram de inveja e comprem também rs :).
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -528,8 +616,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -549,11 +637,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Saiba como decidir qual versão suportar nos aplicativos Android</h2>
+                            <h3>Participação no Podcast do HappyHourTech sobre iOS e Android</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/desenvolvimento-de-games-android-ios-1.jpg" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Uns caras que produzem podcasts, um convite, o Android e lá vamos nós de novo! 
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -566,8 +655,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -587,11 +676,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Android Colecionáveis Série 03</h2>
+                            <h3>Android Meetup, seu evento mensal sobre Android</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/evolution-android-11.jpg" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Entenda como surgiu o Android Meetup, evento mensal sobre Android organizado pelo GDG-SP, e como você pode participar.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -604,8 +694,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -625,11 +715,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Participação no Podcast do HappyHourTech sobre iOS e Android</h2>
+                            <h3>Entenda quando usar tag fragment ou tag de layout</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="assets/img/posts/fragmented2.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Você aprendeu sobre fragments no Android e quer ir para o próximo nível no quesito conhecimento sobre esta ferramenta bacana que temos no Android. Então venha ver este detalhe incrível sobre para que serve a tag fragment e quando usá-la.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -642,8 +733,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -663,11 +754,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Android Meetup, seu evento mensal sobre Android</h2>
+                            <h3>Usando o poder da API Fragments do Android</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="http://suelengc.com/assets/img/posts/androids_frags.png" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Chegou a API de Fragments do Android. Entenda neste post como usá-la com exemplos e código disponível no Github.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -680,8 +772,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -701,11 +793,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Entenda quando usar tag fragment ou tag de layout</h2>
+                            <h3>Dicas sobre interface visual para desenvolvedores mobile</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Aprenda alguns macetes para deixar seus aplicativos Android mais atraentes em um passe de mágica.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -718,8 +811,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -739,11 +832,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Usando o poder da API Fragments do Android</h2>
+                            <h3>Orientador, onde eu compro isso!?</h3>
                             <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
+                            <img src="/assets/img/posts/duvida-caminho.gif" style="max-height: 300px;" class="img-responsive img-centered" alt="">
+                            <p>Está pensando em fazer uma pós e não sabe por onde começar? Escolher bem e entrar em contato com seu futuro orientador pode ser um bom começo. Veja neste post como não errar na hora de escolher a pessoa que vai te acompanhar por pelo menos dois anos nesta tragetória.
+</p>
+                            <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
@@ -756,84 +850,8 @@
                                     <strong><a href="http://startbootstrap.com"></a>
                                     </strong>
                                 </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Dicas sobre interface visual para desenvolvedores mobile</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Orientador, onde eu compro isso!?</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p></p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </ul> -->
+                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
                         </div>
                     </div>
                 </div>
@@ -842,7 +860,7 @@
     </div>
 
 
-          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
 
     <!-- jQuery Version 1.11.0 -->
