@@ -21,8 +21,8 @@ $(function() {
             }
 
             $.ajax({
-                url: "https://formspree.io/contato@suelencarvalho.com",
-                type: "POST",
+                url: 'https://formspree.io/contato@suelencarvalho.com',
+                method: 'POST',
                 data: {
                     _subject: subject,
                     name: name,
