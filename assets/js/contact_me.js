@@ -11,14 +11,14 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var message = $("textarea#message").val();
-            var subject = "[suelencarvalho.com] " + $("select#reason").val();
+            var subject = "[New submission!] " + $("select#reason").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://formspree.io/suelengcarvalho@gmail.com",
+                url: "https://formspree.io/contato@suelencarvalho.com",
                 type: "POST",
                 data: {
                     _subject: subject,
