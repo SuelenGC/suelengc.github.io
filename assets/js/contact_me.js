@@ -7,16 +7,19 @@ $(function() {
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
+
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
             var message = $("textarea#message").val();
             var subject = "[New submission!] " + $("select#reason").val();
-            var firstName = name; // For Success/Failure Message
+            var firstName = name;
+
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
             $.ajax({
                 url: "https://formspree.io/contato@suelencarvalho.com",
                 type: "POST",
@@ -50,7 +53,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            });
         },
         filter: function() {
             return $(this).is(":visible");
