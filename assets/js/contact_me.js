@@ -21,10 +21,10 @@ $(function() {
             }
 
             $.ajax({
-                url: 'https://formspree.io/contato@suelencarvalho.com',
+                url: 'https://suelencarvalho-api.appspot.com/sendEmail',
                 method: 'POST',
                 data: {
-                    _subject: subject,
+                    subject: subject,
                     name: name,
                     email: email,
                     message: message
