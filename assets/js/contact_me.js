@@ -12,13 +12,8 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var message = $("textarea#message").val();
-            var subject = "[New submission!] " + $("select#reason").val();
-            var firstName = name;
+            var subject = $("select#reason").val();
 
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
 
             $.ajax({
                 url: 'https://suelencarvalho-api.appspot.com/sendEmail',
