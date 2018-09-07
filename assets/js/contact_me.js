@@ -14,7 +14,6 @@ $(function() {
             var message = $("textarea#message").val();
             var subject = $("select#reason").val();
 
-
             $.ajax({
                 url: 'https://suelencarvalho-api.appspot.com/sendEmail',
                 method: 'POST',
