@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Backlog de Produto: O que você precisa saber para começar o seu"
-date:   2018-09-08
+date:   2018-09-10
 categories: métodos ágeis
 tags: [métodos ágeis, backlog de produto, product owner]
 image: assets/img/posts/product-backlog-agile-startegy.jpg
