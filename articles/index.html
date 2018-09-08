@@ -12,11 +12,11 @@ layout: page
                 <!-- <h3 class="section-subheading text-muted">{{ site.description }}</h3> -->
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-7">
-                
+
               <!-- This loops through the paginated posts -->
               {% for post in paginator.posts %}
                 <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
@@ -54,12 +54,12 @@ layout: page
               {% endif %}
 
             </div> <!-- close col-sm-10 -->
-            <div class="col-sm-2"><h4>Tags</h4>
+            <div class="col-sm-3"><h4>Tags</h4>
 
               <p class="meta">
                 {% for tag in site.tags %}
-                <a class="tag" href='/articles/tag/{{ tag[0] | slugify }}/'>{{ tag[0] }}</a>
-                {% endfor %} 
+                <a class="tag" href='/articles/tag/{{ tag[0] | slugify }}/'>{{ tag[0] }}</a> <span style="color: #{{ site.data.template.color.primary }};">|</span>
+                {% endfor %}
               </p>
             </div>
             <div class="col-sm-1"></div>
