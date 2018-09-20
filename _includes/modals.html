@@ -1,40 +1,58 @@
- <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h3>{{ post.title }}</h3>
-                            <hr class="star-primary">
-                            <img src="{{ post.image }}" style="max-height: 300px;" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.resumo }} <a href="{{ post.url }}">Continuar lendo</a>.</p>
-                            <!-- <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
-                                </li>
-                            </ul> -->
-                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endfor %}
+{% if page.ebook-title %}
+  <!-- Portfolio Modals -->
+  <script type="text/javascript">
+  function sendEbookEmail() {
+      var _name = $("input#name").val();;
+      var _message = "Novo download do e-book {{ page.ebook-title }}";
+      var _subject = "[Download E-Book]";
+      var _email = $("input#email").val();
+
+      $.ajax({
+          url: 'https://suelencarvalho-api.appspot.com/sendEmail',
+          method: 'POST',
+          data: {
+              subject: _subject,
+              name: _name,
+              email: _email,
+              message: _message
+          },
+          cache: false,
+          success: function() {
+              // Success message
+          },
+          error: function() {
+              // Fail message
+          },
+      });
+
+  }
+  </script>
+
+
+  <div class="portfolio-modal modal fade" id="portfolioModal{{ page.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h3>e-Book: {{ page.ebook-title }}</h3>
+                          <hr class="star-primary">
+                          <!-- <img src="{{ post.ebook-image }}" style="max-height: 300px;" class="img-responsive img-centered" alt="{{ post.alt }}"> -->
+                          <p>{{ page.ebook-resume }}</p>
+                            <input type="email" class="form-control" placeholder="Seu email *" id="email" name="email">
+                            <p class="help-block text-danger"></p>
+                            <button type="button" onclick="sendEbookEmail()" class="btn btn-primary" data-dismiss="modal">Receber material</button>
+                            <!-- <div id="success"></div> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+{% endif %}

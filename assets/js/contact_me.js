@@ -12,7 +12,7 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var message = $("textarea#message").val();
-            var subject = $("select#reason").val();
+            var subject = "[New Contact][" + $("select#reason").val() + "] " + name;
 
             $.ajax({
                 url: 'https://suelencarvalho-api.appspot.com/sendEmail',
