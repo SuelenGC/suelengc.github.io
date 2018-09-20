@@ -62,10 +62,11 @@ Um tipo de item de backlog bem comum são ajustes ou alterações pontuais, de n
 Um bug costuma representar um mal funcionamento em produção e, por este motivo, normalmente tem prioridade maior do que as tarefas. Eventualmente sua correção pode ser tão pontual como a de uma tarefa, mas as vezes não. É difícil saber ao certo. No Jira existe o tipo de item Bug, justamente para estes casos.
 
 * **A grande funcionalidade** <br>
-Outro tipo de item de backlog muito comum são aqueles que necessitam que um conjunto de tarefas sejam feitas para ser considerado completo. Podem ser, por exemplo, novas funcionalidades e, por isso necessitam de implementações em diferentes projetos para que seja concluída. Por exemplo: uma tela nova em um aplicativo. É provável que hajam tarefas do lado do aplicativo e outras do lado do backend que irá prover as informações que a nova tela no aplicativo irá exibir. Para casos como este, o Jira tem o tipo de item Estória (Story).
+Outro tipo de item de backlog muito comum são aqueles que necessitam que um conjunto de tarefas sejam feitas para ser considerado completo. Podem ser, por exemplo, novas funcionalidades e, por isso necessitam de implementações em diferentes projetos para que seja concluída. Por exemplo: uma tela nova em um aplicativo. É provável que hajam tarefas do lado do aplicativo e outras do lado do backend que irá prover as informações que a nova tela no aplicativo irá exibir. O Jira tem o tipo de item Estória (Story) para casos como esse.
 <!-- <br> -->
 <!-- &nbsp; &nbsp; Não confunda a técnica de escrita Estória com o tipo de item que o Jira provê. Apesar desse tipo de item ser chamado de Estória, nada impede de usarmos a técnica de escrita de Estórias para escrever tarefas ou bugs, falaremos disso mais adiante.
  -->
+
 * **Os itens técnicos** <br>
 Além das ideias de negócio, é comum existir em um backlog de produto, itens técnicos, sejam eles grandes ou pontuais. Para estes itens, basta criar dois novos tipos de itens no Jira, uma Tarefa Técnica (Tech Task) e uma Estória Técnica (Tech Story). Ambos seguem a mesma ideia, respectivamente, de um ajuste pontual e uma grande funcionalidade, com a diferença que tratam assuntos técnicos.
 <br>
