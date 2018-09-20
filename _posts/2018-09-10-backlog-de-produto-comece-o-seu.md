@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Backlog de Produto: Tudo o que você precisa para começar o seu agora"
-date:   2018-09-08
+date:   2018-09-20
 categories: métodos ágeis
 tags: [métodos ágeis, backlog de produto, product owner]
 image: assets/img/posts/product-backlog-duvida.jpg
