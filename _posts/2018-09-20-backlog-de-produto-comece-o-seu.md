@@ -5,14 +5,10 @@ date:   2018-09-20
 categories: métodos ágeis
 tags: [métodos ágeis, backlog de produto, product owner]
 image: assets/img/posts/product-backlog-duvida2.jpg
-keywords:
 modal-id: 4
 ebook-title: "Como escrever estórias de tarefas, bugs e funcionalidades"
 ebook-image: http://www.anped.org.br/sites/default/files/images/ebooks.png
 ebook-resume: Aprenda a escrever estórias de tarefas, bugs e funcionalidades, com exemplos!
-related:
-  - title: Excelente post no blog da Caelum sobre Java 8
-    url: http://blog.caelum.com.br/o-minimo-que-voce-deve-saber-de-java-8/
 resumo: >
    O papel do Product Owner é extretamente importante para o bom funcionamento de um time ágil. Sua principal responsabilidade é manter o backlog de produto atualizado e priorizado! Para isso é necessário ter organização e tomar algumas decisões antes de começar. Neste post iremos falar das principais dúvidas que surgem quando se inicia a construção de um backlog de produto eficiente.
 ---
