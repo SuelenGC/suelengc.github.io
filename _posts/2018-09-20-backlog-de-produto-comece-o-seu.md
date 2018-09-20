@@ -30,7 +30,7 @@ Ao iniciar um backlog de produto, podem surgir diversas dúvidas. Dentre elas, h
 Neste post, vou compartilhar com você, como tenho resolvido essas três questões nos times que participei ao longo dos últimos 8 anos trabalhando com métodos ágeis. Essas respostas podem lhe ajudar a começar seu backlog de produto mais facilmente!
 
 ## 1. Escolhendo uma ferramenta para gerenciar o Backlog de Produto
-Existem no mercado diversas ferramentas para a gestão de backlogs. Todos eles oferecem diversas funcionalidades e não é raro ficarmos indecisos e confusos sobre quais funcionalidades adotar. Muitas vezes nos sentimos até obrigados a usar todas as funcionalidades. Mas calma! Isso não é necessário.
+Existem no mercado diversas ferramentas para a gestão de backlogs. Todas elas oferecem diversas funcionalidades e não é raro ficarmos indecisos e confusos sobre quais funcionalidades adotar. Muitas vezes nos sentimos até obrigados a usar todas as funcionalidades. Mas calma! Isso não é necessário.
 
 As ferramentas que mais vejo serem usadas em times ágeis são: [Jira](https://www.atlassian.com/software/jira?), [Trello](https://trello.com) e [Asana](http://asana.com). Não é o objetivo deste post entrar em detalhes sobre elas e suas funcionalidades. Ao invés disso, vou te contar algumas características, que considero essenciais, para fazer uma boa escolha de ferramenta para a gestão do backlog de produto.
 
@@ -47,7 +47,7 @@ Para se comunicar, frequentemente é melhor ter uma lista. Listas não possuem d
 * **Boas opções de buscas e ordenação** <br>
 Como PO você vai precisar interagir muito, mas muito mesmo, com o backlog de produto! Vai precisar priorizar separadamente mas vai querer visualizar o todo após a priorização! Pode precisar buscar por itens sabendo apenas uma palavra chave ou se lembrando de apenas um detalhe da tarefa. Pode precisar focar em apenas um assunto, que eventualmente pode estar espalhado em várias tarefas e agrupados por uma etiqueta ou marcador que os relacionam.
 <br>
-&nbsp; &nbsp;Resumidamente, pode precisar buscar e ordenar de formas que você nem imagina. E lembre-se! Por diversos motivos, facilmente seu backlog pode crescer rapidamente. De 30 para 100, para 500 ou mais itens. Minha recomendação é: escolha uma ferramenta que tenha boas funcionalidades de busca e ordenação ou sofra as consequências!
+&nbsp; &nbsp;Resumidamente, pode precisar buscar e ordenar de formas que você nem imagina. E lembre-se! Por diversos motivos, facilmente seu backlog pode crescer rapidamente. De 30 para 100, para 500 ou mais itens. Minha recomendação é, escolha uma ferramenta que tenha boas funcionalidades de busca e ordenação ou sofra as consequências!
 
 
 
