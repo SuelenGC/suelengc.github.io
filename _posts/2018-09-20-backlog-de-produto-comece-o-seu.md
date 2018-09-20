@@ -84,7 +84,7 @@ Caso a sua ferramenta não permita customizar tipos de itens diferentes, uma man
 ## 3. Mantendo a saúde do Backlog de Produto
 Diversas ideias vindas de diferentes pessoas vão surgir ao longo do tempo. Você não poderá refinar todas elas sempre, basicamente porque tempo é dinheiro e o tempo de qualquer pessoa é finito! Então você precisa focar no principal objetivo de um PO, relembrando: manter o backlog de produto atualizado e priorizado. Há duas informações que são vão te ajudar a manter a saúde do seu backlog de produto: a estória e a prioridade percebida.
 
-Estória do Jira e a técnica de escrita Estória são duas coisas diferentes. O Jira até passa a ideia de que o item do tipo Estória é uma tarefa escrita no formato de estória[\[1\]](https://confluence.atlassian.com/agile/glossary/story?_ga=2.231644383.1152074856.1537238137-182799752.1527212613), mas isso não significa que você não possa também escrever os bugs no formato de estória também.
+Estória do Jira e a técnica de escrita Estória são duas coisas diferentes. O Jira até passa a ideia [\[1\]](https://confluence.atlassian.com/agile/glossary/story?_ga=2.231644383.1152074856.1537238137-182799752.1527212613) de que o item do tipo Estória é uma tarefa escrita no formato de estória, mas isso não significa que você não possa também escrever os bugs no formato de estória também.
 
 Minha sugestão é, escreva todo item no formato de estória. Ao usar este formato você ganha produtividade pra priorizar. Uma estória é, basicamente, uma frase curta contendo três informações: O quê? Por quê? e Pra quem? Com essas informações é possível fazer uma rápida avaliação de valor de negócio ou impacto e decidir a prioridade do item.
 
