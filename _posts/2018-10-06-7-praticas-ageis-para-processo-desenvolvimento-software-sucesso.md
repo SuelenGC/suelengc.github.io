@@ -13,7 +13,7 @@ resumo: >
    Muitas pessoas acham que o que faz um time ágil são grandes mudanças, mas na verdade, a agilidade está nos detalhes. Um detalhe muito importante para turninar a agilidade de um time é estruturar um fluxo de desenvolvimento de excelência. O objetivo é remover o máximo possível de obstáculos deixando apenas aqueles que agregam velocidade e valor ao time.
 ---
 
-Muitas pessoas acreditam que o que torna um time ágil, são grandes mudanças. Entretando, a agilidade está nos detalhes. E um detalhe muito importante, capaz de turbinar a agilidade de um time é estruturar um bom fluxo de desenvolvimento de software. O objetivo é remover o máximo de obstáculos e deixar apenas os processos que agregam algum valor, como velocidade ou qualidade.
+Muitas pessoas acreditam que o que torna um time ágil são grandes mudanças. Entretando, a agilidade está nos detalhes. E um detalhe muito importante, capaz de turbinar a agilidade de um time é estruturar um bom fluxo de desenvolvimento de software. O objetivo é remover o máximo de obstáculos e deixar apenas os processos que agregam algum valor, como velocidade ou qualidade.
 
 Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?”. Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Impactando diretamente na velocidade do time, consequentemente na entrega de valor e nos resultados da empresa.
 
@@ -23,7 +23,7 @@ Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimen
 
 ## 1. Tire proveito do nome das suas branches
 
-Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome de suas branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos (guarde sua criatividade para situações melhores), além de economizar tempo quando se precisa rastrear quais funcionalidades ou correções foram entrando no código ao longo do tempo.
+Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome das branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos (guarde sua criatividade para situações melhores), além de economizar tempo quando se precisa rastrear quais funcionalidades ou correções foram entrando no código ao longo do tempo.
 
 O que tem dado muito certo nos times ágeis que participei é, criar branches com nomes que iniciem informando o tipo de tarefa, um identificador e por fim, de 3 a 5 palavras que resumam a tarefa. Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Por exemplo:
 
@@ -40,7 +40,7 @@ Para identificar o tipo de tarefa costumo usar os seguintes padrões:
 
 ## 2. O Git flow certo, nem mais, nem menos
 
-É essencial para um time ágil, pensar e estabelecer um fluxo de trabalho com o Git, ou outro versionador de código, mais adequado para o time. Um dos mais famosos fluxos com o Git é o apresentado no post <a href="https://nvie.com/posts/a-successful-git-branching-model/"> A successful Git branching model</a>. Entretando, este fluxo tende a ser muito mais robusto do que a maioria dos times ágeis precisam. O que percebo é que a ideia da "release branch" acaba sendo desnecessária. O que tenho usado com bastante sucesso, é uma versão simplificada deste fluxo, basicamente tenho:
+É essencial para um time ágil pensar e estabelecer um fluxo de trabalho com o Git que seja mais adequado para o time. Um dos mais famosos fluxos com o Git é o apresentado no post <a href="https://nvie.com/posts/a-successful-git-branching-model/"> A successful Git branching model</a>. Porém, tenho percebido que este fluxo costuma ser muito mais robusto <u>e complexo</u> do que a maioria dos times ágeis precisam. Eu tenho usado, com muito sucesso, uma versão simplificada deste fluxo:
 
 - **Branch master** representa o código de produção. Ninguém faz commits diretos nesta branch, ela apenas recebe merge da branch `develop`;
 
