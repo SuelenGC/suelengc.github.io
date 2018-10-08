@@ -29,7 +29,7 @@ Outra vantagem é economizar tempo quando se precisa rastrear quais funcionalida
 
 Onde **feat_** significa feature, ou seja, uma nova funcionalidade; **ops07** é o identificador da tarefa, que no meu caso seria OPS-07 no Jira. E por fim, **_new_help_screen** são três palavras que resumem a tarefa.
 
-Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Para identificar o tipo de tarefa costumo usar os seguintes padrões:
+Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Um padrão legal, que vejo muito ser utilizado é:
 - **feat** para funcionalidade,
 - **bug** para branch de correção de bugs e
 - **hotfix** para branches que vão corrigir um bug urgente em produção.
