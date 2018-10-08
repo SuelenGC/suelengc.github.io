@@ -21,17 +21,16 @@ Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimen
 
 ## 1. Tire proveito do nome das suas branches
 
-Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome das branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos (guarde sua criatividade para situações melhores). Além de economizar tempo quando se precisa rastrear quais funcionalidades ou correções foram entrando no código ao longo do tempo.
+Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome das branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos. Guarde sua criatividade para situações melhores!
 
-O que tem dado muito certo nos times ágeis que participei é, criar branches com nomes que iniciem informando o tipo de tarefa, um identificador e por fim, de 3 a 5 palavras que resumam a tarefa. Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Por exemplo:
-
+Outra vantagem é economizar tempo quando se precisa rastrear quais funcionalidades ou correções foram entrando no código ao longo do tempo. O que tem dado muito certo nos times ágeis que participei é criar branches com o seguinte formato:
 
   > feat_ops07_new_help_screen
 
 Onde **feat_** significa feature, ou seja, uma nova funcionalidade; **ops07** é o identificador da tarefa, que no meu caso seria OPS-07 no Jira. E por fim, **_new_help_screen** são três palavras que resumem a tarefa.
 
-Para identificar o tipo de tarefa costumo usar os seguintes padrões:
-- **feat** para funcioanalidade,
+Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Para identificar o tipo de tarefa costumo usar os seguintes padrões:
+- **feat** para funcionalidade,
 - **bug** para branch de correção de bugs e
 - **hotfix** para branches que vão corrigir um bug urgente em produção.
 
@@ -88,6 +87,6 @@ Além de ferramentas bem tradicionais como <a href="https://jenkins.io/">Jenkins
 
 <p><center>. . .</center></p>
 
-Muitas pessoas acreditam que o que torna um time ágil são grandes mudanças. Entretando, a agilidade está nos detalhes. Um detalhe muito importante, capaz de turbinar a agilidade de um time, é estruturar um bom fluxo de desenvolvimento de software. O objetivo é remover o máximo de obstáculos e deixar apenas os processos que agregam algum valor como velocidade ou qualidade.
+Muitas pessoas acreditam que o que torna um time ágil são grandes mudanças. Entretanto, a agilidade está nos detalhes. Um detalhe muito importante, capaz de turbinar a agilidade de um time, é estruturar um bom fluxo de desenvolvimento de software. O objetivo é remover o máximo de obstáculos e deixar apenas os processos que agregam algum valor como velocidade ou qualidade.
 
 Agora com essas dicas você já tem mais insumos para tornar o seu time ainda mais ágil!
