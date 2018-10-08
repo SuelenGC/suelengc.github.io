@@ -10,7 +10,7 @@ ebook-title: ""
 ebook-image:
 ebook-resume:
 resumo: >
-   Muitas pessoas acham que o que faz um time ágil são grandes mudanças, mas na verdade, a agilidade está nos detalhes. Um detalhe muito importante para turninar a agilidade de um time é estruturar um fluxo de desenvolvimento de excelência. O objetivo é remover o máximo possível de obstáculos deixando apenas aqueles que agregam velocidade e valor ao time.
+   Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?”. Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimento de software, que percebi contribuírem mais para a agilidade de um time.
 ---
 
 Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?”. Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Impactando diretamente na velocidade do time, consequentemente na entrega de valor e nos resultados da empresa.
@@ -21,7 +21,7 @@ Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimen
 
 ## 1. Tire proveito do nome das suas branches
 
-Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome das branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos (guarde sua criatividade para situações melhores), além de economizar tempo quando se precisa rastrear quais funcionalidades ou correções foram entrando no código ao longo do tempo.
+Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome das branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos (guarde sua criatividade para situações melhores). Além de economizar tempo quando se precisa rastrear quais funcionalidades ou correções foram entrando no código ao longo do tempo.
 
 O que tem dado muito certo nos times ágeis que participei é, criar branches com nomes que iniciem informando o tipo de tarefa, um identificador e por fim, de 3 a 5 palavras que resumam a tarefa. Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Por exemplo:
 
