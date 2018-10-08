@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "7 práticas para ter um processo de desenvolvimento de software ágil de sucesso"
+title:  "7 práticas para ter sucesso no desenvolvimento de software ágil"
 date:   2018-10-06
 categories: métodos ágeis
 tags: [métodos ágeis, qualidade de software, desenvolvimento ágil]
