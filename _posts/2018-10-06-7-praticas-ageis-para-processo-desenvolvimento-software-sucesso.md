@@ -13,8 +13,6 @@ resumo: >
    Muitas pessoas acham que o que faz um time ágil são grandes mudanças, mas na verdade, a agilidade está nos detalhes. Um detalhe muito importante para turninar a agilidade de um time é estruturar um fluxo de desenvolvimento de excelência. O objetivo é remover o máximo possível de obstáculos deixando apenas aqueles que agregam velocidade e valor ao time.
 ---
 
-Muitas pessoas acreditam que o que torna um time ágil são grandes mudanças. Entretando, a agilidade está nos detalhes. E um detalhe muito importante, capaz de turbinar a agilidade de um time é estruturar um bom fluxo de desenvolvimento de software. O objetivo é remover o máximo de obstáculos e deixar apenas os processos que agregam algum valor, como velocidade ou qualidade.
-
 Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?”. Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Impactando diretamente na velocidade do time, consequentemente na entrega de valor e nos resultados da empresa.
 
 Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimento de software, que percebi contribuírem mais para a agilidade de um time. Espero que você também possa aplicá-las no seu dia a dia e tornar-se ainda mais ágil.
@@ -58,7 +56,7 @@ Ambas atendem o objetivo. Porém, o uso do rebase torna o histórico de commits 
 Para isso, imediatamente antes de abrir ou mergear um PR, costumo fazer rebase da minha feature branch com `develop` e resolvo os conflitos localmente. Isso me possibilita retestar e garantir que, após integrar com todas as outras alterações já prontas, minha tarefa continua ok.
 
 
-## 4. Tirando o máximo do Code Review
+## 4. Tire o máximo do Code Review
 
 As políticas sobre code review são variadas, vão depender de muitos fatores, dentre eles, o tamanho do time. Se o contexto permitir, eu sugiro pelo menos 2 aprovações para que o PR possa ser mergeado.
 
@@ -86,3 +84,10 @@ Antes disso, essa branch ainda poderá ser usada para fazer correções ou ainda
 Para um fluxo de desenvolvimento de software realmente ser eficiente, ele tem que ser fluído. Ou seja, não podemos desperdiçar tempo com tarefas repetitivas e suscetíveis a erros humanos, como realizar deploys. Logo, automatize o máximo de tarefas que puder: execução de testes, validação de "code style", lints, o deploy (continuous delivery) e outras.
 
 Além de ferramentas bem tradicionais como <a href="https://jenkins.io/">Jenkins</a>, atualmente já podemos contar com diversas opções de SAAS (Software As A Service) que simplificam esta tarefa, alguns exemplos são <a href="https://circleci.com" target="_blank">CircleCI</a> e <a href="https://travis-ci.org/" target="_blank">Travis</a>.
+
+
+<p><center>. . .</center></p>
+
+Muitas pessoas acreditam que o que torna um time ágil são grandes mudanças. Entretando, a agilidade está nos detalhes. Um detalhe muito importante, capaz de turbinar a agilidade de um time, é estruturar um bom fluxo de desenvolvimento de software. O objetivo é remover o máximo de obstáculos e deixar apenas os processos que agregam algum valor como velocidade ou qualidade.
+
+Agora com essas dicas você já tem mais insumos para tornar o seu time ainda mais ágil!
