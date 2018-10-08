@@ -19,7 +19,7 @@ Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimen
 
 
 
-## 1. Tire proveito do nome das suas branches
+## 1. Torne o nome das branches útil
 
 Sabia que o nome de suas branches podem ser muito úteis para rastreabilidade das tarefas? Padronizar o nome das branches, de forma que você consiga associar a qual atividade ela está relacionada, ajuda a reduzir vários minutos pensando em nomes criativos. Guarde sua criatividade para situações melhores!
 
