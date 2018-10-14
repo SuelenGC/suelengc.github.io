@@ -983,8 +983,26 @@ a.post-title.active {
   font-weight: 400;
   margin-top: 5px;
 }
+
 a.tag {
   color: #{{ site.data.template.color.primary }};
+}
+
+a.cloud-tag {
+  color: #fff;
+  display: inline-block;
+  background-color: #{{ site.data.template.color.primary }};
+  /*font-size: .8rem;*/
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .35rem .75rem;
+  margin: 0 .25rem .75rem;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear
 }
 
 .post-content {
