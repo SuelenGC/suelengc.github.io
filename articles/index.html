@@ -32,14 +32,14 @@ layout: page
               {% if paginator.total_pages > 1 %}
               <div class="pagination">
                 {% if paginator.previous_page %}
-                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Anterior </a>
+                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; ANTERIOR </a>
                 {% else %}
-                  <span>&laquo; Anterior </span>
+                  <span>&laquo; ANTERIOR </span>
                 {% endif %}
 
                 {% for page in (1..paginator.total_pages) %}
                   {% if page == paginator.page %}
-                    <em>{{ page }}</em>
+                    {{ page }}
                   {% elsif page == 1 %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                   {% else %}
@@ -48,14 +48,15 @@ layout: page
                 {% endfor %}
 
                 {% if paginator.next_page %}
-                  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> Próximo &raquo;</a>
+                  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> PRÓXIMO &raquo;</a>
                 {% else %}
-                  <span> Próximo &raquo;</span>
+                  <span> PRÓXIMO &raquo;</span>
                 {% endif %}
               </div>
               {% endif %}
 
             </div> <!-- close col-sm-10 -->
+
             <div class="col-sm-3"><h4>Tags</h4>
 
               <p class="meta">
