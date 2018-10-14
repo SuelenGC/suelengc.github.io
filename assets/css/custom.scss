@@ -242,6 +242,24 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.data.template.color.primary }};
 }
 
+.btn-outline-dark {
+    text-transform: uppercase;
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #343a40;
+    background-image: none;
+    border-color: #343a40;
+}
+
 .logoname-suelen {
     font-family: "Avenir Next";
     font-weight: 100;
@@ -992,11 +1010,10 @@ a.cloud-tag {
   color: #fff;
   display: inline-block;
   background-color: #{{ site.data.template.color.primary }};
-  /*font-size: .8rem;*/
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: .35rem .75rem;
+  padding: .95rem .95rem;
   margin: 0 .25rem .75rem;
   -webkit-transition: background-color 300ms linear;
   -moz-transition: background-color 300ms linear;

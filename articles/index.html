@@ -12,7 +12,7 @@ layout: page
                 <!-- <h3 class="section-subheading text-muted">{{ site.description }}</h3> -->
             </div>
         </div>
-
+        <br>
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-7">
@@ -24,6 +24,8 @@ layout: page
                 <div class="resumo" >
                   {{ post.resumo }}
                 </div>
+                <br>
+                <a href="{{ post.url }}" class="btn btn-outline-dark">Continuar lendo</a>
                 <hr style="margin-top:30px; margin-bottom:20px" />
               {% endfor %}
 
@@ -58,7 +60,7 @@ layout: page
 
               <p class="meta">
                 {% for tag in site.tags %}
-                <a class="tag" href='/articles/tag/{{ tag[0] | slugify }}/'>{{ tag[0] }}</a> <span style="color: #{{ site.data.template.color.primary }};">|</span>
+                <a class="cloud-tag" href='/articles/tag/{{ tag[0] | slugify }}/'>#{{ tag[0] }}</a>
                 {% endfor %}
               </p>
             </div>
