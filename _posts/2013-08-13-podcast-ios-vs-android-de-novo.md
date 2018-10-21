@@ -3,11 +3,11 @@ layout: post
 title:  "Participação no Podcast do HappyHourTech sobre iOS e Android"
 date:   2013-08-13
 tags: [android, mobile]
-image: assets/img/posts/desenvolvimento-de-games-android-ios-1.jpg
+image: assets/img/posts/podcast-android-ios.jpg
 keywords:
 related:
 resumo: >
-   Uns caras que produzem podcasts, um convite, o Android e lá vamos nós de novo! 
+   Uns caras que produzem podcasts, um convite, o Android e lá vamos nós de novo!
 ---
 <p>Recentemente fui convidada para participar da gravação de um podcast sobre Android e iOS gravado pelo site <strong><a href="http://happyhourtech.com/" target="_blank">HappyHourTech</a></strong>. Minha participação foi para abordar sobre o Android, visto que tenho mais conhecimento sobre ele.</p>
 <p>O convite surgiu após um tweet do meu amigo <strong>Alexandre Danelon</strong> (<a href="https://twitter.com/danelon" target="_blank">@Danelon</a>) em resposta a um tweet do <strong><a href="https://twitter.com/happyhourtech" target="_blank">@HappyHourTech</a></strong> onde eles buscavam por alguém que pudesse falar sobre Android. Fiquei muito feliz com a indicação.</p>

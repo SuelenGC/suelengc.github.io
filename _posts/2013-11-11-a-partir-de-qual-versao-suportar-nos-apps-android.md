@@ -3,10 +3,10 @@ layout: post
 title:  "Saiba como decidir qual versão suportar nos aplicativos Android"
 date:   2013-11-11
 tags: [android, mobile]
-image: assets/img/posts/androids_frags.png
+image: assets/img/posts/android-versions.jpg
 keywords:
 related:
-  - title: Who’s Winning, iOS or Android? All the Numbers, All in One Place 
+  - title: Who’s Winning, iOS or Android? All the Numbers, All in One Place
     url: http://techland.time.com/2013/04/16/ios-vs-android/
   - title: Mais da metade dos aparelhos Android no mundo já roda alguma versão do Jelly Bean
     url: http://meiobit.com/270726/mais-da-metade-android-jelly-bean/

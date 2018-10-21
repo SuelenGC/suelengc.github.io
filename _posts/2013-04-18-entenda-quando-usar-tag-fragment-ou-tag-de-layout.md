@@ -3,7 +3,7 @@ layout: post
 title:  "Entenda quando usar tag fragment ou tag de layout"
 date:   2013-04-18
 tags: [android, mobile, fragments]
-image: assets/img/posts/fragmented2.png
+image: assets/img/posts/android-tag-fragment-tag-layout.jpg
 keywords:
 related:
 resumo: >
@@ -88,10 +88,10 @@ MenuFragment menuFrag = new MenuFragment();
 
 /** Pega a transação para trabalhar com Fragments */
 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-      
+
 /** Coloca o Fragment de menu no espaço delimitado pela tag de layout */
-transaction.add(R.id.menu, menuFrag); 
-            
+transaction.add(R.id.menu, menuFrag);
+
 /** Confirma a transação. Neste momento ele sabe o que deve ser renderizado no espaço da tag de layout */
 transaction.commit();
 {% endhighlight %}

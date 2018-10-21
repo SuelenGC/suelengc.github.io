@@ -4,7 +4,7 @@ title:  "Orientador, onde eu compro isso!?"
 date:   2010-11-21
 categories: java
 tags: [mestrado]
-image: /assets/img/posts/duvida-caminho.gif
+image: assets/img/posts/duvida-caminho.gif
 keywords:
 related:
 resumo: >

@@ -3,7 +3,7 @@ layout: post
 title:  "Android Meetup, seu evento mensal sobre Android"
 date:   2013-08-06
 tags: [android, eventos]
-image: assets/img/posts/evolution-android-11.jpg
+image: assets/img/posts/gdg-sp-android-meetup.jpg
 keywords:
 related:
   - title: GDG SP no Google+

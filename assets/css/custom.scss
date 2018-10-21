@@ -976,16 +976,9 @@ body {
 
 a.post-title {
   font-size: 1.5em;
-  color: #222;
+  color: #fff;
   text-decoration: none;
   line-height: 1;
-  margin-bottom: 10px;
-}
-
-a.post-title {
-  font-size: 1.5em;
-  color: #222;
-  text-decoration: none;
 }
 
 a.post-title:hover,
@@ -993,6 +986,14 @@ a.post-title:focus,
 a.post-title:active,
 a.post-title.active {
   color: #{{ site.data.template.color.secondary }};
+}
+
+.post-image-title {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #00000099;
+  padding: 10px;
 }
 
 .meta{
@@ -1051,4 +1052,5 @@ a.cloud-tag {
   background-position: center;
   background-repeat: no-repeat;
   margin: 20px 0;
+  position: relative;
 }

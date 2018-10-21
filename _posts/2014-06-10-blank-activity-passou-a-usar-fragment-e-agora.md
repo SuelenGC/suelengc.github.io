@@ -3,7 +3,7 @@ layout: post
 title:  "Blank Activity passou a usar Fragment, e agora?"
 date:   2014-06-10
 tags: [android, mobile]
-image: assets/img/posts/android-triste.png
+image: assets/img/posts/doubt-blank-activity.jpg
 related:
 resumo: >
    O Google mudou o template da Blank Activity sem avisar e os desenvovledores ficaram #chateados. Saiba mais aqui.

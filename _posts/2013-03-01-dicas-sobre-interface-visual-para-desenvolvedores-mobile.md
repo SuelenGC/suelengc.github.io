@@ -3,7 +3,7 @@ layout: post
 title:  "Dicas sobre interface visual para desenvolvedores mobile"
 date:   2013-03-01
 tags: [android, mobile]
-image: 
+image: assets/img/posts/mobile-ui.jpg
 keywords:
 related:
   - title: Calculadora de Tributos PJ na Google PlayStore
@@ -24,7 +24,7 @@ resumo: >
 <p>Os demais apps que estou desenvolvendo, costumo dar uma olhada antes no site <a title="Ir para Android Niceties" href="http://androidniceties.tumblr.com/" target="_blank">AndroidNiceties.tumblr.com</a> que lista os melhores design mobile do momento!! Lá é possível observar os apps e achar padrões de design e se você não é expert no assunto como eu e também é desenvolvedor, pelo menos de "pattern" você entende :)</p>
 <p>Abaixo mostro um comparativo do design de telas das primeiras versões da <strong>Calculadora de Tributos PJ</strong> e da última, que está hoje na PlayStore. Exatamente a esquerda temos a versão 2 e a direita temos a versão 6.</p>
 
-![CalcPJ Versão 2]({{site.url}}/assets/img/posts/calc-pj2.png) | ![CalcPJ Versão 6]({{site.url}}/assets/img/posts/calc-pj-new2.png) 
+![CalcPJ Versão 2]({{site.url}}/assets/img/posts/calc-pj2.png) | ![CalcPJ Versão 6]({{site.url}}/assets/img/posts/calc-pj-new2.png)
 
 <p>Ambas as imagens foram extraídas do app sendo executado no mesmo device, um Samsung Galaxy Note. É possível observar que:</p>
 <ul>

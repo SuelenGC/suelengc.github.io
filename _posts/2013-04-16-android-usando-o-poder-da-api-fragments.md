@@ -3,7 +3,7 @@ layout: post
 title:  "Usando o poder da API Fragments do Android"
 date:   2013-04-16
 tags: [android, mobile, fragments]
-image: http://suelengc.com/assets/img/posts/androids_frags.png
+image: assets/img/posts/android-fragment-api-power.jpg
 keywords:
 related:
 resumo: >
@@ -57,7 +57,7 @@ resumo: >
         android:layout_height="fill_parent"
         android:layout_weight="2" />
 
-    <FrameLayout 
+    <FrameLayout
         android:id="@+id/content"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -86,23 +86,23 @@ public class MainActivity extends FragmentActivity {
 
     /** Como o menu sempre existirá, instâncio ele fora da condição */
     MenuFragment menuFrag = new MenuFragment();
-    
+
     if (findViewById(R.id.main) != null) {
       /** Se for acessodado de um smartphone o espaço main existirá */
-      
+
       /** Adiciona o menu no único espaço */
-      getSupportFragmentManager().beginTransaction().add(R.id.main, menuFrag).commit(); 
-    
+      getSupportFragmentManager().beginTransaction().add(R.id.main, menuFrag).commit();
+
     } else if (findViewById(R.id.content) != null) {
       /** Se for acessodado de um tablet o espaço main não existirá, existirá o menu e content */
-      
+
       /** Pega a transação */
       FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-      
+
       /** Coloca o fragment de menu do lado esquerdo e o fragment de conteúdo do lado direito */
-      transaction.add(R.id.menu, menuFrag).commit(); 
-      transaction.add(R.id.content, new ContentFragment()); 
-      
+      transaction.add(R.id.menu, menuFrag).commit();
+      transaction.add(R.id.content, new ContentFragment());
+
       /** Confirma as transações */
       transaction.commit();
     }
@@ -143,23 +143,23 @@ public class MainActivity extends FragmentActivity implements OnItemClickedCallB
 
     /** Como o menu sempre existirá, instâncio ele fora da condição */
     MenuFragment menuFrag = new MenuFragment();
-    
+
     if (findViewById(R.id.main) != null) {
       /** Se for acessodado de um smartphone o espaço main existirá */
-      
+
       /** Adiciona o menu no único espaço */
-      getSupportFragmentManager().beginTransaction().add(R.id.main, menuFrag); 
-    
+      getSupportFragmentManager().beginTransaction().add(R.id.main, menuFrag);
+
     } else if (findViewById(R.id.content) != null) {
       /** Se for acessodado de um tablet o espaço main não existirá, existirá o menu e content */
-      
+
       /** Pega a transação */
       FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-      
+
       /** Coloca o fragment de menu do lado esquerdo e o fragment de conteúdo do lado direito */
-      transaction.add(R.id.menu, menuFrag); 
-      transaction.add(R.id.content, new ContentFragment()); 
-      
+      transaction.add(R.id.menu, menuFrag);
+      transaction.add(R.id.content, new ContentFragment());
+
       /** Confirma as transações */
       transaction.commit();
     }
@@ -172,44 +172,44 @@ public class MainActivity extends FragmentActivity implements OnItemClickedCallB
     switch (menuItem) {
     case R.id.menu1:
       /** Fragment que deve ser aberto quando for o menu 1 */
-      newFragment = getNewFragment(1); 
+      newFragment = getNewFragment(1);
       break;
 
     case R.id.menu2:
       /** Fragment que deve ser aberto quando for o menu 2 */
-      newFragment = getNewFragment(2); 
+      newFragment = getNewFragment(2);
       break;
 
     case R.id.menu3:
       /** Fragment que deve ser aberto quando for o menu 3 */
-      newFragment = getNewFragment(3); 
+      newFragment = getNewFragment(3);
       break;
-      
+
     case R.id.menu4:
       /** Fragment que deve ser aberto quando for o menu 4 */
-      newFragment = getNewFragment(4); 
+      newFragment = getNewFragment(4);
       break;
     }
-    
+
     if (newFragment != null) {
 
       /** Pega a transação */
       FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-      
+
       if (findViewById(R.id.main) != null) {
         /** Se for acessodado de um smartphone o espaço main existirá */
-        
+
         /** Adiciona o fragment com o novo conteúdo no único espaço */
-        transaction.replace(R.id.main, newFragment); 
-        
+        transaction.replace(R.id.main, newFragment);
+
         /** Adiciona o fragment a backstack */
         transaction.addToBackStack(null);
-        
+
       } else if (findViewById(R.id.content) != null) {
         /** Se for acessodado de um tablet o espaço main não existirá, existirá o menu e content */
-        
+
         /** Coloca o fragment com o novo conteúdo do lado direito */
-        transaction.replace(R.id.content, newFragment); 
+        transaction.replace(R.id.content, newFragment);
       }
 
       /** Confirma a transação */
@@ -217,19 +217,19 @@ public class MainActivity extends FragmentActivity implements OnItemClickedCallB
     }
   }
 
-  /** 
-   * Método auxiliar que faz a geração do ContentFragment com o conteúdo adequado ao menu clicado 
-   * Na prática é provável que você não utilize um método como este pois você terá fragments específicos 
+  /**
+   * Método auxiliar que faz a geração do ContentFragment com o conteúdo adequado ao menu clicado
+   * Na prática é provável que você não utilize um método como este pois você terá fragments específicos
    */
   private Fragment getNewFragment(int menu) {
     /** Cria instância de ContentFragment */
     ContentFragment fragment = new ContentFragment();
-    
+
     /** Adiciona um argumento indicando qual menu foi clicado */
     Bundle args = new Bundle();
     args.putInt("menu", menu);
     fragment.setArguments(args);
-    
+
     /** Retorna o fragment criado */
     return fragment;
   }
@@ -253,10 +253,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class MenuFragment extends Fragment {
-  
+
   /** Atributo de callback */
   OnItemClickedCallBack callBack;
-  
+
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     /** Infla o layout */
@@ -267,23 +267,23 @@ public class MenuFragment extends Fragment {
     ((Button) view.findViewById(R.id.menu2)).setOnClickListener(new OnClickMenuItemListener());;
     ((Button) view.findViewById(R.id.menu3)).setOnClickListener(new OnClickMenuItemListener());;
     ((Button) view.findViewById(R.id.menu4)).setOnClickListener(new OnClickMenuItemListener());;
-    
+
     /** Retorna a view para ser exibida */
     return view;
   }
-  
+
   /** Garante que a Activity que irá carregar o fragment implementa a interface de callback */
   @Override
   public void onAttach(Activity activity) {
     super.onAttach(activity);
-    
+
     try {
       callBack = (OnItemClickedCallBack) activity;
     } catch (ClassCastException e) {
       Log.e("MenuFragment", activity.toString() + " must implement OnItemClickedCallBack");
     }
   }
-  
+
   /** Listener do click do botão */
   protected class OnClickMenuItemListener implements View.OnClickListener {
 
@@ -316,25 +316,25 @@ import android.widget.TextView;
 public class ContentFragment extends Fragment {
 
   int menuClicado = 0;
-  
+
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     /** Infla a view que deve ser exibida */
     View view = inflater.inflate(R.layout.content, container, false);
-    
+
     /** Recupra o argumento de qual método foi clicado */
     if (getArguments() != null) {
       Bundle args = getArguments();
       menuClicado = args.getInt("menu");
     }
-    
+
     /** Preenche o conteúdo do textview com a informação de qual menu foi clicado */
     TextView txt = (TextView) view.findViewById(R.id.txt);
     txt.setText("Conteúdo do menu " + menuClicado);
-    
+
     /** Retorna a view para ser exibida */
     return view;
-  } 
+  }
 }
 {% endhighlight %}
 
@@ -347,14 +347,14 @@ public class ContentFragment extends Fragment {
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center" >
-    
+
     <TextView
         android:id="@+id/txt"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:textStyle="bold"
         android:textSize="18sp" />
-        
+
 </LinearLayout>
 {% endhighlight %}
 

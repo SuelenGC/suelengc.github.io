@@ -19,7 +19,12 @@ layout: page
 
               <!-- This loops through the paginated posts -->
               {% for post in paginator.posts %}
-                <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
+                  <div class="post-image-title">
+                    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                  </div>
+                </div>
+
                 {% include meta.html %}
                 <div class="resumo" >
                   {{ post.resumo }}
