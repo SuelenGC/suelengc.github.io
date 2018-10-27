@@ -14,8 +14,8 @@ layout: page
         </div>
         <br>
         <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-7">
+            <!-- <div class="col-sm-1"></div> -->
+            <div class="col-md-8">
 
               <!-- This loops through the paginated posts -->
               {% for post in paginator.posts %}
@@ -62,7 +62,7 @@ layout: page
 
             </div> <!-- close col-sm-10 -->
 
-            <div class="col-sm-3"><h4>Tags</h4>
+            <div class="col-md-4"><h4>Tags</h4>
 
               <p class="meta">
                 {% for tag in site.tags %}
@@ -70,7 +70,7 @@ layout: page
                 {% endfor %}
               </p>
             </div>
-            <div class="col-sm-1"></div>
+            <!-- <div class="col-sm-1"></div> -->
         </div>
     </div>
 </section>
