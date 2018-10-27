@@ -399,12 +399,13 @@ header .intro .main-text-box {
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 4vw;
-    line-height: 5vw;
+
+    /*font-size: 5vw;
+    line-height: 6vw;*/
 
     /* sucesso é uma questão... */
-    /*font-size: 8vw;
-    line-height: 8vw;*/
+    font-size: 5vw;
+    line-height: 6vw;
     z-index: 200;
     vertical-align: baseline;
 }
@@ -434,16 +435,16 @@ header .intro .bottom-text {
 
 @media(min-width:768px) {
     header .intro .main-text-box {
-        font-size: 2vw;
-        line-height: 3vw;
+        /*font-size: 2vw;
+        line-height: 3vw;*/
 
         /* sucesso é uma questão... */
-        /*font-size: 4.5vw;
-        line-height: 5.5vw;*/
+        font-size: 3vw;
+        line-height: 4vw;
     }
 
     header .intro .main-text-box .main-text {
-        width: 74%;
+        width: 80%;
     }
 }
 
