@@ -1146,3 +1146,28 @@ a.cloud-tag {
     font-size: .9em;
 
 }
+
+
+/* SHARE BUTTONS */
+.share-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 2px;
+  color: #000;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.share-button:hover {
+  color: #{{site.data.template.color.primary}};
+}
+
+.share-button:active {
+  color: #{{site.data.template.color.primary}};
+
+}
