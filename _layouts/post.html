@@ -25,9 +25,46 @@ layout: page
                   <p style="text-align: justify;"><b>Suelen Carvalho</b> é Mestre em Ciência da Computação pelo Instituto de Matemática e Estatística da USP (2018), certificada em Liderança e Coach pela Universidade de La Verve na Califórnia (2018) e Pós-Graduada em Gestão Estratégica de Projetos pelo ITA (2012). Atua com desenvolvimento de software há 13 anos e lidera times ágeis há 8. Atualmente é CTO do <a href="https://www.jeitto.com.br" target="_blank">Jeitto</a> e também ministra palestras, workshops e treinamentos sobre Métodos Ágeis, Desenvolvimento de Aplicativos e Carreira.</p>
 
                 </small>
+
               </div>
             </div> <!-- close col-sm-10 -->
             <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <br><br>
+
+            <br><br>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                  <h4>Tags</h4>
+
+                  <p class="meta">
+                    {% for tag in site.tags %}
+                    <a class="cloud-tag" href='/articles/tag/{{tag[0]}}/'>#{{ tag[0] }}</a>
+                    {% endfor %}</p>
+            </div>
+            <div class="col-md-7">
+                  <h4>OUTROS ARTIGOS</h4>
+
+                  {% for post in site.posts limit:4 %}
+                  <div class="col-md-6">
+                    <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
+                      <div class="post-image-title">
+                        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+            </div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 </section>
