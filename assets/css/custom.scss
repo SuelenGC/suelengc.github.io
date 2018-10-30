@@ -12,16 +12,6 @@
     src:url('../fonts/axis.otf')
 }
 
-
-.about-photo {
-  float:left;
-  width:150px;
-  height:150px;
-  margin-right:15px;
-  margin-bottom:10px;
-}
-
-
 body {
     overflow-x: hidden;
     font-family: {{ site.data.template.font.primary }};
