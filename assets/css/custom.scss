@@ -13,6 +13,15 @@
 }
 
 
+.about-photo {
+  float:left;
+  width:100px;
+  height:100px;
+  margin-right:15px;
+  margin-bottom:10px;
+}
+
+
 body {
     overflow-x: hidden;
     font-family: {{ site.data.template.font.primary }};
@@ -248,8 +257,6 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.data.template.color.primary }};
 }
 
-
-
 .btn-outline-dark {
     text-transform: uppercase;
     color: #343a40;
@@ -363,6 +370,14 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+    }
+
+    .about-photo {
+      float:left;
+      width:200px;
+      height:200px;
+      margin-right:25px;
+      margin-bottom:20px;
     }
 }
 
