@@ -52,14 +52,21 @@ layout: page
             <div class="col-sm-7">
                   <h4>OUTROS ARTIGOS</h4>
 
-                  {% for post in site.posts limit:4 %}
-                  <div class="col-sm-6">
-                    <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
-                      <div class="post-image-title">
-                        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                  {% assign min = 1 %}
+                  {% assign max = site.posts.size %}
+                  {% assign diff = max | minus: min %}
+                  {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
+                  {% for post in site.posts limit:4 offset:randomNumber %}
+                    {% if page.title != post.title %}
+                      <div class="col-sm-6">
+                        <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
+                          <div class="post-image-title">
+                            <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    {% endif %}
                   {% endfor %}
             </div>
             <div class="col-sm-1"></div>
