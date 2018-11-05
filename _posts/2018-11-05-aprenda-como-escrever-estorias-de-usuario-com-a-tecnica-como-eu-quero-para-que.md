@@ -16,7 +16,7 @@ resumo: >
 
 Estória de usuário é uma técnica de escrita de requisitos enxuta, muito utilziada em times ágeis. Com esta técnica é possível garantir que o "requisito" contenha as informações essenciais de forma muito prática e direta.
 
-Para escrever uma boa estória de usuário de forma simples e rápida existe a técnica: "Como…, Eu quero…, Para que...". Essa técnica nos guia na escrita da estória de forma que nenhum ponto importante fique de fora. A seguir eu vou te mostrar como preencher cada pedaço parte de uma estória usanado esta técnica.
+Para escrever uma boa estória de usuário de forma simples e rápida existe a técnica: "Como…, Eu quero…, Para que...". Essa técnica nos guia na escrita da estória de forma que nenhum ponto importante fique de fora. A seguir eu vou te mostrar como preencher cada parte de uma estória usando esta técnica.
 
 ## Como...
 No "Como...." você deve indicar quem se beneficiará com a implementação da estória. Você pode usar o cargo, função, papel, etc. Quando mais específico melhor. Ou seja, antes de usar usuário ou cliente, pense se não existe uma palavra mais específica, que determine o cliente que estaria usando aquela funcionalidade. Alguns exemplos mais específicos são: professor, aluno, cozinheiro, empresário, etc.
