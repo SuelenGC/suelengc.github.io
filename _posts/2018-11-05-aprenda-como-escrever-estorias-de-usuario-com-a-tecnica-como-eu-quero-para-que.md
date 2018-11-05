@@ -48,7 +48,7 @@ Agora vamos ver um bom exemplo de estória sobre a "Página com a lista de produ
 Esssa estória está melhor escrita porque contextualiza melhor para o time que irá desenvovlê-la. Resumidamente, a estória indica que o usuário do ecommerce está em busca de algo e precisa encontrar rapidamente, por isso ele deseja ter acesso a diversos produtos de uma vez, assim poderá rapidamente encontrar o produto que procura.
 
 ## Dica extra!
-Há quem prefira inverter a onder em que os itens aparecem, ao invés de "Como… Eu quero…. Para que….", algumas pessoas preferem evidenciar o benefício, ou seja, o valor que aquela estória irá agregar, e para isso eles escrevem na seguinte odem: "Para que… Eu quero… Como...". Essa é uma boa forma de focar no valor da estória, ajuda na priorização.
+Há quem prefira inverter a onder em que os itens aparecem, ao invés de "Como… Eu quero…. Para que….", algumas pessoas preferem evidenciar o benefício, ou seja, o valor que aquela estória irá agregar, e para isso eles escrevem na seguinte ordem: "Para que… Eu quero… Como...". Essa é uma boa forma de focar no valor da estória, ajuda na priorização.
 
 Eu geralmente utilizo a ordem em que a estória me parece ser melhor comunicada. Por exemplo, no caso de bugs eu costumo começar com o "Para que...", pois assim evidêncio a situação que não quero mais que ocorra. No artigo <a href="/articles/backlog-de-produto-comece-o-seu">Saiba como começar um backlog de produto do zero</a> eu falo um pouco sobre tipos de tarefas de um backlog de produtos.
 
