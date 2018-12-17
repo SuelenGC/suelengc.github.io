@@ -389,19 +389,14 @@ header .intro .main-text-box {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -35px;
+    margin-top: -45px;
     width: 100%;
     color: #fff;
-    letter-spacing: 3px;
+    /*letter-spacing: 1px;*/
     text-transform: uppercase;
     text-align: center;
-
-    /*font-size: 5vw;
-    line-height: 6vw;*/
-
-    /* sucesso é uma questão... */
-    font-size: 5vw;
-    line-height: 6vw;
+    font-size: 6.5vw;
+    line-height: 7vw;
     z-index: 200;
     vertical-align: baseline;
 }
@@ -409,8 +404,8 @@ header .intro .main-text-box {
 header .intro .main-text-box .main-text {
     font-size: 90%;
     font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.6);
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     text-align: center;
     width: 90%;
@@ -429,18 +424,42 @@ header .intro .bottom-text {
   padding: 10px;
 }
 
-@media(min-width:768px) {
+.logo-name {
+  width: 220px;
+}
+
+.logo-foco {
+  width: 26px;
+}
+
+@media(max-width:320px) {
+    .logo-name {
+      width: 180px;
+    }
+
+    .logo-foco {
+      width: 22px;
+    }
+}
+
+@media(min-width:830px) {
+
+    .logo-name {
+      width: 300px;
+    }
+
     header .intro .main-text-box {
         /*font-size: 2vw;
         line-height: 3vw;*/
 
         /* sucesso é uma questão... */
-        font-size: 3vw;
-        line-height: 4vw;
+        font-size: 4.5vw;
+        line-height: 5vw;
     }
 
     header .intro .main-text-box .main-text {
-        width: 80%;
+        text-shadow: 1px 1px 2px #000000;
+        width: 85%;
     }
 }
 
