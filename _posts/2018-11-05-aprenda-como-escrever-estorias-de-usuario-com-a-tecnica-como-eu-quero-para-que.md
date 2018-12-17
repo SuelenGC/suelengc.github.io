@@ -25,7 +25,7 @@ No "Como...." você deve indicar quem se beneficiará com a implementação da e
 No "Eu quero..." você deve indicar o que de fato se quer, a funcionalidade a ser implementada. Essa informação deve focar em responder a pergunta "O quê?" e não "Como?". Com ela é possível ter ideia do trabalho a ser feito, e se essa é uma estória P, M ou G (Pequena, Média ou Grande).
 
 ## Para que...
-No "Para que..." você deve indicar qual ou quais os benefícios que quem você indicou no "Como..." terá após a implementação dessa estória, qual o valor agregado a essa pessoa. Essa informação é muito importante para priorizar, pois com ela você tem noção do valor agregado para o usuário e consequentemente para o negócio. Também tem insumos sobre os impactos caso a estória não seja realizada.
+No "Para que..." você deve indicar qual ou quais os benefícios que quem você indicou no "Como..." terá após a implementação dessa estória. Qual o valor agregado para essa pessoa? Essa informação é muito importante para priorizar, pois com ela você tem noção do valor agregado para o usuário e consequentemente para o negócio. Também tem insumos sobre os impactos caso a estória não seja realizada.
 
 
 ## Exemplo bom e ruim de estória de usuário
