@@ -14,7 +14,7 @@ resumo: >
    Você sempre ouve falar sobre estórias de usuário mas sente dificuldades quando vai escrever as suas? Este artigo veio para te ajudar! Com a técnica "Como… Eu quero… Para que..." seus problemas em escrever estórias acabaram!
 ---
 
-Estória de usuário é uma técnica de escrita de requisitos enxuta, muito utilziada em times ágeis. Com esta técnica é possível garantir que o "requisito" contenha as informações essenciais de forma muito prática e direta.
+Estória de usuário é uma técnica de escrita de requisitos enxuta, muito utilizada em times ágeis. Com esta técnica é possível garantir que o "requisito" contenha as informações essenciais de forma muito prática e direta.
 
 Para escrever uma boa estória de usuário de forma simples e rápida existe a técnica: "Como…, Eu quero…, Para que...". Essa técnica nos guia na escrita da estória de forma que nenhum ponto importante fique de fora. A seguir eu vou te mostrar como preencher cada parte de uma estória usando esta técnica.
 
@@ -45,12 +45,12 @@ Agora vamos ver um bom exemplo de estória sobre a "Página com a lista de produ
 
 > **Como** usuário **eu quero** visualizar uma lista de produtos com suas principais informações **para que** eu possa de forma rápida e fácil encontrar o que estou buscando.
 
-Esssa estória está melhor escrita porque contextualiza melhor para o time que irá desenvovlê-la. Resumidamente, a estória indica que o usuário do ecommerce está em busca de algo e precisa encontrar rapidamente, por isso ele deseja ter acesso a diversos produtos de uma vez, assim poderá rapidamente encontrar o produto que procura.
+Essa estória está melhor escrita porque contextualiza melhor para o time que irá desenvolvê-la. Resumidamente, a estória indica que o usuário do ecommerce está em busca de algo e precisa encontrar rapidamente, por isso ele deseja ter acesso a diversos produtos de uma vez, assim poderá rapidamente encontrar o produto que procura.
 
 ## Dica extra!
-Há quem prefira inverter a onder em que os itens aparecem, ao invés de "Como… Eu quero…. Para que….", algumas pessoas preferem evidenciar o benefício, ou seja, o valor que aquela estória irá agregar, e para isso eles escrevem na seguinte ordem: "Para que… Eu quero… Como...". Essa é uma boa forma de focar no valor da estória, ajuda na priorização.
+Há quem prefira inverter a ordem em que os itens aparecem, ao invés de "Como… Eu quero…. Para que….", algumas pessoas preferem evidenciar o benefício, ou seja, o valor que aquela estória irá agregar, e para isso eles escrevem na seguinte ordem: "Para que… Eu quero… Como...". Essa é uma boa forma de focar no valor da estória, ajuda na priorização.
 
-Eu geralmente utilizo a ordem em que a estória me parece ser melhor comunicada. Por exemplo, no caso de bugs eu costumo começar com o "Para que...", pois assim evidêncio a situação que não quero mais que ocorra. No artigo <a href="/articles/backlog-de-produto-comece-o-seu">Saiba como começar um backlog de produto do zero</a> eu falo um pouco sobre tipos de tarefas de um backlog de produtos.
+Eu geralmente utilizo a ordem em que a estória me parece ser melhor comunicada. Por exemplo, no caso de bugs eu costumo começar com o "Para que...", pois assim evidencio a situação que não quero mais que ocorra. No artigo <a href="/articles/backlog-de-produto-comece-o-seu">Saiba como começar um backlog de produto do zero</a> eu falo um pouco sobre tipos de tarefas de um backlog de produtos.
 
 
 <p><center>. . .</center></p>
