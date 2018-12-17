@@ -22,7 +22,7 @@ Para escrever uma boa estória de usuário de forma simples e rápida existe a t
 No "Como...." você deve indicar quem se beneficiará com a implementação da estória. Você pode usar o cargo, função, papel, etc. Quanto mais específico melhor. Ou seja, antes de usar usuário ou cliente, pense se não existe uma palavra mais específica, que determine o cliente que estaria usando aquela funcionalidade. Alguns exemplos mais específicos são: professor, aluno, cozinheiro, empresário, etc.
 
 ## Eu quero...
-No "Eu quero..." você deve indicar o que de fato se quer, a funcionalidade a ser implementada. Essa informação deve focar em responder a pergunta "O quê" e não "Como?". Com ela é possível ter ideia do trabalho a ser feito, e se essa é uma estória P, M ou G (Pequena, Média ou Grande).
+No "Eu quero..." você deve indicar o que de fato se quer, a funcionalidade a ser implementada. Essa informação deve focar em responder a pergunta "O quê?" e não "Como?". Com ela é possível ter ideia do trabalho a ser feito, e se essa é uma estória P, M ou G (Pequena, Média ou Grande).
 
 ## Para que...
 No "Para que..." você deve indicar qual ou quais os benefícios que quem você indicou no "Como..." terá após a implementação dessa estória, qual o valor agregado a essa pessoa. Essa informação é muito importante para priorizar, pois com ela você tem noção do valor agregado para o usuário e consequentemente para o negócio. Também tem insumos sobre os impactos caso a estória não seja realizada.
