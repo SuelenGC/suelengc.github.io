@@ -11,6 +11,9 @@ layout: null
   <url>
     <loc>http://suelencarvalho/articles/</loc>
   </url>
+  <url>
+    <loc>http://suelencarvalho/about/</loc>
+  </url>
   {% for post in site.posts %}
   <url>
     <loc>http://suelencarvalho{{ post.url }}</loc>
