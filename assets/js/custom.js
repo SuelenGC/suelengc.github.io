@@ -4,8 +4,13 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+
 $(function() {
+    commentBox('5770178285535232-proj');
+
+
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
