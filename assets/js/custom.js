@@ -9,8 +9,6 @@
 
 $(function() {
     commentBox('5770178285535232-proj');
-
-
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
