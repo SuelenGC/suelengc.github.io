@@ -8,9 +8,7 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 
 $(function() {
-    commentBox('5770178285535232-proj', {
-      subtextColor: '#fed136'
-    });
+    commentBox('5770178285535232-proj');
 
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
