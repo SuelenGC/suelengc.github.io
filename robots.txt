@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 #site maps
-Sitemap: http://suelengc.github.io/sitemap.xml
+Sitemap: http://suelencarvalho/sitemap.xml
