@@ -46,3 +46,6 @@ plugins_dir: ./_plugins
 
 paginate: 5
 paginate_path: "/articles/page:num/"
+
+plugins:
+  - jekyll-seo-tag
