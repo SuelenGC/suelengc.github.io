@@ -1,7 +1,7 @@
 /* TEAM */
 
 Developer & Designer: Suelen GC
-Site: http://suelengc.github.io, https://github.com/suelengc
+Site: http://suelencarvalho.com, https://github.com/suelengc
 Twitter: @suelengc
 Location: Brazil
 
