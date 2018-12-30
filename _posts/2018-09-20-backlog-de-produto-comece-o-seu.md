@@ -83,7 +83,7 @@ Diversas ideias vindas de diferentes pessoas vão surgir ao longo do tempo. Voc�
 
 Estória do Jira e a técnica de escrita Estória são duas coisas diferentes. O Jira até passa a ideia [\[1\]](https://confluence.atlassian.com/agile/glossary/story?_ga=2.231644383.1152074856.1537238137-182799752.1527212613) de que o item do tipo Estória é uma tarefa escrita no formato de estória, mas isso não significa que você não possa escrever os bugs no formato de estória também.
 
-Minha sugestão é, escreva todo item no formato de estória. Ao usar este formato você ganha produtividade pra priorizar. Uma estória é, basicamente, uma frase curta contendo três informações: O quê? Por quê? e Pra quem? Com essas informações é possível fazer uma rápida avaliação de valor de negócio ou impacto e decidir a prioridade do item.
+Minha sugestão é, escreva todo item no <a href="aprenda-como-escrever-estorias-de-usuario-com-a-tecnica-como-eu-quero-para-que">formato de estória</a>. Ao usar este formato você ganha produtividade pra priorizar. Uma estória é, basicamente, uma frase curta contendo três informações: O quê? Por quê? e Pra quem? Com essas informações é possível fazer uma rápida avaliação de valor de negócio ou impacto e decidir a prioridade do item.
 
 Se você garantir que todo item que entrar no backlog seja escrito no formato de estória e tenha uma prioridade inicial, será muito mais fácil focar e refinar aquilo que é mais importante! Vale lembrar que um backlog de produto é dinâmico. O que hoje é considerado de baixa prioridade, amanhã pode não ser. Então revise as prioridades frequentemente para manter o backlog de produto representando os objetivos da empresa.
 
