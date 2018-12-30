@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "7 práticas para ter sucesso no desenvolvimento de software ágil"
+title:  "7 passos para turbinar o desempenho do time e entregar mais valor na sua empresa"
 date:   2018-10-06
 categories: métodos ágeis
 tags: [métodos ágeis, desenvolvimento ágil]
@@ -16,7 +16,7 @@ resumo: >
 
 Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?”. Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Impactando diretamente na velocidade do time, consequentemente na entrega de valor e nos resultados da empresa.
 
-Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimento de software, que percebi contribuírem mais para a agilidade de um time. Espero que você também possa aplicá-las no seu dia a dia e tornar-se ainda mais ágil.
+Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimento de software ágil, que percebi contribuírem mais para a agilidade de um time. Espero que você também possa aplicá-las no seu dia a dia e tornar-se ainda mais ágil.
 
 
 
@@ -30,7 +30,7 @@ Outra vantagem é economizar tempo quando se precisa rastrear quais funcionalida
 
 Onde **feat_** significa feature, ou seja, uma nova funcionalidade; **ops07** é o identificador da tarefa, que no meu caso seria OPS-07 no Jira. E por fim, **_new_help_screen** são três palavras que resumem a tarefa.
 
-Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">como organizar um backlog de produto do zero</a>. Um padrão legal, que vejo muito ser utilizado é:
+Você pode ler mais sobre tipos de tarefas no post <a href="http://suelencarvalho.com/articles/backlog-de-produto-comece-o-seu">"Como organizar um backlog de produto do zero em 3 passos"</a>. Um padrão legal, que vejo muito ser utilizado é:
 - **feat** para funcionalidade,
 - **bug** para branch de correção de bugs e
 - **hotfix** para branches que vão corrigir um bug urgente em produção.
@@ -38,7 +38,7 @@ Eu falo mais sobre tipos de tarefas neste outro post sobre <a href="http://suele
 
 ## 2. O Git flow certo, nem mais, nem menos
 
-É essencial para um time ágil pensar e estabelecer um fluxo de trabalho com o Git que seja mais adequado para o time. Um dos mais famosos fluxos com o Git é o apresentado no post <a href="https://nvie.com/posts/a-successful-git-branching-model/"> A successful Git branching model</a>. Porém, tenho percebido que este fluxo costuma ser muito mais robusto <u>e complexo</u> do que a maioria dos times ágeis precisam. Eu tenho usado, com muito sucesso, uma versão simplificada deste fluxo:
+É essencial para um time ágil pensar e estabelecer um fluxo de trabalho com o Git que seja mais adequado para o time. Um dos mais famosos fluxos com o Git é o apresentado no post <a href="https://nvie.com/posts/a-successful-git-branching-model/">"A successful Git branching model</a>". Porém, tenho percebido que este fluxo costuma ser muito mais robusto <u>e complexo</u> do que a maioria dos times ágeis precisam. Eu tenho usado, com muito sucesso, uma versão simplificada deste fluxo:
 
 - **Branch master** representa o código de produção. Ninguém faz commits diretos nesta branch, ela apenas recebe merge da branch `develop`;
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Aprenda de uma vez por todas como escrever estórias de usuário com a técnica \"Como... Eu quero... Para que\""
+title:  "Aprenda de uma vez por todas como escrever estórias de usuário com a técnica \"Como... Eu quero... Para que...\""
 date:   2018-11-05
 categories: métodos ágeis
 tags: [métodos ágeis, backlog de produto, product owner]
