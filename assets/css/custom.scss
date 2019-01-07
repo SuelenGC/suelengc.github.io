@@ -35,6 +35,16 @@ p.large {
     font-size: 16px;
 }
 
+p.quote {
+    font-style: italic;
+    text-align: right;
+    font-size: 95%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 50%;
+    color: #{{ site.data.template.color.muted }};
+}
+
 a,
 a:hover,
 a:focus,
@@ -1184,5 +1194,35 @@ a.cloud-tag {
 
 .share-button:active {
   color: #{{site.data.template.color.primary}};
+}
 
+
+
+.counseling-title {
+  color: #{{site.data.template.color.primary}};
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+
+
+.btn-white {
+    /*border-color: #000;*/
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    color: #000;
+    font-weight: 700;
+    background-color: #fff;
+    padding-right:30px;
+    padding-left:30px;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #000;
+    font-weight: 700;
+    color: #000;
 }
