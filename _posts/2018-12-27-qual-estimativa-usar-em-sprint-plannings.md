@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Pontos, dias ou horas. Como estimar no Sprint Planning?"
-date:   2018-11-05
+date:   2019-03-14
 categories: métodos ágeis
 tags: [métodos ágeis, product owner, estimativas ágeis, sprint planning]
 image: assets/img/posts/tecnica-como-eu-quero-para-que.jpg
