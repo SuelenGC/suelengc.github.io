@@ -1,6 +1,8 @@
 [
   {
-    "title": "An image",
-    "url": "/assets/img/bg-gray.png"
+    "page": "carousel-page1.html"
+  },
+  {
+    "page": "carousel-page2.html"
   }
 ]

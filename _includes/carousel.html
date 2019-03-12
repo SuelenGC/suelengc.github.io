@@ -15,9 +15,14 @@
         <div class="item active">
           {% if picture.title %}
             <img src="{{site.url}}{{ picture.url }}" alt="{{ picture.title }}">
-          {% else %}
-            <img <img src="{{site.url}}{{ picture.url }}">
           {% endif %}
+
+          {% if picture.url %}
+            <img src="{{site.url}}{{ picture.url }}">
+          {% else %}
+            {% include {{picture.page}} %}
+          {% endif %}
+
           {% if picture.caption %}
             <div class="carousel-caption">
               {{ picture.caption }}
@@ -27,15 +32,18 @@
       {% else %}
         <div class="item">
           {% if picture.title %}
-            <img <img src="{{site.url}}{{ picture.url }}" alt="{{ picture.title }}">
-          {% else %}
-            <img <img src="{{site.url}}{{ picture.url }}">
+            <img src="{{site.url}}{{ picture.url }}" alt="{{ picture.title }}">
           {% endif %}
-          {% if picture.caption %}
+
+          {% if picture.url %}
+            <img src="{{site.url}}{{ picture.url }}">
+          {% else %}
+            {% include {{picture.page}} %}
+          {% endif %}
+
             <div class="carousel-caption">
               {{ picture.caption }}
             </div>
-          {% endif %}
         </div>
       {% endif %}
     {% endfor %}
