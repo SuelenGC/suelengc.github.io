@@ -47,8 +47,9 @@ layout: page
 
                   <p class="meta">
                     {% for tag in site.tags %}
-                    <a class="cloud-tag" href='/articles/tag/{{tag[0]}}/'>#{{ tag[0] }}</a>
-                    {% endfor %}</p>
+                    <a class="cloud-tag" href='/articles/tag/{{tag[0] | slugify: "latin"}}/'>#{{ tag[0] }}</a>
+                    {% endfor %}
+                  </p>
             </div>
             <div class="col-sm-7">
                   <h4>OUTROS ARTIGOS</h4>
