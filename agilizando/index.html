@@ -2,7 +2,109 @@
 layout: page
 type: agilizando
 ---
+<style type="text/css">
 
+.agilizando-btns {
+  background-color: #FEC503;
+  border: none;
+}
+
+a.agilizando-btns:hover,
+a.agilizando-btns:focus,
+a.agilizando-btns:active,
+a.agilizando-btns.active {
+  background-color: #E9B503;
+
+}
+
+.agilizando-post {
+  margin: 20px 0 80px;
+  height: 230px;
+}
+
+.agilizando-post:hover {
+  /* no futuro fazer algo aqui */
+}
+
+    .agilizando-post-image {
+      width: 30%;
+      height: 230px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .agilizando-post-image-cropped {
+        width: 30%;
+        height: 230px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .agilizando-post-info {
+      width: 65%;
+      display: inline-block;
+    }
+
+        .agilizando-post-title {
+          font-size: 1.5em;
+          color: #390864;
+          text-decoration: none;
+          line-height: 1;
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+
+        .agilizando-post-title:hover {
+            text-decoration: none;
+        }
+
+        .agilizando-post-metadata {
+            height: 30px;
+            margin: 8px 0 15px;
+            font-size: 79%;
+        }
+
+            .agilizando-post-meta-data {
+                color: #390864;
+                font-weight: 600;
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            .agilizando-post-meta-categoria {
+                margin-right: 20px;
+                color: #fec503;
+                font-weight: 600;
+                display: inline-block;
+            }
+
+            .agilizando-post-meta-icon-clock {
+                width: 17px;
+                margin-bottom: 1px;
+                display: inline-block;
+            }
+
+        .agilizando-post-resumo {
+            font-size: 1.2em;
+            color: #777;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .agilizando-post-leia-mais-box {
+            vertical-align: middle;
+        }
+
+            .agilizando-post-leia-mais {
+                display: inline-block;
+                font-size: 1.1em;
+                color: #390864;
+                font-weight: 600;
+            }
+</style>
 <!-- Services Section -->
 <section id="posts" class="bg-light-gray" id="principal" style="padding: 150px 0 40px">
     <div class="container " style="min-height:100%;">
@@ -25,10 +127,10 @@ type: agilizando
             </div>
 
             <div class="col-lg-1" style="height: 600px; padding: 0">
-                <a href=""><img style="display: inline-block; clear: both;width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-youtube.png" /></a>
-                <a href=""><img style="display: inline-block; clear: both;width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-instagram.png" /></a>
-                <a href=""><img style="display: inline-block; clear: both;width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-twitter.png" /></a>
-                <a href=""><img style="display: inline-block; clear: both;width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-linkedin.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/agilizando"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-youtube.png" /></a>
+                <a target="_blank" href="https://www.instagram.com/_agilizando"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-instagram.png" /></a>
+                <a target="_blank" href="https://twitter.com/_agilizando"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-twitter.png" /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/suelengc"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-linkedin.png" /></a>
             </div>
         </div>
     </div>
@@ -37,29 +139,32 @@ type: agilizando
 <section id="posts" style="padding: 20px 0 40px">
     <div class="container " style="min-height:100%;">
         <div class="row">
-            <!-- <div class="col-sm-1"></div> -->
-            <div class="col-md-8">
-
-              <!-- <p class="meta" itemprop="headline">Artigos com a tag <a class="tag" href="/articles/tag/{{ page.tag }}/">{{ page.tag }}</a></p> -->
+            <div class="col-md-9">
               {% for post in site.posts %}
                 {% for tag in post.tags %}
                   {% assign cleantag = tag | slugify: 'latin' %}
                     {% if cleantag == 'metodos-ageis' %}
+                      <div class="agilizando-post">
 
-                      <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
-                        <div class="post-image-title">
-                          <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-                        </div>
+                          <div class="agilizando-post-image-cropped" style="background-image: url({{site.url}}/{{post.image}});"></div>
+                          <div class="agilizando-post-info">
+                              <a class="agilizando-post-title" href="{{ post.url }}">{{ post.title }}</a>
+                              <div class="agilizando-post-metadata">
+                                  <p class="agilizando-post-meta-categoria">Dicas de Agilidade </p>
+                                  <img class="agilizando-post-meta-icon-clock" src="/assets/img/icclockroxo.png" />
+                                  <p class="agilizando-post-meta-data">10 de Abril | 2019</p>
+                              </div>
+                              <div class="agilizando-post-resumo" id="block-with-text" >
+                                  {{ post.resumo | truncate: 150, '...' }}
+                              </div>
+                              <div class="agilizando-post-leia-mais-box">
+                                <a href="{{ post.url }}" class="agilizando-post-leia-mais">Leia mais</a>
+                                <img src="/assets/img/arrow-roxa.png">
+                              </div>
+                            </div>
                       </div>
-                      {% include meta.html %}
-                      <div class="resumo" >
-                        {{ post.resumo }}
-                      </div>
-                      <br>
-                      <a href="{{ post.url }}" class="btn btn-outline-dark">Continuar lendo</a>
-                      <hr style="margin-top:30px; margin-bottom:20px" />
+                      <!-- <hr style="margin-top:30px; margin-bottom:20px" /> -->
                     {% endif %}
-
                 {% endfor %}
               {% endfor %}
 
@@ -89,24 +194,34 @@ type: agilizando
               </div>
               {% endif %}
 
-            </div> <!-- close col-sm-10 -->
-            <div class="col-md-4">
+            </div> <!-- close col-sm-9 -->
 
-              <h4>Tags</h4>
-              <p class="meta">
-                {% for tag in site.tags %}
-                <a class="cloud-tag" href='/articles/tag/{{ tag[0] | slugify: "latin" }}/'>#{{ tag[0] }}</a>
-                {% endfor %}
-              </p>
+            <div class="col-md-3">
 
               <h4>TOP VÍDEOS</h4>
+              {% for video in site.videos %}
+              <div style="margin-bottom: 20px">
+                <a target="_blank" href='{{ video.link}}'><img src="/assets/img/videos/{{ video.thumb }}"></a>
+              </div>
+              {% endfor %}
+
+              <hr/>
+
+              <div style="text-align: center; margin-bottom: 20px">
+                  <img src="/assets/img/foto-fundo-roxo.png" style="width: 200px;">
+              </div>
+              <a href="/about" class="btn btn-warning agilizando-btns"><b>SOBRE A SUELEN</b></a>
+
+
+              <hr>
+              <h4>TAGS</h4>
               <p class="meta">
                 {% for tag in site.tags %}
                 <a class="cloud-tag" href='/articles/tag/{{ tag[0] | slugify: "latin" }}/'>#{{ tag[0] }}</a>
                 {% endfor %}
               </p>
+
             </div>
         </div>
-
     </div>
 </section>

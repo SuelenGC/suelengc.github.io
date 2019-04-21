@@ -9,6 +9,7 @@ modal-id: 5
 ebook-title: ""
 ebook-image:
 comments: true
+published: false
 ebook-resume:
 resumo: >
    Seu time não consegue atingir a meta da Sprint? Vocês já desistiram da meta porque ela nunca é atingida? Se você se identificou, saiba que o problema pode estar em como vocês estimam as estórias no Sprint Planning. Neste artigo vou te contar quais as principais formas usadas para estimar, suas vantagens e desvantagens e a minha recomendação, com base na minha experiência ao longo de 8 anos trabalhando com times ágeis e muitas Sprint Planning pelo caminho. Vamos lá?

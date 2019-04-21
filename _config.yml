@@ -36,6 +36,22 @@ social:
   - title: instagram
     url: https://instagram.com/_suelengc
 
+
+videos:
+  - thumb: thumnail-video-02-v2.png
+    link: https://www.youtube.com/watch?v=kw4NbsOZEqI&t=32s
+  - thumb: thumnail-video-06-v3.png
+    link: https://www.youtube.com/watch?v=OhDAixrHNhw&t=20s
+  - thumb: thumnail-video-07-v2.png
+    link: https://www.youtube.com/watch?v=OOux_bS40pk&t=124s
+
+
+top-posts:
+  - title: Aprenda de uma vez por todas como escrever estórias de usuário com a técnica "como... eu quero... para que..."
+    link: /articles/aprenda-como-escrever-estorias-de-usuario-com-a-tecnica-como-eu-quero-para-que
+    image: #
+
+
 # Build settings
 markdown: kramdown
 permalink: /articles/:title
