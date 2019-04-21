@@ -10,7 +10,6 @@ ebook-title: ""
 ebook-image:
 comments: true
 ebook-resume:
-published: false
 resumo: >
    Seu time não consegue atingir a meta da Sprint? Vocês já desistiram da meta porque ela nunca é atingida? Se você se identificou, saiba que o problema pode estar em como vocês estimam as estórias no Sprint Planning. Neste artigo vou te contar quais as principais formas usadas para estimar, suas vantagens e desvantagens e a minha recomendação, com base na minha experiência ao longo de 8 anos trabalhando com times ágeis e muitas Sprint Planning pelo caminho. Vamos lá?
 ---
@@ -83,16 +82,14 @@ Anos depois, participei de um time que usava dias para estimar. Tínhamos as op�
 A Sprint é um time box curto que precisa ser regularmente inspecionado e verificado para se manter no caminho certo e atingir a meta. Então é importante estar claro para todos, o quanto antes, se estamos saindo desse caminho ou não.
 
 
-## Minha Experiência
+## Conclusão
 
 Na minha experiência, a flexibilidade de Ponto de Estória costuma confundir o time e outras pessoas da empresa. Tornando difícil entender se a Sprint está atrasada, no prazo ou adiantada. Sem essa informação O time não consegue reagir e fazer as alterações necessárias para alcançar a meta.
 
 Em contrapartida, Dias Ideais é uma unidade de media mais estável e que responde a pergunta que precisamos saber: quanto tempo precisamos para concluir a tarefa X?
 
-Além do que, dias é comum a qualquer pessoa, seja do time ou fora dele. Afinal, aprendemos o significado de 1 dia muito cedo na vida e convivemos com ele todos os dias.
+Além do que, dias é comum a qualquer pessoa, seja do time ou fora dele. Afinal, aprendemos o significado de 1 dia muito cedo na vida e convivemos com ele todos os "dias".
 
 Essas características facilitam a inspeção e verificação constante por qualquer pessoa. Facilita também a comunicação e transparência. Qualquer pessoa que olhar para o quadro de kanban conseguirá fazer um cálculo rápido e concluir se a sprint está no prazo, se será preciso algum ajuste ou não.
 
-<p><center>. . .</center></p>
-
-Concluindo, minha recomendação é que se faça estimativas de Sprint Planning com dias.
+Por fim, estimar atividades da Sprint em Dias Ideais me trouxeram bem mais resultados positivos do que horas.

@@ -3,7 +3,12 @@
     {% include head.html %}
 
     <body id="page-top" class="index">
-      {% include navbar.html %}
+
+      {% if page.type == 'agilizando' %}
+        {% include navbar.html color="#390864"%}
+      {% else %}
+        {% include navbar.html color="#222"%}
+      {% endif %}
 
       {{ content }}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Casos de CTO Mulher - O dia que, com classe, enfatizei minhas qualificações acima da minha aparência"
-date:   2019-03-15
+date:   2019-03-14
 categories: carreira
 tags: [carreira, mulheres em ti]
 image: assets/img/posts/tecnica-como-eu-quero-para-que.jpg
@@ -10,7 +10,6 @@ ebook-title: ""
 ebook-image:
 comments: true
 ebook-resume:
-published: false
 resumo: >
    Já se sabe que ser mulher no mundo corporativo não é fácil. Ocupar cargos de liderança então, nem se fala! Mulher líder de tecnologia? Quase impensável! Se você fizer uma busca pelo termo CTO hoje no Linkedin, é provável que a cada 100 pessoas da lista você veja 1 ou 2 mulheres, se muito, aqui no Brasil. Com muito orgulho, sou uma dessas 2. Entretando, a vida não é fácil aqui no país das princesas.
 ---
