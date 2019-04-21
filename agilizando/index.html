@@ -110,7 +110,8 @@ a.agilizando-btns.active {
     <div class="container " style="min-height:100%;">
         <div class="row">
             <div class="col-lg-11 text-center" style="height: 600px">
-                <div class="post-image-container" style="margin: 0; height: 100%; background-image: url({{site.url}}/assets/img/posts/praticas-ageis-medium.png);">
+                {% assign post = site.posts.first %}
+                <div class="post-image-container" style="margin: 0; height: 100%; background-image: url({{site.url}}/{{post.image}});">
                     <div class="agilizando-post-principal-info-box">
                       <div>
                           <p style="margin-right: 10px; color: #F8E71C;display: inline-block;">Dicas de Agilidade </p>
@@ -120,7 +121,7 @@ a.agilizando-btns.active {
 
                       <div>
                           <img style="display: inline-block; margin-right: 4px; height: 83px" src="/assets/img/yellow-line.png" />
-                          <a href="" class="post-title" style="display: inline-block; vertical-align: top; font-size: 2em; width: 90%; font-weight: 600">A solução para seu problema está mais perto do que você imagina!</a>
+                          <a href="{{ post.url }}" class="post-title" style="display: inline-block; vertical-align: top; font-size: 2em; width: 90%; font-weight: 600">{{ post.title }}</a>
                       </div>
                     </div>
                 </div>
@@ -140,12 +141,11 @@ a.agilizando-btns.active {
     <div class="container " style="min-height:100%;">
         <div class="row">
             <div class="col-md-9">
-              {% for post in site.posts %}
+              {% for post in site.posts offset: 1 %}
                 {% for tag in post.tags %}
                   {% assign cleantag = tag | slugify: 'latin' %}
                     {% if cleantag == 'metodos-ageis' %}
                       <div class="agilizando-post">
-
                           <div class="agilizando-post-image-cropped" style="background-image: url({{site.url}}/{{post.image}});"></div>
                           <div class="agilizando-post-info">
                               <a class="agilizando-post-title" href="{{ post.url }}">{{ post.title }}</a>
