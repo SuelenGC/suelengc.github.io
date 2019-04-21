@@ -1054,6 +1054,17 @@ a.post-title.active {
   padding: 10px;
 }
 
+
+.agilizando-post-principal-info-box {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #00000099;
+  padding: 15px;
+  height: 150px;
+  text-align: left;
+}
+
 .meta{
   font-family: {{ site.data.template.font.secondary }};
   text-transform: uppercase;
@@ -1112,7 +1123,6 @@ a.cloud-tag {
   margin: 15px 0;
   position: relative;
 }
-
 
 .last-post-image-container
 {
