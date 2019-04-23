@@ -2,11 +2,6 @@
 layout: page
 type: agilizando
 ---
-<style type="text/css">
-
-
-</style>
-
 
 <!-- Services Section -->
 <section id="posts" class="bg-light-gray agilizando-section-principal" id="principal">
@@ -45,7 +40,7 @@ type: agilizando
 <section id="posts" style="padding: 20px 0 40px">
     <div class="container " style="min-height:100%;">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-lg-9">
               {% for post in site.posts offset: 1 %}
                 {% for tag in post.tags %}
                   {% assign cleantag = tag | slugify: 'latin' %}
@@ -103,7 +98,7 @@ type: agilizando
 
             </div> <!-- close col-sm-9 -->
 
-            <div class="col-md-3">
+            <div class="col-lg-3">
 
               <form action="#" method="post">
                   <div style="display: table; width: 100%; margin-bottom: 10px;">
@@ -115,7 +110,7 @@ type: agilizando
                   <div class="form-group">
                       <input type="text" class="form-control" placeholder="fulano@gmail.com" />
                   </div>
-                  <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none;"><b>Inscrever</b></a>
+                  <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Inscrever</b></a>
                   <div class="wpcf7-response-output wpcf7-display-none"></div>
               </form>
 
@@ -124,14 +119,14 @@ type: agilizando
               <div style="text-align: center; margin-bottom: 20px">
                   <img src="/assets/img/foto-fundo-roxo.png" style="width: 200px;">
               </div>
-              <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none;"><b>Sobre a Suelen</b></a>
+              <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Sobre a Suelen</b></a>
 
 
               <hr style="margin-top: 50px" />
 
               <div style="display: table; width: 100%; margin-bottom: 20px;">
                 <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
-                <h4 style="color: #390864; text-transform: none; margin: 0 10px;">Top Vídeos</h4>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top Vídeos</h4>
               </div>
 
               {% for video in site.videos %}
