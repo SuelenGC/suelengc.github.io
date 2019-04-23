@@ -432,12 +432,51 @@ a.agilizando-btns.active {
 
 }
 
+.agilizando-post-hr-separator {
+    margin-bottom:40px;
+    margin-top: 40px;
+}
+
+.agilizando-post-principal-yellow-vertical-line {
+    width: 4px;
+    background-color: #F8E71C;
+    display: table-cell;
+    height: 100%;
+}
+
+.agilizando-post-principal-title {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+  margin-left: 10px;
+}
+.agilizando-post-principal-title:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.agilizando-post-principal-info-box {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #00000099;
+  padding: 15px;
+  text-align: left;
+}
+
 .agilizando-section-principal {
     padding: 70px 0 40px;
 }
 
 .agilizando-post {
-  margin: 20px 0 20px;
+  margin: 0px 0 20px;
+  display: table;
+  padding: 20px;
+}
+
+.agilizando-post:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .agilizando-post:hover {
@@ -455,6 +494,10 @@ a.agilizando-btns.active {
         width: 100%;
         display: inline-block;
         float: left;
+    }
+
+    .agilizando-post-principal-container:hover {
+        opacity: 0.8;
     }
 
     .agilizando-networks-container {
@@ -497,11 +540,12 @@ a.agilizando-btns.active {
           text-decoration: none;
           line-height: 1;
           font-weight: 600;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
         }
 
         .agilizando-post-title:hover {
             text-decoration: none;
+            color: #390864;
         }
 
         .agilizando-post-metadata {
@@ -550,6 +594,10 @@ a.agilizando-btns.active {
 /* Agilizando! fim */
 
 @media(min-width:768px) {
+    .agilizando-post-hr-separator {
+        size: 0;
+    }
+
     .agilizando-section-principal {
         padding: 150px 0 40px;
     }
@@ -570,14 +618,18 @@ a.agilizando-btns.active {
       margin-right: 20px;
     }
 
+    .agilizando-post-title {
+        margin-bottom: 20px;
+    }
 
     .agilizando-post-image-cropped {
         width: 30%;
         margin-right: 20px;
+        margin-bottom: 0;
     }
 
     .agilizando-post-info {
-      width: 67%;
+      width: 66%;
     }
 
     .agilizando-post-metadata {
@@ -1278,14 +1330,6 @@ a.post-title.active {
 }
 
 
-.agilizando-post-principal-info-box {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  background-color: #00000099;
-  padding: 15px;
-  text-align: left;
-}
 
 .meta{
   font-family: {{ site.data.template.font.secondary }};
