@@ -4,114 +4,39 @@ type: agilizando
 ---
 <style type="text/css">
 
-.agilizando-btns {
-  background-color: #FEC503;
-  border: none;
+.agilizando-post-principal-yellow-vertical-line {
+    height: 112%;
+    width: 4px;
+    background-color: #F8E71C;
+    display: table-cell;
+    height: 100%;
+}
+.agilizando-post-principal-title {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+  margin-left: 10px;
 }
 
-a.agilizando-btns:hover,
-a.agilizando-btns:focus,
-a.agilizando-btns:active,
-a.agilizando-btns.active {
-  background-color: #E9B503;
 
-}
-
-.agilizando-post {
-  margin: 20px 0 80px;
-  height: 230px;
-}
-
-.agilizando-post:hover {
-  /* no futuro fazer algo aqui */
-}
-
-    .agilizando-post-image {
-      width: 30%;
-      height: 230px;
-      float: left;
-      margin-right: 20px;
-    }
-
-    .agilizando-post-image-cropped {
-        width: 30%;
-        height: 230px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        float: left;
-        margin-right: 20px;
-    }
-
-    .agilizando-post-info {
-      width: 65%;
-      display: inline-block;
-    }
-
-        .agilizando-post-title {
-          font-size: 1.5em;
-          color: #390864;
-          text-decoration: none;
-          line-height: 1;
-          font-weight: 600;
-          margin-bottom: 30px;
-        }
-
-        .agilizando-post-title:hover {
-            text-decoration: none;
-        }
-
-        .agilizando-post-metadata {
-            height: 30px;
-            margin: 8px 0 15px;
-            font-size: 79%;
-        }
-
-            .agilizando-post-meta-data {
-                color: #390864;
-                font-weight: 600;
-                display: inline-block;
-                margin-left: 10px;
-            }
-
-            .agilizando-post-meta-categoria {
-                margin-right: 20px;
-                color: #fec503;
-                font-weight: 600;
-                display: inline-block;
-            }
-
-            .agilizando-post-meta-icon-clock {
-                width: 17px;
-                margin-bottom: 1px;
-                display: inline-block;
-            }
-
-        .agilizando-post-resumo {
-            font-size: 1.2em;
-            color: #777;
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-
-        .agilizando-post-leia-mais-box {
-            vertical-align: middle;
-        }
-
-            .agilizando-post-leia-mais {
-                display: inline-block;
-                font-size: 1.1em;
-                color: #390864;
-                font-weight: 600;
-            }
 </style>
+
+
 <!-- Services Section -->
 <section id="posts" class="bg-light-gray" id="principal" style="padding: 150px 0 40px">
     <div class="container " style="min-height:100%;">
         <div class="row">
-            <div class="col-lg-11 text-center" style="height: 600px">
+            <div class="col-lg-12 text-center" style="height: 600px;">
                 {% assign post = site.posts.first %}
-                <div class="post-image-container" style="margin: 0; height: 100%; background-image: url({{site.url}}/{{post.image}});">
+                <div class="agilizando-networks-container">
+                    <a target="_blank" href="https://www.youtube.com/agilizando"><img class="agilizando-network" src="/assets/img/share-youtube.png" /></a>
+                    <a target="_blank" href="https://www.instagram.com/_agilizando"><img class="agilizando-network" src="/assets/img/share-instagram.png" /></a>
+                    <a target="_blank" href="https://twitter.com/_agilizando"><img class="agilizando-network" src="/assets/img/share-twitter.png" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/suelengc"><img class="agilizando-network" src="/assets/img/share-linkedin.png" /></a>
+                </div>
+
+                <div class="agilizando-post-principal-container" style="background-image: url({{site.url}}/{{post.image}});">
                     <div class="agilizando-post-principal-info-box">
                       <div>
                           <p style="margin-right: 10px; color: #F8E71C;display: inline-block;">Dicas de Agilidade </p>
@@ -119,19 +44,12 @@ a.agilizando-btns.active {
                           <p style="color: #fff;display: inline-block;">10 de Abril | 2019</p>
                       </div>
 
-                      <div>
-                          <img style="display: inline-block; margin-right: 4px; height: 83px" src="/assets/img/yellow-line.png" />
-                          <a href="{{ post.url }}" class="post-title" style="display: inline-block; vertical-align: top; font-size: 2em; width: 90%; font-weight: 600">{{ post.title }}</a>
+                      <div style="display:table; width: 100%">
+                          <div class="agilizando-post-principal-yellow-vertical-line"></div>
+                          <a href="{{ post.url }}" class="agilizando-post-principal-title" style="display: inline-block; vertical-align: top; font-size: 2em; width: 90%; font-weight: 600">{{ post.title }}</a>
                       </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-1" style="height: 600px; padding: 0">
-                <a target="_blank" href="https://www.youtube.com/agilizando"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-youtube.png" /></a>
-                <a target="_blank" href="https://www.instagram.com/_agilizando"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-instagram.png" /></a>
-                <a target="_blank" href="https://twitter.com/_agilizando"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-twitter.png" /></a>
-                <a target="_blank" href="https://www.linkedin.com/in/suelengc"><img style="display: inline-block; width: 50px; float: left; margin-bottom: 5px" src="/assets/img/share-linkedin.png" /></a>
             </div>
         </div>
     </div>
@@ -163,7 +81,7 @@ a.agilizando-btns.active {
                               </div>
                             </div>
                       </div>
-                      <!-- <hr style="margin-top:30px; margin-bottom:20px" /> -->
+                      <hr style="margin-top:40px; margin-bottom:20px" />
                     {% endif %}
                 {% endfor %}
               {% endfor %}

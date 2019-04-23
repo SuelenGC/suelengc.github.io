@@ -49,13 +49,3 @@ $('#type-it').typeIt({
     startDelete: true
 })
 .tiPause(2000);
-
-function ellipsizeTextBox(id) {
-    var el = document.getElementById(id);
-    var wordArray = el.innerHTML.split(' ');
-    while(el.scrollHeight > el.offsetHeight) {
-        wordArray.pop();
-        el.innerHTML = wordArray.join(' ') + '...';
-     }
-}
-ellipsizeTextBox('block-with-text');

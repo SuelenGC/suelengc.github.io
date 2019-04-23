@@ -371,7 +371,184 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
 }
+
+
+
+
+
+
+
+/* Agilizando! início */
+.agilizando-btns {
+  background-color: #FEC503;
+  border: none;
+}
+
+a.agilizando-btns:hover,
+a.agilizando-btns:focus,
+a.agilizando-btns:active,
+a.agilizando-btns.active {
+  background-color: #E9B503;
+
+}
+
+.agilizando-post {
+  margin: 20px 0 20px;
+}
+
+.agilizando-post:hover {
+  /* no futuro fazer algo aqui */
+}
+
+    .agilizando-post-principal-container {
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        float: left;
+    }
+
+    .agilizando-networks-container {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .agilizando-network {
+        display: inline-block;
+        width: 50px;
+        float: left;
+        margin-bottom: 5px
+    }
+
+    .agilizando-post-image {
+      width: 30%;
+      height: 230px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .agilizando-post-image-cropped {
+        width: 100%;
+        height: 230px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    .agilizando-post-info {
+      width: 100%;
+      display: inline-block;
+    }
+
+        .agilizando-post-title {
+          font-size: 1.5em;
+          color: #390864;
+          text-decoration: none;
+          line-height: 1;
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+
+        .agilizando-post-title:hover {
+            text-decoration: none;
+        }
+
+        .agilizando-post-metadata {
+            height: 30px;
+            margin: 8px 0 8px;
+            font-size: 79%;
+        }
+
+            .agilizando-post-meta-data {
+                color: #390864;
+                font-weight: 600;
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            .agilizando-post-meta-categoria {
+                margin-right: 20px;
+                color: #fec503;
+                font-weight: 600;
+                display: inline-block;
+            }
+
+            .agilizando-post-meta-icon-clock {
+                width: 17px;
+                margin-bottom: 1px;
+                display: inline-block;
+            }
+
+        .agilizando-post-resumo {
+            font-size: 1.1em;
+            color: #777;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .agilizando-post-leia-mais-box {
+            vertical-align: middle;
+        }
+
+            .agilizando-post-leia-mais {
+                display: inline-block;
+                font-size: 1.1em;
+                color: #390864;
+                font-weight: 600;
+            }
+/* Agilizando! fim */
+
+@media(min-width:768px) {
+    .agilizando-post-principal-container {
+        width: 93%;
+    }
+
+    .agilizando-networks-container {
+        width:6%;
+        float: right;
+    }
+
+    .agilizando-post-image {
+      width: 30%;
+      height: 230px;
+      float: left;
+      margin-right: 20px;
+    }
+
+
+    .agilizando-post-image-cropped {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .agilizando-post-info {
+      width: 67%;
+    }
+
+    .agilizando-post-metadata {
+        margin: 8px 0 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 header {
     text-align: left;
@@ -435,7 +612,7 @@ header .intro .bottom-text {
 }
 
 .logo-name {
-  width: 220px;
+  width: 250px;
 }
 
 .logo-foco {
@@ -1061,7 +1238,6 @@ a.post-title.active {
   width: 100%;
   background-color: #00000099;
   padding: 15px;
-  height: 150px;
   text-align: left;
 }
 
