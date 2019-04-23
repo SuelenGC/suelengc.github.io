@@ -394,6 +394,10 @@ a.agilizando-btns.active {
 
 }
 
+.agilizando-section-principal {
+    padding: 70px 0 40px;
+}
+
 .agilizando-post {
   margin: 20px 0 20px;
 }
@@ -508,6 +512,10 @@ a.agilizando-btns.active {
 /* Agilizando! fim */
 
 @media(min-width:768px) {
+    .agilizando-section-principal {
+        padding: 150px 0 40px;
+    }
+
     .agilizando-post-principal-container {
         width: 93%;
     }
