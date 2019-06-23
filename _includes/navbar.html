@@ -9,7 +9,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="/#page-top"><img src="/assets/img/suelen-carvalho-logo-name.png" class="logo-name"></a>
+            <a class="navbar-brand page-scroll" href="/#page-top">
+              {% if page.type == 'agilizando' %}
+                <img src="/assets/img/agilizando-logo.png" width="190px">
+              {% else %}
+                <img src="/assets/img/suelen-carvalho-logo-name.png" class="logo-name">
+              {% endif %}
+
+            </a>
             <br />
         </div>
 
