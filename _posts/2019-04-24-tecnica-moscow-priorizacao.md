@@ -73,3 +73,17 @@ Noexemplo do banheiro a gente pode pensar em torneira com água quente por exemp
 Deu pra entender melhor a técnica MoSCoW de priorização? Quer conhecer outras estratégias de priorização? Então comenta aqui em baixo quais técnicas você já usa e quais técnicas ou estratégias você quer que eu comente aqui no blog!
 
 E eu quero deixar uma reflexão: <b>Será que apenas uma estratégia de priorização é suficiente ou precisamos de mais, dependendo do contexto, do momento, etc?</b> Comenta aqui em baixo que eu quero saber sua opinião!
+
+Gostou de mais e quer ver este conteúdo em vídeo? Acesse o link abaixo!
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+      <div class="portfolio-item">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/OOux_bS40pk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

@@ -257,6 +257,10 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.data.template.color.primary }};
 }
 
+.nav>li>a {
+  padding: 10px;
+}
+
 .btn-outline-dark {
     text-transform: uppercase;
     color: #343a40;
@@ -314,10 +318,11 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
+    font-size: 14px;
     color: #fff;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
