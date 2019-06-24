@@ -39,7 +39,7 @@ type: agilizando
 
 <section id="posts" style="padding: 20px 0 40px">
     <div class="container " style="min-height:100%;">
-        <div class="row">
+        <div class="row"> <!-- lista com posts do blog -->
             <div class="col-lg-9">
               {% for post in site.posts offset: 1 %}
                 {% for tag in post.tags %}
@@ -95,11 +95,10 @@ type: agilizando
                 {% endif %}
               </div>
               {% endif %}
+            </div>
 
-            </div> <!-- close col-sm-9 -->
-
-            <div class="col-lg-3">
-
+            <div class="col-sm-3"> <!-- coluna lateral direita -->
+              <!-- Formulário de Inscrição -->
               <form action="#" method="post">
                   <div style="display: table; width: 100%; margin-bottom: 10px;">
                       <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
@@ -114,19 +113,12 @@ type: agilizando
                   <div class="wpcf7-response-output wpcf7-display-none"></div>
               </form>
 
-              <hr style="margin-top: 50px"/>
 
-              <div style="text-align: center; margin-bottom: 20px">
-                  <img src="/assets/img/foto-fundo-roxo.png" style="width: 200px;">
-              </div>
-              <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Sobre a Suelen</b></a>
-
-
-              <hr style="margin-top: 50px" />
-
+              <!-- Top Vídeos -->
+              <hr style="margin-top:50px" />
               <div style="display: table; width: 100%; margin-bottom: 20px;">
                 <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
-                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top Vídeos</h4>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
               </div>
 
               {% for video in site.videos %}
@@ -135,7 +127,35 @@ type: agilizando
               </div>
               {% endfor %}
 
-            </div>
+
+
+              <!-- Sobre a Suelen -->
+              <hr style="margin-top: 50px"/>
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Sobre a Suelen</h4>
+              </div>
+              <div style="text-align: center; margin-bottom: 20px">
+                  <img src="/assets/img/foto-fundo-roxo.png" style="width: 200px;">
+              </div>
+              <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Saiba mais!</b></a>
+
+
+              <!-- Tags -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Tags</h4>
+              </div>
+              <p class="meta">
+                {% for tag in site.tags %}
+                <a class="cloud-tag" href='/articles/tag/{{tag[0] | slugify: "latin"}}/'>#{{ tag[0] }}</a>
+                {% endfor %}
+              </p>
+
+
+            </div> <!-- fim coluna lateral direita -->
+
         </div>
     </div>
 </section>

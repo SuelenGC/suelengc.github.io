@@ -1371,13 +1371,14 @@ a.cloud-tag {
 
 .post-content {
   text-align: justify;
-  font-size: 1.1em;
+  /*font-size: 1.1em;*/
+  font-size: 100%;
 }
 
 .post-content > h2 {
   margin-top: 30px;
   font-size: 1.5em;
-  color: #390864;
+  color: #333;
   text-transform: none;
   font-weight: 600;
 }
