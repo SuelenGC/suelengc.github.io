@@ -12,9 +12,7 @@ resumo: >
    Se você chegou até este post certamente sabe que priorizar é um desafio! Priorizar é fazer escolhas! E escolher é sempre difícil! Mas para ficar um pouco mais fácil felizmente temos diversas técnicas e estratégias por aí, e uma delas, poderosissíma e muito utilizada é a técnica MoSCoW.
 ---
 
-Se você chegou até este post certamente sabe que priorizar é um desafio! Priorizar é fazer escolhas! E escolher é sempre difícil!
-
-Mas para ficar um pouco mais fácil felizmente temos diversas técnicas e estratégias por aí, e uma delas poderosissíma e muito utilizada é a técnica MoSCoW.
+**Se você chegou até este post certamente sabe que priorizar é um desafio! Priorizar é fazer escolhas! E escolher é sempre difícil! Mas para ficar um pouco mais fácil felizmente temos diversas técnicas e estratégias por aí, e uma delas poderosissíma e muito utilizada é a técnica MoSCoW.**
 
 ## O que é a técnica MoSCoW de priorização?
 MoSCoW é uma técnica de priorização criada por Dai Clegg muito utlizada em um método ágil chamado DSDM.
@@ -26,12 +24,14 @@ Os Os foram colocados alí no meio apenas para ela ser mais pronunciável!
 ## Como usar?
 Usar essa técnica é muito simples. Você pode criar 4 colunas, uma para cada categoria, e distribuir as suas estórias dentre elas. Então suas colunas seriam:
 
-- Deve ter
-- Deveria ter
-- Poderia ter
-- Não vai ter
+<br />
+<center>
+	<img src="/assets/img/posts/moscow.png" width="60%" class="center">
+</center>
 
-O trick dessa técnica é saber qual estória deve ir em qual coluna. Então presta muita atenção que é isso que eu vou te explicar agora com direito a exemplos de banheiro pra todo mundo entender, porque todo mundo entende de banheiro!
+<br />
+
+O _"trick"_ dessa técnica é saber qual estória deve ir em qual coluna. Então presta muita atenção que é isso que eu vou te explicar agora com direito a exemplos de banheiro pra todo mundo entender, porque todo mundo entende de banheiro!
 
 
 ## Coluna DEVE TER
@@ -66,7 +66,6 @@ E por fim, na coluna **Não vai ter** são estórias que surgiram e você decidi
 Ou por questões estratégicas, ou questões financeiras ou por gerarem menos valor ou simplesmente porque não são apropriadas no momento mas talvez no futuro faça mais sentido.
 
 Noexemplo do banheiro a gente pode pensar em torneira com água quente por exemplo. Talvez o custo e esforço de encanamento, aquecedor, etc não faça sentido agora e por isso optou por não fazer.
-
 
 <p><center>. . .</center></p>
 
