@@ -3,7 +3,7 @@ layout: post
 title:  "Série Termos Ágeis: Manifesto Ágil"
 date:   2019-06-27
 categories: métodos ágeis
-tags: [termos ágeis, manifesto ágil]
+tags: [métodos ágeis, termos ágeis, manifesto ágil]
 image: assets/img/posts/doubt-people.jpg
 modal-id: 5
 comments: true
