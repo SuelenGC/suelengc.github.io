@@ -1356,7 +1356,6 @@ a.post-title.active {
 
 .meta{
   font-family: {{ site.data.template.font.secondary }};
-  text-transform: uppercase;
   font-size: .8em;
   color: #{{ site.data.template.color.secondary-dark }};
   font-weight: 400;
@@ -1365,6 +1364,7 @@ a.post-title.active {
 
 a.tag {
   color: #{{ site.data.template.color.primary }};
+  text-transform: uppercase;
 }
 
 a.cloud-tag {
