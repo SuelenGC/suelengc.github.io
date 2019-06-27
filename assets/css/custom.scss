@@ -353,6 +353,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
+.post-image-content {
+		width: 100%;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -362,6 +366,10 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
+
+    .post-image-content {
+				width: 70%;
+		}
 
     .navbar-default .navbar-brand {
         font-size: 2em;

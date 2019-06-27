@@ -26,9 +26,8 @@ Usar essa técnica é muito simples. Você pode criar 4 colunas, uma para cada c
 
 <br />
 <center>
-	<img src="/assets/img/posts/moscow.png" width="60%" class="center">
+		<img src="/assets/img/posts/moscow.png" class="post-image-content" />
 </center>
-
 <br />
 
 O _"trick"_ dessa técnica é saber qual estória deve ir em qual coluna. Então presta muita atenção que é isso que eu vou te explicar agora com direito a exemplos de banheiro pra todo mundo entender, porque todo mundo entende de banheiro!
