@@ -72,7 +72,7 @@ Os princípios ágeis são mais extensos, vale pensar em exemplos para entender 
 
 É comum ouvirmos por aí que métodos ágeis são apenas para a área de tecnologia. Ledo engano! Isso ocorre porque as pessoas por trás do manifesto eram dessa área.
 
-Mas isso não significa, de forma nenhuma, que métodos ágeis só possam ser usados na área de tecnologia. Eu e o Agilizando! estamos aqui para te ajudar com isso! Com a missão de fazer todos se beneficiarem dos resultados que métodos ágeis nos ajudam a alcançar te tarzendo informação sobre este assunto de forma descontraída, decomplicada e com qualidade!!
+Mas isso não significa, de forma nenhuma, que métodos ágeis só possam ser usados na área de tecnologia. Eu e o Agilizando! estamos aqui para te ajudar com isso! Com a missão de fazer todos se beneficiarem dos resultados que métodos ágeis nos ajudam a alcançar te trazendo informação sobre este assunto de forma descontraída, decomplicada e com qualidade!!
 
 
 Gostou de saber mais sobre o manifesto? Então comenta aqui em baixo, qual valor ou princípio ágil te trás mais dúvida?? Ah! E conta para mim qual sua área de atuação para que eu possa te ajudar dando exemplos na sua área!!
