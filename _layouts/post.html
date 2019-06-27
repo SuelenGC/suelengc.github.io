@@ -61,9 +61,17 @@ layout: page
               <h3 class="section-heading" style="margin-top: 0">{{ page.title }}</h3>
               {% include meta.html %}
 
-              {% if page.image %}
-                <div class="post-image-container" style="background-image: url({{site.url}}/{{page.image}});"></div>
-              {% endif %}
+							{% if page.image %}
+	              <div class="post-image-container text-center" style="background-image: url({{site.url}}/{{page.image}});">
+										<div class="agilizando-networks-container" style="margin: 10px; padding: 3px;">
+		                    <a target="_blank" href="https://www.youtube.com/agilizando"><img class="agilizando-network" src="/assets/img/share-youtube.png" /></a>
+		                    <a target="_blank" href="https://www.instagram.com/_agilizando"><img class="agilizando-network" src="/assets/img/share-instagram.png" /></a>
+		                    <a target="_blank" href="https://twitter.com/_agilizando"><img class="agilizando-network" src="/assets/img/share-twitter.png" /></a>
+		                    <a target="_blank" href="https://www.linkedin.com/in/suelengc"><img class="agilizando-network" src="/assets/img/share-linkedin.png" /></a>
+		                </div>
+
+	              </div>
+	            {% endif %}
 
 							<!-- compartilhar em redes sociais -->
 							<div>
@@ -74,7 +82,6 @@ layout: page
 
 									<br /><br />
 	            </div>
-
 
               <div class="post-content" style="line-height: none">
                 {{ content }}
