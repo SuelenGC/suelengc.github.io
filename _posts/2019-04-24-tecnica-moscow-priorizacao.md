@@ -14,15 +14,13 @@ resumo: >
 
 **Se você chegou até este post certamente sabe que priorizar é um desafio! Priorizar é fazer escolhas! E escolher é sempre difícil! Mas para ficar um pouco mais fácil felizmente temos diversas técnicas e estratégias por aí, e uma delas poderosissíma e muito utilizada é a técnica MoSCoW.**
 
-## O que é a técnica MoSCoW de priorização?
-MoSCoW é uma técnica de priorização criada por Dai Clegg muito utlizada em um método ágil chamado DSDM.
+## O que é a técnica MoSCoW?
+MoSCoW é uma técnica de priorização criada por Dai Clegg muito utlizada em um método ágil chamado DSDM (Dynamic System Development Method). O nome dessa técnica é um acrônimo derivado da primeira primeira letra de quatro categorias de priorização que são: Must have, Should have, Could have e Won't have, que no português significam: Deve ter, Deveria ter, Poderia ter e Não vai ter.
 
-MoSCoW é um acrônimo derivado da primeira primeira letra de quatro categorias de priorização que são Must have, Should have, Could have e Won't have que no português significam Deve ter, Deveria ter, Poderia ter e Não vai ter.
-
-Os Os foram colocados alí no meio apenas para ela ser mais pronunciável!
+Os "o"s foram colocados alí no meio apenas para ela ser mais pronunciável!
 
 ## Como usar?
-Usar essa técnica é muito simples. Você pode criar 4 colunas, uma para cada categoria, e distribuir as suas estórias dentre elas. Então suas colunas seriam:
+Usar essa técnica é muito simples! Você pode criar 4 colunas, uma para cada categoria, e distribuir as suas estórias dentre elas. Então suas colunas seriam:
 
 <br />
 <center>
@@ -56,15 +54,15 @@ Na coluna **Poderia ter** são estórias desejáveis mas não necessárias. Aqui
 
 Essas estórias melhoram a experiência do usuário ou aumentam a satisfação dele com seu produto ou serviço. Costumam ter um esforço e custo relativamente baixo.
 
-Pensando no banheiro, poderia ser um "bom ar" para dar uma aromatizada no ambiente. Um espelho, uma plantinha, um tapete etc
+Pensando no banheiro, poderia ser um "bom ar" para dar uma aromatizada no ambiente. Um espelho, uma plantinha, um tapete etc.
 
 
 ## Coluna NÃO VAI TER
-E por fim, na coluna **Não vai ter** são estórias que surgiram e você decidiu concientemente que não vai fazer agora ou num futuro próximo.
+E por fim, na coluna **Não vai ter** entram estórias que surgiram e você decidiu concientemente que não vai fazer agora ou num futuro próximo.
 
-Ou por questões estratégicas, ou questões financeiras ou por gerarem menos valor ou simplesmente porque não são apropriadas no momento mas talvez no futuro faça mais sentido.
+Ou por questões estratégicas, ou por questões financeiras, ou por gerarem menos valor ou simplesmente porque não são apropriadas no momento mas talvez no futuro façam mais sentido.
 
-Noexemplo do banheiro a gente pode pensar em torneira com água quente por exemplo. Talvez o custo e esforço de encanamento, aquecedor, etc não faça sentido agora e por isso optou por não fazer.
+No exemplo do banheiro a gente pode pensar em torneira com água quente por exemplo. Talvez o custo e esforço de encanamento, aquecedor, etc não faça sentido agora e por isso optou-se por não fazer.
 
 <p><center>. . .</center></p>
 
@@ -72,7 +70,7 @@ Deu pra entender melhor a técnica MoSCoW de priorização? Quer conhecer outras
 
 E eu quero deixar uma reflexão: <b>Será que apenas uma estratégia de priorização é suficiente ou precisamos de mais, dependendo do contexto, do momento, etc?</b> Comenta aqui em baixo que eu quero saber sua opinião!
 
-Gostou de mais e quer ver este conteúdo em vídeo? Acesse o link abaixo!
+Prefere conteúdo em vídeo? Veja este conteúdo no canal do Agilizando! no Youtube, acesse o link abaixo!
 
 <div class="row">
   <div class="col-md-2"></div>
