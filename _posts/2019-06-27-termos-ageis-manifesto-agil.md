@@ -17,7 +17,7 @@ resumo: >
 
 >_Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo._
 
-O Manifesto Ágil é um texto criado em 2001 por um grupo de 17 pessoas que, na época, trabalhavam com formas diferentes de desenvolver software e que funcionavam bem, naquele momento ainda não conhecidas como métodos ágeis.
+O Manifesto Ágil é um texto criado em 2001 por um grupo de 17 pessoas que, na época, trabalhavam com formas diferentes de desenvolver software e que funcionavam bem. Naquele momento, essas formas ainda não eram conhecidas como métodos ágeis.
 
 Essas 17 pessoas se reuniram em um Ski Resort em Utah, USA, onde ficaram 2 dias esquiando e conversando sobre o que as formas diferentes de desenvolver software que elas utilizavam tinham em comum. Pessoas como o criador do TDD, métods ágil que ajuda a aumentar a qualidade e legibilidade do software, e outros participaram desse encontro.
 
