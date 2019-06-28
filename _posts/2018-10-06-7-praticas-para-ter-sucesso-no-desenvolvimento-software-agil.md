@@ -11,7 +11,7 @@ ebook-image:
 comments: true
 ebook-resume:
 resumo: >
-   Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?” Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimento de software, que percebi contribuírem mais para a agilidade de um time.
+   Diversas pequenas dúvidas diárias sobre qual processo seguir, a cada tarefa, podem custar muito caro para times ágeis. Neste post, vou compartilhar com você, sete práticas no fluxo de desenvolvimento de software, que percebi contribuírem mais para a agilidade de um time.
 ---
 
 Já se pegou pensando “Qual nome uso nessa branch?” ou “Faço merge ou rebase?”. Essas e outras dúvidas de processo, a cada tarefa, podem custar muito caro para times ágeis. Impactando diretamente na velocidade do time, consequentemente na entrega de valor e nos resultados da empresa.

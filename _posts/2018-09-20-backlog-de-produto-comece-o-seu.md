@@ -15,7 +15,7 @@ resumo: >
 
 O Backlog de Produto é basicamente uma lista contendo todas as ideias que se tem para um projeto, como uma lista de desejos. O papel do Product Owner (termo inglês para Dono do Produto) é extretamente importante para o bom funcionamento de um time ágil e sua principal responsabilidade é:
 
-  > ##### Manter o Backlog de Produto atualizado e priorizado.
+  > Manter o Backlog de Produto atualizado e priorizado.
 
 Ao iniciar um backlog de produto, podem surgir diversas dúvidas. Dentre elas, há três que percebo serem mais comuns:
 
@@ -95,5 +95,3 @@ Se você garantir que todo item que entrar no backlog seja escrito no formato de
 Pronto, agora que você já sabe como escolher uma ferramenta para gerir seu backlog, quais tipos de itens incluir e quais informações armazenar, é hora de começar o seu!
 
 <!-- Baixe o e-book gratuíto sobre <a href="#portfolioModal{{page.modal-id}}" class="portfolio-link" data-toggle="modal">como escrever estórias de tarefas, bugs e funcionalidades</a> e comece agora mesmo a tirar as ideias da cabeça! -->
-
-Até breve! :)

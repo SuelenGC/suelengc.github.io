@@ -12,9 +12,6 @@ resumo: >
    Este é o primeiro post da série Termos Ágeis, para que você fique menos perdido nas rodinhas de agilidade. Hoje eu vou te contar sobre o Manifesto Ágil, um termo muito usado e importante no mundo ágil.
 ---
 
-**Este é o primeiro post da série Termos Ágeis, para que você fique menos perdido nas rodinhas de agilidade. Hoje eu vou te contar sobre o Manifesto Ágil, um termo muito usado e importante no mundo ágil.**
-
-
 >_Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo._
 
 O Manifesto Ágil é um texto criado em 2001 por um grupo de 17 pessoas que, na época, trabalhavam com formas diferentes de desenvolver software e que funcionavam bem. Naquele momento, essas formas ainda não eram conhecidas como métodos ágeis.

@@ -12,10 +12,8 @@ resumo: >
    Se você chegou até este post certamente sabe que priorizar é um desafio! Priorizar é fazer escolhas! E escolher é sempre difícil! Mas para ficar um pouco mais fácil felizmente temos diversas técnicas e estratégias por aí, e uma delas, poderosissíma e muito utilizada é a técnica MoSCoW.
 ---
 
-**Se você chegou até este post certamente sabe que priorizar é um desafio! Priorizar é fazer escolhas! E escolher é sempre difícil! Mas para ficar um pouco mais fácil felizmente temos diversas técnicas e estratégias por aí, e uma delas poderosissíma e muito utilizada é a técnica MoSCoW.**
-
 ## O que é a técnica MoSCoW?
-MoSCoW é uma técnica de priorização criada por Dai Clegg muito utlizada em um método ágil chamado DSDM (Dynamic System Development Method). O nome dessa técnica é um acrônimo derivado da primeira primeira letra de quatro categorias de priorização que são: Must have, Should have, Could have e Won't have, que no português significam: Deve ter, Deveria ter, Poderia ter e Não vai ter.
+MoSCoW é uma técnica de priorização criada por Dai Clegg muito utlizada em um método ágil chamado DSDM (Dynamic System Development Method). O nome dessa técnica é um acrônimo derivado da primeira letra de quatro categorias de priorização que são: Must have, Should have, Could have e Won't have, que no português significam: Deve ter, Deveria ter, Poderia ter e Não vai ter.
 
 Os "o"s foram colocados alí no meio apenas para ela ser mais pronunciável!
 
