@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Série Termos Ágeis: Manifesto Ágil, uh!?"
+title:  "Termos Ágeis: O que é o Manifesto Ágil?"
 date:   2019-06-27
 categories: métodos ágeis
 tags: [métodos ágeis, termos ágeis, manifesto ágil]
