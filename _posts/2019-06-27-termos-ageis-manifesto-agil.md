@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Termos Ágeis: O que é o Manifesto Ágil?"
+title:  "Termos Ágeis: Manifesto Ágil, Uh!?"
 date:   2019-06-27
 categories: métodos ágeis
 tags: [métodos ágeis, termos ágeis, manifesto ágil]
@@ -9,7 +9,7 @@ modal-id: 5
 comments: true
 ebook-resume:
 resumo: >
-   Este é o primeiro post da série Termos Ágeis, para que você fique menos perdido nas rodinhas de agilidade. Hoje eu vou te contar sobre o Manifesto Ágil, um termo muito usado e importante no mundo ágil.
+   Este é o primeiro post da série Termos Ágeis, para que você fique menos perdido nas rodinhas de agilidade. Hoje eu vou te contar o que é o Manifesto Ágil, um termo muito usado e importante no mundo ágil.
 ---
 
 >_Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo._
