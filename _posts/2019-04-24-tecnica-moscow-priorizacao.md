@@ -13,7 +13,7 @@ resumo: >
 ---
 
 ## O que é a técnica MoSCoW?
-MoSCoW é uma técnica de priorização criada por Dai Clegg muito utlizada em um método ágil chamado DSDM (Dynamic System Development Method). O nome dessa técnica é um acrônimo derivado da primeira letra de quatro categorias de priorização que são: Must have, Should have, Could have e Won't have, que no português significam: Deve ter, Deveria ter, Poderia ter e Não vai ter.
+MoSCoW é uma técnica de priorização criada por Dai Clegg muito utilizada em um método ágil chamado DSDM (Dynamic System Development Method). O nome dessa técnica é um acrônimo derivado da primeira letra de quatro categorias de priorização que são: Must have, Should have, Could have e Won't have, que no português significam: Deve ter, Deveria ter, Poderia ter e Não vai ter.
 
 Os "o"s foram colocados alí no meio apenas para ela ser mais pronunciável!
 
@@ -56,7 +56,7 @@ Pensando no banheiro, poderia ser um "bom ar" para dar uma aromatizada no ambien
 
 
 ## Coluna NÃO VAI TER
-E por fim, na coluna **Não vai ter** entram estórias que surgiram e você decidiu concientemente que não vai fazer agora ou num futuro próximo.
+E por fim, na coluna **Não vai ter** entram estórias que surgiram e você decidiu conscientemente que não vai fazer agora ou num futuro próximo.
 
 Ou por questões estratégicas, ou por questões financeiras, ou por gerarem menos valor ou simplesmente porque não são apropriadas no momento mas talvez no futuro façam mais sentido.
 
@@ -68,7 +68,7 @@ Deu pra entender melhor a técnica MoSCoW de priorização? Quer conhecer outras
 
 E eu quero deixar uma reflexão: <b>Será que apenas uma estratégia de priorização é suficiente ou precisamos de mais, dependendo do contexto, do momento, etc?</b> Comenta aqui em baixo que eu quero saber sua opinião!
 
-Prefere conteúdo em vídeo? Veja este conteúdo no canal do Agilizando! no Youtube, acesse o link abaixo!
+Prefere conteúdo em vídeo? Veja este conteúdo no canal do Agilizando! no YouTube, acesse o link abaixo!
 
 <div class="row">
   <div class="col-md-2"></div>
