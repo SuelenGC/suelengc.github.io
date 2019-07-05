@@ -9,23 +9,21 @@
             </div>
             <br><br>
             <div class="row">
-            {% for post in site.posts limit:3 %}
-            <a href="{{ post.url }}" class="portfolio-link" data-toggle="modal">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <!-- <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal"> -->
-
-                  <div class="last-post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
-
-                  </div>
-                  <div class="portfolio-caption">
-                    <h4 style="color: black;">
-                      {{ post.title }}
-                    </h4>
-                  </div>
-
-                </div>
-              </a>
-            {% endfor %}
+            	{% for post in site.posts limit:3 %}
+		            <div class="col-sm-4">
+		            	<a href="{{ post.url }}" target="_blank">
+		            		<div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
+		            			<div style="padding: 10px; text-align: right;">
+		            				<img style="display: inline-block; width: 13px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />
+                      	<p style="color: #fff;display: inline-block; font-size: 12px;">{% include post-date.html %}</p>
+		            			</div>
+		                  <div class="post-image-title">
+		                    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+		                  </div>
+		                </div>
+		              </a>
+		            </div>
+            	{% endfor %}
             </div>
         </div>
     </section>
