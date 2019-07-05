@@ -357,7 +357,17 @@ fieldset[disabled] .btn-xl.active {
 		width: 100%;
 }
 
+
+.last-posts-disclaimer {
+	text-align: center;
+	font-size: 18px;
+}
+
 @media(min-width:768px) {
+		.last-posts-disclaimer {
+			padding-right: 80px;
+			padding-left: 80px;
+		}
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -1516,7 +1526,6 @@ a.cloud-tag {
 .share-button:active {
   color: #{{site.data.template.color.primary}};
 }
-
 
 
 .counseling-title {
