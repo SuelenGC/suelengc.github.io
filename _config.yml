@@ -60,7 +60,7 @@ tag_dir: /articles/tag
 gems: ['jekyll-paginate']
 plugins_dir: ./_plugins
 
-paginate: 5
+paginate: 7
 paginate_path: "/articles/page:num/"
 
 plugins:

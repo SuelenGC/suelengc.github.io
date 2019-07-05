@@ -23,6 +23,13 @@ O principal papel de um Product Owner é justamente manter este backlog atualiza
 
 <p><center>. . .</center></p>
 
+É dinâmico!
+o Product Backlog cresce e muda à medida que se aprende mais sobre o produto e seus usuários.
+
+
+
+Um Product Backlog bem organizado e priorizado é essencial para qualquer projeto ágil. Ele não apenas torna o planejamento da release e da iteração mais simples, como também transmite para a equipe, de maneira rápida, todas as necessidades do cliente. Além disso, o Product Backlog ajuda a gerenciar as expectativas das partes interessadas e de outras equipes, especialmente, quando algum trabalho adicional precisa ser inserido dentro do projeto. Mas, o que exatamente é um Product Backlog? É isso que vou te explicar agora!
+
 
 Gostou de saber mais sobre o manifesto? Então comenta aqui em baixo, qual valor ou princípio ágil te trás mais dúvida?? Ah! E conta para mim qual sua área de atuação para que eu possa te ajudar dando exemplos na sua área!!
 
