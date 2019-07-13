@@ -2,7 +2,7 @@
 layout: post
 title:  "Aprenda de uma vez por todas como escrever estórias de usuário com a técnica \"Como... Eu quero... Para que...\""
 date:   2018-11-05
-categories: métodos ágeis
+categories: ["Dicas de Agilidade"]
 tags: [métodos ágeis, backlog de produto, product owner]
 image: assets/img/posts/tecnica-como-eu-quero-para-que.jpg
 modal-id: 5

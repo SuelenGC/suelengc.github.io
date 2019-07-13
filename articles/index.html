@@ -3,47 +3,79 @@ layout: page
 ---
 
 <!-- Services Section -->
-<section id="posts">
-    <div class="container" style="min-height:100%;">
+<section id="posts" class="bg-light-gray agilizando-section-principal" id="principal">
+    <div class="container " style="min-height:100%;">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Artigos</h2>
-                <!-- <h3 class="section-subheading text-muted">{{ site.description }}</h3> -->
+            <div class="col-lg-12 text-center" style="height: 600px;">
+                {% assign post = site.posts.first %}
+                <div class="agilizando-networks-container">
+                    <a target="_blank" href="https://www.youtube.com/agilizando"><img class="agilizando-network" src="/assets/img/share-youtube.png" /></a>
+                    <a target="_blank" href="https://www.instagram.com/_agilizando"><img class="agilizando-network" src="/assets/img/share-instagram.png" /></a>
+                    <a target="_blank" href="https://twitter.com/_agilizando"><img class="agilizando-network" src="/assets/img/share-twitter.png" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/suelengc"><img class="agilizando-network" src="/assets/img/share-linkedin.png" /></a>
+                </div>
+
+                <a href="{{ post.url }}">
+                    <div class="agilizando-post-principal-container" style="background-image: url({{site.url}}/{{post.image}});">
+                        <div class="agilizando-post-principal-info-box">
+                          <div>
+                              <p style="margin-right: 10px; color: #F8E71C;display: inline-block;">{{ post.categories }}</p>
+                              <img style="display: inline-block; width: 17px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />
+                              <p style="color: #fff;display: inline-block;">{% include post-date.html %}</p>
+                          </div>
+
+                          <div style="display:table; width: 100%">
+                              <div class="agilizando-post-principal-yellow-vertical-line"></div>
+                              <p class="agilizando-post-principal-title" style="display: inline-block; vertical-align: top; font-size: 2em; width: 90%; font-weight: 600">{{ post.title }}</p>
+                          </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <br>
+    </div>
+</section>
+
+<section id="posts" style="padding: 20px 0 40px">
+    <div class="container " style="min-height:100%;">
         <div class="row">
-            <!-- <div class="col-sm-1"></div> -->
-            <div class="col-md-8">
 
-              <!-- This loops through the paginated posts -->
-              {% for post in paginator.posts %}
-                <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
-                  <div class="post-image-title">
-                    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-                  </div>
-                </div>
-
-                {% include meta.html %}
-                <div class="resumo" >
-                  {{ post.resumo }}
-                </div>
-                <br>
-                <a href="{{ post.url }}" class="btn btn-outline-dark">Continuar lendo</a>
-                <hr style="margin-top:30px; margin-bottom:20px" />
+        		<!-- lista com posts do blog -->
+            <div class="col-lg-9">
+              {% for post in paginator.posts offset: 1 %}
+                <a href="{{ post.url }}">
+                    <div class="agilizando-post">
+                        <div class="agilizando-post-image-cropped" style="background-image: url({{site.url}}/{{post.image}});"></div>
+                        <div class="agilizando-post-info">
+                            <p class="agilizando-post-title">{{ post.title }}</p>
+                            <div class="agilizando-post-metadata">
+                                <p class="agilizando-post-meta-categoria">{{ post.categories }}</p>
+                                <img class="agilizando-post-meta-icon-clock" src="/assets/img/icclockroxo.png" />
+                                <p class="agilizando-post-meta-data">{% include post-date.html %}</p>
+                            </div>
+                            <div class="agilizando-post-resumo" id="block-with-text" >
+                                {{ post.resumo | truncate: 150, '...' }}
+                            </div>
+                            <div class="agilizando-post-leia-mais-box">
+                              <p class="agilizando-post-leia-mais">Leia mais</p>
+                              <img src="/assets/img/arrow-roxa.png">
+                            </div>
+                          </div>
+                    </div>
+                </a>
               {% endfor %}
 
               {% if paginator.total_pages > 1 %}
               <div class="pagination">
                 {% if paginator.previous_page %}
-                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; ANTERIOR </a>
+                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Anterior </a>
                 {% else %}
-                  <span>&laquo; ANTERIOR </span>
+                  <span>&laquo; Anterior </span>
                 {% endif %}
 
                 {% for page in (1..paginator.total_pages) %}
                   {% if page == paginator.page %}
-                    {{ page }}
+                    <em>{{ page }}</em>
                   {% elsif page == 1 %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                   {% else %}
@@ -52,24 +84,85 @@ layout: page
                 {% endfor %}
 
                 {% if paginator.next_page %}
-                  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> PRÓXIMO &raquo;</a>
+                  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> Próximo &raquo;</a>
                 {% else %}
-                  <span> PRÓXIMO &raquo;</span>
+                  <span> Próximo &raquo;</span>
                 {% endif %}
               </div>
               {% endif %}
+            </div>
 
-            </div> <!-- close col-sm-10 -->
+            <div class="col-sm-3"> <!-- coluna lateral direita -->
+              <!-- Formulário de Inscrição -->
+              <form action="#" method="post">
+                  <div style="display: table; width: 100%; margin-bottom: 10px;">
+                      <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                      <h4 style="color: #390864; font-weight: 600; text-transform: none; margin: 0 10px; font-size: 1em;">O Agilizando! te ajuda a agilizar sua vida e carreira!</h4>
+                  </div>
 
-            <div class="col-md-4"><h4>Tags</h4>
+                  <p style="color: #ccc; line-height: 1">Deixe seu e-mail aqui e receba o conteúdo mais ágil do Brasil!</p>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="fulano@gmail.com" />
+                  </div>
+                  <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Inscrever</b></a>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+              </form>
 
+
+              <!-- Top Vídeos -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
+              </div>
+
+              {% for video in site.videos %}
+              <div style="margin-bottom: 20px">
+                <a target="_blank" href='{{ video.link}}'><img src="/assets/img/videos/{{ video.thumb }}"></a>
+              </div>
+              {% endfor %}
+
+
+              <!-- Sobre a Suelen -->
+              <hr style="margin-top: 50px"/>
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Sobre a Suelen</h4>
+              </div>
+              <div style="text-align: center; margin-bottom: 20px">
+                  <img src="/assets/img/foto-fundo-roxo.png" style="width: 200px;">
+              </div>
+              <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Saiba mais!</b></a>
+
+
+							<!-- Categories -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Categorias</h4>
+              </div>
+              <p class="meta">
+                {% for category in site.categories %}
+                <a class="cloud-tag" href='/articles/category/{{category[0] | slugify: "latin"}}/'>{{ category[0] }}</a>
+                {% endfor %}
+              </p>
+
+
+              <!-- Tags -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Tags</h4>
+              </div>
               <p class="meta">
                 {% for tag in site.tags %}
                 <a class="cloud-tag" href='/articles/tag/{{tag[0] | slugify: "latin"}}/'>#{{ tag[0] }}</a>
                 {% endfor %}
               </p>
-            </div>
-            <!-- <div class="col-sm-1"></div> -->
+
+
+            </div> <!-- fim coluna lateral direita -->
+
         </div>
     </div>
 </section>

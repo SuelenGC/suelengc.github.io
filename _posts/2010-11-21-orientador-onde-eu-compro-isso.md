@@ -2,7 +2,7 @@
 layout: post
 title:  "6 dicas matadoras para você encontrar o seu próximo orientador"
 date:   2010-11-21
-categories: java
+categories: ["Dicas de Carreira"]
 tags: [mestrado]
 image: assets/img/posts/como-encontrar-orientador.jpg
 keywords:

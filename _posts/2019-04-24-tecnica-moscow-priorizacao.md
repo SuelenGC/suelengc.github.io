@@ -2,7 +2,7 @@
 layout: post
 title:  "MoSCoW: A técnica de priorização que todo Product Owner ou Product Manager Ágil deve saber!"
 date:   2019-04-24
-categories: métodos ágeis
+categories: ["Dicas de Agilidade"]
 tags: [métodos ágeis, backlog, priorização, product owner]
 image: assets/img/posts/first-things-first.jpeg
 modal-id: 5

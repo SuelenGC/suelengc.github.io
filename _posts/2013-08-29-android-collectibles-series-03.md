@@ -2,6 +2,7 @@
 layout: post
 title:  "Android Colecionáveis Série 03"
 date:   2013-08-29
+categories: ["Dicas de Tecnologia"]
 tags: [android, geek]
 image: assets/img/posts/todos.png
 keywords:
@@ -23,4 +24,4 @@ resumo: >
 
 ![]({{site.url}}/assets/img/posts/android-collectibles3.jpg)
 
-E aí, curtiu! Quer sua coleção também ou já tem uma? Compartilha aqui com a gente! 
+E aí, curtiu! Quer sua coleção também ou já tem uma? Compartilha aqui com a gente!

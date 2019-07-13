@@ -2,7 +2,7 @@
 layout: post
 title:  "Casos de CTO Mulher - O dia que, com classe, enfatizei minhas qualificações acima da minha aparência"
 date:   2019-03-14
-categories: carreira
+categories: ["Dicas de Carreira"]
 tags: [carreira, mulheres em ti]
 image: assets/img/posts/tecnica-como-eu-quero-para-que.jpg
 modal-id: 5

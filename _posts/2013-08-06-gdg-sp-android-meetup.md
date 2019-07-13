@@ -2,6 +2,7 @@
 layout: post
 title:  "Android Meetup, seu evento mensal sobre Android"
 date:   2013-08-06
+categories: ["Dicas de Tecnologia"]
 tags: [android, eventos]
 image: assets/img/posts/gdg-sp-android-meetup.jpg
 keywords:

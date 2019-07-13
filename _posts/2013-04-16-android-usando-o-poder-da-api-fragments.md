@@ -2,6 +2,7 @@
 layout: post
 title:  "Usando o poder da API Fragments do Android"
 date:   2013-04-16
+categories: ["Dicas de Tecnologia"]
 tags: [android, mobile, fragments]
 image: assets/img/posts/android-fragment-api-power.jpg
 keywords:
