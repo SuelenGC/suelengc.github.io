@@ -1,0 +1,72 @@
+---
+layout: page
+---
+
+<!-- Services Section -->
+<section id="posts">
+    <div class="container" style="min-height:100%;">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Artigos na categoria <a class="cloud-tag" href="/articles/category/{{ page.category }}/">{{ page.category }}</a></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+							{% for post in site.posts %}
+								{% for category in post.categories %}
+                  {% assign slug = category | slugify: 'latin' %}
+                  {% if slug == page.category %}
+                    <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
+                      <div class="post-image-title">
+                        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                      </div>
+                    </div>
+										{% include meta.html %}
+                    <div class="resumo" >
+                      {{ post.resumo }}
+                    </div>
+                    <br>
+                    <a href="{{ post.url }}" class="btn btn-outline-dark">Continuar lendo</a>
+                    <hr style="margin-top:30px; margin-bottom:20px" />
+									{% endif %}
+								{% endfor %}
+              {% endfor %}
+
+              {% if paginator.total_pages > 1 %}
+              <div class="pagination">
+                {% if paginator.previous_page %}
+                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Anterior </a>
+                {% else %}
+                  <span>&laquo; Anterior </span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                  {% if page == paginator.page %}
+                    <em>{{ page }}</em>
+                  {% elsif page == 1 %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                  {% else %}
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                  {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> Próximo &raquo;</a>
+                {% else %}
+                  <span> Próximo &raquo;</span>
+                {% endif %}
+              </div>
+              {% endif %}
+
+            </div> <!-- close col-sm-10 -->
+            <div class="col-md-4"><h4>Tags</h4>
+
+              <p class="meta">
+                {% for tag in site.tags %}
+                <a class="cloud-tag" href='/articles/tag/{{ tag[0] | slugify: "latin" }}/'>#{{ tag[0] }}</a>
+                {% endfor %}
+              </p>
+            </div>
+        </div>
+    </div>
+</section>

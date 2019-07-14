@@ -677,7 +677,8 @@ header {
     text-align: left;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('/assets/img/bg-idea.jpg');
+    /*background-image: url('/assets/img/bg-idea.jpg');*/
+    background-image: url('/assets/img/suelencarvalho-front-cover-bg18.jpg');
     background-color: #222;
     background-position: center top;
     background-repeat: none;
@@ -695,32 +696,33 @@ header .intro {
 }
 
 header .intro .main-text-box {
-    margin: 0 auto;
+    margin: 0;
     position: absolute;
     left: 0;
-    top: 50%;
-    margin-top: -45px;
+    top: 0;
+    background-color: #1A1A1D90;
     width: 100%;
     color: #fff;
-    /*letter-spacing: 1px;*/
     text-transform: uppercase;
     text-align: center;
     font-size: 6.5vw;
     line-height: 7vw;
     z-index: 200;
+    height: 100vh;
     vertical-align: baseline;
 }
 
 header .intro .main-text-box .main-text {
-    font-size: 90%;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.4);
-    background: rgba(0, 0, 0, 0.4);
+    font-size: 32px;
+    line-height: 1.2em;
     color: #fff;
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px;
+    text-align: left;
+    text-shadow: none;
+    text-transform: none;
+    font-weight: 300;
+    width: 100%;
+    margin: 340px 0px;
+    padding: 20px 60px;
     font-family: {{ site.data.template.font.primary }};
 }
 
@@ -752,6 +754,7 @@ header .intro .bottom-text {
     }
 }
 
+/* tablet */
 @media(min-width:768px) {
 
     .logo-name {
@@ -759,26 +762,32 @@ header .intro .bottom-text {
     }
 
     header .intro .main-text-box {
-        /*font-size: 2vw;
-        line-height: 3vw;*/
-
-        /* sucesso é uma questão... */
         font-size: 4vw;
         line-height: 4vw;
     }
 
     header .intro .main-text-box .main-text {
-        text-shadow: 1px 1px 2px #000000;
-        width: 75%;
+        text-shadow: 1px 1px 2px #000;
+        width: 80%;
+        font-size: 34px;
+        margin: 340px 0px;
     }
 }
 
-/*@media(min-width:1000px) {
-    header .intro .main-text-box {
-        font-size: 2vw;
-        line-height: 3vw;
+/* desktop */
+@media(min-width:993px) {
+		header .intro .main-text-box {
+        font-size: 4vw;
+        line-height: 4vw;
     }
-}*/
+
+    header .intro .main-text-box .main-text {
+				width: 50%;
+				font-size: 34px;
+				margin: 340px 70px;
+				padding: 0;
+    }
+}
 
 section {
     padding: 100px 0;

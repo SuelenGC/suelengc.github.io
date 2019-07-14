@@ -93,6 +93,7 @@ layout: page
             </div>
 
             <div class="col-sm-3"> <!-- coluna lateral direita -->
+
               <!-- Formulário de Inscrição -->
               <form action="#" method="post">
                   <div style="display: table; width: 100%; margin-bottom: 10px;">
@@ -104,9 +105,56 @@ layout: page
                   <div class="form-group">
                       <input type="text" class="form-control" placeholder="fulano@gmail.com" />
                   </div>
-                  <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Inscrever</b></a>
+                  <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #fff; width: 100%"><b>INSCREVER</b></a>
                   <div class="wpcf7-response-output wpcf7-display-none"></div>
               </form>
+
+
+							<!-- Categories -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Categorias</h4>
+              </div>
+              <p class="meta">
+                {% for category in site.categories %}
+                <a class="cloud-tag" href='/articles/category/{{category[0] | slugify: "latin"}}/'>{{ category[0] }}</a>
+                {% endfor %}
+              </p>
+
+
+							<!-- Sobre a Suelen -->
+              <!-- <hr style="margin-top: 50px"/>
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Sobre a Suelen</h4>
+              </div>
+              <div style="text-align: center; margin-bottom: 20px">
+                  <a href="/about"><img src="/assets/img/foto-fundo-roxo.png" style="width: 180px;"></a>
+              </div> -->
+
+
+							<!-- Outros Artigos -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Mais lidos</h4>
+              </div>
+
+              {% assign min = 1 %}
+              {% assign max = site.posts.size %}
+              {% assign diff = max | minus: min %}
+              {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
+              {% for post in site.posts limit:4 offset:randomNumber %}
+                {% if page.title != post.title %}
+                    <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
+                      <div class="post-image-title">
+                        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                      </div>
+                    </div>
+                {% endif %}
+              {% endfor %}
 
 
               <!-- Top Vídeos -->
@@ -123,32 +171,7 @@ layout: page
               {% endfor %}
 
 
-              <!-- Sobre a Suelen -->
-              <hr style="margin-top: 50px"/>
-              <div style="display: table; width: 100%; margin-bottom: 20px;">
-                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
-                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Sobre a Suelen</h4>
-              </div>
-              <div style="text-align: center; margin-bottom: 20px">
-                  <img src="/assets/img/foto-fundo-roxo.png" style="width: 200px;">
-              </div>
-              <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Saiba mais!</b></a>
-
-
-							<!-- Categories -->
-              <hr style="margin-top:50px" />
-              <div style="display: table; width: 100%; margin-bottom: 20px;">
-                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
-                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Categorias</h4>
-              </div>
-              <p class="meta">
-                {% for category in site.categories %}
-                <a class="cloud-tag" href='/articles/category/{{category[0] | slugify: "latin"}}/'>{{ category[0] }}</a>
-                {% endfor %}
-              </p>
-
-
-              <!-- Tags -->
+							<!-- Tags -->
               <hr style="margin-top:50px" />
               <div style="display: table; width: 100%; margin-bottom: 20px;">
                 <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
