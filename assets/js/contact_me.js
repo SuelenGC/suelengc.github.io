@@ -9,15 +9,10 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
 
             // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var message = $("textarea#message").val();
-
-            var reason = $("select#reason").val();
-
-            if (typeof reason === 'undefined'){
-              reason = $("input#reason").val();
-            }
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
+            var reason = $("#reason").val();
 
             var subject = "[New Contact] " + reason;
 
@@ -37,7 +32,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Sua mensagem foi enviada. Obrigada pelo contato!</strong>");
+                        .append("Sua mensagem foi enviada. Obrigada pelo contato!");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -49,7 +44,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Desculpe, ocorreu algum problema. Por favor, tente novamente mais tarde!");
+                    $('#success > .alert-danger').append("Desculpe, ocorreu algum problema. Por favor, tente novamente mais tarde!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
