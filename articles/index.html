@@ -5,7 +5,7 @@ layout: page
 <!-- Services Section -->
 <section id="posts" class="bg-light-gray agilizando-section-principal" id="principal">
     <div class="container " style="min-height:100%;">
-        <div class="row">
+        <div class="row" style="padding: 0 20px">
             <div class="col-lg-12 text-center" style="height: 500px;">
                 {% assign post = site.posts.first %}
                 <div class="agilizando-networks-container">
@@ -38,7 +38,7 @@ layout: page
 
 <section id="posts" style="padding: 20px 0 40px">
     <div class="container " style="min-height:100%;" >
-        <div class="row">
+        <div class="row" style="">
 
         		<!-- lista com posts do blog -->
             <div class="col-lg-9">
@@ -92,8 +92,7 @@ layout: page
               {% endif %}
             </div>
 
-            <div class="col-lg-3"> <!-- coluna lateral direita -->
-
+            <div class="col-lg-3" style="padding-right: 50px"> <!-- coluna lateral direita -->
               <!-- Formulário de Inscrição -->
               <form action="#" method="post">
                   <div style="display: table; width: 100%; margin-bottom: 10px;">
@@ -182,7 +181,6 @@ layout: page
                 <a class="cloud-tag" href='/articles/tag/{{tag[0] | slugify: "latin"}}/'>#{{ tag[0] }}</a>
                 {% endfor %}
               </p>
-
 
             </div> <!-- fim coluna lateral direita -->
 
