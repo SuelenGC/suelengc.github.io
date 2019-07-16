@@ -6,7 +6,7 @@ layout: page
 <section id="posts" class="bg-light-gray agilizando-section-principal" id="principal">
     <div class="container " style="min-height:100%;">
         <div class="row">
-            <div class="col-lg-12 text-center" style="height: 600px;">
+            <div class="col-lg-12 text-center" style="height: 500px;">
                 {% assign post = site.posts.first %}
                 <div class="agilizando-networks-container">
                     <a target="_blank" href="https://www.youtube.com/agilizando"><img class="agilizando-network" src="/assets/img/share-youtube.png" /></a>
@@ -24,9 +24,9 @@ layout: page
                               <p style="color: #fff;display: inline-block;">{% include post-date.html %}</p>
                           </div>
 
-                          <div style="display:table; width: 100%">
+                          <div style="display:table; width: 100%; vertical-align: middle;">
                               <div class="agilizando-post-principal-yellow-vertical-line"></div>
-                              <p class="agilizando-post-principal-title" style="display: inline-block; vertical-align: top; font-size: 2em; width: 90%; font-weight: 600">{{ post.title }}</p>
+                              <p class="agilizando-post-principal-title" style="display: inline-block; font-size: 2em; width: 90%; font-weight: 600">{{ post.title }}</p>
                           </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ layout: page
 </section>
 
 <section id="posts" style="padding: 20px 0 40px">
-    <div class="container " style="min-height:100%;">
+    <div class="container " style="min-height:100%;" >
         <div class="row">
 
         		<!-- lista com posts do blog -->
@@ -57,7 +57,7 @@ layout: page
                                 {{ post.resumo | truncate: 150, '...' }}
                             </div>
                             <div class="agilizando-post-leia-mais-box">
-                              <p class="agilizando-post-leia-mais">Leia mais</p>
+                              <p class="agilizando-post-leia-mais">Contineu lendo</p>
                               <img src="/assets/img/arrow-roxa.png">
                             </div>
                           </div>
@@ -92,7 +92,7 @@ layout: page
               {% endif %}
             </div>
 
-            <div class="col-sm-3"> <!-- coluna lateral direita -->
+            <div class="col-lg-3"> <!-- coluna lateral direita -->
 
               <!-- Formulário de Inscrição -->
               <form action="#" method="post">

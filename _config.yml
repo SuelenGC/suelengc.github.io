@@ -77,7 +77,7 @@ category_dir: /articles/category
 gems: ['jekyll-paginate']
 plugins_dir: ./_plugins
 
-paginate: 10
+paginate: 7
 paginate_path: "/articles/page:num/"
 
 plugins:
