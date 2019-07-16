@@ -38,12 +38,28 @@ social:
 
 
 videos:
-  - thumb: thumnail-video-02-v2.png
-    link: https://www.youtube.com/watch?v=kw4NbsOZEqI&t=32s
-  - thumb: thumnail-video-06-v3.png
-    link: https://www.youtube.com/watch?v=OhDAixrHNhw&t=20s
-  - thumb: thumnail-video-07-v2.png
-    link: https://www.youtube.com/watch?v=OOux_bS40pk&t=124s
+  - url: https://www.youtube.com/embed/OOux_bS40pk
+    img: thumnail-video-07-v2.png
+    title: Aprenda HOJE a técnica MoSCoW de priorização! Com exemplos de banheiro
+  - url: https://www.youtube.com/embed/OhDAixrHNhw
+    img: thumnail-video-06-v3.png
+    title: 14 TERMOS ÁGEIS que você precisa aprender HOJE! | Perca o medo do AGILE! (Parte 1)
+  - url: https://www.youtube.com/embed/kw4NbsOZEqI
+    img: thumnail-video-02-v2.png
+    title: 7 LIÇÕES PRA PRIORIZAR O BACKLOG que você precisa aprender HOJE!
+  - url: https://www.youtube.com/embed/g7eBjRB--p8
+    img:
+    title: Ágil É RÁPIDO | SUE, AGILIZA ESSA DÚVIDA
+  - url: https://www.youtube.com/embed/0lKZlqpQGhI
+    img:
+    title: MANIFESTO ÁGIL PARA LEIGOS! O que é? Como surgiu?
+  - url: https://www.youtube.com/embed/80iA8IKvZc0
+    img:
+    title: Você SÓ ENTREGA ou AGREGA VALOR? Descubra hoje se você está no caminho certo da agilidade!
+  - url: https://www.youtube.com/embed/ZHMI9OfYGgw
+    img:
+    title: Apresentação do canal Agilizando! Por Suelen Carvalho
+
 
 
 top-posts:

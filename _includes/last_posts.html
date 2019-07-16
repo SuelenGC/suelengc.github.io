@@ -1,35 +1,44 @@
-<!-- Portfolio Grid Section -->
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12" style="text-align: center;">
-                <h2 class="section-heading">ÚLTIMOS POSTS</h2>
-                <p class="last-posts-disclaimer text-muted">Constantemente compartilho artigos sobre métodos ágeis, carreira, produtividade e empreendedorismo. Confira os últimos posts abaixo:</p>
+        		<div class="col-sm-1"></div>
+            <div class="col-sm-10" style="text-align: center;">
+                <h2 class="section-heading">BLOG</h2>
+                <p class="text-muted" style="text-align: left;">Conteúdo para guiar, refletir, provocar e inspirar você na aplicação de métodos ágeis, desenvolvimento de carreira, tecnologia, empreendedorismo e life style.</p>
             </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row" style="padding-top: 20px;">
+        	<div class="col-sm-1"></div>
+
+        	<div class="col-sm-10">
+        		<div class="row">
+        		{% for post in site.posts limit:3 %}
+	        		<div class="col-sm-4">
+		          	<a href="{{ post.url }}" target="_blank">
+		          		<div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); height: 300px;">
+		          			<div style="padding: 10px; text-align: right;">
+		          				<img style="display: inline-block; width: 13px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />
+		                	<p style="color: #fff;display: inline-block; font-size: 12px;">{% include post-date.html %}</p>
+		          			</div>
+		          			<div class="post-image-title" style="font-size: 90%">
+		                  <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+		                </div>
+		              </div>
+		            </a>
+		          </div>
+            {% endfor %}
+          	</div>
+        	</div>
+
+        	<div class="col-sm-1"></div>
         </div>
 
         <div class="row">
-        	{% for post in site.posts limit:3 %}
-            <div class="col-sm-4">
-            	<a href="{{ post.url }}" target="_blank">
-            		<div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
-            			<div style="padding: 10px; text-align: right;">
-            				<img style="display: inline-block; width: 13px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />
-                  	<p style="color: #fff;display: inline-block; font-size: 12px;">{% include post-date.html %}</p>
-            			</div>
-                  <div class="post-image-title">
-                    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-                  </div>
-                </div>
-              </a>
-            </div>
-        	{% endfor %}
-        </div>
-
-        <div class="row">
             <div class="col-lg-12" style="text-align: center;">
-            	<br><br>
-              <a href="/articles" class="btn btn-outline-dark">Quero ver todos os posts!</a>
+            	<br>
+              <a href="/articles" class="btn btn-warning agilizando-btns" style="box-shadow: 2px 2px 5px #0005;">Ler Mais Posts do Blog</a>
             </div>
         </div>
     </div>
