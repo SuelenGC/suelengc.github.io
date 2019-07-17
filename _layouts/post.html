@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<section id="post">
+<section id="post" style="padding: 100px 0">
 		<div class="container" style="min-height:100%;">
 
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -152,9 +152,9 @@ layout: page
                 <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
               </div>
 
-              {% for video in site.videos %}
+              {% for video in site.videos limit:3 %}
               <div style="margin-bottom: 20px">
-                <a target="_blank" href='{{ video.link}}'><img src="/assets/img/videos/{{ video.thumb }}"></a>
+                <a target="_blank" href='{{ video.url}}'><img src="/assets/img/videos/{{ video.img }}"></a>
               </div>
               {% endfor %}
 
