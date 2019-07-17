@@ -82,14 +82,17 @@ h6 {
 }
 
 /* Customized by SuelenGC */
+.carousel-control {
+	width: 5%;
+}
 
 .carousel .item {
-    width: 100%; /*slider width*/
-    height: 100vh; /*slider height*/
-    /*max-height: 700px; */
+    /*width: 100%; slider width*/
+    height: 400px;
+    /*max-height: 700px;
 }
 .carousel .item img {
-    width: 100%; /*img width*/
+    /*width: 100%; img width*/
 }
 
 /*full width container*/
@@ -443,9 +446,14 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+/* custom carousel */
+.carousel-control.left {
+	background-image: none;
+}
 
-
-
+.carousel-control.right {
+	background-image: none;
+}
 
 /* Agilizando! início */
 .agilizando-btns {

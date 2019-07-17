@@ -1,11 +1,11 @@
 [
   {
-    "title": "An image",
+    "name": "An image",
     "caption": "A caption",
     "url": "/assets/img/bg-yellow.png"
   },
   {
-    "title": "An image",
+    "name": "An image",
     "url": "/assets/img/bg-red.png"
   },
 ]

@@ -1,7 +1,7 @@
 <div id="{{ include.name }}" class="carousel slide" data-ride="carousel" data-interval="3500" data-pause="false">
 
   <ol class="carousel-indicators">
-   {% for picture in include.data %}
+   {% for carousel in include.data %}
    {% if forloop.first == true %}
      <li data-target="#{{ include.name }}" data-slide-to="0" class="active"></li>
    {% else %}
@@ -10,39 +10,39 @@
    {% endfor %}
   </ol>
   <div class="carousel-inner" role="listbox">
-    {% for picture in include.data %}
+    {% for carousel in include.data %}
       {% if forloop.first == true %}
         <div class="item active">
-          {% if picture.title %}
-            <img src="{{site.url}}{{ picture.url }}" alt="{{ picture.title }}">
+          {% if carousel.name %}
+            <img src="{{site.url}}{{ carousel.url }}" alt="{{ carousel.name }}">
           {% endif %}
 
-          {% if picture.url %}
-            <img src="{{site.url}}{{ picture.url }}">
+          {% if carousel.url %}
+            <img src="{{site.url}}{{ carousel.url }}">
           {% else %}
-            {% include {{picture.page}} %}
+            {% include {{carousel.page}} %}
           {% endif %}
 
-          {% if picture.caption %}
+          {% if carousel.caption %}
             <div class="carousel-caption">
-              {{ picture.caption }}
+              {{ carousel.caption }}
             </div>
           {% endif %}
         </div>
       {% else %}
         <div class="item">
-          {% if picture.title %}
-            <img src="{{site.url}}{{ picture.url }}" alt="{{ picture.title }}">
+          {% if carousel.name %}
+            <img src="{{site.url}}{{ carousel.url }}" alt="{{ carousel.name }}">
           {% endif %}
 
-          {% if picture.url %}
-            <img src="{{site.url}}{{ picture.url }}">
+          {% if carousel.url %}
+            <img src="{{site.url}}{{ carousel.url }}">
           {% else %}
-            {% include {{picture.page}} %}
+            {% include {{carousel.page}} %}
           {% endif %}
 
             <div class="carousel-caption">
-              {{ picture.caption }}
+              {{ carousel.caption }}
             </div>
         </div>
       {% endif %}
