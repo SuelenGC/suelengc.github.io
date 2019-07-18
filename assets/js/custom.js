@@ -40,12 +40,12 @@ $('div.modal').on('show.bs.modal', function() {
 	}
 });
 $('#type-it').typeIt({
-    strings: ["Tudo o que você precisa saber", "e não te contaram", "sobre carreira, métodos ágeis", "e desenvolvimento de aplicativos!"],
+    strings: [" dinâmicos!", " interativos!", " práticos!"],
     speed: 90,
-    breakLines: true,
-    loop: false,
-    lifeLike: false,
-    nextStringDelay: 1000,
+    breakLines: false,
+    loop: true,
+    lifeLike: true,
+    nextStringDelay: 3000,
     startDelete: true
 })
 .tiPause(2000);
