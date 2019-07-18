@@ -331,7 +331,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
@@ -404,6 +404,9 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em;
     }
 
+		 .navbar-default .nav li a {
+    	font-size: 12px;
+		}
 }
 
 
