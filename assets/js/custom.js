@@ -40,7 +40,7 @@ $('div.modal').on('show.bs.modal', function() {
 	}
 });
 $('#type-it').typeIt({
-    strings: [" dinâmicos!", " interativos!", " práticos!"],
+    strings: [" DINÂMICOS!", " INTERATIVOS!", " PRÁTICOS!"],
     speed: 90,
     breakLines: false,
     loop: true,
