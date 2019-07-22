@@ -2,7 +2,7 @@
 layout: post
 title:  "5 passos simples para você sair usando os lambdas do Java 8"
 date:   2016-04-29
-categories: ["Dicas de Tecnologia"]
+categories: ["Tecnologia"]
 tags: [java]
 image: assets/img/posts/happy-developer.jpg
 keywords:

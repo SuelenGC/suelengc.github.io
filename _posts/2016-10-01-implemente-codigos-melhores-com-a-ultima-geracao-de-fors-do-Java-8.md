@@ -2,7 +2,7 @@
 layout: post
 title:  "Implemente códigos melhores com a última geração de fors do Java 8"
 date:   2016-10-01
-categories: ["Dicas de Tecnologia"]
+categories: ["Tecnologia"]
 tags: [java]
 image: assets/img/posts/surprised-developer.jpg
 keywords:

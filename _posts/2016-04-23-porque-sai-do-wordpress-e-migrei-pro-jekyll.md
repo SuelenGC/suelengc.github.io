@@ -2,7 +2,7 @@
 layout: post
 title:  "Porque sai do Wordpress e migrei pro Jekyll"
 date:   2016-04-23
-categories: ["Dicas de Tecnologia"]
+categories: ["Tecnologia"]
 tags: [jekyll]
 image: assets/img/posts/jekyll-wordpress.png
 keywords:

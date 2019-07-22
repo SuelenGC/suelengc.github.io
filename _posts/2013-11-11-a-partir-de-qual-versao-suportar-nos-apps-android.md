@@ -2,7 +2,7 @@
 layout: post
 title:  "Saiba como decidir qual versão suportar nos aplicativos Android"
 date:   2013-11-11
-categories: ["Dicas de Tecnologia"]
+categories: ["Tecnologia"]
 tags: [android, mobile]
 image: assets/img/posts/android-versions.jpg
 keywords:

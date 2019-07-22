@@ -2,7 +2,7 @@
 layout: post
 title:  "Participação no Podcast do HappyHourTech sobre iOS e Android"
 date:   2013-08-13
-categories: ["Dicas de Tecnologia"]
+categories: ["Tecnologia"]
 tags: [android, mobile]
 image: assets/img/posts/podcast-android-ios.jpg
 keywords:

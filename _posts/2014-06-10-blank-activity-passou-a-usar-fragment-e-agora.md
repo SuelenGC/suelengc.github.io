@@ -2,7 +2,7 @@
 layout: post
 title:  "Blank Activity passou a usar Fragment, e agora?"
 date:   2014-06-10
-categories: ["Dicas de Tecnologia"]
+categories: ["Tecnologia"]
 tags: [android, mobile]
 image: assets/img/posts/doubt-blank-activity.jpg
 related:
