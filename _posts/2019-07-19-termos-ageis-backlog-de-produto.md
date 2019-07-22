@@ -8,6 +8,7 @@ image: assets/img/posts/backlog-de-produto4.jpg
 modal-id: 5
 comments: true
 ebook-resume:
+published: false
 resumo: >
    Este é o segundo post da série Termos Ágeis, para que você fique menos perdido nas rodinhas de agilidade. Hoje eu vou te explicar o que é o Backlog de Produto e qual sua importância para times ágeis.
 ---
