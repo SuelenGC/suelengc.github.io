@@ -19,9 +19,9 @@ Mas depois de todo o processo, sempre existe o esforço adicional de trazer o co
 
 Para fugir desse trabalho manual de ter que transcrever tudo para o mundo digital, muitos times optam por ferramentas online que permitem interação com postits digitais. Apesar dessas ferramentas ajudarem muito, você e seu time acabam perdendo parte da interação e flexibilidade que o tradicional "papel e caneta" oferecem.
 
-Será que é possível obter o melhor dos dois mundos: usar postits físicos sem o esforço de transcrever para o digital? Sim!
+Será que é possível obter o melhor dos dois mundos: usar postits físicos sem o esforço de transcrever para o digital?
 
-Desenvolvido pela 3M, o [Post-it® App](https://play.google.com/store/apps/details?id=com.mmm.postit&hl=en) significa que você não precisa mais escolher entre o tradicional e ultra flexível _"papel e caneta"_ e o extremamente fácil e versátil digital!
+Sim! Desenvolvido pela 3M, o [Post-it® App](https://play.google.com/store/apps/details?id=com.mmm.postit&hl=en) significa que você não precisa mais escolher entre o tradicional e ultra flexível _"papel e caneta"_ e o extremamente fácil e versátil digital!
 
 Disponível para [iOS](https://apps.apple.com/us/app/post-it/id920127738) e [Android](https://play.google.com/store/apps/details?id=com.mmm.postit&hl=en), com o aplicativo você consegue tirar uma foto de vários postits e o app automagicamente reconhece e os cria digitalmente. Uma vez no app, você consegue editar a cor de fundo, adicionar notas, exportar o board com os postits para o Trello, compartilhar e muito mais.
 
