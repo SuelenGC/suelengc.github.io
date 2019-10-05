@@ -122,6 +122,20 @@ layout: page
                   <div class="wpcf7-response-output wpcf7-display-none"></div>
               </form>
 
+
+							<!-- Categories -->
+              <hr style="margin-top:50px" />
+              <div style="display: table; width: 100%; margin-bottom: 20px;">
+                <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Categorias</h4>
+              </div>
+              <p class="meta">
+                {% for category in site.categories %}
+                <a class="cloud-tag" href='/articles/category/{{category[0] | slugify: "latin"}}/'>{{ category[0] }}</a>
+                {% endfor %}
+              </p>
+
+
               <!-- Outros Artigos -->
               <hr style="margin-top:50px" />
               <div style="display: table; width: 100%; margin-bottom: 20px;">
@@ -170,7 +184,7 @@ layout: page
               <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #390864"><b>Saiba mais!</b></a>
 
 
-              <!-- Tags -->
+							<!-- Tags -->
               <hr style="margin-top:50px" />
               <div style="display: table; width: 100%; margin-bottom: 20px;">
                 <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>

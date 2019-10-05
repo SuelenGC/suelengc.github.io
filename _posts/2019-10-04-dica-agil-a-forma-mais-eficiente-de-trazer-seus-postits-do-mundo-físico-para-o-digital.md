@@ -17,7 +17,7 @@ Se você trabalha com agilidade, postits certamente fazem parte da sua rotina. R
 
 Mas depois de todo o processo, sempre existe o esforço adicional de trazer o conteúdo gerado no mundo físico para o digital. Toda essa informação precisa ser armazenada e compartilhada com o time e as vezes, com outras pessoas de fora.
 
-Para fugir desse trabalho manual de ter que transcrever tudo para o mundo digital, muitos times optam por ferramentas online que permitem interação com postits digitais. Apesar dessas ferramentas ajudarem muito, você e seu time acaba perdendo parte da interação e flexibilidade que o tradicional "papel e caneta" oferecem.
+Para fugir desse trabalho manual de ter que transcrever tudo para o mundo digital, muitos times optam por ferramentas online que permitem interação com postits digitais. Apesar dessas ferramentas ajudarem muito, você e seu time acabam perdendo parte da interação e flexibilidade que o tradicional "papel e caneta" oferecem.
 
 Será que é possível obter o melhor dos dois mundos: usar postits físicos sem o esforço de transcrever para o digital? Sim!
 
