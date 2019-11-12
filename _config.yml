@@ -41,25 +41,31 @@ videos:
   - url: https://www.youtube.com/embed/OOux_bS40pk
     img: thumnail-video-07-v2.png
     title: Aprenda HOJE a técnica MoSCoW de priorização! Com exemplos de banheiro
+    description: É sempre importante você ter um cinto de ferramentas ágeis RECHEADO! E uma ferramenta que NÃO PODE te faltar neste seu cinto é a TÉCNICA MoSCoW de PRIORIZAÇÃO. Neste vídeo eu te explico tim tim por tim tim tudo o que você precisa saber, com EXEMPLOS PRÁTICOS, essa técnica MARAVILHOSA!
   - url: https://www.youtube.com/embed/OhDAixrHNhw
     img: thumnail-video-06-v3.png
     title: 14 TERMOS ÁGEIS que você precisa aprender HOJE! | Perca o medo do AGILE! (Parte 1)
-  - url: https://www.youtube.com/embed/kw4NbsOZEqI
-    img: thumnail-video-02-v2.png
-    title: 7 LIÇÕES PRA PRIORIZAR O BACKLOG que você precisa aprender HOJE!
+    description: Você costuma ficar PERDIDO nas rodinhas de agilidade? Vários termos, siglas e expressões e você NÃO ENTENDE NADA? Se perde mas ainda assim faz aquela cara de sabedoria plena?? Esses dias tortuosos ACABAM HOJE pra você!
   - url: https://www.youtube.com/embed/g7eBjRB--p8
     img:
     title: Ágil É RÁPIDO | SUE, AGILIZA ESSA DÚVIDA
+    description: Estamos começando a ter algumas perguntas bacanas e por isso estou estreiando a série "Sue, agiliza essa dúvida!" onde irei responder perguntas de vocês! Você está com aquela dúvida cruel, precisando de uma mãozinha ágil amiga, conta pra mim que vou tentar te ajudar!
   - url: https://www.youtube.com/embed/0lKZlqpQGhI
     img:
     title: MANIFESTO ÁGIL PARA LEIGOS! O que é? Como surgiu?
+    description: Aqui você vai começar a sua jornada sobre o Manifesto Ágil, a base de todos os métodos e práticas ágeis!!! Todo agilista que se preze deve conhecê-lo!
   - url: https://www.youtube.com/embed/80iA8IKvZc0
     img:
     title: Você SÓ ENTREGA ou AGREGA VALOR? Descubra hoje se você está no caminho certo da agilidade!
+    description: Você SÓ ENTREGA ou AGREGA VALOR? Se não sabe responder a esta pergunta, este vídeo será os 7 minutos mais bem investidos da sua vida ágil!
+  - url: https://www.youtube.com/embed/kw4NbsOZEqI
+    img: thumnail-video-02-v2.png
+    title: 7 LIÇÕES PRA PRIORIZAR O BACKLOG que você precisa aprender HOJE!
+    description: Você já travou ao tentar priorizar seu backlog? Não consegue decidir o que vem antes ou depois??? Você pode estar sendo afetado por um OU MAIS problemas dentre estes 7 que eu vou te contar neste vídeo!
   - url: https://www.youtube.com/embed/ZHMI9OfYGgw
     img:
     title: Apresentação do canal Agilizando! Por Suelen Carvalho
-
+    description: Compartilhando a teoria e a PRÁTICA sobre Métodos Ágeis de forma descontraída, descomplicada e com QUALIDADE pra te ajudar a agilizar a sua vida, seus projetos e sua CARREIRA!
 
 
 top-posts:

@@ -17,13 +17,17 @@
         		{% for post in site.posts limit:3 %}
 	        		<div class="col-sm-4">
 		          	<a href="{{ post.url }}" target="_blank">
-		          		<div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); height: 300px;">
-		          			<div style="padding: 10px;">
-		          				<!-- <p class="agilizando-post-meta-categoria" style="display: inline-block; font-size: 12px; float: left;">{{ post.categories }}</p> -->
-		          				<p style="color: #fff;display: inline-block; font-size: 12px; float: right;"> <img style="display: inline-block; width: 13px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />{% include post-date.html %}</p>
-		          			</div>
-		          			<div class="post-image-title" style="font-size: 90%">
-		                  <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+		          		<div class="last-post-image-container" style="background-image: linear-gradient(to bottom, transparent 0%, black 100%), url({{site.url}}/{{post.image}}); height: 300px;">
+		          			<div class="post-image-title" style="font-size: 90%; background-color: #00000000;">
+		          				<p style="color: #fff;display: inline-block; font-size: 10px; float: left;">
+	          						<span class="agilizando-post-meta-categoria" style="display: inline-block; font-weight: 300; font-size: 10px; float: left;">{{ post.categories }}</span>
+	          						<img style="display: inline-block; width: 11px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />{% include post-date.html %}
+	          					</p>
+
+		          				<div style="display:table; width: 100%; vertical-align: middle;">
+		          					<div class="agilizando-post-principal-yellow-vertical-line"></div>
+		          					<p style="display: inline-block; font-size: 1.2em; line-height: 1.2em; margin-left: 10px;" class="agilizando-post-principal-title">{{ post.title }}</p>
+		          				</div>
 		                </div>
 		              </div>
 		            </a>
