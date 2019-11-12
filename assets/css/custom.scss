@@ -1522,6 +1522,14 @@ a.cloud-tag {
   height:100%;
 }
 
+
+.video-block-with-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
 /* SHARE BUTTONS */
 .share-button {
   position: relative;
