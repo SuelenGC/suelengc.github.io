@@ -18,7 +18,7 @@ resumo: >
 
 Você achou que porque agora é ágil ia se livrar de dar estimativas! Pois não (na maioria dos casos pelo menos). Estimativas são muito importantes para o sucesso de projetos, sejam eles ágeis ou não, porém são beeem diferentes do que se fazia em projetos geridos de forma mais tradicional.
 
-Mas uma coisa não mudou, quanto menos assertivas as estimativas, mais longe ficamos de atingir a meta e consequentemente, agregar o valor esperado no tempo esperado para nossos time, empresa e principalmente, clientes.
+Mas uma coisa não mudou, quanto menos assertivas as estimativas, mais longe ficamos de atingir a meta e consequentemente, agregar o valor esperado no tempo esperado para nosso time, empresa e principalmente, clientes.
 
 
 ## O que são pontos de estória e como é usado?
