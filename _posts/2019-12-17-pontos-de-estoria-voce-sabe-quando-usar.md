@@ -43,7 +43,7 @@ Mas qual o problema disso?
 
 O problema é quando pontos de estória são usados no planejamento de sprints. Enquanto pontos de estória é uma unidade de medida **relativa**, **dinâmica** e **abstrata**, sprints, por serem ciclos de tempo muito curtos (até 1 mês segundo o Scrum Guide, mas de até duas semanas segundo minha experiência), precisam de mais **transparência** e **assertividade**, do contrário o risco de não atingir a meta da sprint aumenta.
 
-Usar pontos de estórias para estimar itens de uma sprint é como usar cachorrinhos para medir a distância entre duas cidades. Existem de vários tamanhos e apesar de ser muito legal e fofo no fim, vai dar um resultado bem impreciso e difícil de outras pessoas entenderem. Já pensou você falando: "Vou daqui ao Rio de Janeiro, são apenas 1450 cachorros de distância."
+Usar pontos de estórias para estimar itens de uma sprint é como usar cachorrinhos para medir a distância entre duas cidades. Existem de vários tamanhos e apesar de ser muito legal e fofo, no fim, vai dar um resultado bem impreciso e difícil de outras pessoas entenderem. Já pensou você falando: "Vou daqui ao Rio de Janeiro, são apenas 1450 cachorros de distância."
 
 Se você depender disso para planejar quanto irá gastar de combustível por exemplo, pode "morrer na praia". Tanto para distância como para estimar itens de uma sprint, existem outras unidades de medidas bem mais apropriadas.
 
