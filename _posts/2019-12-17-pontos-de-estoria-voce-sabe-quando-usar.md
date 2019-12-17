@@ -4,7 +4,7 @@ title:  "Pontos de estória, você sabe quando usar?"
 date:   2019-12-17
 categories: ["Dicas de Agilidade"]
 tags: []
-image: assets/img/posts/backlog-de-produto.jpg
+image: assets/img/posts/doubt-man.jpg
 modal-id: 5
 comments: true
 ebook-resume:
