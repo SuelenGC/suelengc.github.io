@@ -54,7 +54,7 @@ Se você depender disso para planejar quanto irá gastar de combustível por exe
 
 Mike Cohn, criador do termo pontos de estória (do inglês _Story Points_) e autor do livro [Agile Estimating and Planning (2006)](https://www.amazon.com.br/Agile-Estimating-Planning-Mike-Cohn/dp/0131479415), diz que pontos de estória são ótimos para release plannings, que são planejamentos de médio a longo prazo. Para planejamentos de curto prazo, que é o caso de sprints no Scrum, ele recomenda dias ou horas "ideais", que nada mais é do que um dia (ou hora) de trabalho sem interrupções, por ser mais exata, controlável e administrável.
 
-Ou seja, estimar com 1, 2, 3 ou 5 dias, é perfeitamente ok e "ágil". De quebra você ganha uma estimativa mais assertiva e que todo mundo entende - vulgo transparência - dentro e fora do time.
+Ou seja, estimar com 1, 2, 3 ou 5 dias, é perfeitamente ok e "ágil". De quebra você ganha uma estimativa mais assertiva e que todo mundo entende - agrega transparência - dentro e fora do time.
 
 Na minha experiência, dias foram os que trouxeram melhores resultados. Com isso eu quero dizer, mais sprints onde a meta era atingida e todos os itens puxados finalizados dentro do tempo da sprint.
 
