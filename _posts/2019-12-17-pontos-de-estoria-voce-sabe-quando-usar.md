@@ -18,12 +18,12 @@ resumo: >
 
 Você achou que porque agora é ágil ia se livrar de dar estimativas! Pois não (na maioria dos casos pelo menos). Estimativas são muito importantes para o sucesso de projetos, sejam eles ágeis ou não, porém são beeem diferentes do que se fazia em projetos geridos de forma mais tradicional.
 
-Mas uma coisa não mudou, quanto menos assertivas as estimativas, mais longe ficamos de atingir a meta e consequentemente, agregar o valor esperado no tempo esperado para nosso time, empresa e principalmente, clientes.
+Mas uma coisa não mudou, quanto menos assertivas as estimativas, mais longe ficamos de atingir a meta e consequentemente, agregar o valor esperado no tempo esperado para nosso	 time, empresa e principalmente, clientes.
 
 
 ## O que são pontos de estória e como é usado?
 
-Ponto de estória é uma unidade de media usada por times ágeis para estimar complexidade e esforço de itens a serem feitos pelo time.
+Pontos de estória é uma unidade de media usada por times ágeis para estimar complexidade e esforço de itens a serem feitos pelo time.
 
 Normalmente é utilizada a sequência de fibonacci (1, 2, 3, 5, 8, 13, etc) para representar os pontos que podem ser utilizados para estimar. Existe também o símbolo do infinito para representar algo tão complexo que é impossível estimar. Via de regra os times solicitam que itens com esta pontuação sejam quebrados em itens menores, para ser possível estimar.
 
