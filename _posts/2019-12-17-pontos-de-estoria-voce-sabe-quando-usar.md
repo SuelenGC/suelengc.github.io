@@ -9,7 +9,7 @@ modal-id: 5
 comments: true
 ebook-resume:
 resumo: >
-   Passei muito tempo da minha experiência com times ágeis me sentindo obrigada a estimar com pontos de estória. Felizmente a experiência me mostrou que é essa é apenas uma das opções possíveis. Quer saber quais são as outras? Quando usar qual? Continue lendo!
+   Na última década trabalhando com times ágeis, por muito tempo me senti obrigada a estimar com pontos de estória. Felizmente a experiência me mostrou que essa é apenas uma das opções possíveis. Quer saber quais são as outras? Quando usar qual? Continue lendo!
 ---
 
 
