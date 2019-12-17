@@ -63,7 +63,7 @@ Por muito tempo eu mesma fiz questão de usar pontos de estória no planejamento
 O próprio Mike Cohn percebeu que a mensagem do livro foi mal compreendida e que o propósito de pontos de estória foi sendo distorcido com o tempo. Para tentar consertar, ele escreveu alguns posts em seu blog, vale muito a leitura (em inglês):
 
 * [Por que não usar pontos de estória para o planejamento de sprints (2007)](https://www.mountaingoatsoftware.com/blog/why-i-dont-use-story-points-for-sprint-planning)
-* [Re-estimar ou não, eis a questão (2007)](https://www.mountaingoatsoftware.com/blog/to-re-estimate-or-not-that-is-the-question).
+* [Re-estimar ou não, eis a questão (2007)](https://www.mountaingoatsoftware.com/blog/to-re-estimate-or-not-that-is-the-question)
 
 
 
