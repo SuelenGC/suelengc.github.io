@@ -9,7 +9,7 @@ modal-id: 5
 comments: true
 ebook-resume:
 resumo: >
-   Você achou que porque agora é ágil ia se livrar de dar estimativas! Pois não (na maioria dos casos pelo menos). Estimativas são muito importantes para o sucesso de projetos, sejam eles ágeis ou não. Quer saber como estimar em projetos ágeis, continue lendo!
+   Passei muito tempo da minha experiência com times ágeis me sentindo obrigada a estimar com pontos de estória. Felizmente a experiência me mostrou que é essa é apenas uma das opções possíveis. Quer saber quais são as outras? Quando usar qual? Continue lendo!
 ---
 
 
