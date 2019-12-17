@@ -39,7 +39,7 @@ Para exemplificar, pense em um time composto só por pessoas com senioridade alt
 
 Em pouco mais de uma década trabalhando com times ágeis, foram pouquíssimos os times que eu vi fazendo este alinhamento inicial sobre o que vale 2 pontos. E apesar de ser algo aparentemente muito simples de ser feito, e até talvez por isso, na maioria das vezes é negligenciado e os times começam a estimar em pontos sem esse alinhamento.
 
-Mas e aí, qual o problema disso?
+Mas qual o problema disso?
 
 O problema é quando pontos de estória são usados no planejamento de sprints. Enquanto pontos de estória é uma unidade de medida relativa, dinâmica e abstrata, sprints, por serem ciclos de tempo muito curtos (até 1 mês segundo o Scrum Guide, mas de até duas semanas segundo minha experiência), precisam de mais transparência e assertividade, do contrário o risco de não atingir a meta da sprint aumenta.
 
