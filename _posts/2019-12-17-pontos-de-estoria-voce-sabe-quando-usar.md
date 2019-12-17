@@ -27,7 +27,7 @@ Pontos de estória é uma unidade de media usada por times ágeis para estimar c
 
 Normalmente é utilizada a sequência de Fibonacci (1, 2, 3, 5, 8, 13, etc) para representar os pontos que podem ser utilizados para estimar. Existe também o símbolo do infinito para representar algo tão complexo que é impossível estimar. Via de regra os times solicitam que itens com esta pontuação sejam quebrados em itens menores, para ser possível estimar.
 
-Para o time começar a utilizar pontos de estória em suas estimativas, é muito importante, eles conversarem e alinharem entre sí o que representa um item que vale 2 pontos e 1 ponto. Isso porque as demais estimativas se baseiam nessas definições.
+Para o time começar a utilizar pontos de estória em suas estimativas, é muito importante eles conversarem e alinharem entre sí o que representa um item que vale 2 pontos e 1 ponto. Isso porque as demais estimativas se baseiam nessas definições.
 
 Por exemplo, quando se diz que um item vale 5 pontos, significa que ele é mais que o dobro de complexidade e esforço do que o item que foi combinado que valia 2 pontos. E as demais estimativas seguem dessa forma, sempre fazendo essas comparações, por isso a importância do alinhamento!
 
@@ -37,7 +37,7 @@ Para exemplificar, pense em um time composto só por pessoas com senioridade alt
 
 ## Teoria vs Prática
 
-Em pouco mais de uma década trabalhando com times ágeis, foram pouquíssimos os times que eu vi fazendo este alinhamento inicial sobre o que vale 2 pontos. E apesar de ser algo aparentemente muito simples de ser feito, e até talvez por isso, na maioria das vezes é negligenciado e os times começam a estimar em pontos sem isso mesmo.
+Em pouco mais de uma década trabalhando com times ágeis, foram pouquíssimos os times que eu vi fazendo este alinhamento inicial sobre o que vale 2 pontos. E apesar de ser algo aparentemente muito simples de ser feito, e até talvez por isso, na maioria das vezes é negligenciado e os times começam a estimar em pontos sem esse alinhamento.
 
 Mas e aí, qual o problema disso?
 
