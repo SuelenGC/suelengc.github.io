@@ -58,7 +58,7 @@ Ou seja, estimar com 1, 2, 3 ou 5 dias, é perfeitamente ok e "ágil". De quebra
 
 Na minha experiência, estimar itens da sprint em dias foi o que trouxe os melhores resultados. Com isso eu quero dizer, mais sprints onde a meta era atingida e todos os itens puxados finalizados dentro do tempo da sprint.
 
-Por muito tempo eu mesma fiz questão de usar pontos de estória no planejamento de sprints. Era o que parecia mais "correto" e "ágil" de se fazer. Qualquer coisa diferente parecia que não estávamos sendo "ágeis". Depois fui experimentando outras formas e percebendo que não era algo "errado" e que tudo bem usar dias por exemplo, se os resultados são melhores.
+Por muito tempo eu mesma fiz questão de usar pontos de estória no planejamento de sprints. Era o que parecia mais "correto" e "ágil" de se fazer. Qualquer coisa diferente parecia que não estávamos sendo "ágeis". Depois fui conhecendo e experimentando outras formas e percebendo que não era algo "errado" e que tudo bem usar dias por exemplo, se os resultados são melhores.
 
 O próprio Mike Cohn percebeu que a mensagem do livro foi mal compreendida e que o propósito de pontos de estória foi sendo distorcido com o tempo. Para tentar consertar, ele escreveu alguns posts em seu blog, vale muito a leitura (em inglês):
 
