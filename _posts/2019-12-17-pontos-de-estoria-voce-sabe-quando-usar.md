@@ -25,7 +25,7 @@ Mas uma coisa não mudou, quanto menos assertivas as estimativas, mais longe fic
 
 Pontos de estória é uma unidade de media usada por times ágeis para estimar complexidade e esforço de itens a serem feitos pelo time.
 
-Normalmente é utilizada a sequência de fibonacci (1, 2, 3, 5, 8, 13, etc) para representar os pontos que podem ser utilizados para estimar. Existe também o símbolo do infinito para representar algo tão complexo que é impossível estimar. Via de regra os times solicitam que itens com esta pontuação sejam quebrados em itens menores, para ser possível estimar.
+Normalmente é utilizada a sequência de Fibonacci (1, 2, 3, 5, 8, 13, etc) para representar os pontos que podem ser utilizados para estimar. Existe também o símbolo do infinito para representar algo tão complexo que é impossível estimar. Via de regra os times solicitam que itens com esta pontuação sejam quebrados em itens menores, para ser possível estimar.
 
 Para o time começar a utilizar pontos de estória em suas estimativas, é muito importante, eles conversarem e alinharem entre sí o que representa um item que vale 2 pontos e 1 ponto. Isso porque as demais estimativas se baseiam nessas definições.
 
