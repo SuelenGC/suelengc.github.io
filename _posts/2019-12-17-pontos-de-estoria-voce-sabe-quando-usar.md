@@ -75,7 +75,7 @@ Você é livre para mudar o que não estiver trazendo bons resultados, isso é s
 
 
 
-Gostou desse conteúdo? Então deixa seu comentário aqui em baixo expressando todo seu amor, carinho, dúvidas e experiências! =`]
+Gostou desse conteúdo? Então deixa seu comentário aqui em baixo expressando todo seu amor, carinho, dúvidas e experiências!
 
 Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
 
