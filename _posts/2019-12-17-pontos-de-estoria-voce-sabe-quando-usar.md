@@ -69,7 +69,7 @@ O próprio Mike Cohn percebeu que a mensagem do livro foi mal compreendida e que
 
 ## Conclusão
 
-Você também torcia (ou ainda torce) o nariz ao estimar com pontos de estória? Se sente obrigado a usar porque acha que se não fizer assim não está sendo "ágil"? Fique tranquilo e tranquila meus queridos padauãs, você não está sozinho!
+Você também torcia (ou ainda torce) o nariz ao estimar com pontos de estória? Se sente obrigado a usar porque acha que se não fizer assim não está sendo "ágil"? Fique tranquilo e tranquila meus queridos padauãs da agilidade, você não está sozinho!
 
 Você é livre para mudar o que não estiver trazendo bons resultados, isso é ser ágil! Agora... se você estima usando pontos de estória e seu time está voando, também não se sinta obrigado a mudar, o que importa são os resultados! Se você faz parte desse último grupo, conta pra mim sua história, quero saber! =`]
 
