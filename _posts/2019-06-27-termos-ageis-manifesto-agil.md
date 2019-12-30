@@ -3,7 +3,7 @@ layout: post
 title:  "Termos Ágeis: Manifesto Ágil, Uh!?"
 date:   2019-06-27
 categories: ["Dicas de Agilidade"]
-tags: [métodos ágeis, termos ágeis, manifesto ágil]
+tags: [Métodos Ágeis, Termos Ágeis, Manifesto Ágil]
 image: assets/img/posts/doubt-people.jpg
 modal-id: 5
 comments: true
@@ -12,9 +12,9 @@ resumo: >
    Este é o primeiro post da série Termos Ágeis, para que você fique menos perdido nas rodinhas de agilidade. Hoje eu vou te contar o que é o Manifesto Ágil, um termo muito usado e importante no mundo ágil.
 ---
 
->_Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo._
-
 O Manifesto Ágil é um texto criado em 2001 por um grupo de 17 pessoas que, na época, trabalhavam com formas diferentes de desenvolver software e que funcionavam bem. Naquele momento, essas formas ainda não eram conhecidas como métodos ágeis.
+
+>_Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo._
 
 Essas 17 pessoas se reuniram em um Ski Resort em Utah, USA (olha só que chato), onde ficaram 2 dias esquiando e conversando sobre o que as formas diferentes de desenvolver software que elas utilizavam tinham em comum. Pessoas como o criador do TDD, método ágil que ajuda a aumentar a qualidade e legibilidade do software, e outros participaram desse encontro.
 

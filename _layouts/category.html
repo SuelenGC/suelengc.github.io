@@ -14,8 +14,7 @@ layout: page
             <div class="col-md-8">
 							{% for post in site.posts %}
 								{% for category in post.categories %}
-                  {% assign slug = category | slugify: 'latin' %}
-                  {% if slug == page.category %}
+                  {% if category.downcase == page.category.downcase %}
                     <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
                       <div class="post-image-title">
                         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>

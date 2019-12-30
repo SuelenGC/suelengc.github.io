@@ -9,7 +9,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'category.html')
       self.data['category'] = category
       category_title_prefix = site.config['category_title_prefix'] || 'Categoria &ldquo;'
-      category_title_suffix = site.config['category_title_suffix'] || '&rdquo;'
+      category_title_suffix = site.config['category_title_suffix'] || '&ldquo;'
       self.data['title'] = "#{category_title_prefix}#{category}#{category_title_suffix}"
     end
   end
@@ -19,8 +19,8 @@ module Jekyll
       if site.layouts.key? 'category'
         dir = site.config['category_dir'] || 'category'
         site.categories.keys.each do |category|
-          category = category.gsub(' ', '-').gsub('é', 'e').gsub('á', 'a').gsub('à', 'a').gsub('í', 'i').gsub('ú', 'u').gsub('ó', 'o').downcase
-          write_category_index(site, File.join(dir, category), category)
+          category_slug = category.gsub(' ', '-').gsub('é', 'e').gsub('á', 'a').gsub('à', 'a').gsub('í', 'i').gsub('ú', 'u').gsub('ó', 'o').downcase
+          write_category_index(site, File.join(dir, category_slug), category.split.map(&:capitalize).join(' '))
         end
       end
     end

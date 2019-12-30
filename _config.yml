@@ -1,10 +1,10 @@
 url: http://suelencarvalho.com/
 
 # Site settings
-title: Suelen Carvalho - Alcance a Agilidade, Inovação e o próximo nível na sua Carreira!
+title: Suelen Carvalho - Métodos ágeis, tecnologia, inovação e o próximo nível na sua carreira!
 email: suelengcarvalho@gmail.com
-description: "Conteúdo simples e de qualidade sobre metodologias ágeis scrum, lean, kanban, XP e outros métodos ágeis. Desenvolvimento Mobile Android e Carreira"
-
+description: "Conteúdo simples e de qualidade sobre metodologias ágeis scrum, lean, kanban, XP e outros métodos ágeis. Desenvolvimento mobile Android e carreira"
+author: Suelen Carvalho
 
 # Team names, titles and social links
 people:
@@ -80,7 +80,7 @@ permalink: /articles/:title
 tag_dir: /articles/tag
 category_dir: /articles/category
 
-gems: ['jekyll-paginate']
+gems: ['jekyll-paginate', 'jekyll-seo-tag']
 plugins_dir: ./_plugins
 
 paginate: 9
