@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dica Ágil: A forma mais eficiente de trazer seus postits do mundo físico para o digital!"
+title:  "A forma mais eficiente de trazer seus postits do mundo físico para o digital!"
 date:   2019-10-05
 categories: ["Dicas de Agilidade"]
 tags: []
