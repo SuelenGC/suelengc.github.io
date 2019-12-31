@@ -80,7 +80,7 @@ permalink: /articles/:title
 tag_dir: /articles/tag
 category_dir: /articles/category
 
-gems: ['jekyll-paginate', 'jekyll-seo-tag']
+gems: ['jekyll-paginate', 'jekyll-seo-tag', 'jekyll-compress-images']
 plugins_dir: ./_plugins
 
 paginate: 9
@@ -88,3 +88,4 @@ paginate_path: "/articles/page:num/"
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-compress-images
