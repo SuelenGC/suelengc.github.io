@@ -9,12 +9,14 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
 
             // get values from FORM
-            var name = $("#name").val();
-            var email = $("#email").val();
-            var message = $("#message").val();
-            var reason = $("#reason").val();
+            var name = $form.find("#name").val();
+            var email = $form.find("#email").val();
+            var message = $form.find("#message").val();
+            var reason = $form.find("#reason").val();
 
             var subject = "[New Contact] " + reason;
+
+            console.log($form);
 
             $.ajax({
                 url: 'https://suelencarvalho-api.appspot.com/sendEmail',
@@ -28,26 +30,26 @@ $(function() {
                 cache: false,
                 success: function() {
                     // Success message
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $form.find('#success').html("<div class='alert alert-success'>");
+                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-success')
+                    $form.find('#success > .alert-success')
                         .append("Sua mensagem foi enviada. Obrigada pelo contato!");
-                    $('#success > .alert-success')
+                    $form.find('#success > .alert-success')
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $form.trigger("reset");
                 },
                 error: function() {
                     // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $form.find('#success').html("<div class='alert alert-danger'>");
+                    $form.find('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("Desculpe, ocorreu algum problema. Por favor, tente novamente mais tarde!");
-                    $('#success > .alert-danger').append('</div>');
+                    $form.find('#success > .alert-danger').append("Desculpe, ocorreu algum problema. Por favor, tente novamente mais tarde!");
+                    $form.find('#success > .alert-danger').append('</div>');
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $form.trigger("reset");
                 },
             });
         },
