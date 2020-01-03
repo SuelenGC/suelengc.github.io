@@ -103,10 +103,29 @@ title: Blog
 
                   <p style="color: #ccc; line-height: 1">Deixe seu e-mail aqui e receba o conteúdo mais ágil do Brasil!</p>
                   <div class="form-group">
-                      <input type="text" class="form-control" placeholder="fulano@gmail.com" />
+
+										<form name="sentMessage" id="agilizandoForm" class="form-inline">
+											<input type="hidden" id="reason" value="Newsletter Agilziando!">
+											<input type="hidden" id="message" value="Me inscreva na newsletter.">
+											<div class="form-group">
+		                      <input id="name" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Nome" />
+		                  </div>
+		                  <div class="form-group">
+			                  	<input id="email" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Seu melhor email aqui" />
+		                  </div>
+		                  <!-- <div id="success"></div>
+		                  <div class="wpcf7-response-output wpcf7-display-none"></div> -->
+
+											<button type="submit" class="btn btn-warning agilizando-btns" style="box-shadow: 2px 2px 5px #0005;"><b>Me inscreva!</b></button><br>
+
+
+		              </form>
+
+
+                      <!-- <input type="text" class="form-control" placeholder="fulano@gmail.com" /> -->
                   </div>
-                  <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #fff; width: 100%"><b>INSCREVER</b></a>
-                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+                  <!-- <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #fff; width: 100%"><b>INSCREVER</b></a>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div> -->
               </form>
 
 

@@ -34,7 +34,7 @@ $(function() {
                     $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $form.find('#success > .alert-success')
-                        .append("Sua mensagem foi enviada. Obrigada pelo contato!");
+                        .append("Obrigada pelo contato!");
                     $form.find('#success > .alert-success')
                         .append('</div>');
 
@@ -46,8 +46,11 @@ $(function() {
                     $form.find('#success').html("<div class='alert alert-danger'>");
                     $form.find('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $form.find('#success > .alert-danger').append("Desculpe, ocorreu algum problema. Por favor, tente novamente mais tarde!");
-                    $form.find('#success > .alert-danger').append('</div>');
+                    $form.find('#success > .alert-danger')
+                        .append("Desculpe não foi, tente novamente.");
+                    $form.find('#success > .alert-danger')
+                        .append('</div>');
+
                     //clear all fields
                     $form.trigger("reset");
                 },
