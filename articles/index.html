@@ -165,7 +165,7 @@ title: Blog
               {% assign diff = max | minus: min %}
               {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 
-              {% for post in site.posts limit:4 offset:randomNumber %}
+              {% for post in site.posts limit:2 offset:randomNumber %}
                 {% if page.title != post.title %}
                     <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
                       <div class="post-image-title">
