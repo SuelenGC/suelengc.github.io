@@ -9,7 +9,7 @@
 
 /*@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
@@ -462,29 +462,38 @@ fieldset[disabled] .btn-xl.active {
 
 .left-container {
 	text-align: center;
-	width: 100%;
+	width: 70%;
 	margin: 100px auto 80px;
 }
 
 .right-container {
 	text-align: center;
-	width: 100%;
+	width: 65%;
 	margin: 80px auto 50px;
+}
+
+.youtube-logo-plus-text {
+	width: 100%;
 }
 
 /* tablet */
 @media(min-width:768px) {
 	.left-container {
 		text-align: center;
-		width: 80%;
-		margin: 100px auto;
+		width: 100%;
+		margin: 107% auto;
 	}
 
 	.right-container {
 		text-align: center;
-		width: 80%;
-		margin: 80px auto;
+		width: 100%;
+		margin: 100% auto;
 	}
+
+	.youtube-logo-plus-text {
+		width: 70%;
+	}
+
 }
 
 /* desktop */
@@ -492,13 +501,18 @@ fieldset[disabled] .btn-xl.active {
 	.left-container {
 		text-align: center;
 		width: 100%;
-		margin: 260px auto;
+		margin: 270px auto;
 	}
 
 	.right-container {
 		text-align: center;
-		width: 110%;
-		margin: 240px auto;
+		width: 90%;
+		margin: 250px auto;
+	}
+
+	.youtube-logo-plus-text {
+		width: 75%;
+		margin-top: 10px;
 	}
 }
 
