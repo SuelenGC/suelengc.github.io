@@ -59,12 +59,12 @@ title: "YouTube Agilizando!"
 
 	        <br><hr>
 
-					{% assign rows = site.videos.size | divided_by: 3.0 | ceil %}
+					{% assign rows = site.videos.size | divided_by: 2.0 | ceil %}
 					{% for row in (1..rows) %}
 						<div class="row" style="border-top: 50px">
-							{% assign row_offset = row | minus: 1 | times: 3 %}
-							{% for video in site.videos limit:3 offset:row_offset %}
-		            <div class="col-md-4">
+							{% assign row_offset = row | minus: 1 | times: 2 %}
+							{% for video in site.videos limit:2 offset:row_offset %}
+		            <div class="col-md-6">
 		                <div class="portfolio-item">
 		                  <div class="video-container">
 		                    <iframe src="{{video.url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -154,7 +154,7 @@ title: "YouTube Agilizando!"
           {% assign diff = max | minus: min %}
           {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 
-          {% for post in site.posts limit:4 offset:randomNumber %}
+          {% for post in site.posts limit:2 offset:randomNumber %}
             {% if page.title != post.title %}
                 <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
                   <div class="post-image-title">
@@ -172,7 +172,7 @@ title: "YouTube Agilizando!"
             <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
           </div>
 
-          {% for video in site.videos limit:3 %}
+          {% for video in site.videos limit:2 %}
           <div style="margin-bottom: 20px">
             <a target="_blank" href='{{ video.url}}'><img src="/assets/img/videos/{{ video.img }}"></a>
           </div>
