@@ -460,59 +460,75 @@ fieldset[disabled] .btn-xl.active {
 
 /* Youtube Agilizando! início */
 
+.mobile-100 {height:50%}
+
 .left-container {
+	padding: 20px;
 	text-align: center;
 	width: 100%;
-	margin: 140px auto 80px;
+	height: 100%;
 }
 
 .right-container {
+	padding: 20px;
 	text-align: center;
-	width: 85%;
-	margin: 100px auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .youtube-logo-plus-text {
-	width: 100%;
+	max-height: 90%;
+	display: block;
+	margin: auto;
 }
 
 /* tablet */
 @media(min-width:768px) {
 	.left-container {
 		text-align: center;
-		width: 70%;
-		margin: 107% auto;
 	}
 
 	.right-container {
 		text-align: center;
-		width: 60%;
-		margin: 100px auto;
+
 	}
 
 	.youtube-logo-plus-text {
-		width: 70%;
+		max-height: 60%;
+		display: block;
+		margin: auto;
 	}
+
+	.youtube-video-img {
+		max-height: 100%;
+    display: block;
+    margin: auto;
+   }
 
 }
 
 /* desktop */
 @media(min-width:993px) {
+	.mobile-100 {height:100vh}
+
 	.left-container {
 		text-align: center;
 		width: 100%;
-		margin: 270px auto;
+		height: 100%;
+		margin: 30% auto;
 	}
 
 	.right-container {
 		text-align: center;
-		width: 90%;
-		margin: 250px auto;
+		width: 100%;
+		height: 100%;
+		margin: 25% auto;
 	}
 
 	.youtube-logo-plus-text {
 		width: 75%;
-		margin-top: 10px;
+		display: block;
 	}
 }
 
