@@ -462,14 +462,14 @@ fieldset[disabled] .btn-xl.active {
 
 .left-container {
 	text-align: center;
-	width: 70%;
-	margin: 100px auto 80px;
+	width: 100%;
+	margin: 140px auto 80px;
 }
 
 .right-container {
 	text-align: center;
-	width: 65%;
-	margin: 80px auto 50px;
+	width: 85%;
+	margin: 100px auto;
 }
 
 .youtube-logo-plus-text {
@@ -480,14 +480,14 @@ fieldset[disabled] .btn-xl.active {
 @media(min-width:768px) {
 	.left-container {
 		text-align: center;
-		width: 100%;
+		width: 70%;
 		margin: 107% auto;
 	}
 
 	.right-container {
 		text-align: center;
-		width: 100%;
-		margin: 100% auto;
+		width: 60%;
+		margin: 100px auto;
 	}
 
 	.youtube-logo-plus-text {
