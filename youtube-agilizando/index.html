@@ -1,0 +1,201 @@
+---
+layout: page
+title: "YouTube Agilizando!"
+---
+
+<style type="text/css">
+
+  iframe {
+    padding: 3px;
+  }
+
+  .videos-description {
+     min-height: 125px;
+     padding: 3px;
+     font-size: 0.9em;
+  }
+
+  .videos-title {
+    margin: -5px 0;
+    padding: 3px;
+  }
+</style>
+
+<header style="background-image: url('/assets/img/youtube-agilizando/bg-youtube-agilizando2.png'); background-color: #500A8E">
+    <div class="container">
+    	<div class="row" style="">
+    		<!-- <div class="col-md-1"></div> -->
+    		<!-- esquerda -->
+    		<div class="col-md-6">
+          <div class="left-container">
+						<img style="width: 75%;" src="/assets/img/youtube-agilizando/youtube-agilizando-logo-plus-texto.png" class="logo-name"></img>
+						<br><br><a href="https://www.youtube.com/agilizando?sub_confirmation=1" target="_blank" class="btn btn-warning agilizando-btns" style="font-size: 90%">ME INSCREVER NO CANAL!</a>
+					</div>
+    		</div> <!-- close esquerda -->
+
+
+				<!-- direita -->
+    		<div class="col-md-5">
+    			<div class="right-container" style="position: relative;">
+						<img style="width: 90%;" src="/assets/img/youtube-agilizando/have-you-saw-youtube-agilizando-video.png" class="logo-name"></img>
+						<a href="https://youtu.be/OOux_bS40pk" target="_blank"><img src="/assets/img/thumnail-video-07-v2.png" class="logo-name" style="width: 89%; position: absolute; top: 8px; left: 30px;"></img></a>
+					</div>
+    		</div> <!-- close direita -->
+
+				<div class="col-md-1"></div>
+    	</div> <!-- close row -->
+    </div> <!-- close container -->
+</header>
+
+<!-- Services Section -->
+<section id="community">
+    <div class="container" style="min-height:100%;">
+
+			<div class="row" style="">
+        <div class="col-md-9">
+	        <p style="font-size: 2em; color: #390864; margin-bottom: 40px; font-weight: 600">Acompanhe os vídeos do Agilizando!</p>
+
+	        <p>Para te ajudar na jornada de aprendizado de métodos ágeis, eu criei o canal Agilizando! no YouTube. Lá eu compartilho conteúdos sobre métodos ágeis de forma DESCONTRAÍDA, DESCOMPLICADA e com QUALIDADE! Se inscreve no canal!</p>
+
+	        <br><hr>
+
+					{% assign rows = site.videos.size | divided_by: 3.0 | ceil %}
+					{% for row in (1..rows) %}
+						<div class="row" style="border-top: 50px">
+							{% assign row_offset = row | minus: 1 | times: 3 %}
+							{% for video in site.videos limit:3 offset:row_offset %}
+		            <div class="col-md-4">
+		                <div class="portfolio-item">
+		                  <div class="video-container">
+		                    <iframe src="{{video.url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		                  </div>
+		                  <div class="videos-description">
+		                    <h5 style="color: black;">{{video.title}}</h4>
+		                     <p class="video-block-with-text" style="line-height: 1.3">{{video.description}}</p>
+		                  </div>
+		                </div>
+		            </div>
+		          {% endfor %}
+		        </div>
+					{% endfor %}
+
+				</div> <!-- close col-md-9 -->
+
+
+        <div class="col-lg-3" style="padding-right: 50px"> <!-- coluna lateral direita -->
+          <!-- Formulário de Inscrição -->
+          <form action="#" method="post">
+              <div style="display: table; width: 100%; margin-bottom: 10px;">
+                  <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                  <h4 style="color: #390864; font-weight: 600; text-transform: none; margin: 0 10px; font-size: 1em;">O Agilizando! te ajuda a agilizar sua vida e carreira!</h4>
+              </div>
+
+              <p style="color: #ccc; line-height: 1">Deixe seu e-mail aqui e receba o conteúdo mais ágil do Brasil!</p>
+              <div class="form-group">
+
+								<form name="sentMessage" id="agilizandoForm" class="form-inline">
+									<input type="hidden" id="reason" value="Newsletter Agilziando!">
+									<input type="hidden" id="message" value="Me inscreva na newsletter.">
+									<div class="form-group">
+                      <input id="name" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Nome" />
+                  </div>
+                  <div class="form-group">
+	                  	<input id="email" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Seu melhor email aqui" />
+                  </div>
+                  <!-- <div id="success"></div>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div> -->
+
+									<button type="submit" class="btn btn-warning agilizando-btns" style="box-shadow: 2px 2px 5px #0005;"><b>Me inscreva!</b></button><br>
+
+
+              </form>
+
+
+                  <!-- <input type="text" class="form-control" placeholder="fulano@gmail.com" /> -->
+              </div>
+              <!-- <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #fff; width: 100%"><b>INSCREVER</b></a>
+              <div class="wpcf7-response-output wpcf7-display-none"></div> -->
+          </form>
+
+
+					<!-- Categories -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Categorias</h4>
+          </div>
+          <p class="meta">
+            {% for category in site.categories %}
+            <a class="cloud-tag" href='/articles/category/{{category[0] | slugify: "latin"}}/'>{{ category[0] }}</a>
+            {% endfor %}
+          </p>
+
+
+					<!-- Sobre a Suelen -->
+          <!-- <hr style="margin-top: 50px"/>
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Sobre a Suelen</h4>
+          </div>
+          <div style="text-align: center; margin-bottom: 20px">
+              <a href="/about"><img src="/assets/img/foto-fundo-roxo.png" style="width: 180px;"></a>
+          </div> -->
+
+
+					<!-- Outros Artigos -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Mais lidos</h4>
+          </div>
+
+          {% assign min = 1 %}
+          {% assign max = site.posts.size %}
+          {% assign diff = max | minus: min %}
+          {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
+          {% for post in site.posts limit:4 offset:randomNumber %}
+            {% if page.title != post.title %}
+                <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
+                  <div class="post-image-title">
+                    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+                  </div>
+                </div>
+            {% endif %}
+          {% endfor %}
+
+
+          <!-- Top Vídeos -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
+          </div>
+
+          {% for video in site.videos limit:3 %}
+          <div style="margin-bottom: 20px">
+            <a target="_blank" href='{{ video.url}}'><img src="/assets/img/videos/{{ video.img }}"></a>
+          </div>
+          {% endfor %}
+
+
+					<!-- Tags -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Tags</h4>
+          </div>
+          <p class="meta">
+            {% for tag in site.tags %}
+            <a class="cloud-tag" href='/articles/tag/{{tag[0] | slugify: "latin"}}/'>#{{ tag[0] }}</a>
+            {% endfor %}
+          </p>
+
+        </div> <!-- fim coluna lateral direita -->
+
+			</div> <!-- close row -->
+
+    </div> <!-- close container -->
+</section>
+
+

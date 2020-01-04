@@ -40,8 +40,8 @@ $('div.modal').on('show.bs.modal', function() {
 	}
 });
 $('#type-it').typeIt({
-    strings: [" DINÂMICOS!", " INTERATIVOS!", " PRÁTICOS!"],
-    speed: 90,
+    strings: ["TREINAMENTOS ", "PALESTRAS ", "WORSKHOPS"],
+    speed: 150,
     breakLines: false,
     loop: true,
     lifeLike: true,
