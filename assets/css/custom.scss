@@ -103,6 +103,7 @@ h6 {
     }
 }
 
+
 .white-text {
     color: #fff;
 }
@@ -268,6 +269,12 @@ fieldset[disabled] .btn-xl.active {
 
 .nav>li>a {
   padding: 10px;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    height: 100vh;
+    text-align: center;
+    max-height: 100vh;
 }
 
 .btn-outline-dark {
