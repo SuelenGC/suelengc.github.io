@@ -17,8 +17,10 @@ layout: page
               <!-- <p class="meta" itemprop="headline">Artigos com a tag <a class="tag" href="/articles/tag/{{ page.tag }}/">{{ page.tag }}</a></p> -->
               {% for post in site.posts %}
                 {% for tag in post.tags %}
-                  {% if tag.downcase == page.tag.downcase %}
+                	{% assign tag_downcase = tag | downcase %}
+									{% assign page_tag_downcase = page.tag | downcase %}
 
+                  {% if tag_downcase == page_tag_downcase %}
                     <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
                       <div class="post-image-title">
                         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>

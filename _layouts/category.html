@@ -14,7 +14,10 @@ layout: page
             <div class="col-md-9">
 							{% for post in site.posts %}
 								{% for category in post.categories %}
-                  {% if category.downcase == page.category.downcase %}
+									{% assign category_downcase = category | downcase %}
+									{% assign page_category_downcase = page.category | downcase %}
+
+								  {% if category_downcase == page_category_downcase %}
                     <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}});">
                       <div class="post-image-title">
                         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
