@@ -6,7 +6,7 @@ layout: page
 
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<style>
-				.fa {
+				.fa2 {
 					  padding: 7px;
 					  font-size: 18px;
 					  width: 67px;
@@ -15,9 +15,9 @@ layout: page
 					  margin: 5px 2px;
 					}
 
-					.fa:hover,
-					.fa:focus,
-					.fa:active {
+					.fa2:hover,
+					.fa2:focus,
+					.fa2:active {
 					    opacity: 0.7;
 					    text-transform: none;
 					    text-decoration: none;
@@ -29,12 +29,12 @@ layout: page
 					  color: white;
 					}
 
-					.fa-twitter {
+					.fa-twitter2 {
 					  background: #55ACEE;
 					  color: white;
 					}
 
-					.fa-linkedin {
+					.fa-linkedin2 {
 					  background: #007bb5;
 					  color: white;
 					}
@@ -45,7 +45,7 @@ layout: page
 					}
 
 					@media(min-width:768px) {
-							.fa {
+							.fa2 {
 							  padding: 7px;
 							  font-size: 18px;
 							  width: 110px;
@@ -75,10 +75,10 @@ layout: page
 
 							<!-- compartilhar em redes sociais -->
 							<div>
-		            	<a href="https://www.facebook.com/share.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe no Facebook" class="fa fa-facebook"></a>
-									<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe no Twitter" class="fa fa-twitter"></a>
-									<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe no LinkedIn" class="fa fa-linkedin"></a>
-									<a href="whatsapp://send?text={{ site.url }}{{ site.baseurl }}{{ page.url }}" data-action="share/whatsapp/share" title="Compartilhe no Whatsapp" class="fa fa-whatsapp"></a>
+		            	<a href="https://www.facebook.com/share.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe no Facebook" class="fa fa2 fa-facebook"></a>
+									<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe no Twitter" class="fa fa2 fa-twitter fa-twitter2"></a>
+									<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe no LinkedIn" class="fa fa2 fa-linkedin fa-linkedin2"></a>
+									<a href="whatsapp://send?text={{ site.url }}{{ site.baseurl }}{{ page.url }}" data-action="share/whatsapp/share" title="Compartilhe no Whatsapp" class="fa fa2 fa-whatsapp"></a>
 
 									<br /><br />
 	            </div>
@@ -148,7 +148,7 @@ layout: page
               {% assign diff = max | minus: min %}
               {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 
-              {% for post in site.posts limit:4 offset:randomNumber %}
+              {% for post in site.posts limit:2 offset:randomNumber %}
                 {% if page.title != post.title %}
                     <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
                       <div class="post-image-title">
@@ -166,7 +166,7 @@ layout: page
                 <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
               </div>
 
-              {% for video in site.videos limit:3 %}
+              {% for video in site.videos limit:2 %}
               <div style="margin-bottom: 20px">
                 <a target="_blank" href='{{ video.url}}'><img src="/assets/img/videos/{{ video.img }}"></a>
               </div>
