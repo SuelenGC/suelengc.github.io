@@ -1,19 +1,64 @@
   <footer style="background-color: #222;">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-inline social-buttons-white social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <span class="copyright" style="color: #fff;">Copyright &copy; Suelen Carvalho {{ 'now' | date: "%Y" }}</span>
-                </div>
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px; font-size: 0.9em">
+        <div class="row">
+
+            <div class="col-md-3">
+            		<img id="page-top" src="/assets/img/logo-name.png" style="width: 260px">
+            		<br><br>
+
+                <ul class="list-inline social-buttons-white social-buttons">
+                    {% for network in site.social %}
+                    <li style="padding-right: 2px; padding-left: 2px;"><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <br><br>
+                <span class="copyright" style="color: white">Copyright &copy; Suelen Carvalho {{ 'now' | date: "%Y" }}</span>
             </div>
-        </div>
-    </footer>
+
+
+						<div class="col-md-1"></div>
+
+						<div class="col-md-2" style="text-align: left;">
+							<a href="" style="color: white;">Blog</a><br><br>
+							<a href="" style="color: white;">Sobre</a><br><br>
+							<a href="" style="color: white;">Workshops</a><br><br>
+							<a href="" style="color: white;">Palestras</a><br><br>
+						</div>
+
+						<div class="col-md-2" style="text-align: left;">
+							<a href="" style="color: white;">YouTube Agilizando!</a><br><br>
+							<a href="" style="color: white;">Contato</a><br><br>
+							<a href="" style="color: white;">Busca no blog</a><br><br>
+						</div>
+
+						<div class="col-md-1"></div>
+
+
+		        <div class="col-md-3" style="text-align: left;">
+							<form action="#" method="post">
+		              <div style="display: table; width: 100%; margin-bottom: 10px;">
+		                  <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%; background-color: #fff"></div>
+		                  <h4 style="color: #F8E71C; font-weight: 600; text-transform: none; margin: 0 10px; font-size: 1em;">O Agilizando! te ajuda a agilizar sua vida e carreira!</h4>
+		              </div>
+
+		              <p style="color: #fff; line-height: 1">Deixe seu e-mail aqui e receba o conteúdo mais ágil do Brasil!</p>
+		              <div class="form-group">
+										<form name="sentMessage" id="agilizandoForm" class="form-inline">
+											<input type="hidden" id="reason" value="Newsletter Agilziando!">
+											<input type="hidden" id="message" value="Me inscreva na newsletter.">
+
+		                  <div class="form-group">
+			                  	<input id="email" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Seu melhor email aqui" />
+		                  </div>
+
+											<button type="submit" class="btn btn-warning agilizando-btns" style="box-shadow: 2px 2px 5px #0005;"><b>Me inscreva!</b></button><br>
+		              	</form>
+		              </div>
+		          </form>
+
+		        </div>
+				</div>
+  	</div>
+</footer>
