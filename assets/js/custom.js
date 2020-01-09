@@ -50,7 +50,7 @@ $('#type-it').typeIt({
 })
 .tiPause(2000);
 
-$('.owl-carousel').owlCarousel({
+$('#owl-carousel-photos').owlCarousel({
     loop:true,
     margin:10,
     autoplay: true,
@@ -58,7 +58,6 @@ $('.owl-carousel').owlCarousel({
     mouseDrag:true,
     touchDrag:true,
     autoHeight:true,
-    autoplayHoverPause:true,
     responsiveClass:true,
     responsive:{
         0:{
@@ -69,6 +68,32 @@ $('.owl-carousel').owlCarousel({
         },
         700:{
             items:2,
+            nav:false,
+            loop:true,
+            slideBy:2
+        }
+    }
+})
+
+$('#owl-carousel-depoiments').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    autoplaySpeed: 600,
+    mouseDrag:true,
+    touchDrag:true,
+    autoHeight:true,
+    center:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            loop:true,
+            slideBy:1
+        },
+        700:{
+            items:1,
             nav:false,
             loop:true,
             slideBy:2
