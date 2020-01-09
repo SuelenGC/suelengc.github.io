@@ -49,3 +49,29 @@ $('#type-it').typeIt({
     startDelete: true
 })
 .tiPause(2000);
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    autoplaySpeed: 600,
+    mouseDrag:true,
+    touchDrag:true,
+    autoHeight:true,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            loop:true,
+            slideBy:1
+        },
+        700:{
+            items:2,
+            nav:false,
+            loop:true,
+            slideBy:2
+        }
+    }
+})
