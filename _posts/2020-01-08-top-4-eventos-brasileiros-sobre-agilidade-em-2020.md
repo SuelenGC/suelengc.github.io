@@ -13,13 +13,12 @@ resumo: >
 ---
 
 
-Muitas pessoas me perguntam quais são os melhores eventos sobre de agilidade. Eventos que são sérios, com bons conteúdos, bons palestrantes, boa organização, bons formatos de sessões e não só a palestra tradicional e etc. Basicamente, que vale a pena você investir seu dinheiro e tempo.
+Muitas pessoas me perguntam quais são os melhores eventos sobre de agilidade. Eventos que são sérios, com bons conteúdos, bons palestrantes, boa organização e bons formatos de sessões e não só a palestra tradicional. Basicamente, que vale a pena você investir seu dinheiro e tempo.
 
-Estou sendo paga para falar sobre esses eventos? Não… É a minha mais sincera opinião. Poderia ser paga para dar minha opinião? Sim, seria ótimo =`D
+Estou sendo paga para falar sobre esses eventos? Não… É a minha mais sincera opinião.
 
 Pra te ajudar nesse planejamento hoje eu vou te contar quais são os 4 melhores eventos sobre agilidade aqui no Brasil e que eu pretendo participar este ano.
 
-3 deles eu já fui, 1 deles ainda não, mas pelas minhas pesquisas e pelo tempo que ele ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem consolidado.
 
 ## 1. Agile Brazil
 Uma das maiores conferências sobre agilidade da améria latina e a mais tradicional. Ocorre há 11 anos em diversos locais do Brasil e sua primeira edição foi em 2010. Este ano irá ocorrer de 7 a 9 de Outubro em Porto Alegre.
@@ -98,6 +97,7 @@ Local:  Rio de Janeiro
 
 
 <br><center>. . .</center><br>
+Dessa lista eu já participei de 3, inclusive algumas vezes como palestrante, são eles: Agile Brazil, Agile Trends e TDC. Sobre o Regional Scrum Gathering Rio ainda não participei, mas pelas minhas pesquisas e pelo tempo que o evento ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem maduro e consolidade, por isso entra pra minha lista sim.
 
 
 Tem algum outro evento sobre agildiade que você vai participar e não está na lista? Conta aqui nos comentários que eu quero saber!
