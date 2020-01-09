@@ -22,9 +22,7 @@ Pra te ajudar nesse planejamento hoje eu vou te contar quais são os 4 melhores 
 3 deles eu já fui, 1 deles ainda não, mas pelas minhas pesquisas e pelo tempo que ele ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem consolidado.
 
 ## 1. Agile Brazil
-Uma das maiores conferências sobre agilidade da améria latina e a mais tradicional. Ocorre há 11 anos em diversos locais do Brasil e sua primeira edição foi em 2010.
-
-Ainda não tem data nem local confirmados para 2020, mas como nos últumos anos, deve ocorrer em meados de Setembro. Então fique de olho no site para a abertura das inscrições!
+Uma das maiores conferências sobre agilidade da améria latina e a mais tradicional. Ocorre há 11 anos em diversos locais do Brasil e sua primeira edição foi em 2010. Este ano irá ocorrer de 7 a 9 de Outubro em Porto Alegre.
 
 O preço dos ingressos variam de R$300 a +/- R$1000, dependendo se você é membro ou não da Agile Alliance e do momento da compra. Se for membro e comprar o quanto antes, mais barato vai pagar!
 
