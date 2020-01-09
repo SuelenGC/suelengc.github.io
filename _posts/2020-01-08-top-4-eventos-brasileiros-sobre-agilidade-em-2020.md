@@ -68,7 +68,7 @@ O evento ocorre em diversos Estados do Brasil e está em expansão para a améri
 
 Apesar de não confirmadas as datas, já está indicando no site que haverão edições em São Paulo, Recife e Porto Alegre.
 
-O preço dos ingressos variam giram em torno de R$100 a R$200. Existem algumas trilhas que podem ser assistidas online e de graça. Confere tudo lá no site porque isso muda constantemente.
+O preço dos ingressos giram em torno de R$100 a R$200. Existem algumas trilhas que podem ser assistidas online e de graça. Confere tudo lá no site porque isso muda constantemente.
 
 Vale comentar que existe também o TDC Online onde você consegue assistir as palestras de edições anteriores do evento.
 
