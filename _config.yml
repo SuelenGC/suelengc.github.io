@@ -25,18 +25,20 @@ people:
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/suelengc
-  - title: twitter
-    url: http://twitter.com/suelengc
   - title: youtube
     url: https://youtube.com/agilizando
-  - title: medium
-    url: https://medium.com/@suelengc
+  - title: instagram
+    url: https://instagram.com/_suelengc
+  - title: instagram
+    url: https://instagram.com/_agilizando
+  - title: twitter
+    url: http://twitter.com/suelengc
   - title: slideshare
     url: https://pt.slideshare.net/suelengc
   - title: github
     url: http://github.com/suelengc
-  - title: instagram
-    url: https://instagram.com/_suelengc
+  # - title: medium
+  #   url: https://medium.com/@suelengc
 
 
 videos:
