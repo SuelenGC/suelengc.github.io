@@ -62,7 +62,7 @@ Data e Locais:
 ## 3. TDC
 O TDC ocorre há 13 anos tendo sua primeia edição em 2008. É um evento para desenvolvedores de software em geral.
 
-Apesar de não ser um evento só sobre ágeis, existem diversas trilhas sobre agilidade, por exemplo: agile coaching, design thinking, customer success, gestão de produtos, requisitos ágeis, management 3.0, kanban e lean, agile, etc
+Apesar de não ser um evento só sobre agilidade, existem diversas trilhas que abordam a temática, por exemplo: agile coaching, design thinking, customer success, gestão de produtos, requisitos ágeis, management 3.0, kanban e lean, agile, etc
 
 O evento ocorre em diversos Estados do Brasil e está em expansão para a américa latina. Por enquanto, as edições para 2020 com data confirmada são as de Belo Horizonte de 16 a 18 de Abril e Florianópolis de 2 a 6 de Junho.
 
