@@ -42,10 +42,10 @@ Até o momento, no site temos a informações apenas do evento de São Paulo, qu
 
 Para se inscrever você pode escolher dentre 4 opções de ingressos. Alguns permitem acesso a trilha sobre gestão que ocorre nos dois primeiros dias 6 e 7, outro a trilha sobre times que ocorre nos 2 últimos dias 8 e 9, outro a 1 dia de evento da sua escolha e outro a todos os dias do evento.
 
-* Agile Trends Management: acesso aos dias 6 e 7 (opção com acesso acesso executivo)
+* Agile Trends Management: acesso aos dias 6 e 7 (opção com acesso executivo)
 * Agile Trends Teams: acesso aos dias 8 e 9
-* Day Pass: você escolhe qual dia quer participar (opção com acesso acesso executivo)
-* Full Pass: acesso aos 4 dias do evento (opção com acesso acesso executivo)
+* Day Pass: você escolhe qual dia quer participar (opção com acesso executivo)
+* Full Pass: acesso aos 4 dias do evento (opção com acesso executivo)
 
 O preço dos ingressos variam de R$546 a R$2151 dependendo do tipo de ingresso e de quando você comprar. Quanto antes comprar, mais barato você paga!
 
