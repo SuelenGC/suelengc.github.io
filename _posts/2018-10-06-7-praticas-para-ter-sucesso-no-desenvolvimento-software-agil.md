@@ -3,7 +3,7 @@ layout: post
 title:  "7 passos para turbinar o desempenho do time e entregar mais valor na sua empresa"
 date:   2018-10-06
 categories: ["Dicas de Agilidade"]
-tags: [métodos ágeis, desenvolvimento ágil]
+tags: ["desenvolvimento ágil"]
 image: assets/img/posts/praticas-ageis-medium.png
 modal-id: 5
 ebook-title: ""

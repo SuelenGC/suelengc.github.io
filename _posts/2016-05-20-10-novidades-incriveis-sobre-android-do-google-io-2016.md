@@ -3,7 +3,7 @@ layout: post
 title: "10 novidades incríveis sobre Android do Google IO 2016"
 date: 2016-05-22
 categories: ["Tecnologia"]
-tags: [android, eventos]
+tags: [android, eventos, googleio]
 image: assets/img/posts/google-io-2016-2.jpg
 keywords:
 modal-id: 2

@@ -19,7 +19,7 @@ module Jekyll
       if site.layouts.key? 'category'
         dir = site.config['category_dir'] || 'category'
         site.categories.keys.each do |category|
-          category_slug = category.gsub(' ', '-').gsub('é', 'e').gsub('á', 'a').gsub('à', 'a').gsub('í', 'i').gsub('ú', 'u').gsub('ó', 'o').downcase
+          category_slug = category.gsub(' ', '-').gsub('é', 'e').gsub('á', 'a').gsub('à', 'a').gsub('í', 'i').gsub('ú', 'u').gsub('ó', 'o').gsub('ç', 'c').gsub('ã', 'a').gsub('õ', 'o').downcase
           write_category_index(site, File.join(dir, category_slug), category.split.map(&:capitalize).join(' '))
         end
       end

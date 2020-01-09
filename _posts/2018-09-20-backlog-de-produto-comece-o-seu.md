@@ -3,7 +3,7 @@ layout: post
 title:  "Como começar um backlog de produto do zero em 3 passos"
 date:   2018-09-20
 categories: ["Dicas de Agilidade"]
-tags: [métodos ágeis, backlog de produto, product owner]
+tags: ["backlog de produto", "product owner"]
 image: assets/img/posts/product-backlog-duvida2.jpg
 modal-id: 4
 ebook-title: "Como escrever estórias de tarefas, bugs e funcionalidades"

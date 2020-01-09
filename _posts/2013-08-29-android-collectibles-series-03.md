@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android Colecionáveis Série 03"
+title:  "Android colecionáveis série 03"
 date:   2013-08-29
 categories: ["Tecnologia"]
 tags: [android, geek]

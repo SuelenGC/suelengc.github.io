@@ -3,7 +3,7 @@ layout: post
 title:  "A forma mais eficiente de trazer seus postits do mundo físico para o digital!"
 date:   2019-10-05
 categories: ["Dicas de Agilidade"]
-tags: []
+tags: [kanban, "backlog de produto", "ferramentas ágeis"]
 image: assets/img/posts/backlog-de-produto4.jpg
 modal-id: 5
 comments: true

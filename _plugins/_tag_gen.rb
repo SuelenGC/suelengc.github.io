@@ -19,7 +19,7 @@ module Jekyll
       if site.layouts.key? 'tag'
         dir = site.config['tag_dir'] || 'tag'
         site.tags.keys.each do |tag|
-          tag_slug = tag.gsub(' ', '-').gsub('é', 'e').gsub('á', 'a').gsub('à', 'a').gsub('í', 'i').gsub('ú', 'u').gsub('ó', 'o')
+          tag_slug = tag.gsub(' ', '-').gsub('é', 'e').gsub('á', 'a').gsub('à', 'a').gsub('í', 'i').gsub('ú', 'u').gsub('ó', 'o').gsub('ç', 'c').gsub('ã', 'a').gsub('õ', 'o').downcase
           write_tag_index(site, File.join(dir, tag_slug), tag.split.map(&:capitalize).join(' '))
         end
       end

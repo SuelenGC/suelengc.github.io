@@ -3,7 +3,7 @@ layout: post
 title:  "Pontos de estória, você sabe quando usar?"
 date:   2019-12-17
 categories: ["Dicas de Agilidade"]
-tags: []
+tags: ["backlog de produto", "product owner"]
 image: assets/img/posts/doubt-man.jpg
 modal-id: 5
 comments: true

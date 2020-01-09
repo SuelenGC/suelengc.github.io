@@ -3,7 +3,7 @@ layout: post
 title:  "Termos Ágeis: O que é o Backlog de Produto?"
 date:   2019-07-19
 categories: ["Dicas de Agilidade"]
-tags: [métodos ágeis, termos ágeis]
+tags: ["termos ágeis", "backlog de produto"]
 image: assets/img/posts/backlog-de-produto4.jpg
 modal-id: 5
 comments: true

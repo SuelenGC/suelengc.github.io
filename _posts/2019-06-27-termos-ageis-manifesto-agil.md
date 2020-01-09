@@ -3,7 +3,7 @@ layout: post
 title:  "Termos Ágeis: Manifesto Ágil, Uh!?"
 date:   2019-06-27
 categories: ["Dicas de Agilidade"]
-tags: [Métodos Ágeis, Termos Ágeis, Manifesto Ágil]
+tags: ["termos ágeis", "manifesto ágil"]
 image: assets/img/posts/doubt-people.jpg
 modal-id: 5
 comments: true
