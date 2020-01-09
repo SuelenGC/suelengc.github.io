@@ -99,7 +99,7 @@ Local:  Rio de Janeiro
 
 
 <br><center>. . .</center><br>
-Dessa lista eu já participei de 3, inclusive algumas vezes como palestrante, são eles: Agile Brazil, Agile Trends e TDC. Sobre o Regional Scrum Gathering Rio ainda não participei, mas pelas minhas pesquisas e pelo tempo que o evento ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem maduro e consolidade, por isso entra pra minha lista sim.
+Dessa lista eu já participei de 3, inclusive, algumas vezes como palestrante e organizadora, são eles: Agile Brazil, Agile Trends e TDC. O Regional Scrum Gathering Rio ainda não participei, mas pelas minhas pesquisas e pelo tempo que o evento ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem maduro e consolidade, por isso entra pra minha lista sim.
 
 
 Tem algum outro evento sobre agildiade que você vai participar e não está na lista? Conta aqui nos comentários que eu quero saber!
