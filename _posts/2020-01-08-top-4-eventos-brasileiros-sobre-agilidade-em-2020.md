@@ -105,3 +105,15 @@ Dessa lista eu já participei de 3, inclusive, algumas vezes como palestrante e 
 Tem algum outro evento sobre agildiade que você vai participar e não está na lista? Conta aqui nos comentários que eu quero saber!
 
 Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+      <div class="portfolio-item">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/mXsMuypkh_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
