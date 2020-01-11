@@ -552,6 +552,11 @@ fieldset[disabled] .btn-xl.active {
 .agilizando-btns {
   background-color: #FEC503;
   border: none;
+  text-shadow: none;
+  padding: 15px 60px;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
 }
 
 a.agilizando-btns:hover,
@@ -559,6 +564,7 @@ a.agilizando-btns:focus,
 a.agilizando-btns:active,
 a.agilizando-btns.active {
   background-color: #E9B503;
+  color: black;
 }
 
 .agilizando-post-hr-separator {
