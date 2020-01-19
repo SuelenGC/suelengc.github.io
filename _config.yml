@@ -42,9 +42,13 @@ social:
 
 
 videos:
+  - url: https://www.youtube.com/embed/mLDEl6cpFbg
+    img: thumnail-video-10-como-criar-um-quadro-de-kanban-para-suas-metas-de-ano-novo.png
+    title: CRIE UM QUADRO DE KANBAN PARA SUAS METAS DE 2020 | Agora vai!
+    description: Ano novo metas novas! E para te ajudar a realizar todas elas, nesse vídeo eu vou te mostrar como montar um quadro de kanban para acompanhar suas metas em 2020 pra não perder o foco (na verdade, para aumentar o foco!).
   - url: https://www.youtube.com/embed/mXsMuypkh_s
     img: thumnail-video-09-top-4-eventos-agilidade-em-2020.png
-    title: Top melhores eventos de agilidade em 2020!
+    title: TOP MELHORES EVENTOS DE AGILIDADE EM 2020!
     description: Quer saber quais são os melhores eventos de agilidade para participar em 2020? Então assiste este vídeo até final porque tem dica super especial para inclusive participar de graça!
   - url: https://www.youtube.com/embed/OOux_bS40pk
     img: thumnail-video-07-v2.png
