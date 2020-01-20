@@ -50,7 +50,7 @@ Se quiser saber mais sobre vantagens e desvantagens de um kaban físico vs. kanb
 
 Esse passo é muito simples, você vai na sua página inicial do Trello e no canto superior direito tem um maiszinho, é só clicar nele e seguir o passo a passo.
 
-No Trello tem a opção de escolher uma imagem como background, coloca uma imagem bem bacana
+No Trello tem a opção de escolher uma imagem como background, coloca uma imagem bem bacana.
 
 Você também pode favoritar seu quadro clicando na estrelinha perto do nome, assim ele aparece pra você sempre no topo, olha só que lindo!
 
@@ -81,6 +81,9 @@ Um exemplo de meta seria _“Praticar exercícios físicos pelo menos 3 x por se
 
 Se você já pensou nas suas metas, é só criar um cartão para cada uma delas. Se ainda não pensou, minha sugestão é que você tire um tempo, um final de semana por exemplo, e reflita um pouco sobre elas. Dá trabalho? Dá. Mas vale a pena!
 
+A imagem abaixo ilustra seu quadro todo pronto com os passos acima.
+
+![]({{site.url}}/assets/img/posts/trello-quadro-modelo-metas-2020.png)
 
 ## Dicas bônus!!
 
