@@ -3,7 +3,7 @@ layout: post
 title:  "TOP 4 EVENTOS ÁGEIS! Saiba quais são os melhores eventos ágeis pra não perder em 2020!"
 date:   2020-01-08
 categories: ["Dicas de Agilidade"]
-tags: ["eventos"]
+tags: ["eventos", "agilidade"]
 image: assets/img/posts/eventos-agilidade-2020-2.jpg
 modal-id: 5
 comments: true

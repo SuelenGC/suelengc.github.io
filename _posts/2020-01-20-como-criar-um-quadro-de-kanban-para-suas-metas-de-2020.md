@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "REALIZE MAIS EM 2020! Organize suas metas com esse quadro de kanban em 3 passos super simples!"
-date:   2020-01-17
+date:   2020-01-20
 categories: ["Dicas de Agilidade", "Life Hacks"]
 tags: ["Agilidade na Prática", "Kanban", "Trello"]
 image: assets/img/posts/metas-ano-novo3.jpg
