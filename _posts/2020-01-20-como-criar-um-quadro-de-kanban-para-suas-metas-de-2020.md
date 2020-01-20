@@ -19,7 +19,7 @@ Há pesquisas muito sérias que falam que o maior motivo das pessoas não atingi
 
 O nosso cérebro é muito inteligente. Quando ele sabe que algo é importante pra você, ele presta mais atenção nas oportunidades que podem te ajudar a conseguir aquilo.
 
-Sabe qndo você quer comprar um carro amarelo e começa a só ver carro amarelo na rua? Não é que o mundo de repente resolveu ter carro amarelo. É basicamente seu cérebro agindo a seu favor. Como ele sabe que carro amarelo é algo importante pra você, ele passa a prestar mais atenção nisso!
+Sabe quando você quer comprar um carro amarelo e começa a só ver carro amarelo na rua? Não é que o mundo de repente resolveu ter carro amarelo. É basicamente seu cérebro agindo a seu favor. Como ele sabe que carro amarelo é algo importante pra você, ele passa a prestar mais atenção nisso!
 
 Ou seja, para se manter nos objetivos, você deve estar em constante contato com o que definiu.
 
@@ -34,8 +34,6 @@ O método kanban foi criado pela Toyota em meados da década de 50/60 para resol
 A palavra tem origem japonesa e significa cartão. A ideia por trás do kanban é a gestão visual de processos através de um quadro com colunas e cartões. QUALQUER PROCESSO mesmo, simples ou complexo.
 
 Exemplo de processos podem ser: o desenvolvimento de software, execução de uma faxina, cronograma de marketing digital, treinos para uma maratona ou, como vamos ver nesse vídeo, a gestão de metas anuais.
-
-Ficou curioso sobre o método kanban? Que aprender mais ele? Coloca aqui em baixo nos comentário #QueroKanban
 
 
 ## O que você vai precisar
@@ -58,50 +56,49 @@ Você também pode favoritar seu quadro clicando na estrelinha perto do nome, as
 
 ## #2 Adicionar colunas no nosso quadro
 
-O maior desafio na criação de quadros de kanban é entender quais colunas representam o processo que você está querendo “kanbanizar”. Basicamente, quais são as etapas que uma meta, tarefa, cartão vai passar até ser concluída.
+O maior desafio na criação de quadros de kanban é entender quais colunas representam o processo que você está querendo _“kanbanizar”_. Basicamente, quais são as etapas que uma meta deve seguir até ser concluída.
 
-Pensa comigo, no nosso caso, vamos precisar de uma coluna para as metas do ano ainda não iniciadas, ou seja, essa é a primeira coluna onde suas metas vão ficar! É tipo o início de tudo. É o que vc planejou fazer mas ainda não iniciou. Vou chamar esta coluna de "METAS 2020”.
+Pensa comigo, no nosso caso, vamos precisar de uma coluna para as metas do ano ainda não iniciadas, ou seja, essa é a primeira coluna onde suas metas vão ficar! É o início de tudo. É o que você planejou fazer mas ainda não iniciou. Vou chamar esta coluna de **METAS 2020**.
 
-Também vamos precisar de uma coluna para quando começarmos a trabalhar em uma meta, nomes óbvios são ótimos, então eu vou chamar esta coluna de "EM ANDAMENTO”, ou seja, começamos a trabalhar naquela meta.
+Também vamos precisar de uma coluna para quando começarmos a trabalhar em uma meta, nomes óbvios são ótimos! Então eu vou chamar esta coluna de **EM ANDAMENTO**, ou seja, começamos a trabalhar naquela meta.
 
-Por exemplo, se for uma meta de "correr 3 x por semana", a sua meta vem pra coluna “EM ANDAMENTO" quando vc correr pela primeira vez.
+Por exemplo, se for uma meta de "correr 3 x por semana", a sua meta vem pra coluna **EM ANDAMENTO** quando você correr pela primeira vez.
 
+Como o ano é muito longo, pode ser que você comece uma meta e por qualquer motivo precise pausar o foco nela e colocar o foco em outra meta. Então podemos criar uma coluna para colocar essas metas que foram iniciada mas que por algum motivo, precisaram ser pausadas. Vou chamar esta coluna de  **METAS PAUSADAS** e colocar entre **METAS 2020** e **EM ANDAMENTO**.
 
-Como o ano é muito longo, pode ser que você comece uma meta e por qlqr motivo precise pausar o foco nela e colocar o foco em outra meta. Então podemos criar uma coluna para colocar essas metas que foram iniciada mas que por algum motivo, precisaram ser pausadas. Vou chamar esta coluna de  “PAUSADAS" e colocar entre "METAS 2020" e "EM ANDAMENTO".
+Por que ela vem entre essas duas colunas e não depois de **EM ANDAMENTO**?
 
-Por que ela vem entre essas duas colunas e não depois de EM ANDAMENTO?
+Quando pausamos algo que já começamos indica uma espécie de retrocesso. Ela não avança em direção a conclusão, ela regride um pouco, por isso fica antes e não depois de **EM ANDAMENTO**.
 
-Quando pausamos algo que já começamos indica uma espécie de retrocesso. Ela não avança em direção a conclusão, ela regride um pouco, por isso fica antes e não depois de EM ANDAMENTO.
-
-Por último, mas não menos importante. Precisamos de uma coluna para quando você concluir uma meta (EEEEHHHHH YEAHH). Vou chamá-la de “METAS ATINGIDAS”. Essa é aquela coluna do prazer! Quando você move sua meta pra cá chega se arrepia.
+Por último, mas não menos importante! Precisamos de uma coluna para quando você concluir uma meta (YEEAAAAHH!!). Vou chamá-la de **METAS ATINGIDAS**. Essa é aquela coluna do prazer! Quando você move sua meta pra cá chega se arrepia.
 
 
 ## #3 Adicionar as metas
 
-Para cada meta, você vai criar um cartão e colocar na coluna "METAS 2020". Para uma meta ser boa ela tem que ser: específica, mensurável, fazer sentido pra você e tem que ter prazo!
+Para cada meta, você vai criar um cartão e colocar na coluna **METAS 2020**. Para uma meta ser boa ela tem que ser: específica, mensurável, fazer sentido pra você e tem que ter prazo!
 
-Um exemplo de meta seria “Praticar exercícios físicos pelo menos 3 x por semana, ou seja, 144 vezes no ano, até 31/12/2020".
+Um exemplo de meta seria _“Praticar exercícios físicos pelo menos 3 x por semana, ou seja, 144 vezes no ano, até 31/12/2020"_.
 
-Se você já pensou nas suas metas, é só criar um cartão para cada uma delas. Se ainda não pensou, minha sugestão é que você tire um tempo, um final de semana por exemplo, e reflita um pouco sobre elas. Dá trabalho? Dá. Mas vale a pena.
+Se você já pensou nas suas metas, é só criar um cartão para cada uma delas. Se ainda não pensou, minha sugestão é que você tire um tempo, um final de semana por exemplo, e reflita um pouco sobre elas. Dá trabalho? Dá. Mas vale a pena!
 
 
 ## Dicas bônus!!
 
-Você pode adicionar nos cartões:
-   * Lista com as pequenas ações (_checklists_) que você vai precisar fazer para atingir aquela meta
-   * Colocar prazos para conclusão
-   * E pode adicionar comentários conforme o andamento do ano e muito mais
-   * Criar marcadores (_labels_) para categorizar suas metas. Por eu tenho os marcadores: profissional, pessoal e educacional.
+Para cada meta, você pode adicionar:
+   * Lista com as pequenas ações (_checklists_) que você vai precisar fazer para atingir aquela meta.
+   * Colocar prazos para conclusão.
+   * Adicionar comentários conforme o andamento do ano.
+   * Criar marcadores (_labels_) para categorizar suas metas. Por exemplo, eu tenho os marcadores: profissional, pessoal e educacional.
 
 
-Pra te ajudar ainda mais pq estou muito fofa em 2020. Eu criei um quadro público no Trello com todos os passos que falamos já executados. Ele tem até um template de meta pra você criar as suas!! Acesse ele [aqui](https://trello.com/b/HeKK3FwB/modelo-metas-2020)
+Pra te ajudar ainda mais porque estou muito fofa em 2020, eu criei um [quadro modelo de metas 2020](https://trello.com/b/HeKK3FwB/modelo-metas-2020) no Trello com todos os passos acima já executados. Ele tem até um modelo de meta pra você criar as suas, top né!
 
-<br><center>. . . </center><br>
+<center>. . . </center><br>
 
-Pronto! Agora você tem um quadro de kanban para suas metas de 2020 para saber se está no caminho certo rumo ao que você busca para sua vida e carreira. Assim vc não vive como Zeca Pagodinho que "deixa a vida me levar, vida leva eu"
+Pronto! Agora você tem um quadro de kanban para suas metas de 2020 para saber se está no caminho certo rumo ao que você busca para sua vida e carreira. Assim você não vive como Zeca Pagodinho que _"deixa a vida me levar, vida leva eu"_.
 
 
-Se você gostou desse artigo comenta aqui em baixo como ele te ajudou. E o que mais você faz para conseguir concretizar suas metas do ano? Me conta aqui nos comentários que eu quero saber!
+Se você gostou desse post comenta aqui em baixo como ele te ajudou. E o que mais você faz para conseguir concretizar suas metas do ano? Me conta aqui nos comentários que eu quero saber!
 
 Não esquece de compartilhar com aquele seu amigo que entra ano sai ano, não sai do lugar, não evolui, não nada...
 
