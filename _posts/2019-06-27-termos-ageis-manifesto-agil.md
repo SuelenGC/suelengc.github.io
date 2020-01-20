@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Termos Ágeis: Manifesto Ágil, Uh!?"
+title:  "TERMOS ÁGEIS! Descubra de forma simples e rápida o que é o Manifesto Ágil"
 date:   2019-06-27
 categories: ["Dicas de Agilidade"]
 tags: ["termos ágeis", "manifesto ágil"]

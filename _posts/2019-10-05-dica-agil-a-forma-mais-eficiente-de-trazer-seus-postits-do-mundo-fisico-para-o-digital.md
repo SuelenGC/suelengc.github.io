@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A forma mais eficiente de trazer seus postits do mundo físico para o digital!"
+title:  "ESCREVER POSTITS NUNCA MAIS! Conheça o app que trás seus postits do mundo físico para o digital!"
 date:   2019-10-05
-categories: ["Dicas de Agilidade"]
+categories: ["Dicas de Agilidade", "Life Hacks"]
 tags: [kanban, "backlog de produto", "ferramentas ágeis"]
 image: assets/img/posts/backlog-de-produto4.jpg
 modal-id: 5

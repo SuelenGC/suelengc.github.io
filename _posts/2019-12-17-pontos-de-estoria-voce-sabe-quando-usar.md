@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pontos de estória, você sabe quando usar?"
+title:  "PONTOS DE ESTÓRIA! Você provavelmente está usando errado!"
 date:   2019-12-17
 categories: ["Dicas de Agilidade"]
 tags: ["backlog de produto", "product owner"]
