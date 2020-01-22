@@ -9,7 +9,7 @@ modal-id: 5
 comments: true
 ebook-resume:
 resumo: >
-   Existe um jeito muito simples de você registrar e acompanhar suas metas do ano, tudo que você precisa é criar um quadro de kanban para isso. Esse ano você vai concretizar mais metas aplicando o método kaban nas suas metas de 2020!
+   Existe um jeito muito simples de você registrar e acompanhar suas metas do ano, tudo que você precisa é criar um quadro de kanban para isso. Esse ano você vai concretizar mais metas aplicando o método kanban nas suas metas de 2020!
 ---
 
 O ano de 2019 acabou e quando você olha pra ele, o que você concretizou? Quais resultados você alcançou? O que evolui na sua vida profissional ou pessoal? Se ficou difícil de responder a esta pergunta, calma! Muitas pessoas tem essa mesma dificuldade de concretizar metas que elas definem no começo do ano.
