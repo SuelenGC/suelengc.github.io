@@ -14,59 +14,50 @@ $(function() {
             var message = $form.find("#message").val();
             var reason = $form.find("#reason").val();
 
-            var subject = "[New Contact] " + reason;
+						// Change to your service ID, or keep using the default service
+					  var service_id = "default_service";
+            var template_id = "template_21zDZej9";
+            if ($form.find("#template_id").val()) {
+            		template_id = $form.find("#template_id").val();
+            		console.log("passou por aqui " + $form.find("#template_id").val());
+            }
 
-            console.log($form);
+					  var message_params = {
+						   "email": email,
+						   "name": name,
+						   "message": message,
+						   "reason": reason
+						}
 
-            $.ajax({
-                url: 'https://suelencarvalho-api.appspot.com/sendEmail',
-                method: 'POST',
-                data: {
-                    subject: subject,
-                    name: name,
-                    email: email,
-                    message: message
-                },
-                cache: false,
-                success: function() {
-                    // Success message
+					  emailjs.send(service_id, template_id, message_params)
+					  	.then(function(){
 
-                    if ($form.id = 'kanbanForm') {
-                    	$form.find('#success').html("<div class='alert alert-success' style='color: black'>");
-	                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-	                        .append("</button>");
-	                    $form.find('#success > .alert-success')
-	                        .append("Acesse o <a style='color: black' href='https://trello.com/b/HeKK3FwB/modelo-metas-2020' target='_blank'>Modelo de Quandro Kanban para Metas 2020</a>");
-	                    $form.find('#success > .alert-success')
-	                        .append('</div>');
-                    } else {
-                    	$form.find('#success').html("<div class='alert alert-success'>");
-	                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-	                        .append("</button>");
-	                    $form.find('#success > .alert-success')
-	                        .append("Obrigada pelo contato!");
-	                    $form.find('#success > .alert-success')
-	                        .append('</div>');
-                    }
+                  if ($form.id == 'kanbanForm') {
+                  	$form.find('#success').html("<div class='alert alert-success' style='color: black'>");
+                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    	.append("</button>");
+                    $form.find('#success > .alert-success').append("Acesse o <a style='color: black' href='https://trello.com/b/HeKK3FwB/modelo-metas-2020' target='_blank'>Modelo de Quandro Kanban para Metas 2020</a>");
+                    $form.find('#success > .alert-success').append('</div>');
+                  } else {
+                  	$form.find('#success').html("<div class='alert alert-success'>");
+                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    .append("</button>");
+                    $form.find('#success > .alert-success').append("Obrigada pelo contato!");
+                    $form.find('#success > .alert-success').append('</div>');
+                  }
 
-                    //clear all fields
-                    $form.trigger("reset");
-                },
-                error: function() {
-                    // Fail message
-                    $form.find('#success').html("<div class='alert alert-danger'>");
-                    $form.find('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $form.find('#success > .alert-danger')
-                        .append("Desculpe não foi, tente novamente.");
-                    $form.find('#success > .alert-danger')
-                        .append('</div>');
+					    }, function(err) {
+					        $form.find('#success').html("<div class='alert alert-danger'>");
+                  $form.find('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+                  $form.find('#success > .alert-danger').append("Desculpe não foi, tente novamente.");
+                  $form.find('#success > .alert-danger').append('</div>');
 
-                    //clear all fields
-                    $form.trigger("reset");
-                },
-            });
+                  // $form.find("button").text("Ops! Tentar novamente!");
+					    });
+
+					  $form.trigger("reset");
         },
+
         filter: function() {
             return $(this).is(":visible");
         },
