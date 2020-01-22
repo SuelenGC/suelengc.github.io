@@ -17,11 +17,11 @@ Muitas pessoas me perguntam quais são os melhores eventos sobre de agilidade. E
 
 Estou sendo paga para falar sobre esses eventos? Não… É a minha mais sincera opinião.
 
-Pra te ajudar nesse planejamento hoje eu vou te contar quais são os 4 melhores eventos sobre agilidade aqui no Brasil e que eu pretendo participar este ano.
+Para te ajudar nesse planejamento hoje eu vou te contar quais são os 4 melhores eventos sobre agilidade aqui no Brasil e que eu pretendo participar este ano.
 
 
 ## 1. Agile Brazil
-Uma das maiores conferências sobre agilidade da améria latina e a mais tradicional. Ocorre há 11 anos em diversos locais do Brasil e sua primeira edição foi em 2010.
+Uma das maiores conferências sobre agilidade da américa latina e a mais tradicional. Ocorre há 11 anos em diversos locais do Brasil e sua primeira edição foi em 2010.
 
 Este ano irá ocorrer de 7 a 9 de Outubro em Porto Alegre.
 
@@ -60,7 +60,7 @@ Data e Locais:
 </pre>
 
 ## 3. TDC
-O TDC ocorre há 13 anos tendo sua primeia edição em 2008. É um evento para desenvolvedores de software em geral.
+O TDC ocorre há 13 anos tendo sua primeira edição em 2008. É um evento para desenvolvedores de software em geral.
 
 Apesar de não ser um evento só sobre agilidade, existem diversas trilhas que abordam a temática, por exemplo: agile coaching, design thinking, customer success, gestão de produtos, requisitos ágeis, management 3.0, kanban e lean, agile, etc
 
@@ -83,7 +83,7 @@ Data e Locais:
 </pre>
 
 ## 4. Regional Scrum Gathering Rio
-O Scrum Gathering Rio é um evento sobre o método scrum que ocorre há 7 anos na cidade do Rio de Janeiro, sua primeira edição foi em 2014.
+O Scrum Gathering Rio é um evento sobre o método Scrum que ocorre há 7 anos na cidade do Rio de Janeiro, sua primeira edição foi em 2014.
 
 Esse ano irá ocorrer em Julho nos dias 2, 3 e 4 no Rio de Janeiro.
 
@@ -97,12 +97,12 @@ Data:  de 2 à 4 de Julho
 Local:  Rio de Janeiro
 </pre>
 
-Dessa lista eu já participei de 3, inclusive, algumas vezes como palestrante e organizadora, são eles: Agile Brazil, Agile Trends e TDC. O Regional Scrum Gathering Rio ainda não participei, mas pelas minhas pesquisas e pelo tempo que o evento ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem maduro e consolidade, por isso entra pra minha lista sim.
+Dessa lista eu já participei de 3, inclusive, algumas vezes como palestrante e organizadora, são eles: Agile Brazil, Agile Trends e TDC. O Regional Scrum Gathering Rio ainda não participei, mas pelas minhas pesquisas e pelo tempo que o evento ocorre aqui no Brasil, me parece ter um excelente conteúdo e já estar bem maduro e consolidado, por isso entra para minha lista sim.
 
 
 <br><center>. . .</center><br>
 
-Tem algum outro evento sobre agildiade que você vai participar e não está na lista? Conta aqui nos comentários que eu quero saber!
+Tem algum outro evento sobre agilidade que você vai participar e não está na lista? Conta aqui nos comentários que eu quero saber!
 
 Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
 
