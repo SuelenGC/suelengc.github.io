@@ -31,28 +31,17 @@ $(function() {
 
 					  emailjs.send(service_id, template_id, message_params)
 					  	.then(function(){
-
-                  if ($form.id == 'kanbanForm') {
-                  	$form.find('#success').html("<div class='alert alert-success' style='color: black'>");
-                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                    	.append("</button>");
-                    $form.find('#success > .alert-success').append("Acesse o <a style='color: black' href='https://trello.com/b/HeKK3FwB/modelo-metas-2020' target='_blank'>Modelo de Quandro Kanban para Metas 2020</a>");
-                    $form.find('#success > .alert-success').append('</div>');
-                  } else {
-                  	$form.find('#success').html("<div class='alert alert-success'>");
-                    $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                    .append("</button>");
-                    $form.find('#success > .alert-success').append("Obrigada pelo contato!");
-                    $form.find('#success > .alert-success').append('</div>');
-                  }
+                	$form.find('#success').html("<div class='alert alert-success'>");
+                  $form.find('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                  .append("</button>");
+                  $form.find('#success > .alert-success').append("Obrigada pelo contato!");
+                  $form.find('#success > .alert-success').append('</div>');
 
 					    }, function(err) {
 					        $form.find('#success').html("<div class='alert alert-danger'>");
                   $form.find('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                  $form.find('#success > .alert-danger').append("Desculpe não foi, tente novamente.");
+                  $form.find('#success > .alert-danger').append("Por favor, tente novamente.");
                   $form.find('#success > .alert-danger').append('</div>');
-
-                  // $form.find("button").text("Ops! Tentar novamente!");
 					    });
 
 					  $form.trigger("reset");
