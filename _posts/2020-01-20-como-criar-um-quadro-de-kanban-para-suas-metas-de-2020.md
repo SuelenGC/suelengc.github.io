@@ -94,7 +94,7 @@ Para cada meta, você pode adicionar:
    * Criar marcadores (_labels_) para categorizar suas metas. Por exemplo, eu tenho os marcadores: profissional, pessoal e educacional.
 
 
-Pra te ajudar ainda mais porque estou muito fofa em 2020, eu criei um [quadro modelo de metas 2020](https://trello.com/b/HeKK3FwB/modelo-metas-2020) no Trello com todos os passos acima já executados. Ele tem até um modelo de meta pra você criar as suas, top né!
+Pra te ajudar ainda mais porque estou muito fofa em 2020, eu criei um [quadro modelo de metas 2020](https://www.suelencarvalho.com/modelo-kanban-metas-de-ano-novo/) no Trello com todos os passos acima já executados. Ele tem até um modelo de meta pra você criar as suas, top né!
 
 <center>. . . </center><br>
 

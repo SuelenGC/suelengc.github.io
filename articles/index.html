@@ -20,7 +20,7 @@ title: Blog
                     <div class="agilizando-post-principal-container" style="background-image: url({{site.url}}/{{post.image}});">
                         <div class="agilizando-post-principal-info-box">
                           <div>
-                              <p style="margin-right: 10px; color: #F8E71C;display: inline-block;">{{ post.categories | join: ", " }}</p>
+                              <p style="margin-right: 10px; color: #F8E71C;display: inline-block;">{{ post.categories | first }}</p>
                               <img style="display: inline-block; width: 17px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />
                               <p style="color: #fff;display: inline-block;">{% include post-date.html %}</p>
                           </div>
@@ -50,7 +50,7 @@ title: Blog
                         <div class="agilizando-post-info">
                             <p class="agilizando-post-title">{{ post.title }}</p>
                             <div class="agilizando-post-metadata">
-                                <p class="agilizando-post-meta-categoria">{{ post.categories | join: ", " }}</p>
+                                <p class="agilizando-post-meta-categoria">{{ post.categories | first }}</p>
                                 <img class="agilizando-post-meta-icon-clock" src="/assets/img/icclockroxo.png" />
                                 <p class="agilizando-post-meta-data">{% include post-date.html %}</p>
                             </div>

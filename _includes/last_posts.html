@@ -20,7 +20,7 @@
 		          		<div class="last-post-image-container" style="background-image: linear-gradient(to bottom, transparent 0%, black 100%), url({{site.url}}/{{post.image}}); height: 300px;">
 		          			<div class="post-image-title" style="font-size: 90%; background-color: #00000000;">
 		          				<p style="color: #fff;display: inline-block; font-size: 10px; float: left;">
-	          						<span class="agilizando-post-meta-categoria" style="display: inline-block; font-weight: 300; font-size: 10px; float: left;">{{ post.categories | join: ", " }}</span>
+	          						<span class="agilizando-post-meta-categoria" style="display: inline-block; font-weight: 300; font-size: 10px; float: left;">{{ post.categories | first }}</span>
 	          						<img style="display: inline-block; width: 11px; margin-right: 4px; margin-bottom: 1px;" src="/assets/img/icclock.png" />{% include post-date.html %}
 	          					</p>
 
