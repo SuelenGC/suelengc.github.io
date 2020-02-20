@@ -1,154 +1,182 @@
 ---
 layout: page
 ---
+<!-- <header id="posts" style="background-image: none;" class="bg-light-gray agilizando-section-principal" id="principal">
+    <div class="container " style="min-height:100%;">
+				<div class="intro">
+
+          <div class="main-text-box" style="margin: auto 0 ">
+            <div class="main-text" style="text-align: center; font-weight: 600; width: 100%; font-size: 150%; margin: 360px auto">
+							PALESTRAS
+              <br><a href="/#contact" class="btn btn-warning agilizando-btns">Quero Contratar!</a>
+
+	          </div>
+					</div>
+        </div>
+    </div>
+</header> -->
 
 
-<!-- Services Section -->
+<!-- Section -->
 <section id="community">
     <div class="container" style="min-height:100%;">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">PALESTRAS EM EVENTOS</h2>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
+			<div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">EVENTOS DA COMUNIDADE</h2>
+          </div>
+      </div>
+      <br><br>
 
-            <div class="col-md-4">
-              <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank">
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    04 de Agosto de 2018 &bull; TechTrends XP
+			<div class="row" style="">
+				<div class="col-md-9">
+	        <p style="font-size: 2em; line-height: 1em; margin-bottom: 40px; font-weight: 600">Me acompanhe em eventos da comunidade!</p>
+
+	        <p>Para compartilhar com a comunidade, constantemente palestro nos principais eventos de agilidade, tecnologia e Android. Veja quais já participei e quais serão os próximos. Te vejo por lá!</p>
+
+	        <br><hr>
+
+					{% assign rows = site.talks.size | divided_by: 2.0 | ceil %}
+					{% for row in (1..rows) %}
+						<div class="row" style="border-top: 50px; margin-bottom: 10px;">
+							{% assign row_offset = row | minus: 1 | times: 2 %}
+							{% for talk in site.talks limit:2 offset:row_offset %}
+		            <div class="col-md-6">
+		              <a href="{{talk.url}}" target="_blank" style="text-decoration: none;">
+		                <div class="presentation-container">
+		                  <div class="presentation-image">
+		                  	<img src="{{talk.img}}">
+		                  </div>
+		                  <div class="presentation-meta">
+		                    {{talk.data}} &bull; {{talk.event}}
+		                  </div>
+		                  <div class="presentation-title">
+		                    <h4>{{talk.title}}</h4>
+		                  </div>
+		                </div>
+		              </a>
+		            </div>
+		          {% endfor %}
+		        </div>
+					{% endfor %}
+
+
+				</div> <!-- close col-md-9 -->
+
+
+				<!-- lateral -->
+        <div class="col-lg-3" style="padding-right: 50px"> <!-- coluna lateral direita -->
+          <!-- Formulário de Inscrição -->
+          <form action="#" method="post">
+              <div style="display: table; width: 100%; margin-bottom: 10px;">
+                  <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+                  <h4 style="color: #390864; font-weight: 600; text-transform: none; margin: 0 10px; font-size: 1em;">O Agilizando! te ajuda a agilizar sua vida e carreira!</h4>
+              </div>
+
+              <p style="color: #ccc; line-height: 1">Deixe seu e-mail aqui e receba o conteúdo mais ágil do Brasil!</p>
+              <div class="form-group">
+								<form name="sentMessage" id="agilizandoForm" class="form-inline">
+									<input type="hidden" id="reason" value="Newsletter Agilziando!">
+									<input type="hidden" id="message" value="Me inscreva na newsletter.">
+									<div class="form-group">
+                      <input id="name" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Nome" />
                   </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
+                  <div class="form-group">
+	                  	<input id="email" type="text" class="form-control" style="border: 0; margin-right: 10px; box-shadow: 2px 2px 5px #0005;" placeholder="Seu melhor email aqui" />
+                  </div>
+                  <!-- <div id="success"></div>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div> -->
+
+									<button type="submit" class="btn btn-warning agilizando-btns" style="box-shadow: 2px 2px 5px #0005;"><b>Me inscreva!</b></button><br>
+              	</form>
+              </div>
+              <!-- <a href="/about" class="btn btn-warning agilizando-btns" style="text-transform: none; color: #fff; width: 100%"><b>INSCREVER</b></a>
+              <div class="wpcf7-response-output wpcf7-display-none"></div> -->
+          </form>
+
+
+					<!-- Categories -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Categorias</h4>
+          </div>
+          <p class="meta">
+            {% for category in site.categories %}
+            <a class="cloud-tag" href='/articles/category/{{category[0] | slugify: "latin"}}/'>{{ category[0] }}</a>
+            {% endfor %}
+          </p>
+
+
+					<!-- Sobre a Suelen -->
+          <!-- <hr style="margin-top: 50px"/>
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Sobre a Suelen</h4>
+          </div>
+          <div style="text-align: center; margin-bottom: 20px">
+              <a href="/about"><img src="/assets/img/foto-fundo-roxo.png" style="width: 180px;"></a>
+          </div> -->
+
+
+					<!-- Outros Artigos -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Mais lidos</h4>
+          </div>
+
+          {% assign min = 1 %}
+          {% assign max = site.posts.size %}
+          {% assign diff = max | minus: min %}
+          {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
+          {% for post in site.posts limit:2 offset:randomNumber %}
+            {% if page.title != post.title %}
+                <div class="post-image-container" style="background-image: url({{site.url}}/{{post.image}}); font-size: .8em; height: 200px;">
+                  <div class="post-image-title">
+                    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
                   </div>
                 </div>
-              </a>
-            </div>
-
-            <div class="col-md-4">
-              <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank">
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    19 de Novembro de 2016 - Agile Trends
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    19 de Novembro de 2016 - Agile Trends
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
-        </div>
+            {% endif %}
+          {% endfor %}
 
 
-        <br><br><br><br>
-        <div class="row">
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    04 de Agosto de 2018 &bull; TechTrends XP
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
+          <!-- Top Vídeos -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Top vídeos</h4>
+          </div>
 
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    19 de Novembro de 2016 - Agile Trends
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
+          {% for video in site.videos limit:2 %}
+          <div style="margin-bottom: 20px">
+            <a target="_blank" href='{{ video.url}}'><img src="/assets/img/videos/{{ video.img }}"></a>
+          </div>
+          {% endfor %}
 
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    19 de Novembro de 2016 - Agile Trends
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
-        </div>
 
-        <br><br><br><br>
-        <div class="row">
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    04 de Agosto de 2018 &bull; TechTrends XP
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
+					<!-- Tags -->
+          <hr style="margin-top:50px" />
+          <div style="display: table; width: 100%; margin-bottom: 20px;">
+            <div class="agilizando-post-principal-yellow-vertical-line" style="height: 100%"></div>
+            <h4 style="color: #390864; text-transform: none; margin: 0 10px; font-size: 1em;">Tags</h4>
+          </div>
+          <p class="meta">
+            {% for tag in site.tags %}
+            <a class="cloud-tag" href='/articles/tag/{{tag[0] | slugify: "latin"}}/'>#{{ tag[0] }}</a>
+            {% endfor %}
+          </p>
 
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    19 de Novembro de 2016 - Agile Trends
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
+        </div> <!-- fim coluna lateral direita -->
 
-            <div class="col-md-4">
-              <!-- <a href="https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto" class="portfolio-link" target="_blank"> -->
-                <div class="portfolio-item">
-                  <div class="presentation-image"></div>
-                  <div class="presentation-meta">
-                    19 de Novembro de 2016 - Agile Trends
-                  </div>
-                  <div class="presentation-title">
-                    <h4 style="color: black;">Desafios da agilidade com trabalho remoto</h4>
-                  </div>
-                </div>
-              <!-- </a> -->
-            </div>
-        </div>
+			</div> <!-- close row -->
 
-    </div>
+    </div> <!-- close container -->
 </section>
+
+
+
+
+
 
 

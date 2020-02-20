@@ -1601,6 +1601,12 @@ a.cloud-tag {
 
 /* COMMUNITY STYLES */
 
+.presentation-container {
+	background-color: #f7f7f7;
+	padding: 5px;
+	/*border: 1px solid black;*/
+}
+
 .presentation-image {
   max-width: 100%;
   background-size: cover;
@@ -1610,9 +1616,10 @@ a.cloud-tag {
 }
 
 .presentation-title h4 {
-    margin: -15px auto 5px;
+    margin: 10px auto;
     max-width: 100%;
-    background-color: #fff;
+    background-color: #f7f7f7;
+    color: #{{ site.data.template.color.secondary-dark }};
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
@@ -1621,7 +1628,7 @@ a.cloud-tag {
 .presentation-meta {
     margin: 10px auto;
     max-width: 400px;
-    background-color: #fff;
+    background-color: #f7f7f7;
     font-weight: 100;
     color: #{{ site.data.template.color.secondary-dark }};
     font-size: .9em;

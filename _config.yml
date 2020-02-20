@@ -41,6 +41,134 @@ social:
   #   url: https://medium.com/@suelengc
 
 
+talks:
+  - title: "Scrum: Relembrando os por quês?"
+    url: https://www.slideshare.net/suelengc/scrum-relembrando-os-por-qus
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/palestra-scrum-relembrando-os-por-ques-190912001156-thumbnail-4.jpg
+    event: "Meetup DataLab Experian"
+    data: "12 de Setembro de 2019"
+  - title: "Desafios da agilidade com trabalho remoto"
+    url: https://www.slideshare.net/suelengc/techtrends-xp-desafios-da-agilidade-com-trabalho-remoto
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/techtrendsxp-desafiosdaagilidadecomtrabalhoremoto-180806141650-thumbnail-4.jpg
+    event: "Tech Trends XP"
+    data: "06 de Agosto de 2019"
+  - title: "Introdução a Kotlin"
+    url: https://www.slideshare.net/suelengc/introducao-a-kotlin
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/2017-introducaoaokotlin-171007155445-thumbnail-4.jpg
+    event: "Android Dev Conference"
+    data: "07 de Outubro de 2017"
+  - title: "Introdução a Android Instant Apps"
+    url: https://www.slideshare.net/suelengc/introduo-a-android-instant-apps
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/devfestmaceio2017-instantapps-170923124012-thumbnail-4.jpg
+    event: "GDG DevFest Maceió"
+    data: "23 de Setembro de 2017"
+  # - title: "Google IO'17"
+  #   url: https://www.slideshare.net/suelengc/google-io17
+  #   img: https://cdn.slidesharecdn.com/ss_thumbnails/googleio17-170801165442-thumbnail-4.jpg
+  #   event: "Tech Talk Gympass"
+  #   data: "01 de Agosto de 2017"
+  - title: "Construindo Times de Alta Performance - Produtos &amp; Engenharia"
+    url: https://www.slideshare.net/suelengc/times-de-alta-performance-em-produtos-engenharia
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/timesdealtaperformance-produtosengenharia-170303203207-thumbnail-4.jpg
+    event: "Moip Fintech DevDay"
+    data: "03 de Março de 2017"
+  # - title: "Git Merge e Rebase - The goal and differences"
+  #   url: https://www.slideshare.net/suelengc/merge-e-rebase
+  #   img: https://cdn.slidesharecdn.com/ss_thumbnails/mergexrebase-170121153534-thumbnail-4.jpg
+  #   event: "Tech Talk Moip"
+  #   data: "21 de Janeiro de 2017"
+  # - title: "Dynamic Programming and Reinforcement Learning applied to Tetris Game"
+  #   url: https://www.slideshare.net/suelengc/dynamic-programming-and-reinforcement-learning-applied-to-tetris-game
+  #   img: https://cdn.slidesharecdn.com/ss_thumbnails/ia-apresentacao-160314192221-thumbnail-4.jpg
+  #   event: "IME-USP"
+  #   data: "14 de Março de 2016"
+  - title: "O sucesso do seu app está nos detalhes!"
+    url: https://www.slideshare.net/suelengc/o-sucesso-do-seu-app-est-nos-detalhes
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/devfestsudeste-2015-151024184157-lva1-app6892-thumbnail-4.jpg
+    event: "DevFest Sudeste"
+    data: "24 de Outubro de 2015"
+  # - title: "Go lang"
+  #   url: https://www.slideshare.net/suelengc/go-lang-52138194
+  #   img: https://cdn.slidesharecdn.com/ss_thumbnails/golang-150827144155-lva1-app6891-thumbnail-4.jpg
+  #   event: "IME-USP"
+  #   data: "27 de Agosto de 2015"
+  - title: "Google Play In App Billing"
+    url: https://www.slideshare.net/suelengc/intercon-android-2014-google-play-in-app-billing
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/interconandroid-googleplayinappbilling-140920142413-phpapp02-thumbnail-4.jpg
+    event: "Intercon Android"
+    data: "20 de Setembro de 2014"
+  - title: "Carreira Mobile"
+    url: https://www.slideshare.net/suelengc/semana-da-computao-usp-so-carlos-2014-carreira-mobile
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/semcomp2014-carreiraandroid-140820230247-phpapp01-thumbnail-4.jpg
+    event: "Semana da Computação USP São Carlos"
+    data: "20 de Agosto de 2014"
+  - title: "Tudo sobre GCM Push Notifications"
+    url: https://www.slideshare.net/suelengc/tdc-2014-tudo-sobre-gcm-push-notifications
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/tdc2014-tudosobregcmpushnotifications-140806141215-phpapp01-thumbnail-4.jpg
+    event: "The Developers Conference"
+    data: "06 de Agosto de 2014"
+  - title: "Sua carreira e o que o desenvolvimento mobile tem a ver com isso!"
+    url: https://www.slideshare.net/suelengc/mobile-conf-2014-sua-carreira-e-o-que-o-desenvolvimento-mobile-tem-a-ver-com-isso
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/mobileconf2014-carreiraandroid-140531091500-phpapp01-thumbnail-4.jpg
+    event: "Mobile Conf"
+    data: "31 de Maio de 2014"
+  - title: "Sua primeira app Android"
+    url: https://www.slideshare.net/suelengc/conexao-java-sua-primeira-app-android
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/conexaojava-android-140525171007-phpapp02-thumbnail-4.jpg
+    event: "Conexão Java"
+    data: "25 de Maio de 2014"
+  - title: "Dúvidas gerais (ou não) sobre Android"
+    url: https://www.slideshare.net/suelengc/7-masters-sobre-android
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/7masters-android-140430161318-phpapp01-thumbnail-4.jpg
+    event: "7 Masters"
+    data: "30 de Abril de 2014"
+  - title: "O fantástico mundo de Android"
+    url: https://www.slideshare.net/suelengc/hackaton-wtm
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/hackatonwtm-140308134218-phpapp02-thumbnail-4.jpg
+    event: "Women Techmakers"
+    data: "08 de Março de 2014"
+  - title: "Nativo vs. Cross-Plataform: Caminhos e Alternativas"
+    url: https://slideshare.net/suelengc/nativo-vs-crossplataform
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/qconsp2013-nativovscross-plataform-130829165905-phpapp01-thumbnail-4.jpg
+    event: "QConSP"
+    data: "29 de Agosto de 2013"
+  - title: "Usando o Poder da API Fragments"
+    url: https://slideshare.net/suelengc/usando-o-poder-da-api
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/3gdgandroidmeetup-usandoopoderdaapifragments-130704164131-phpapp02-thumbnail-4.jpg
+    event: "GDG Android Meetup"
+    data: "04 de Julho de 2013"
+  - title: "O bê-a-bá de Widgets"
+    url: https://slideshare.net/suelengc/5-gdg-androidmeetupobeabadewidgets
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/5gdgandroidmeetupobe-a-badewidgets-130703152250-phpapp02-thumbnail-4.jpg
+    event: "GDG Android Meetup"
+    data: "03 de Julho de 2013"
+  - title: "Esquartejando sua Activity com Fragments"
+    url: https://slideshare.net/suelengc/devfest-2012-esquartejando-sua-activity-com-fragments
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/devfest2012android-fragments-130112082946-phpapp02-thumbnail-4.jpg
+    event: "DevFest SP"
+    data: "12 de Janeiro de 2013"
+  - title: "Padrões Para Implantar Métodos Ágeis"
+    url: https://slideshare.net/suelengc/agile-brazil-2012-padres-para-implantar-mtodos-geis
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/agilebrazil2012-padroesparaimplantarmetodosageis-120906154603-phpapp01-thumbnail-4.jpg
+    event: "Agile Brazil"
+    data: "06 de Setembro de 2012"
+  - title: "Deixando Sua Interface mais Bonita com Shapes"
+    url: https://slideshare.net/suelengc/tdc2012-android-deixando-sua-interface-mais-bonita-com-shapes
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/tdc2012android-deixandosuainterfacemaisbonitacomshapes-120806185119-phpapp01-thumbnail-4.jpg
+    event: "The Developers Conference"
+    data: "06 de Agosto de 2012"
+  - title: "7 Padrões Para Implantar Métodos Ágeis"
+    url: https://slideshare.net/suelengc/tdc2012-agile-7-padres-para-implantar-mtodos-geis
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/tdc2012agile-7padroesparaimplantarmetodosageis-120806183825-phpapp02-thumbnail-4.jpg
+    event: "The Developers Conference"
+    data: "06 de Agosto de 2012"
+  - title: "SOLID em 5 minutos"
+    url: https://slideshare.net/suelengc/qconsp-2012-solid-em-5-minutos
+    img: https://cdn.slidesharecdn.com/ss_thumbnails/qconsp2012-solidem5minutos-120806182853-phpapp02-thumbnail-4.jpg
+    event: "QConSP"
+    data: "06 de Agosto de 2012"
+
+
 videos:
   - url: https://www.youtube.com/embed/mLDEl6cpFbg
     img: thumnail-video-10-como-criar-um-quadro-de-kanban-para-suas-metas-de-ano-novo.png
