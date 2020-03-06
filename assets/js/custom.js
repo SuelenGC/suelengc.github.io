@@ -75,6 +75,31 @@ $('#owl-carousel-photos').owlCarousel({
     }
 })
 
+$('#owl-carousel-quotes').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    autoplaySpeed: 600,
+    mouseDrag:true,
+    touchDrag:true,
+    autoHeight:true,
+    center:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:3,
+            nav:false,
+            loop:true,
+            slideBy:2
+        },
+        700:{
+            items:5,
+            nav:false,
+            loop:false
+        }
+    }
+})
+
 $('#owl-carousel-depoiments').owlCarousel({
     loop:true,
     margin:10,
