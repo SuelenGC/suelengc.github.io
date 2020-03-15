@@ -75,7 +75,7 @@ $('#owl-carousel-photos').owlCarousel({
     }
 })
 
-$('#owl-carousel-quotes').owlCarousel({
+$('#owl-carousel-medias').owlCarousel({
     loop:true,
     margin:10,
     autoplay: true,
@@ -84,6 +84,8 @@ $('#owl-carousel-quotes').owlCarousel({
     touchDrag:true,
     autoHeight:true,
     center:false,
+    pagination: false,
+    dots: false,
     responsiveClass:true,
     responsive:{
         0:{
