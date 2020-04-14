@@ -79,13 +79,13 @@ $('#owl-carousel-medias').owlCarousel({
     loop:true,
     margin:10,
     autoplay: true,
-    autoplaySpeed: 600,
+    autoplaySpeed: 400,
     mouseDrag:true,
     touchDrag:true,
     autoHeight:true,
     center:false,
-    pagination: false,
-    dots: false,
+    pagination:false,
+    dots:false,
     responsiveClass:true,
     responsive:{
         0:{
