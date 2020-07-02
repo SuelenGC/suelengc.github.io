@@ -10,7 +10,7 @@ comments: true
 ebook-resume:
 published: true
 resumo: >
-   Em tempos de corona vírus diversas empresas tem mandado seus funcionários trabalharem de casa, o famoso <i>home office</i>. Quer saber como manter a prodututividade, qualidade e os resultados? Leia este post porque eu vou te ajudar com X dicas super práticas como resolver tudo isso!
+   Em tempos de corona vírus diversas empresas tem mandado seus funcionários trabalharem de casa, o famoso <i>home office</i>. Quer saber como manter a produtividade, qualidade e os resultados? Leia este post porque eu vou te ajudar com 10 dicas super práticas que vão te ajudar com tudo isso!
 ---
 
 
@@ -44,7 +44,9 @@ E não é necessário se vestir 100% como se estivesse dentro de um prédio corp
 
 ## 3. Tenha um local apropriado para trabalhar
 
-Defina um lugar na sua casa para ser seu local de trabalho. O ideal é que neste local você tenha tudo que você precisa para trabalhar, normalmente tomadas, uma mesa e cadeira. Dê preferência para locais mais reservados, onde não passe muitas pessoas o tempo todo. Um <b>escritório em casa</b> seria o ideal, mas a mesa da sala de jantar ou da cozinha também podem ser boas opções.
+Defina um lugar na sua casa para ser seu local de trabalho. O ideal é que neste local você tenha tudo que você precisa para trabalhar, normalmente tomadas, uma mesa e cadeira.
+
+Dê preferência para locais mais reservados, onde não passe muitas pessoas o tempo todo. Um <b>escritório em casa</b> seria o ideal, mas a mesa da sala de jantar ou da cozinha também podem ser boas opções.
 
 Essa definição ajuda sua mente a ligar e desligar do "modo trabalho" e te ajuda a se organizar já que não vai precisar ficar mudando toda hora de lugar. Ah, também ajuda você e a sua família sobre divisão de espaço.
 
@@ -77,7 +79,9 @@ Já vi lugares que ao invés de ter um horário para iniciar, o combinado é o t
 
 ## 6. Sempre ligue o vídeo para as reuniões, sempre!
 
-A informação visual ainda é a mais relevante a rapidamente processada pelo cérebro humano. <b>Também somos mais empáticos</b> com pessoas que temos algum relacionamento e, para gerar relacionamento, quanto mais informação melhor!
+A informação visual ainda é a mais relevante a rapidamente processada pelo cérebro humano.
+
+<b>Também somos mais empáticos</b> com pessoas que temos algum relacionamento e, para gerar relacionamento, quanto mais informação melhor!
 
 A dica aqui é, faça toda <b>reunião com vídeo</b>! Dessa forma você vai gerar mais empatia e a comunicação enriquece com mais informações de expressões e gestos.
 
@@ -98,7 +102,9 @@ Essa experiência para mim é nova mas tem trazido excelentes resultados e por i
 
 No <b>trabalho remoto</b>, sempre que precisamos falar com alguém, geralmente mandamos mensagem perguntando se ela está disponível para uma conversa "rapidinho". Se sim, a gente cria uma sala de reunião, compartilha com essa pessoa e pronto, finalmente podemos conversar.
 
-Fazer esse caminho todo uma ou outra vez até é ok. Mas imagina fazer a cada pequena dúvida que surge? Muito chato e improdutivo não é mesmo!? Nesse cenário o que pode vir a acontecer é o time se comunicar menos porque é muito difícil se comunicar sempre. E <b>não queremos menos comunicação</b> no nosso time!
+Fazer esse caminho todo uma ou outra vez até é ok. Mas imagina fazer a cada pequena dúvida que surge? Muito chato e improdutivo não é mesmo!?
+
+Nesse cenário o que pode vir a acontecer é o time se comunicar menos porque é muito difícil se comunicar sempre. E <b>não queremos menos comunicação</b> no nosso time!
 
 Para minimizar essa barreira que o trabalho remoto agrega à comunicação, você pode ter uma sala online ligada o dia todo, onde todos do time podem ficar conectados por áudio e se quiserem, também por vídeo. Desse modo vocês podem se comunicar como se estivessem no mesmo ambiente, pois todo o time estará se escutando o tempo inteiro.
 
