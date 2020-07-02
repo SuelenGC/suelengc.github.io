@@ -4,7 +4,7 @@ title:  "10 dicas práticas para times trabalharem de home office sem perder a p
 date:   2020-07-02
 categories: ["Dicas de Agilidade"]
 tags: ["hacks de vida"]
-image: assets/img/posts/home-office2.jpg
+image: assets/img/posts/home-office.jpg
 modal-id: 5
 comments: true
 ebook-resume:
