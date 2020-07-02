@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PONTOS DE ESTÓRIA! Você provavelmente está usando errado!"
+title:  "PONTOS DE ESTÓRIA! Você sabe quando usar?"
 date:   2019-12-17
 categories: ["Dicas de Agilidade"]
 tags: ["backlog de produto", "product owner"]

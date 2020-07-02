@@ -170,6 +170,10 @@ talks:
 
 
 videos:
+  - url: https://www.youtube.com/embed/I5KT52CFh78
+    img: thumbnail-video-14-estoria-vs-historia.png
+    title: ESTÓRIA ou HISTÓRIA de usuário, qual o correto? | Agilizando!
+    description: Para você ficar mais afinado no dia a dia, descubra nesse vídeo qual a diferença entre história e estória e qual a forma correta quando se trata de user stories!
   - url: https://www.youtube.com/embed/UmCxReLF62w
     img: thumbnail-video-12-vai-fazer-home-office-por-causa-do-coronavirus-confira-9-dicas-praticas.png
     title: VAI FAZER HOME OFFICE POR CAUSA DO CORONAVÍRUS? Confira 9 dicas práticas!
