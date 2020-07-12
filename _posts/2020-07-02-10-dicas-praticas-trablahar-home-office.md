@@ -132,7 +132,7 @@ Espero que essa dicas tenham sido úteis para você. E se você gostou desse pos
 
 Não esquece de compartilhar com aquele seu amigo que também teve a oportunidade de trabalhar de casa em meio a essa crise que estamos passando, pode ser muito útil para ele também!
 
-Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
+Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/canalagilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
 
 <div class="row">
   <div class="col-md-2"></div>

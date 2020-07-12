@@ -104,7 +104,7 @@ Dessa lista eu já participei de 3, inclusive, algumas vezes como palestrante e 
 
 Tem algum outro evento sobre agilidade que você vai participar e não está na lista? Conta aqui nos comentários que eu quero saber!
 
-Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
+Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/canalagilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
 
 <div class="row">
   <div class="col-md-2"></div>

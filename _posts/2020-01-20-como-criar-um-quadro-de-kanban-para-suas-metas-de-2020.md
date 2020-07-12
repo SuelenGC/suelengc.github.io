@@ -106,7 +106,7 @@ Se você gostou desse post comenta aqui em baixo como ele te ajudou. E o que mai
 Não esquece de compartilhar com aquele seu amigo que entra ano sai ano, não sai do lugar, não evolui, não nada...
 
 
-Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
+Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/canalagilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
 
 <div class="row">
   <div class="col-md-2"></div>

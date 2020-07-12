@@ -27,7 +27,7 @@ Disponível para [iOS](https://apps.apple.com/us/app/post-it/id920127738) e [And
 
 Gostou desse conteúdo? Aproveite para usar o app após uma dinâmica usando a [Técnica MoSCoW de Priorização](http://127.0.0.1:4000/articles/tecnica-moscow-priorizacao) com seu time.
 
-Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/agilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
+Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/canalagilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
 
 <div class="row">
   <div class="col-md-2"></div>
