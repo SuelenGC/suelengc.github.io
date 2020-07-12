@@ -56,3 +56,17 @@ Eu geralmente utilizo a ordem em que a estória me parece ser melhor comunicada.
 <p><center>. . .</center></p>
 
 Agora que você conhece esta técnica melhor, mãos a obra para escrever melhores estórias de usuário.
+
+Prefere conteúdo em vídeo? Veja mais conteúdos no [Agilizando!](https://youtube.com/canalagilizando) meu canal do YouTube onde falo sobre Métodos Ágeis de forma descontraída, descomplicada e com qualidade!
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+      <div class="portfolio-item">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/yG6GUqrje1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
