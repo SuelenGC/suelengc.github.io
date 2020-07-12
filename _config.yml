@@ -25,18 +25,30 @@ people:
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/suelengc
-  - title: youtube
-    url: https://youtube.com/agilizando
   - title: instagram
     url: https://instagram.com/_suelengc
-  - title: instagram
-    url: https://instagram.com/_agilizando
   - title: twitter
     url: http://twitter.com/suelengc
   - title: slideshare
     url: https://pt.slideshare.net/suelengc
   - title: github
     url: http://github.com/suelengc
+  # - title: medium
+  #   url: https://medium.com/@suelengc
+
+
+# Social networks of Agilizando!
+social-agilizando:
+  - title: youtube
+    url: https://youtube.com/canalagilizando
+  - title: instagram
+    url: https://instagram.com/canalagilizando
+  - title: twitter
+    url: http://twitter.com/canalagilizando
+  - title: facebook
+    url: https://www.facebook.com/canalagilizando
+  - title: linkedin
+    url: https://www.linkedin.com/company/canalagilizando
   # - title: medium
   #   url: https://medium.com/@suelengc
 
@@ -170,14 +182,26 @@ talks:
 
 
 videos:
+  - url: https://www.youtube.com/embed/yG6GUqrje1k
+    img: thumbnail-video-15-como-escrever-requisito-agil-historias-usuario.png
+    title: REQUISITOS ÁGEIS - Como escrever histórias de usuário incríveis!
+    description: Para te ajudar nesse desafio de escrever histórias que comunicam, eu fiz esse vídeo te ensinando uma técnica super simples e eficiente para escrever histórias incríveis!
   - url: https://www.youtube.com/embed/I5KT52CFh78
     img: thumbnail-video-14-estoria-vs-historia.png
     title: ESTÓRIA ou HISTÓRIA de usuário, qual o correto? | Agilizando!
     description: Para você ficar mais afinado no dia a dia, descubra nesse vídeo qual a diferença entre história e estória e qual a forma correta quando se trata de user stories!
+  - url: https://www.youtube.com/embed/XMLvNtJh4l0
+    img: thumbnail-video-13-aulas-online-ao-vivo-dicas-2.png
+    title: COMO DAR AULAS ONLINE AO VIVO | Confira 5 dicas práticas!
+    description: Você é professor integral ou só nas horas vagas? Essa quarentena te trouxe muitos desafios não é mesmo!? Dar aulas online ao vivo é desafiador! Como manter os alunos atentos e acompanhando a aula!
   - url: https://www.youtube.com/embed/UmCxReLF62w
     img: thumbnail-video-12-vai-fazer-home-office-por-causa-do-coronavirus-confira-9-dicas-praticas.png
     title: VAI FAZER HOME OFFICE POR CAUSA DO CORONAVÍRUS? Confira 9 dicas práticas!
     description: Com a crise do corona vírus muitas empresas liberaram o trabalho home office 100% do tempo. Mas como manter a produtividade trabalhando de casa? Nesse vídeo vou trazer 9 boas práticas super práticas (uh!?) para você fazer home office e manter a agilidade com seu time! Assiste agora!
+  - url: https://www.youtube.com/embed/60wt4Oqxjts
+    img: thumbnail-video-11-o-que-e-ser-agil-agile
+    title: O QUE É SER ÁGIL | Explicação muito simples!
+    description: Há diversos adjetivos (bem positivos inclusive) a cerca de métodos ágeis. Dizem que é mais rápido, não tem burocracia, que são dinâmicos, etc! Mas será mesmo?
   - url: https://www.youtube.com/embed/mLDEl6cpFbg
     img: thumnail-video-10-como-criar-um-quadro-de-kanban-para-suas-metas-de-ano-novo.png
     title: CRIE UM QUADRO DE KANBAN PARA SUAS METAS DE 2020 | Agora vai!

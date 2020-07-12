@@ -14,6 +14,13 @@
 
                 <br><br>
                 <img id="page-top" src="/assets/img/agilizando-logo.png" style="width: 260px">
+                <br><br>
+                <ul class="list-inline social-buttons-white social-buttons">
+                    {% for network in site.social-agilizando %}
+                    <li style="padding-right: 2px; padding-left: 2px;"><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
 
 
