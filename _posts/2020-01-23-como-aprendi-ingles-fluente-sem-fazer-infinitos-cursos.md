@@ -31,7 +31,7 @@ Quantas vezes isso não acontece com a gente no português?! Alguém fala alguma
 
 Os músicos tem liberdade poética, isso quer dizer que eles podem usar a língua falada e não necessariamente a correta, e isso é ótimo para aumentar o seu **_listening_** (compreensão da língua), ou seja, a sua compreensão das palavras como elas são ditas no dia a dia.
 
-Se você reparar, vai perceber que falamos o português muito errado o tempo todo. Nós contraímos diversas palavras e nos entendemos mesmo assim. Isso porque a língua falada tem atalhos e esses atalhos nos ajudam na correria do dia a dia a ser mais rápidos e eficientes com muito menos esforço.
+Se você reparar, vai perceber que falamos o português muito errado o tempo todo. Nós contraímos diversas palavras e nos entendemos mesmo assim. Isso porque a língua falada tem atalhos e esses atalhos nos ajudam na correria do dia a dia a sermos mais rápidos e eficientes com muito menos esforço.
 
 Exemplo prático: "Cê sabe se o Fulano vem hoje?". Qualquer um que falar essa frase como está escrita, vamos entender perfeitamente sem estranheza. O que causa estranheza é vê-la escrita dessa forma. Porque somos mais criteriosos na escrita do que na fala, logo, essa frase seria: "Você sabe se Fulano vem hoje?".
 
@@ -73,7 +73,7 @@ Depois comecei a participar de eventos no exterior, onde tem pessoas de várias 
 
 Hoje me considero fluente. Ainda entendo mais do que falo, mas diariamente aumento meu repertório de palavras e expressões, exatamente como fazemos na nossa língua nativa.
 
-Outro ponto é, ouvindo músicas não necessariamente vamos aprender o inglês formal, usado em ambientes profissionais. As músicas por ter a licença poética, costumam usar muitas gírias e pronúncias não muito apropriadas para um ambiente formal. De qualquer forma, acredito que já é um grande avanço.
+Outro ponto é, ouvindo músicas não necessariamente vamos aprender o inglês formal, usado em ambientes profissionais. As músicas por terem a licença poética, costumam usar muitas gírias e pronúncias não muito apropriadas para um ambiente formal. De qualquer forma, acredito que já é um grande avanço.
 
 Além de que, quanto mais você sabe (mesmo que a forma "errada") mas fácil fica de aprender a forma correta!
 
